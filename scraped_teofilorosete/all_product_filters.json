@@ -1,0 +1,5331 @@
+{
+  "https://www.teofilorosete.es/productos/industria-alimentaria/cuchillos-giesser-industria-carnica-mango-clasico.html": {
+    "category_name": "Clásico",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/cuchillos-giesser-industria-carnica-mango-clasico.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "medidacm",
+        "label": "Medida (cm)",
+        "type": "Desplegable (Select)",
+        "options": [
+          "10",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "20",
+          "21",
+          "22",
+          "24",
+          "25",
+          "27",
+          "30",
+          "32",
+          "36"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_name": "mango",
+        "label": "Mango",
+        "type": "Desplegable (Select)",
+        "options": [
+          "clásico",
+          "clásico polipropileno"
+        ]
+      },
+      {
+        "field_name": "color",
+        "label": "Color",
+        "type": "Desplegable (Select)",
+        "options": [
+          "blanco",
+          "negro",
+          "verde",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_name": "uso",
+        "label": "Uso",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "pinchar",
+          "filetear",
+          "despiezar",
+          "deshacer",
+          "pulir",
+          "recortar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_name": "formatipo",
+        "label": "Forma/Tipo",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "ancho",
+          "recto",
+          "rígido",
+          "curvo",
+          "mediano",
+          "estrecho",
+          "flexible"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/cuchillos-giesser.html": {
+    "category_name": "Cuchillos",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/cuchillos-giesser.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/aceros-afiladores.html": {
+    "category_name": "Aceros y Afiladores",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/aceros-afiladores.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-chuleteras/productos/chuleteras_38_1_ap.html": {
+    "category_name": "Chuleteras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-chuleteras/productos/chuleteras_38_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "577"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "264,5",
+          "270",
+          "292",
+          "301",
+          "304",
+          "306",
+          "332,3",
+          "363",
+          "365",
+          "388",
+          "395",
+          "409",
+          "437",
+          "438",
+          "443",
+          "444",
+          "485",
+          "515",
+          "573",
+          "602",
+          "686",
+          "693"
+        ]
+      },
+      {
+        "field_name": "alto",
+        "label": "Alto",
+        "type": "Desplegable (Select)",
+        "options": [
+          "118",
+          "146",
+          "150",
+          "152",
+          "160",
+          "177",
+          "188",
+          "195",
+          "225",
+          "239",
+          "266",
+          "273",
+          "322",
+          "364",
+          "436",
+          "468"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "12,2",
+          "26",
+          "26,5",
+          "40",
+          "45",
+          "50",
+          "50,2",
+          "60,1",
+          "60,3"
+        ]
+      },
+      {
+        "field_name": "radio",
+        "label": "Radio",
+        "type": "Desplegable (Select)",
+        "options": [
+          "212",
+          "230",
+          "235",
+          "245",
+          "264",
+          "275",
+          "295",
+          "298,7",
+          "300",
+          "300,5",
+          "311",
+          "315,5",
+          "330",
+          "332",
+          "340",
+          "366",
+          "375",
+          "376",
+          "376,13",
+          "405",
+          "416"
+        ]
+      },
+      {
+        "field_name": "radiointerior",
+        "label": "Radio interior",
+        "type": "Desplegable (Select)",
+        "options": [
+          "5"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "2,4",
+          "2,5",
+          "3",
+          "4",
+          "5",
+          "5,4",
+          "5,7",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero inoxidable 420 (1.4034)"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "dentado",
+          "liso",
+          "microdentado",
+          "semidentado"
+        ]
+      },
+      {
+        "field_name": "pasodientes",
+        "label": "Paso de dientes",
+        "type": "Desplegable (Select)",
+        "options": [
+          "10"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_name": "numpalas",
+        "label": "Número de palas",
+        "type": "Desplegable (Select)",
+        "options": [
+          "2"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "010-1160-300098",
+          "010-1160-300107",
+          "010-4160-300121",
+          "010-4160-300133",
+          "03-1073-0",
+          "119231",
+          "155816 - 124812",
+          "16-3057-0",
+          "2101171/0",
+          "23-3366-0/2",
+          "40-1064-1/0",
+          "40-2473-0/0",
+          "4025420/0",
+          "47831",
+          "49734",
+          "50455",
+          "50462",
+          "50933",
+          "55800/124812",
+          "55822",
+          "58114",
+          "58870A",
+          "83529",
+          "86261",
+          "930-235-110",
+          "93157"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "berkel",
+          "crm/nexus",
+          "crm/nexus 245",
+          "crm/nexus TG-180",
+          "emsens",
+          "holac",
+          "magurit",
+          "mhs",
+          "nagema",
+          "rühle SR1",
+          "rühle SR2",
+          "treif",
+          "treif felix-100S-CE",
+          "treif fox",
+          "treif lion-bison",
+          "treif mustang",
+          "treif phoenix-CE120",
+          "treif puma",
+          "treif puma-1240",
+          "treif tiger-700",
+          "tvi"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti396",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti397",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti398",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti399",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti400",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti402",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti406",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti407",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti408",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti417",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti419",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti420",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti421",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti422",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti424",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti425",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti427",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti429",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti430",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti431",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti432",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti437",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti438",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti445",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti446",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti447",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti448",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti454",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti455",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti456",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti461",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti470",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti471",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti473",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti477",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti481",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti483",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti484",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti489",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti491",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti497",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti509",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti511",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti512",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti513",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti515",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti521",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti526",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-circulares-de-carne/productos/circulares-carne_21_1_ap.html": {
+    "category_name": "Circulares carne",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-circulares-de-carne/productos/circulares-carne_21_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "70",
+          "80",
+          "100",
+          "110",
+          "120",
+          "125",
+          "130",
+          "131",
+          "135",
+          "140",
+          "150",
+          "160",
+          "165",
+          "167",
+          "170",
+          "175",
+          "180",
+          "195",
+          "200",
+          "220",
+          "225",
+          "230",
+          "231,2",
+          "240",
+          "250",
+          "260",
+          "265",
+          "270",
+          "275",
+          "295",
+          "300",
+          "350",
+          "450",
+          "500",
+          "750"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "10",
+          "14",
+          "15",
+          "16",
+          "20",
+          "22",
+          "24",
+          "25",
+          "27",
+          "30",
+          "30,1",
+          "32",
+          "32,1",
+          "33,1",
+          "35",
+          "40",
+          "44,5",
+          "45",
+          "50",
+          "52",
+          "54",
+          "56",
+          "60"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,5",
+          "1",
+          "1,05",
+          "1,2",
+          "1,5",
+          "2",
+          "2,5",
+          "2,75",
+          "3",
+          "3,5",
+          "4,5",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero inoxidable 420 (1.4034)",
+          "acero inoxidable 440",
+          "acero inoxidable 440B (1.4112)",
+          "cromado duro",
+          "acero inoxidable 1.4310"
+        ]
+      },
+      {
+        "field_name": "dureza",
+        "label": "Dureza",
+        "type": "Desplegable (Select)",
+        "options": [
+          "48-52"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "dentado",
+          "liso",
+          "microdentado"
+        ]
+      },
+      {
+        "field_name": "pasodientes",
+        "label": "Paso de dientes",
+        "type": "Desplegable (Select)",
+        "options": [
+          "7"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble",
+          "sencillo + contrabisel"
+        ]
+      },
+      {
+        "field_name": "ranuras",
+        "label": "Ranuras",
+        "type": "Desplegable (Select)",
+        "options": [
+          "3",
+          "4",
+          "6",
+          "8",
+          "10",
+          "11",
+          "24",
+          "66",
+          "79"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "266923",
+          "279780",
+          "7459143"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "attec",
+          "crm",
+          "nock",
+          "scanvaegt"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti200",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti204",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti211",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti213",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti214",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti225",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti226",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti230",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti231",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti232",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti236",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti237",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti238",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti240",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti241",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti242",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti245",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti246",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti247",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti248",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti251",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti252",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti253",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti255",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti256",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti257",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti258",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti259",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti260",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti261",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti262",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti263",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti264",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti265",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti267",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti268",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti269",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti270",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti271",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti273",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti274",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti275",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti276",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti277",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti278",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti279",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti280",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti282",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti283",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti284",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti285",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti286",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti287",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti288",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti294",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti297",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti299",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti300",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti301",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti302",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti303",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti304",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti306",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti307",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti311",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti312",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti314",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti315",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti316",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti318",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti319",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti320",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti321",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti322",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti323",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti324",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti326",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti328",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti329",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti330",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti331",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti333",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti334",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti335",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti336",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti338",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti339",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti344",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti349",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti358",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti371",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti375",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti392",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-circulares/productos/cortar-fiambres_83_1_ap.html": {
+    "category_name": "Cortar fiambres",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-circulares/productos/cortar-fiambres_83_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "alto",
+        "label": "Alto",
+        "type": "Desplegable (Select)",
+        "options": [
+          "10",
+          "11,2",
+          "12",
+          "13",
+          "13,5",
+          "14,5",
+          "15",
+          "15,5",
+          "16",
+          "17",
+          "17,5",
+          "19",
+          "19,5",
+          "20",
+          "21",
+          "21,5",
+          "22",
+          "22,5",
+          "23"
+        ]
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "200",
+          "220",
+          "240",
+          "250",
+          "275",
+          "292",
+          "296",
+          "300",
+          "320",
+          "330",
+          "350",
+          "360",
+          "370"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "159",
+          "180",
+          "190",
+          "200",
+          "210",
+          "218",
+          "220",
+          "227",
+          "235",
+          "240",
+          "241",
+          "242",
+          "245",
+          "250",
+          "254",
+          "270",
+          "280",
+          "286",
+          "290",
+          "300",
+          "306",
+          "316"
+        ]
+      },
+      {
+        "field_name": "diametroagujero",
+        "label": "Diámetro del agujero",
+        "type": "Desplegable (Select)",
+        "options": [
+          "24",
+          "25,4",
+          "40",
+          "42",
+          "54",
+          "55",
+          "57",
+          "58",
+          "76,2"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero aleado D2 (1.2379)",
+          "acero inoxidable",
+          "100Cr6",
+          "cromado",
+          "acero al carbono C45",
+          "teflonada"
+        ]
+      },
+      {
+        "field_name": "dureza",
+        "label": "Dureza",
+        "type": "Desplegable (Select)",
+        "options": [
+          "59-62"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "microdentado"
+        ]
+      },
+      {
+        "field_name": "numagujeros",
+        "label": "Número de agujeros",
+        "type": "Desplegable (Select)",
+        "options": [
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "ade",
+          "agw",
+          "arsa",
+          "berkel",
+          "bizerba",
+          "bizerba mod.SE-355",
+          "boston",
+          "braher",
+          "daga",
+          "essedue",
+          "fac",
+          "fia",
+          "globe usa",
+          "iffaco",
+          "ironweed",
+          "it macchi",
+          "kolossal",
+          "mistro",
+          "mobba",
+          "omas",
+          "oms",
+          "ortega",
+          "rheninghaus",
+          "scharfen"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2409",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-coradora-de-dados/productos/cortadoras-de-dados_44_1_ap.html": {
+    "category_name": "Cortadoras de dados",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-coradora-de-dados/productos/cortadoras-de-dados_44_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "179",
+          "182",
+          "185",
+          "196",
+          "210",
+          "212",
+          "226",
+          "230",
+          "235",
+          "238",
+          "246",
+          "248",
+          "265",
+          "266",
+          "270",
+          "293",
+          "318",
+          "430",
+          "1190"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "284"
+        ]
+      },
+      {
+        "field_name": "alto",
+        "label": "Alto",
+        "type": "Desplegable (Select)",
+        "options": [
+          "8,5",
+          "10",
+          "12",
+          "12,5",
+          "13",
+          "14",
+          "15",
+          "16",
+          "18",
+          "20",
+          "21",
+          "22",
+          "23,5",
+          "25"
+        ]
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "26"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,5",
+          "0,75",
+          "1",
+          "1,2",
+          "1,5",
+          "2"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero inoxidable 1.4310"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "liso",
+          "ondulado"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "13312",
+          "13313",
+          "13326",
+          "14607",
+          "14608",
+          "16-0181-1",
+          "16-0183-1",
+          "16-0186-1",
+          "17-2078-0",
+          "3111750",
+          "3111800",
+          "4112",
+          "58751",
+          "58752"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "emsens",
+          "food logistic",
+          "holac",
+          "mhs",
+          "nematec",
+          "rühle",
+          "treif",
+          "treif felix-100"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti638",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti641",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti642",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti643",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti646",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti647",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti648",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti649",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti652",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti653",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti657",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti661",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti663",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti667",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti671",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti672",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti674",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti678",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti679",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti680",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti681",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti682",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti683",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti684",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti686",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti688",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti697",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti698",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti699",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti701",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti703",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti708",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti712",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti713",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti717",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti719",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti724",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti729",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti756",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-fileteadoras/productos/fileteadoras-peso-exacto_41_1_ap.html": {
+    "category_name": "Fileteadoras de peso exacto",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-fileteadoras/productos/fileteadoras-peso-exacto_41_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "109,8",
+          "238",
+          "241",
+          "365",
+          "446",
+          "468",
+          "526",
+          "543,1"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "15",
+          "54",
+          "79",
+          "185",
+          "218,9",
+          "232,8",
+          "285,9"
+        ]
+      },
+      {
+        "field_name": "radio",
+        "label": "Radio",
+        "type": "Desplegable (Select)",
+        "options": [
+          "195",
+          "530"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,8",
+          "1",
+          "1,2",
+          "1,5",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "Tratamiento electropulido"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "dentado",
+          "liso"
+        ]
+      },
+      {
+        "field_name": "pasodientes",
+        "label": "Paso de dientes",
+        "type": "Desplegable (Select)",
+        "options": [
+          "9"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0200-999-804-140-101",
+          "08010403341",
+          "080-1040-3350",
+          "08010403351",
+          "080600002087",
+          "37708010403682",
+          "3-80.854.01",
+          "80.414.03",
+          "80.414.07",
+          "80.414.10",
+          "8041404",
+          "8049804",
+          "8085701"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "marel",
+          "marel b55",
+          "norfo",
+          "scanvaegt"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti29",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti28",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti31",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti30",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti39",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti38",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti36",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti37",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti40",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti779",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti730",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti732",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti733",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti736",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti737",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti739",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti742",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti743",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti77",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-para-corte-de-carne-congelada/productos/congelados_47_1_ap.html": {
+    "category_name": "Congelados",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-para-corte-de-carne-congelada/productos/congelados_47_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "69,7",
+          "95",
+          "98,5",
+          "140",
+          "164",
+          "180",
+          "245",
+          "260",
+          "350"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "15",
+          "18",
+          "28",
+          "29",
+          "35",
+          "45",
+          "120",
+          "123"
+        ]
+      },
+      {
+        "field_name": "alto",
+        "label": "Alto",
+        "type": "Desplegable (Select)",
+        "options": [
+          "25",
+          "36",
+          "62",
+          "120"
+        ]
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "305",
+          "579"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "51"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "Tratamiento electropulido"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_name": "pasodientes",
+        "label": "Paso de dientes",
+        "type": "Desplegable (Select)",
+        "options": [
+          "18",
+          "19"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "074921104001",
+          "348235101005",
+          "555234102",
+          "555234117",
+          "555234121"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "laska",
+          "magurit",
+          "magurit unicut 555"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1030",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1028",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1029",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1031",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1032",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1033",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1034",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1035",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1036",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1037",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1039",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1040",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1013",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1014",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1015",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1016",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1017",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1018",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1019",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1021",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1022",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1023",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1024",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1025",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1026",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1027",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti884",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1044",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-para-despiece-de-aves/productos/elaboracion-de-aves_28_1_ap.html": {
+    "category_name": "Elaboracion aves",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-para-despiece-de-aves/productos/elaboracion-de-aves_28_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "61",
+          "65",
+          "80",
+          "90",
+          "115",
+          "120",
+          "129",
+          "138",
+          "195",
+          "250"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "30",
+          "30,5",
+          "31",
+          "32",
+          "36",
+          "36,3",
+          "42",
+          "74",
+          "100",
+          "140"
+        ]
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "110",
+          "125",
+          "145",
+          "150",
+          "175",
+          "200",
+          "215",
+          "225",
+          "250",
+          "270",
+          "300",
+          "350",
+          "490"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "22",
+          "22,2",
+          "30",
+          "30,1",
+          "32",
+          "40"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "1,5",
+          "2",
+          "2,2",
+          "2,4",
+          "2,5",
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero inoxidable 420 (1.4034)",
+          "acero inoxidable 440"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "dentado",
+          "liso",
+          "microdentado",
+          "con ranuras"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_name": "ranuras",
+        "label": "Ranuras",
+        "type": "Desplegable (Select)",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "12",
+          "24"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0249670",
+          "0249671",
+          "3908007B",
+          "3930330",
+          "3930331",
+          "3943374",
+          "3947032E",
+          "3947048E",
+          "3960622",
+          "3966082A",
+          "3R566187",
+          "507579",
+          "518180",
+          "518391",
+          "550138",
+          "555710",
+          "596746",
+          "608788C",
+          "608789C",
+          "617359A",
+          "617360A"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "meyn",
+          "stork",
+          "stork",
+          "systemate"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1085",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1086",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti768",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti769",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti770",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti771",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti772",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti773",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1088",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1089",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti790",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti791",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1090",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti814",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti825",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti224",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti227",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti228",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti229",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1773",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti234",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti235",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti249",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti250",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti266",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1093",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1094",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1095",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti281",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti292",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti293",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti295",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti296",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti308",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti309",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1096",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti332",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti348",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti1097",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti360",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti373",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti347",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti233",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti254",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-para-termofromado/productos/termoformado_24_1_ap.html": {
+    "category_name": "Termoformado",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-para-termofromado/productos/termoformado_24_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas-pescado/productos/circulares-pescado_22_1_ap.html": {
+    "category_name": "Circulares pescado",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas-pescado/productos/circulares-pescado_22_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "101",
+          "120",
+          "127",
+          "130",
+          "140",
+          "148",
+          "150",
+          "178",
+          "190",
+          "200",
+          "229",
+          "230",
+          "250",
+          "279,4",
+          "400"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "14",
+          "15,1",
+          "19",
+          "22",
+          "24",
+          "25",
+          "25,4",
+          "27",
+          "30",
+          "31,9",
+          "32",
+          "35",
+          "35,15",
+          "50"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,63",
+          "0,7",
+          "0,8",
+          "1",
+          "1,5",
+          "1,8",
+          "2",
+          "2,3",
+          "3",
+          "3,2",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero inoxidable 420 (1.4034)",
+          "acero inoxidable 440B (1.4112)",
+          "Tratamiento electropulido"
+        ]
+      },
+      {
+        "field_name": "dureza",
+        "label": "Dureza",
+        "type": "Desplegable (Select)",
+        "options": [
+          "58-60"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "dentado",
+          "liso",
+          "con ranuras"
+        ]
+      },
+      {
+        "field_name": "pasodientes",
+        "label": "Paso de dientes",
+        "type": "Desplegable (Select)",
+        "options": [
+          "4",
+          "8"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble",
+          "sencillo + contrabisel"
+        ]
+      },
+      {
+        "field_name": "ranuras",
+        "label": "Ranuras",
+        "type": "Desplegable (Select)",
+        "options": [
+          "12",
+          "22",
+          "44"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "3-2796",
+          "3-3699",
+          "3-58-2",
+          "3-6845-2",
+          "94010117",
+          "94010119",
+          "9401013",
+          "94010135",
+          "94010148",
+          "94010151",
+          "94010161",
+          "94010524",
+          "940110",
+          "94011007"
+        ]
+      },
+      {
+        "field_name": "forma",
+        "label": "Forma",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "con relieve"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "baader",
+          "baader fbk 1001",
+          "baader fbk 117",
+          "baader fbk 119",
+          "baader fbk 131",
+          "baader fbk 151",
+          "baader fbk 221",
+          "baader fbk 524",
+          "baader fbk kronborg",
+          "Cuchillas circulares pescado",
+          "pisces",
+          "vmk"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti594",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti595",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti596",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti597",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti598",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti599",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti600",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti601",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti602",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti603",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti604",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti605",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti606",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti607",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti610",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti611",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti613",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti614",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti616",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti617",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti619",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti620",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti622",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti623",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti624",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti625",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti626",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti239",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti298",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti861",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti337",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas/productos/cortar-verduras_33_1_ap.html": {
+    "category_name": "Cortar verduras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas/productos/cortar-verduras_33_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "132"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "18,9"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,39"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "doble"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "VA2214"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "urschel"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti793",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchillas/productos/cuchillas-y-placas-de-picadora_32_1_ap.html": {
+    "category_name": "Cuchillas y placas de picadora",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchillas/productos/cuchillas-y-placas-de-picadora_32_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuhillas-descortezadoras/productos/descortezadoras_48_1_ap.html": {
+    "category_name": "Descortezadoras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuhillas-descortezadoras/productos/descortezadoras_48_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/cuchilla-chutter/productos/cutter_23_1_ap.html": {
+    "category_name": "Cutters",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/cuchilla-chutter/productos/cutter_23_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "65"
+        ]
+      },
+      {
+        "field_name": "radio",
+        "label": "Radio",
+        "type": "Desplegable (Select)",
+        "options": [
+          "120",
+          "125,5",
+          "133",
+          "155",
+          "160",
+          "163",
+          "164",
+          "165",
+          "170,5",
+          "175",
+          "180",
+          "181",
+          "186",
+          "186,5",
+          "190",
+          "195",
+          "196",
+          "203",
+          "205",
+          "206",
+          "207",
+          "218",
+          "225",
+          "229",
+          "230",
+          "233",
+          "236",
+          "240",
+          "245",
+          "253",
+          "257",
+          "265",
+          "275",
+          "276",
+          "280",
+          "290",
+          "293",
+          "294",
+          "315",
+          "325",
+          "350",
+          "360",
+          "360,5",
+          "363",
+          "380",
+          "410",
+          "412",
+          "440"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "3",
+          "3,5",
+          "4",
+          "5",
+          "5,5",
+          "6",
+          "7,5",
+          "8"
+        ]
+      },
+      {
+        "field_name": "litraje",
+        "label": "Litraje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "20",
+          "33",
+          "42",
+          "45",
+          "50",
+          "60",
+          "65",
+          "70",
+          "75",
+          "100",
+          "120",
+          "125",
+          "130",
+          "150",
+          "200",
+          "300",
+          "325",
+          "330",
+          "500",
+          "750"
+        ]
+      },
+      {
+        "field_name": "material",
+        "label": "Material",
+        "type": "Desplegable (Select)",
+        "options": [
+          "acero inoxidable 420 (1.4034)"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "liso",
+          "ondulado"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo"
+        ]
+      },
+      {
+        "field_name": "forma",
+        "label": "Forma",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "200",
+          "4 cortes",
+          "600-4CD supercutt",
+          "CT",
+          "4EE",
+          "BW",
+          "cosial",
+          "EEB",
+          "flema-U2",
+          "FTU100",
+          "high speed-233",
+          "K",
+          "K-FLT",
+          "KR",
+          "KS",
+          "M",
+          "M-4S",
+          "MT",
+          "original",
+          "PBS-246",
+          "PBS-248",
+          "PBS-251",
+          "PBS-256",
+          "PBS-260",
+          "PBS-263",
+          "redondo",
+          "S",
+          "spiral-433",
+          "UM80",
+          "UM80/130",
+          "YW",
+          "zack-242",
+          "KO"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "alenxanderwerk",
+          "castellvall",
+          "cato",
+          "cfs",
+          "cia",
+          "delta",
+          "fatosa",
+          "hansen",
+          "kilia",
+          "krämer & grebe",
+          "laska",
+          "mainca",
+          "rex duker",
+          "securit",
+          "seydelmann",
+          "stephan",
+          "talsa",
+          "tecmaq",
+          "t-vall",
+          "wolfking",
+          "yanagiya"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti101",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti102",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti103",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti104",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti105",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti106",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti107",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti108",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti109",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti110",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti111",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti112",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti113",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti114",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti115",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti116",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti117",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti118",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti119",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti120",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti121",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti122",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti123",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti124",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti125",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti126",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti127",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti128",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti129",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti130",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti131",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti132",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti133",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti134",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti135",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti136",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti137",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti138",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti139",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti140",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti141",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti142",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti143",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti144",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti145",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti146",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti147",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti148",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti149",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti150",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti151",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti152",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti153",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti154",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti155",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti156",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti157",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti158",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti159",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti160",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti161",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti162",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti163",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti164",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti165",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti166",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti167",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti168",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti169",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti170",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti171",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti172",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti173",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti174",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti175",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti176",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti177",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti178",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti179",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti180",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti181",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti182",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti183",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti184",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti185",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti186",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti187",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti188",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti189",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti190",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti191",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti192",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti193",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti194",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti195",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/lutz/productos/fileteadoras_50_1_ap.html": {
+    "category_name": "Fileteadoras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/lutz/productos/fileteadoras_50_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "265",
+          "275",
+          "302",
+          "304",
+          "420",
+          "446",
+          "450",
+          "454",
+          "468",
+          "515",
+          "720",
+          "1254"
+        ]
+      },
+      {
+        "field_name": "ancho",
+        "label": "Ancho",
+        "type": "Desplegable (Select)",
+        "options": [
+          "10",
+          "15",
+          "16"
+        ]
+      },
+      {
+        "field_name": "espesor",
+        "label": "Espesor",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,5",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "field_name": "filo",
+        "label": "Filo",
+        "type": "Desplegable (Select)",
+        "options": [
+          "dentado",
+          "liso",
+          "ondulado"
+        ]
+      },
+      {
+        "field_name": "pasodientes",
+        "label": "Paso de dientes",
+        "type": "Desplegable (Select)",
+        "options": [
+          "9",
+          "12",
+          "15"
+        ]
+      },
+      {
+        "field_name": "bisel",
+        "label": "Bisel",
+        "type": "Desplegable (Select)",
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_name": "referenciacomo",
+        "label": "Referencia como",
+        "type": "Desplegable (Select)",
+        "options": [
+          "80.414.02",
+          "8041405"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "grasselli",
+          "marel",
+          "norfo",
+          "scanvaegt"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2096",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti722",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2202",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti721",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2576",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2577",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti731",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti735",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2591",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti734",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2590",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti738",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2644",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2992",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti2993",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/cuchillas-loncheadoras": {
+    "category_name": "Loncheadoras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/cuchillas-loncheadoras",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/cintas-sierra.html": {
+    "category_name": "Cintas de sierra",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/cintas-sierra.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/maquinas-afiladoras-pulidoras.html": {
+    "category_name": "Maquinas Afiladoras-Pulidoras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/maquinas-afiladoras-pulidoras.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/mataderos.html": {
+    "category_name": "Mataderos",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/mataderos.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/proteccion-guantes-delantales-anticorte.html": {
+    "category_name": "Protección guantes y delantales anticorte",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/proteccion-guantes-delantales-anticorte.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/repuestos-afiladores.html": {
+    "category_name": "Repuestos de afiladoras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/repuestos-afiladores.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/productos/industria-alimentaria/sala-despiece.html": {
+    "category_name": "Sala de despiece",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/sala-despiece.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  },
+  "https://www.teofilorosete.es/agujas-inyectoras/productos/agujas-inyectoras_27_1_ap.html": {
+    "category_name": "Agujas inyectoras",
+    "breadcrumb": "Está viendo:",
+    "url": "https://www.teofilorosete.es/agujas-inyectoras/productos/agujas-inyectoras_27_1_ap.html",
+    "filters": [
+      {
+        "field_name": "textobusc",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "loginweb",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "longitud",
+        "label": "Longitud",
+        "type": "Desplegable (Select)",
+        "options": [
+          "69",
+          "71",
+          "190",
+          "193,5",
+          "194",
+          "197",
+          "198",
+          "200",
+          "205",
+          "214",
+          "216,5",
+          "218,6",
+          "220",
+          "221",
+          "228",
+          "234",
+          "237",
+          "238",
+          "240",
+          "245",
+          "250",
+          "261",
+          "265",
+          "268",
+          "270",
+          "272",
+          "273",
+          "274",
+          "275",
+          "277,6",
+          "280",
+          "300",
+          "305",
+          "332",
+          "355",
+          "375",
+          "400"
+        ]
+      },
+      {
+        "field_name": "diametro",
+        "label": "Diámetro",
+        "type": "Desplegable (Select)",
+        "options": [
+          "1",
+          "2",
+          "2,5",
+          "3",
+          "3,2",
+          "3,25",
+          "3,5",
+          "4",
+          "4,2",
+          "4,3",
+          "4,5"
+        ]
+      },
+      {
+        "field_name": "diametrointerior",
+        "label": "Diámetro interior/eje",
+        "type": "Desplegable (Select)",
+        "options": [
+          "0,5",
+          "1",
+          "1,5",
+          "1,6",
+          "2",
+          "2,4",
+          "2,9"
+        ]
+      },
+      {
+        "field_name": "numagujeros",
+        "label": "Número de agujeros",
+        "type": "Desplegable (Select)",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "6",
+          "7",
+          "10",
+          "11",
+          "14"
+        ]
+      },
+      {
+        "field_name": "tipo",
+        "label": "Tipo",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "simple",
+          "doble",
+          "triple",
+          "cuádruple"
+        ]
+      },
+      {
+        "field_name": "maquina",
+        "label": "Máquina para",
+        "type": "Desplegable (Listbox/Multiple)",
+        "options": [
+          "belam",
+          "cato",
+          "fibosa",
+          "fomaco",
+          "gunther",
+          "henneken",
+          "inject star/globus",
+          "kronen",
+          "metalquimia",
+          "nowicki",
+          "ogalsa",
+          "rühle",
+          "rühle PR-20",
+          "suhner"
+        ]
+      },
+      {
+        "field_name": "texto",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti940",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti941",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti942",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti943",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti944",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti945",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti946",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti947",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti948",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti949",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti950",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti951",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti952",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti953",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti954",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti955",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti956",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti957",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti958",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti959",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti960",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti961",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti962",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti963",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti964",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti965",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti967",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti915",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti916",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti917",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti918",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti919",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti920",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti921",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti922",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti923",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti924",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti925",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti926",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti927",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti928",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti929",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti930",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti931",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti932",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti933",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti934",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti935",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti936",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti937",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti938",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "uni_arti939",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      },
+      {
+        "field_name": "email",
+        "label": "Buscar texto",
+        "type": "Camp de Text (Input)",
+        "options": []
+      }
+    ]
+  }
+}

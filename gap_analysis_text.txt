@@ -1,0 +1,36 @@
+ESTUDIO DE COMPETIDORES Y GAP ANALYSIS
+Propuesta de Arquitectura Web y Posicionamiento SEO para Esmotech
+Fecha: Julio 2026 | Documento Estrategico de Trabajo
+_________________________________________________________________________________________________________
+Competidores Analizados
+Teófilo Rosete – https://www.teofilorosete.es
+Mercafilo – https://www.mercafilo.es
+Fabretall (Fabé Tall) – https://www.fabretall.com
+_________________________________________________________________________________________________________
+1. Cobertura de Productos y Servicios
+Conclusión rápida**
+Teófilo Rosete cubre prácticamente todo el catálogo de Esmotech y añade formación. 
+Fabretall cubre la mayor parte pero carece de un servicio de afilado interno de precisión. 
+Mercafilo está alineado en cuchillos, sierras y afilado, pero la web no muestra claramente termoformado ni protección personal.
+_________________________________________________________________________________________________________
+2. Estructura de la Web (Navegación / Arquitectura)
+Patrones comunes**
+Uso de palabras clave en los enlaces (`cuchillos‑giesser`, `cuchillas‑circulares‑de‑carne`, `cintas‑sierra`).
+Separación clara entre “productos” y “servicios” (afilado, formación).
+Jerarquía de 2‑3 niveles (Home → Categoría → Sub‑categoría → ficha).
+_________________________________________________________________________________________________________
+3. Palabras Clave (Keywords) Detectadas
+_________________________________________________________________________________________________________
+4. ¿Ofrecen todo lo que Esmotech propone? (Gap Analysis)
+_________________________________________________________________________________________________________
+5. Comparativa Técnica y Posicionamiento de Esmotech (Hagedorn)
+_________________________________________________________________________________________________________
+6. Matriz DAFO de Esmotech
+_________________________________________________________________________________________________________
+7. Recomendaciones Estratégicas para Esmotech
+_________________________________________________________________________________________________________
+8. Próximos Pasos Sugeridos
+ Validar la lista completa de productos de Esmotech (añadir si falta algún tipo de sierra o accesorio). 
+ Revisar y actualizar los meta‑tags de tu sitio con los keywords listados. 
+ Rediseñar la arquitectura de la web siguiendo el esquema de categorías propuesto. 
+ Crear contenido comparativo (p.ej., “¿Por qué nuestro afilado supera al de Teófilo Rosete?”) para reforzar el SEO y la venta directa.

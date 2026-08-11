@@ -1,0 +1,9 @@
+# Gemini & Agent folders
+.gemini/
+.agents/
+*.log
+scratch/
+test_out.txt
+.system_generated/
+brain/
+*.tmp

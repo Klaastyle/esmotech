@@ -1,0 +1,2916 @@
+[
+  {
+    "url": "https://www.teofilorosete.es/agujas-inyectoras/productos/agujas-inyectoras_27_1_ap.html",
+    "category_name": "Agujas inyectoras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 37,
+        "options": [
+          "69",
+          "71",
+          "190",
+          "193,5",
+          "194",
+          "197",
+          "198",
+          "200",
+          "205",
+          "214",
+          "216,5",
+          "218,6",
+          "220",
+          "221",
+          "228",
+          "234",
+          "237",
+          "238",
+          "240",
+          "245",
+          "250",
+          "261",
+          "265",
+          "268",
+          "270",
+          "272",
+          "273",
+          "274",
+          "275",
+          "277,6",
+          "280",
+          "300",
+          "305",
+          "332",
+          "355",
+          "375",
+          "400"
+        ]
+      },
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 11,
+        "options": [
+          "1",
+          "2",
+          "2,5",
+          "3",
+          "3,2",
+          "3,25",
+          "3,5",
+          "4",
+          "4,2",
+          "4,3",
+          "4,5"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 7,
+        "options": [
+          "0,5",
+          "1",
+          "1,5",
+          "1,6",
+          "2",
+          "2,4",
+          "2,9"
+        ]
+      },
+      {
+        "field_id": "numagujeros",
+        "label": "Numagujeros",
+        "control_type": "Desplegable (Select)",
+        "options_count": 8,
+        "options": [
+          "1",
+          "2",
+          "3",
+          "6",
+          "7",
+          "10",
+          "11",
+          "14"
+        ]
+      },
+      {
+        "field_id": "tipo",
+        "label": "Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 4,
+        "options": [
+          "simple",
+          "doble",
+          "triple",
+          "cuádruple"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 14,
+        "options": [
+          "belam",
+          "cato",
+          "fibosa",
+          "fomaco",
+          "gunther",
+          "henneken",
+          "inject star/globus",
+          "kronen",
+          "metalquimia",
+          "nowicki",
+          "ogalsa",
+          "rühle",
+          "rühle PR-20",
+          "suhner"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchilla-chutter/productos/cutter_23_1_ap.html",
+    "category_name": "Cutters",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "65"
+        ]
+      },
+      {
+        "field_id": "radio",
+        "label": "Radio",
+        "control_type": "Desplegable (Select)",
+        "options_count": 48,
+        "options": [
+          "120",
+          "125,5",
+          "133",
+          "155",
+          "160",
+          "163",
+          "164",
+          "165",
+          "170,5",
+          "175",
+          "180",
+          "181",
+          "186",
+          "186,5",
+          "190",
+          "195",
+          "196",
+          "203",
+          "205",
+          "206",
+          "207",
+          "218",
+          "225",
+          "229",
+          "230",
+          "233",
+          "236",
+          "240",
+          "245",
+          "253",
+          "257",
+          "265",
+          "275",
+          "276",
+          "280",
+          "290",
+          "293",
+          "294",
+          "315",
+          "325",
+          "350",
+          "360",
+          "360,5",
+          "363",
+          "380",
+          "410",
+          "412",
+          "440"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 8,
+        "options": [
+          "3",
+          "3,5",
+          "4",
+          "5",
+          "5,5",
+          "6",
+          "7,5",
+          "8"
+        ]
+      },
+      {
+        "field_id": "litraje",
+        "label": "Litraje",
+        "control_type": "Desplegable (Select)",
+        "options_count": 20,
+        "options": [
+          "20",
+          "33",
+          "42",
+          "45",
+          "50",
+          "60",
+          "65",
+          "70",
+          "75",
+          "100",
+          "120",
+          "125",
+          "130",
+          "150",
+          "200",
+          "300",
+          "325",
+          "330",
+          "500",
+          "750"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "acero inoxidable 420 (1.4034)"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "liso",
+          "ondulado"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "sencillo"
+        ]
+      },
+      {
+        "field_id": "forma",
+        "label": "Forma",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 33,
+        "options": [
+          "200",
+          "4 cortes",
+          "600-4CD supercutt",
+          "CT",
+          "4EE",
+          "BW",
+          "cosial",
+          "EEB",
+          "flema-U2",
+          "FTU100",
+          "high speed-233",
+          "K",
+          "K-FLT",
+          "KR",
+          "KS",
+          "M",
+          "M-4S",
+          "MT",
+          "original",
+          "PBS-246",
+          "PBS-248",
+          "PBS-251",
+          "PBS-256",
+          "PBS-260",
+          "PBS-263",
+          "redondo",
+          "S",
+          "spiral-433",
+          "UM80",
+          "UM80/130",
+          "YW",
+          "zack-242",
+          "KO"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 21,
+        "options": [
+          "alenxanderwerk",
+          "castellvall",
+          "cato",
+          "cfs",
+          "cia",
+          "delta",
+          "fatosa",
+          "hansen",
+          "kilia",
+          "krämer & grebe",
+          "laska",
+          "mainca",
+          "rex duker",
+          "securit",
+          "seydelmann",
+          "stephan",
+          "talsa",
+          "tecmaq",
+          "t-vall",
+          "wolfking",
+          "yanagiya"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-chuleteras/productos/chuleteras_38_1_ap.html",
+    "category_name": "Chuleteras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "577"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 22,
+        "options": [
+          "264,5",
+          "270",
+          "292",
+          "301",
+          "304",
+          "306",
+          "332,3",
+          "363",
+          "365",
+          "388",
+          "395",
+          "409",
+          "437",
+          "438",
+          "443",
+          "444",
+          "485",
+          "515",
+          "573",
+          "602",
+          "686",
+          "693"
+        ]
+      },
+      {
+        "field_id": "alto",
+        "label": "Alto",
+        "control_type": "Desplegable (Select)",
+        "options_count": 16,
+        "options": [
+          "118",
+          "146",
+          "150",
+          "152",
+          "160",
+          "177",
+          "188",
+          "195",
+          "225",
+          "239",
+          "266",
+          "273",
+          "322",
+          "364",
+          "436",
+          "468"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "12,2",
+          "26",
+          "26,5",
+          "40",
+          "45",
+          "50",
+          "50,2",
+          "60,1",
+          "60,3"
+        ]
+      },
+      {
+        "field_id": "radio",
+        "label": "Radio",
+        "control_type": "Desplegable (Select)",
+        "options_count": 21,
+        "options": [
+          "212",
+          "230",
+          "235",
+          "245",
+          "264",
+          "275",
+          "295",
+          "298,7",
+          "300",
+          "300,5",
+          "311",
+          "315,5",
+          "330",
+          "332",
+          "340",
+          "366",
+          "375",
+          "376",
+          "376,13",
+          "405",
+          "416"
+        ]
+      },
+      {
+        "field_id": "radiointerior",
+        "label": "Radiointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "5"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "2,4",
+          "2,5",
+          "3",
+          "4",
+          "5",
+          "5,4",
+          "5,7",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "acero inoxidable 420 (1.4034)"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 4,
+        "options": [
+          "dentado",
+          "liso",
+          "microdentado",
+          "semidentado"
+        ]
+      },
+      {
+        "field_id": "pasodientes",
+        "label": "Pasodientes",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "10"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_id": "numpalas",
+        "label": "Numpalas",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "2"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 26,
+        "options": [
+          "010-1160-300098",
+          "010-1160-300107",
+          "010-4160-300121",
+          "010-4160-300133",
+          "03-1073-0",
+          "119231",
+          "155816 - 124812",
+          "16-3057-0",
+          "2101171/0",
+          "23-3366-0/2",
+          "40-1064-1/0",
+          "40-2473-0/0",
+          "4025420/0",
+          "47831",
+          "49734",
+          "50455",
+          "50462",
+          "50933",
+          "55800/124812",
+          "55822",
+          "58114",
+          "58870A",
+          "83529",
+          "86261",
+          "930-235-110",
+          "93157"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 21,
+        "options": [
+          "berkel",
+          "crm/nexus",
+          "crm/nexus 245",
+          "crm/nexus TG-180",
+          "emsens",
+          "holac",
+          "magurit",
+          "mhs",
+          "nagema",
+          "rühle SR1",
+          "rühle SR2",
+          "treif",
+          "treif felix-100S-CE",
+          "treif fox",
+          "treif lion-bison",
+          "treif mustang",
+          "treif phoenix-CE120",
+          "treif puma",
+          "treif puma-1240",
+          "treif tiger-700",
+          "tvi"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-circulares-de-carne/productos/circulares-carne_21_1_ap.html",
+    "category_name": "Circulares carne",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 35,
+        "options": [
+          "70",
+          "80",
+          "100",
+          "110",
+          "120",
+          "125",
+          "130",
+          "131",
+          "135",
+          "140",
+          "150",
+          "160",
+          "165",
+          "167",
+          "170",
+          "175",
+          "180",
+          "195",
+          "200",
+          "220",
+          "225",
+          "230",
+          "231,2",
+          "240",
+          "250",
+          "260",
+          "265",
+          "270",
+          "275",
+          "295",
+          "300",
+          "350",
+          "450",
+          "500",
+          "750"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 23,
+        "options": [
+          "10",
+          "14",
+          "15",
+          "16",
+          "20",
+          "22",
+          "24",
+          "25",
+          "27",
+          "30",
+          "30,1",
+          "32",
+          "32,1",
+          "33,1",
+          "35",
+          "40",
+          "44,5",
+          "45",
+          "50",
+          "52",
+          "54",
+          "56",
+          "60"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 13,
+        "options": [
+          "0,5",
+          "1",
+          "1,05",
+          "1,2",
+          "1,5",
+          "2",
+          "2,5",
+          "2,75",
+          "3",
+          "3,5",
+          "4,5",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 5,
+        "options": [
+          "acero inoxidable 420 (1.4034)",
+          "acero inoxidable 440",
+          "acero inoxidable 440B (1.4112)",
+          "cromado duro",
+          "acero inoxidable 1.4310"
+        ]
+      },
+      {
+        "field_id": "dureza",
+        "label": "Dureza",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "48-52"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "dentado",
+          "liso",
+          "microdentado"
+        ]
+      },
+      {
+        "field_id": "pasodientes",
+        "label": "Pasodientes",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "7"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "sencillo",
+          "doble",
+          "sencillo + contrabisel"
+        ]
+      },
+      {
+        "field_id": "ranuras",
+        "label": "Ranuras",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "3",
+          "4",
+          "6",
+          "8",
+          "10",
+          "11",
+          "24",
+          "66",
+          "79"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "266923",
+          "279780",
+          "7459143"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 4,
+        "options": [
+          "attec",
+          "crm",
+          "nock",
+          "scanvaegt"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-circulares/productos/cortar-fiambres_83_1_ap.html",
+    "category_name": "Cortar fiambres",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "alto",
+        "label": "Alto",
+        "control_type": "Desplegable (Select)",
+        "options_count": 19,
+        "options": [
+          "10",
+          "11,2",
+          "12",
+          "13",
+          "13,5",
+          "14,5",
+          "15",
+          "15,5",
+          "16",
+          "17",
+          "17,5",
+          "19",
+          "19,5",
+          "20",
+          "21",
+          "21,5",
+          "22",
+          "22,5",
+          "23"
+        ]
+      },
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 13,
+        "options": [
+          "200",
+          "220",
+          "240",
+          "250",
+          "275",
+          "292",
+          "296",
+          "300",
+          "320",
+          "330",
+          "350",
+          "360",
+          "370"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 22,
+        "options": [
+          "159",
+          "180",
+          "190",
+          "200",
+          "210",
+          "218",
+          "220",
+          "227",
+          "235",
+          "240",
+          "241",
+          "242",
+          "245",
+          "250",
+          "254",
+          "270",
+          "280",
+          "286",
+          "290",
+          "300",
+          "306",
+          "316"
+        ]
+      },
+      {
+        "field_id": "diametroagujero",
+        "label": "Diametroagujero",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "24",
+          "25,4",
+          "40",
+          "42",
+          "54",
+          "55",
+          "57",
+          "58",
+          "76,2"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "acero aleado D2 (1.2379)",
+          "acero inoxidable",
+          "100Cr6",
+          "cromado",
+          "acero al carbono C45",
+          "teflonada"
+        ]
+      },
+      {
+        "field_id": "dureza",
+        "label": "Dureza",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "59-62"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "microdentado"
+        ]
+      },
+      {
+        "field_id": "numagujeros",
+        "label": "Numagujeros",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 24,
+        "options": [
+          "ade",
+          "agw",
+          "arsa",
+          "berkel",
+          "bizerba",
+          "bizerba mod.SE-355",
+          "boston",
+          "braher",
+          "daga",
+          "essedue",
+          "fac",
+          "fia",
+          "globe usa",
+          "iffaco",
+          "ironweed",
+          "it macchi",
+          "kolossal",
+          "mistro",
+          "mobba",
+          "omas",
+          "oms",
+          "ortega",
+          "rheninghaus",
+          "scharfen"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-coradora-de-dados/productos/cortadoras-de-dados_44_1_ap.html",
+    "category_name": "Cortadoras de dados",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 19,
+        "options": [
+          "179",
+          "182",
+          "185",
+          "196",
+          "210",
+          "212",
+          "226",
+          "230",
+          "235",
+          "238",
+          "246",
+          "248",
+          "265",
+          "266",
+          "270",
+          "293",
+          "318",
+          "430",
+          "1190"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "284"
+        ]
+      },
+      {
+        "field_id": "alto",
+        "label": "Alto",
+        "control_type": "Desplegable (Select)",
+        "options_count": 14,
+        "options": [
+          "8,5",
+          "10",
+          "12",
+          "12,5",
+          "13",
+          "14",
+          "15",
+          "16",
+          "18",
+          "20",
+          "21",
+          "22",
+          "23,5",
+          "25"
+        ]
+      },
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "26"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "0,5",
+          "0,75",
+          "1",
+          "1,2",
+          "1,5",
+          "2"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "acero inoxidable 1.4310"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "liso",
+          "ondulado"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 14,
+        "options": [
+          "13312",
+          "13313",
+          "13326",
+          "14607",
+          "14608",
+          "16-0181-1",
+          "16-0183-1",
+          "16-0186-1",
+          "17-2078-0",
+          "3111750",
+          "3111800",
+          "4112",
+          "58751",
+          "58752"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 8,
+        "options": [
+          "emsens",
+          "food logistic",
+          "holac",
+          "mhs",
+          "nematec",
+          "rühle",
+          "treif",
+          "treif felix-100"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-fileteadoras/productos/fileteadoras-peso-exacto_41_1_ap.html",
+    "category_name": "Fileteadoras de peso exacto",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 8,
+        "options": [
+          "109,8",
+          "238",
+          "241",
+          "365",
+          "446",
+          "468",
+          "526",
+          "543,1"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 7,
+        "options": [
+          "15",
+          "54",
+          "79",
+          "185",
+          "218,9",
+          "232,8",
+          "285,9"
+        ]
+      },
+      {
+        "field_id": "radio",
+        "label": "Radio",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "195",
+          "530"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 7,
+        "options": [
+          "0,8",
+          "1",
+          "1,2",
+          "1,5",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "Tratamiento electropulido"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "dentado",
+          "liso"
+        ]
+      },
+      {
+        "field_id": "pasodientes",
+        "label": "Pasodientes",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "9"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 13,
+        "options": [
+          "0200-999-804-140-101",
+          "08010403341",
+          "080-1040-3350",
+          "08010403351",
+          "080600002087",
+          "37708010403682",
+          "3-80.854.01",
+          "80.414.03",
+          "80.414.07",
+          "80.414.10",
+          "8041404",
+          "8049804",
+          "8085701"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 4,
+        "options": [
+          "marel",
+          "marel b55",
+          "norfo",
+          "scanvaegt"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-para-corte-de-carne-congelada/productos/congelados_47_1_ap.html",
+    "category_name": "Congelados",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "69,7",
+          "95",
+          "98,5",
+          "140",
+          "164",
+          "180",
+          "245",
+          "260",
+          "350"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 8,
+        "options": [
+          "15",
+          "18",
+          "28",
+          "29",
+          "35",
+          "45",
+          "120",
+          "123"
+        ]
+      },
+      {
+        "field_id": "alto",
+        "label": "Alto",
+        "control_type": "Desplegable (Select)",
+        "options_count": 4,
+        "options": [
+          "25",
+          "36",
+          "62",
+          "120"
+        ]
+      },
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "305",
+          "579"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "51"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "Tratamiento electropulido"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "pasodientes",
+        "label": "Pasodientes",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "18",
+          "19"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 5,
+        "options": [
+          "074921104001",
+          "348235101005",
+          "555234102",
+          "555234117",
+          "555234121"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 3,
+        "options": [
+          "laska",
+          "magurit",
+          "magurit unicut 555"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-para-despiece-de-aves/productos/elaboracion-de-aves_28_1_ap.html",
+    "category_name": "Elaboracion aves",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 10,
+        "options": [
+          "61",
+          "65",
+          "80",
+          "90",
+          "115",
+          "120",
+          "129",
+          "138",
+          "195",
+          "250"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 10,
+        "options": [
+          "30",
+          "30,5",
+          "31",
+          "32",
+          "36",
+          "36,3",
+          "42",
+          "74",
+          "100",
+          "140"
+        ]
+      },
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 13,
+        "options": [
+          "110",
+          "125",
+          "145",
+          "150",
+          "175",
+          "200",
+          "215",
+          "225",
+          "250",
+          "270",
+          "300",
+          "350",
+          "490"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "22",
+          "22,2",
+          "30",
+          "30,1",
+          "32",
+          "40"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 8,
+        "options": [
+          "1,5",
+          "2",
+          "2,2",
+          "2,4",
+          "2,5",
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "acero inoxidable 420 (1.4034)",
+          "acero inoxidable 440"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 4,
+        "options": [
+          "dentado",
+          "liso",
+          "microdentado",
+          "con ranuras"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_id": "ranuras",
+        "label": "Ranuras",
+        "control_type": "Desplegable (Select)",
+        "options_count": 5,
+        "options": [
+          "4",
+          "6",
+          "8",
+          "12",
+          "24"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 21,
+        "options": [
+          "0249670",
+          "0249671",
+          "3908007B",
+          "3930330",
+          "3930331",
+          "3943374",
+          "3947032E",
+          "3947048E",
+          "3960622",
+          "3966082A",
+          "3R566187",
+          "507579",
+          "518180",
+          "518391",
+          "550138",
+          "555710",
+          "596746",
+          "608788C",
+          "608789C",
+          "617359A",
+          "617360A"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 4,
+        "options": [
+          "meyn",
+          "stork",
+          "stork",
+          "systemate"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-para-termofromado/productos/termoformado_24_1_ap.html",
+    "category_name": "Termoformado",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas-pescado/productos/circulares-pescado_22_1_ap.html",
+    "category_name": "Circulares pescado",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "diametro",
+        "label": "Diametro",
+        "control_type": "Desplegable (Select)",
+        "options_count": 15,
+        "options": [
+          "101",
+          "120",
+          "127",
+          "130",
+          "140",
+          "148",
+          "150",
+          "178",
+          "190",
+          "200",
+          "229",
+          "230",
+          "250",
+          "279,4",
+          "400"
+        ]
+      },
+      {
+        "field_id": "diametrointerior",
+        "label": "Diametrointerior",
+        "control_type": "Desplegable (Select)",
+        "options_count": 14,
+        "options": [
+          "14",
+          "15,1",
+          "19",
+          "22",
+          "24",
+          "25",
+          "25,4",
+          "27",
+          "30",
+          "31,9",
+          "32",
+          "35",
+          "35,15",
+          "50"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 12,
+        "options": [
+          "0,63",
+          "0,7",
+          "0,8",
+          "1",
+          "1,5",
+          "1,8",
+          "2",
+          "2,3",
+          "3",
+          "3,2",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "field_id": "material",
+        "label": "Material",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "acero inoxidable 420 (1.4034)",
+          "acero inoxidable 440B (1.4112)",
+          "Tratamiento electropulido"
+        ]
+      },
+      {
+        "field_id": "dureza",
+        "label": "Dureza",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "58-60"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "dentado",
+          "liso",
+          "con ranuras"
+        ]
+      },
+      {
+        "field_id": "pasodientes",
+        "label": "Pasodientes",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "4",
+          "8"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "sencillo",
+          "doble",
+          "sencillo + contrabisel"
+        ]
+      },
+      {
+        "field_id": "ranuras",
+        "label": "Ranuras",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "12",
+          "22",
+          "44"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 14,
+        "options": [
+          "3-2796",
+          "3-3699",
+          "3-58-2",
+          "3-6845-2",
+          "94010117",
+          "94010119",
+          "9401013",
+          "94010135",
+          "94010148",
+          "94010151",
+          "94010161",
+          "94010524",
+          "940110",
+          "94011007"
+        ]
+      },
+      {
+        "field_id": "forma",
+        "label": "Forma",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 1,
+        "options": [
+          "con relieve"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 12,
+        "options": [
+          "baader",
+          "baader fbk 1001",
+          "baader fbk 117",
+          "baader fbk 119",
+          "baader fbk 131",
+          "baader fbk 151",
+          "baader fbk 221",
+          "baader fbk 524",
+          "baader fbk kronborg",
+          "Cuchillas circulares pescado",
+          "pisces",
+          "vmk"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas/productos/cortar-verduras_33_1_ap.html",
+    "category_name": "Cortar verduras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "132"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "18,9"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "0,39"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "doble"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "VA2214"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 1,
+        "options": [
+          "urschel"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuchillas/productos/cuchillas-y-placas-de-picadora_32_1_ap.html",
+    "category_name": "Cuchillas y placas de picadora",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/cuhillas-descortezadoras/productos/descortezadoras_48_1_ap.html",
+    "category_name": "Descortezadoras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/lutz/productos/fileteadoras_50_1_ap.html",
+    "category_name": "Fileteadoras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "longitud",
+        "label": "Longitud",
+        "control_type": "Desplegable (Select)",
+        "options_count": 12,
+        "options": [
+          "265",
+          "275",
+          "302",
+          "304",
+          "420",
+          "446",
+          "450",
+          "454",
+          "468",
+          "515",
+          "720",
+          "1254"
+        ]
+      },
+      {
+        "field_id": "ancho",
+        "label": "Ancho",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "10",
+          "15",
+          "16"
+        ]
+      },
+      {
+        "field_id": "espesor",
+        "label": "Espesor",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "0,5",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "dentado",
+          "liso",
+          "ondulado"
+        ]
+      },
+      {
+        "field_id": "pasodientes",
+        "label": "Pasodientes",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "9",
+          "12",
+          "15"
+        ]
+      },
+      {
+        "field_id": "bisel",
+        "label": "Bisel",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "sencillo",
+          "doble"
+        ]
+      },
+      {
+        "field_id": "referenciacomo",
+        "label": "Referenciacomo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "80.414.02",
+          "8041405"
+        ]
+      },
+      {
+        "field_id": "maquina",
+        "label": "Maquina",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 4,
+        "options": [
+          "grasselli",
+          "marel",
+          "norfo",
+          "scanvaegt"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/cuchillas-loncheadoras",
+    "category_name": "Loncheadoras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/aceros-afiladores.html",
+    "category_name": "Aceros y Afiladores",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/cintas-sierra.html",
+    "category_name": "Cintas de sierra",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/cuchillos-giesser-industria-carnica-mango-clasico.html",
+    "category_name": "Clásico",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 17,
+        "options": [
+          "10",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "20",
+          "21",
+          "22",
+          "24",
+          "25",
+          "27",
+          "30",
+          "32",
+          "36"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "clásico",
+          "clásico polipropileno"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "blanco",
+          "negro",
+          "verde",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "pinchar",
+          "filetear",
+          "despiezar",
+          "deshacer",
+          "pulir",
+          "recortar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "ancho",
+          "recto",
+          "rígido",
+          "curvo",
+          "mediano",
+          "estrecho",
+          "flexible"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/cuchillos-giesser.html",
+    "category_name": "Cuchillos",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/maquinas-afiladoras-pulidoras.html",
+    "category_name": "Maquinas Afiladoras-Pulidoras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/mataderos.html",
+    "category_name": "Mataderos",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/proteccion-guantes-delantales-anticorte.html",
+    "category_name": "Protección guantes y delantales anticorte",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/repuestos-afiladores.html",
+    "category_name": "Repuestos de afiladoras",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/productos/industria-alimentaria/sala-despiece.html",
+    "category_name": "Sala de despiece",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/alveolados_1818_34_543_0_1_pro.html",
+    "category_name": "Alveolados",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 13,
+        "options": [
+          "13",
+          "15",
+          "16",
+          "17",
+          "18",
+          "20",
+          "21",
+          "22",
+          "24",
+          "25",
+          "27",
+          "30",
+          "32"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "clásico",
+          "primeline"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 3,
+        "options": [
+          "negro",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "pinchar",
+          "filetear",
+          "despiezar",
+          "deshacer",
+          "pulir",
+          "recortar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 6,
+        "options": [
+          "alveolado",
+          "ancho",
+          "rígido",
+          "curvo",
+          "mediano",
+          "estrecho"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/clasico_80_34_536_0_1_pro.html",
+    "category_name": "Clásico",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 17,
+        "options": [
+          "10",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "20",
+          "21",
+          "22",
+          "24",
+          "25",
+          "27",
+          "30",
+          "32",
+          "36"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "clásico",
+          "clásico polipropileno"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "blanco",
+          "negro",
+          "verde",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "pinchar",
+          "filetear",
+          "despiezar",
+          "deshacer",
+          "pulir",
+          "recortar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "ancho",
+          "recto",
+          "rígido",
+          "curvo",
+          "mediano",
+          "estrecho",
+          "flexible"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/cuchillos-pulido-mate_37_34_539_0_1_pro.html",
+    "category_name": "Cuchillos pulido mate",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 8,
+        "options": [
+          "13",
+          "14",
+          "15",
+          "16",
+          "18",
+          "20",
+          "21",
+          "24"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "clásico",
+          "profiline e90"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 5,
+        "options": [
+          "negro",
+          "verde",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "pinchar",
+          "deshacer",
+          "pulir",
+          "recortar",
+          "carnicero",
+          "despiezar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "ancho",
+          "recto",
+          "curvo",
+          "flexible",
+          "estrecho",
+          "rígido",
+          "mediano"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/mango-proteccion_172_34_538_0_1_pro.html",
+    "category_name": "Mango protección",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 6,
+        "options": [
+          "15",
+          "18",
+          "21",
+          "22",
+          "24",
+          "30"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "protección"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 5,
+        "options": [
+          "negro",
+          "verde",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 1,
+        "options": [
+          "pinchar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 2,
+        "options": [
+          "ancho",
+          "rígido"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/mango-recto_81_34_537_0_1_pro.html",
+    "category_name": "Mango recto",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 2,
+        "options": [
+          "13",
+          "15"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "cuatro"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 4,
+        "options": [
+          "negro",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 1,
+        "options": [
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 1,
+        "options": [
+          "mediano"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/primeline_78_34_534_0_1_pro.html",
+    "category_name": "Primeline",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "13",
+          "15",
+          "16",
+          "18",
+          "20",
+          "21",
+          "22",
+          "24",
+          "25"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "primeline"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 4,
+        "options": [
+          "negro",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 5,
+        "options": [
+          "pinchar",
+          "pulir",
+          "recortar",
+          "despiezar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 7,
+        "options": [
+          "ancho",
+          "rígido",
+          "curvo",
+          "flexible",
+          "recto",
+          "muy flexible",
+          "punta aguda"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  },
+  {
+    "url": "https://www.teofilorosete.es/teofilo-rosete/cuchillos/profiline_79_34_535_0_1_pro.html",
+    "category_name": "Profiline",
+    "breadcrumb": "Está viendo:",
+    "filters": [
+      {
+        "field_id": "medidacm",
+        "label": "Medida (cm)",
+        "control_type": "Desplegable (Select)",
+        "options_count": 9,
+        "options": [
+          "10",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "18",
+          "21",
+          "24"
+        ]
+      },
+      {
+        "field_id": "filo",
+        "label": "Filo",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "liso"
+        ]
+      },
+      {
+        "field_id": "mango",
+        "label": "Mango",
+        "control_type": "Desplegable (Select)",
+        "options_count": 1,
+        "options": [
+          "profiline e90"
+        ]
+      },
+      {
+        "field_id": "color",
+        "label": "Color",
+        "control_type": "Desplegable (Select)",
+        "options_count": 4,
+        "options": [
+          "negro",
+          "azul",
+          "amarillo",
+          "rojo"
+        ]
+      },
+      {
+        "field_id": "uso",
+        "label": "Uso",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 2,
+        "options": [
+          "pinchar",
+          "deshuesar"
+        ]
+      },
+      {
+        "field_id": "formatipo",
+        "label": "Forma/Tipo",
+        "control_type": "Desplegable Múltiple (Listbox)",
+        "options_count": 3,
+        "options": [
+          "ancho",
+          "recto",
+          "rígido"
+        ]
+      },
+      {
+        "field_id": "texto",
+        "label": "Buscar texto",
+        "control_type": "Camp de Text (Input)",
+        "options_count": 0,
+        "options": []
+      }
+    ]
+  }
+]

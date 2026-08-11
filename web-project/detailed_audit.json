@@ -1,0 +1,368 @@
+[
+  {
+    "ref": "ET-08-01",
+    "name": "Ganiveta Skinner Grasselli 520mm",
+    "brand": "PRIMEdge",
+    "cat_id": "CAT-01",
+    "family": "FAM-ET-08",
+    "has_photos": true,
+    "img_count": 4,
+    "images": [
+      "catalog_img_1_page_1_img_1_1217x1177.jpeg",
+      "catalog_img_28_page_3_img_2_310x303.jpeg",
+      "catalog_img_55_page_5_img_2_518x276.jpeg",
+      "catalog_img_82_page_7_img_7_526x457.jpeg"
+    ],
+    "pdf_source": [
+      "ZHAOLI Machine Knives.pdf"
+    ],
+    "url_source": [
+      "https://www.primedge.com/"
+    ]
+  },
+  {
+    "ref": "ET-08-02",
+    "name": "Ganiveta Skinner Nock 600mm",
+    "brand": "PRIMEdge",
+    "cat_id": "CAT-01",
+    "family": "FAM-ET-08",
+    "has_photos": true,
+    "img_count": 4,
+    "images": [
+      "catalog_img_29_page_3_img_3_269x197.jpeg",
+      "catalog_img_2_page_1_img_2_1245x1032.jpeg",
+      "catalog_img_56_page_5_img_3_477x396.jpeg",
+      "catalog_img_83_page_7_img_8_574x518.png"
+    ],
+    "pdf_source": [
+      "ZHAOLI Machine Knives.pdf"
+    ],
+    "url_source": [
+      "https://www.primedge.com/"
+    ]
+  },
+  {
+    "ref": "ET-03-01",
+    "name": "Ganiveta Cutter CFS 500L",
+    "brand": "TEKBLADE",
+    "cat_id": "CAT-01",
+    "family": "FAM-ET-03",
+    "has_photos": true,
+    "img_count": 4,
+    "images": [
+      "catalog_img_30_page_3_img_4_252x138.png",
+      "catalog_img_3_page_1_img_3_800x250.jpeg",
+      "catalog_img_57_page_5_img_4_668x509.jpeg",
+      "catalog_img_84_page_7_img_9_560x404.jpeg"
+    ],
+    "pdf_source": [],
+    "url_source": []
+  },
+  {
+    "ref": "ET-03-02",
+    "name": "Ganiveta Cutter Seydelmann 300L",
+    "brand": "TEKBLADE",
+    "cat_id": "CAT-01",
+    "family": "FAM-ET-03",
+    "has_photos": true,
+    "img_count": 4,
+    "images": [
+      "catalog_img_34_page_3_img_8_271x266.jpeg",
+      "catalog_img_61_page_5_img_8_397x380.jpeg",
+      "catalog_img_7_page_2_img_2_322x217.jpeg",
+      "catalog_img_88_page_8_img_13_357x246.jpeg"
+    ],
+    "pdf_source": [],
+    "url_source": []
+  },
+  {
+    "ref": "SC-01-01",
+    "name": "Serra Cinta 4 TPI Kolbe 3700mm",
+    "brand": "Stellar Technik",
+    "cat_id": "CAT-02",
+    "family": "FAM-SC-01",
+    "has_photos": true,
+    "img_count": 3,
+    "images": [
+      "catalog_1_page_13_img_1_168x126.jpeg",
+      "catalog_2_page_13_img_2_216x143.jpeg",
+      "catalog_3_page_13_img_3_174x131.jpeg"
+    ],
+    "pdf_source": [],
+    "url_source": [
+      "https://www.stellartechnik.com/",
+      "https://hederschneidtechnik.de/"
+    ]
+  },
+  {
+    "ref": "SC-02-01",
+    "name": "Serra Cinta 3 TPI Medoc 3150mm",
+    "brand": "Stellar Technik",
+    "cat_id": "CAT-02",
+    "family": "FAM-SC-02",
+    "has_photos": true,
+    "img_count": 3,
+    "images": [
+      "catalog_1_page_13_img_1_168x126.jpeg",
+      "catalog_2_page_13_img_2_216x143.jpeg",
+      "catalog_3_page_13_img_3_174x131.jpeg"
+    ],
+    "pdf_source": [],
+    "url_source": [
+      "https://www.stellartechnik.com/",
+      "https://hederschneidtechnik.de/"
+    ]
+  },
+  {
+    "ref": "SC-03-01",
+    "name": "Serra Cinta 6 TPI Congelat 2850mm",
+    "brand": "Stellar Technik",
+    "cat_id": "CAT-02",
+    "family": "FAM-SC-03",
+    "has_photos": true,
+    "img_count": 3,
+    "images": [
+      "catalog_1_page_13_img_1_168x126.jpeg",
+      "catalog_2_page_13_img_2_216x143.jpeg",
+      "catalog_3_page_13_img_3_174x131.jpeg"
+    ],
+    "pdf_source": [],
+    "url_source": [
+      "https://www.stellartechnik.com/",
+      "https://hederschneidtechnik.de/"
+    ]
+  },
+  {
+    "ref": "GE-09-01",
+    "name": "Ganiveta Perimetral Ulma TFS 500",
+    "brand": "Heder",
+    "cat_id": "CAT-03",
+    "family": "FAM-GE-09",
+    "has_photos": true,
+    "img_count": 7,
+    "images": [
+      "catalog_img_13_page_2_img_5_337x225.jpeg",
+      "catalog_img_1_page_13_img_1_168x126.jpeg",
+      "catalog_img_31_page_3_img_5_283x197.jpeg",
+      "catalog_img_4_page_2_img_10_176x313.jpeg",
+      "catalog_img_58_page_5_img_5_750x565.jpeg",
+      "catalog_img_7_page_13_img_7_175x131.jpeg",
+      "catalog_img_85_page_8_img_10_265x260.jpeg"
+    ],
+    "pdf_source": [
+      "tph_industry_imballaggio-SPA.pdf",
+      "ROSETE_termoformadora_listado63.pdf"
+    ],
+    "url_source": [
+      "https://www.ponot.com/en/our-products/ponot-custom-made-industrial-blades/",
+      "https://www.stellartechnik.com/categories/thermoformed-packaging-products/12/"
+    ]
+  },
+  {
+    "ref": "GE-01-01",
+    "name": "Ganiveta Longitudinal Pressió Multivac",
+    "brand": "Rosete",
+    "cat_id": "CAT-03",
+    "family": "FAM-GE-01",
+    "has_photos": true,
+    "img_count": 7,
+    "images": [
+      "catalog_img_14_page_2_img_6_229x153.jpeg",
+      "catalog_img_14_page_2_img_9_245x314.jpeg",
+      "catalog_img_2_page_13_img_2_216x143.jpeg",
+      "catalog_img_41_page_4_img_15_234x205.jpeg",
+      "catalog_img_68_page_6_img_3_491x589.jpeg",
+      "catalog_img_8_page_13_img_8_686x414.jpeg",
+      "catalog_img_95_page_8_img_3_329x275.jpeg"
+    ],
+    "pdf_source": [
+      "tph_industry_imballaggio-SPA.pdf",
+      "ROSETE_termoformadora_listado63.pdf"
+    ],
+    "url_source": [
+      "https://www.ponot.com/en/our-products/ponot-custom-made-industrial-blades/",
+      "https://www.stellartechnik.com/categories/thermoformed-packaging-products/12/"
+    ]
+  },
+  {
+    "ref": "GE-04-01",
+    "name": "Estrella VS (Star Punch) Multivac",
+    "brand": "Rosete",
+    "cat_id": "CAT-03",
+    "family": "FAM-GE-04",
+    "has_photos": true,
+    "img_count": 4,
+    "images": [
+      "catalog_img_17_page_3_img_12_276x220.jpeg",
+      "catalog_img_44_page_4_img_3_233x224.jpeg",
+      "catalog_img_71_page_6_img_6_204x131.jpeg",
+      "catalog_img_98_page_8_img_6_280x302.jpeg"
+    ],
+    "pdf_source": [
+      "tph_industry_imballaggio-SPA.pdf",
+      "ROSETE_termoformadora_listado63.pdf"
+    ],
+    "url_source": [
+      "https://www.ponot.com/en/our-products/ponot-custom-made-industrial-blades/",
+      "https://www.stellartechnik.com/categories/thermoformed-packaging-products/12/"
+    ]
+  },
+  {
+    "ref": "GE-08-01",
+    "name": "Ganiveta Barqueta Mondini 255mm",
+    "brand": "Rosete",
+    "cat_id": "CAT-03",
+    "family": "FAM-GE-08",
+    "has_photos": true,
+    "img_count": 6,
+    "images": [
+      "catalog_img_10_page_2_img_2_237x159.jpeg",
+      "catalog_img_1_page_7_img_1_405x405.png",
+      "catalog_img_21_page_3_img_16_329x319.jpeg",
+      "catalog_img_48_page_4_img_7_479x363.jpeg",
+      "catalog_img_4_page_13_img_4_195x146.jpeg",
+      "catalog_img_75_page_7_img_10_252x172.jpeg"
+    ],
+    "pdf_source": [
+      "tph_industry_imballaggio-SPA.pdf",
+      "ROSETE_termoformadora_listado63.pdf"
+    ],
+    "url_source": [
+      "https://www.ponot.com/en/our-products/ponot-custom-made-industrial-blades/",
+      "https://www.stellartechnik.com/categories/thermoformed-packaging-products/12/"
+    ]
+  },
+  {
+    "ref": "GC-01-01",
+    "name": "Ganiveta Evolutiva TRITECH Weber",
+    "brand": "Hagedorn",
+    "cat_id": "CAT-04",
+    "family": "FAM-GC-01",
+    "has_photos": true,
+    "img_count": 2,
+    "images": [
+      "catalog_img_10_page_4_img_6_1016x412.jpeg",
+      "catalog_img_1_page_1_img_1_1806x2151.jpeg"
+    ],
+    "pdf_source": [
+      "CATALOGO HAGEDORN FOODTECH - ESP.pdf"
+    ],
+    "url_source": [
+      "https://www.hagedorn-knives.com/"
+    ]
+  },
+  {
+    "ref": "GC-02-01",
+    "name": "Ganiveta Evolutiva LONGLIFE Weber",
+    "brand": "Hagedorn",
+    "cat_id": "CAT-04",
+    "family": "FAM-GC-02",
+    "has_photos": true,
+    "img_count": 2,
+    "images": [
+      "catalog_img_12_page_4_img_8_1016x412.jpeg",
+      "catalog_img_3_page_3_img_1_1245x1045.jpeg"
+    ],
+    "pdf_source": [
+      "CATALOGO HAGEDORN FOODTECH - ESP.pdf"
+    ],
+    "url_source": [
+      "https://www.hagedorn-knives.com/"
+    ]
+  },
+  {
+    "ref": "GC-06-01",
+    "name": "Disc Loncheadora PRIMEdge 350mm",
+    "brand": "PRIMEdge",
+    "cat_id": "CAT-04",
+    "family": "FAM-GC-06",
+    "has_photos": true,
+    "img_count": 2,
+    "images": [
+      "catalog_img_16_page_6_img_2_296x296.jpeg",
+      "catalog_img_7_page_4_img_3_1016x437.jpeg"
+    ],
+    "pdf_source": [
+      "CATALOGO HAGEDORN FOODTECH - ESP.pdf",
+      "ZHAOLI Machine Knives.pdf"
+    ],
+    "url_source": [
+      "https://www.primedge.com/",
+      "https://www.hagedorn-knives.com/"
+    ]
+  },
+  {
+    "ref": "CT-01-01",
+    "name": "Capçal Tèrmic Bizerba GLP 203DPI",
+    "brand": "Codewel",
+    "cat_id": "CAT-05",
+    "family": "FAM-CT-01",
+    "has_photos": true,
+    "img_count": 2,
+    "images": [
+      "catalog_img_1_page_10_img_1_1252x1695.jpeg",
+      "catalog_img_7_page_5_img_1_1252x1695.jpeg"
+    ],
+    "pdf_source": [
+      "Codewel Printhead Catalog.pdf"
+    ],
+    "url_source": []
+  },
+  {
+    "ref": "CT-02-01",
+    "name": "Capçal Tèrmic Zebra ZT410 300DPI",
+    "brand": "TPH",
+    "cat_id": "CAT-05",
+    "family": "FAM-CT-02",
+    "has_photos": true,
+    "img_count": 2,
+    "images": [
+      "catalog_img_3_page_12_img_1_1252x1695.jpeg",
+      "catalog_img_9_page_7_img_1_1252x1695.jpeg"
+    ],
+    "pdf_source": [
+      "Codewel Printhead Catalog.pdf"
+    ],
+    "url_source": []
+  },
+  {
+    "ref": "AB-01-01",
+    "name": "Banda Esmolar Knecht Grit 120",
+    "brand": "PRIMEdge",
+    "cat_id": "CAT-06",
+    "family": "FAM-AB-01",
+    "has_photos": true,
+    "img_count": 3,
+    "images": [
+      "catalog_1_page_1_img_1_1217x1177.jpeg",
+      "catalog_2_page_1_img_2_1245x1032.jpeg",
+      "catalog_3_page_1_img_3_800x250.jpeg"
+    ],
+    "pdf_source": [
+      "ZHAOLI Machine Knives.pdf"
+    ],
+    "url_source": [
+      "https://www.primedge.com/"
+    ]
+  },
+  {
+    "ref": "AB-03-01",
+    "name": "Roda Diamantada Esmoler Knecht",
+    "brand": "PRIMEdge",
+    "cat_id": "CAT-06",
+    "family": "FAM-AB-03",
+    "has_photos": true,
+    "img_count": 3,
+    "images": [
+      "catalog_1_page_1_img_1_1217x1177.jpeg",
+      "catalog_2_page_1_img_2_1245x1032.jpeg",
+      "catalog_3_page_1_img_3_800x250.jpeg"
+    ],
+    "pdf_source": [
+      "ZHAOLI Machine Knives.pdf"
+    ],
+    "url_source": [
+      "https://www.primedge.com/"
+    ]
+  }
+]

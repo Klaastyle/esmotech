@@ -1,0 +1,147 @@
+{
+  "products": {
+    "ET-08-01": {
+      "ref": "ET-08-01",
+      "name": "Ganiveta Skinner Grasselli 520mm",
+      "brand": "PRIMEdge",
+      "cat_id": "CAT-01",
+      "family": "Ganivetes Descotnadores (Skinners)",
+      "photo_count": 4,
+      "has_real_photos": true,
+      "files": [
+        "catalog_img_1_page_1_img_1_1217x1177.jpeg",
+        "catalog_img_28_page_3_img_2_310x303.jpeg",
+        "catalog_img_55_page_5_img_2_518x276.jpeg",
+        "catalog_img_82_page_7_img_7_526x457.jpeg"
+      ]
+    },
+    "ET-08-02": {
+      "ref": "ET-08-02",
+      "name": "Ganiveta Skinner Nock 600mm",
+      "brand": "PRIMEdge",
+      "cat_id": "CAT-01",
+      "family": "Ganivetes Descotnadores (Skinners)",
+      "photo_count": 4,
+      "has_real_photos": true,
+      "files": [
+        "catalog_img_29_page_3_img_3_269x197.jpeg",
+        "catalog_img_2_page_1_img_2_1245x1032.jpeg",
+        "catalog_img_56_page_5_img_3_477x396.jpeg",
+        "catalog_img_83_page_7_img_8_574x518.png"
+      ]
+    },
+    "ET-03-01": {
+      "ref": "ET-03-01",
+      "name": "Ganiveta Cutter CFS 500L",
+      "brand": "TEKBLADE",
+      "cat_id": "CAT-01",
+      "family": "Cutters Industrials",
+      "photo_count": 4,
+      "has_real_photos": true,
+      "files": [
+        "catalog_img_30_page_3_img_4_252x138.png",
+        "catalog_img_3_page_1_img_3_800x250.jpeg",
+        "catalog_img_57_page_5_img_4_668x509.jpeg",
+        "catalog_img_84_page_7_img_9_560x404.jpeg"
+      ]
+    },
+    "SC-01-01": {
+      "ref": "SC-01-01",
+      "name": "Serra Cinta 4 TPI Kolbe 3700mm",
+      "brand": "Stellar Technik",
+      "cat_id": "CAT-02",
+      "family": "Serra Cinta Carn Fresca",
+      "photo_count": 0,
+      "has_real_photos": false,
+      "files": []
+    },
+    "GE-09-01": {
+      "ref": "GE-09-01",
+      "name": "Ganiveta Perimetral Ulma TFS 500",
+      "brand": "Heder",
+      "cat_id": "CAT-03",
+      "family": "Ganivetes Barqueta Ulma",
+      "photo_count": 7,
+      "has_real_photos": true,
+      "files": [
+        "catalog_img_13_page_2_img_5_337x225.jpeg",
+        "catalog_img_1_page_13_img_1_168x126.jpeg",
+        "catalog_img_31_page_3_img_5_283x197.jpeg",
+        "catalog_img_4_page_2_img_10_176x313.jpeg",
+        "catalog_img_58_page_5_img_5_750x565.jpeg",
+        "catalog_img_7_page_13_img_7_175x131.jpeg",
+        "catalog_img_85_page_8_img_10_265x260.jpeg"
+      ]
+    },
+    "GC-01-01": {
+      "ref": "GC-01-01",
+      "name": "Ganiveta Evolutiva TRITECH Weber",
+      "brand": "Hagedorn",
+      "cat_id": "CAT-04",
+      "family": "Ganivetes Evolutives Llescat",
+      "photo_count": 2,
+      "has_real_photos": true,
+      "files": [
+        "catalog_img_10_page_4_img_6_1016x412.jpeg",
+        "catalog_img_1_page_1_img_1_1806x2151.jpeg"
+      ]
+    },
+    "CT-01-01": {
+      "ref": "CT-01-01",
+      "name": "Capçal Tèrmic Bizerba GLP 203DPI",
+      "brand": "Codewel",
+      "cat_id": "CAT-05",
+      "family": "Capçals Tèrmics Impressió",
+      "photo_count": 2,
+      "has_real_photos": true,
+      "files": [
+        "catalog_img_1_page_10_img_1_1252x1695.jpeg",
+        "catalog_img_7_page_5_img_1_1252x1695.jpeg"
+      ]
+    },
+    "AB-01-01": {
+      "ref": "AB-01-01",
+      "name": "Banda Esmolar Knecht Grit 120",
+      "brand": "PRIMEdge",
+      "cat_id": "CAT-06",
+      "family": "Bandes d'Esmolar Industrials",
+      "photo_count": 0,
+      "has_real_photos": false,
+      "files": []
+    }
+  },
+  "categories": {
+    "CAT-01": "Eines de Tall (Skinners, Cutters, Picadores)",
+    "CAT-02": "Serra Cinta (Carn, Os, Congelat, Aviram)",
+    "CAT-03": "Ganivetes d'Envasat & Termoformat (Ulma, Multivac)",
+    "CAT-04": "Circulars & Evolutives (Weber, Hagedorn, TRITECH)",
+    "CAT-05": "Capçals Tèrmics (Bizerba, Zebra, Honeywell)",
+    "CAT-06": "Abrasius & Esmolat (PRIMEdge, Knecht)"
+  },
+  "pdf_summary": {
+    "CATALOGO HAGEDORN FOODTECH - ESP.pdf": {
+      "pages": 6,
+      "extracted_images": 21
+    },
+    "Codewel Printhead Catalog.pdf": {
+      "pages": 12,
+      "extracted_images": 12
+    },
+    "Codewel Regular Printhead List.pdf": {
+      "pages": 12,
+      "extracted_images": 1
+    },
+    "ROSETE_termoformadora_listado63.pdf": {
+      "pages": 18,
+      "extracted_images": 14
+    },
+    "tph_industry_imballaggio-SPA.pdf": {
+      "pages": 38,
+      "extracted_images": 54274
+    },
+    "ZHAOLI Machine Knives.pdf": {
+      "pages": 8,
+      "extracted_images": 101
+    }
+  }
+}

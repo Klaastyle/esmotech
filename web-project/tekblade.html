@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKBLADE | La nostra marca pròpia | ESMOTECH</title>
+    <meta name="description" content="Descobreix TEKBLADE, la línia pròpia de solucions de tall dissenyades per al màxim rendiment en la indústria alimentària.">
+    
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- PapaParse per llegir el CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header class="header sticky">
+        <div class="container header-container">
+            <a href="index.html" class="logo text-heading-3">ESMOTECH</a>
+            
+                        <nav class="main-nav" aria-label="Navegació Principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inici</a></li>
+                    
+                    <li class="has-mega-menu">
+                        <a href="productos.html" class="nav-link">Productes</a>
+                        <div class="mega-menu" style="width: 480px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Categories Principals de Tall</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="productes/eines-de-tall.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 1. Eines de Tall (Skinners, Cutters)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Skinners, despelladores, cutters en acer D2 i placats de picadora.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/serra-cinta.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🪚 2. Serra Cinta (Carn, Os, Congelat)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Fulles de serra cinta per a carn fresca, os, congelat (-20ºC) i aviram.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/ganivetes-denvasat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📦 3. Ganivetes d'Envasat &amp; Termoformat</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Termoformat Ulma i Multivac, ganivetes perimetrals i Tefló.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/circulars-i-evolutives.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚙️ 4. Circulars &amp; Evolutives (Weber/Hagedorn)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Llescadores Hagedorn FoodTech (TRITECH) per a Weber Slicer.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/capcals-termics.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🖨️ 5. Capçals Tèrmics (Bizerba, Zebra)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Capçals d'impressió tèrmica per a etiquetatge industrial de pesat.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/abrasius.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ 6. Abrasius &amp; Esmolat Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
+
+                    <li class="has-mega-menu">
+                        <a href="servicios.html" class="nav-link">Serveis</a>
+                        <div class="mega-menu" style="width: 420px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="serveis/esmolat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reafilat CNC Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reafilat d'alta precisió per a ganivetes de llescadora i cutters.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/formacio.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🎓 Formació Tècnica per a Operaris</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Cursos de seguretat en el tall, regulació de fil i optimització.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/consultoria.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📊 Consultoria i Auditoria de Minvament</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Estudi del rendiment de tall a la línia per reduir la merma.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/suport.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ Suport Tècnic 24/7 i Emergències</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Lliurament d'emergència en 24h i manteniment preventiu.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+
+            <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
+                    <span class="lang-option active" style="color: var(--primary); cursor: pointer;">CA</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">ES</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">EN</span>
+                </div>
+                <div class="theme-toggle" role="radiogroup" aria-label="Selecció de tema">
+                    <button class="theme-toggle-option" data-theme="light"><i data-lucide="sun" style="width:16px;height:16px"></i></button>
+                    <button class="theme-toggle-option active" data-theme="dark"><i data-lucide="moon" style="width:16px;height:16px"></i></button>
+                </div>
+                <a href="contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    CONTACTE
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- HERO TEKBLADE -->
+        <section class="hero" style="min-height: 70vh; display: flex; align-items: center; background: linear-gradient(rgba(13, 19, 24, 0.8), rgba(13, 19, 24, 0.95)), url('https://images.unsplash.com/photo-1580983537233-a9d90ec799d5?auto=format&fit=crop&w=1920&q=80') center/cover;">
+            <div class="container text-center">
+                <span class="badge badge-gold" style="margin-bottom: 2rem; font-size: 1rem; padding: 0.5rem 1.5rem;">LA NOSTRA MARCA PRÒPIA</span>
+                <h1 class="font-display" style="font-size: clamp(4rem, 8vw, 8rem); color: var(--primary); letter-spacing: 0.02em; line-height: 1; margin-bottom: 1.5rem;">TEKBLADE</h1>
+                <p class="text-body-large" style="color: #fff; max-width: 700px; margin: 0 auto 3rem; font-size: 1.5rem;">
+                    Enginyeria de tall dissenyada específicament per a superar els estàndards de la indústria alimentària.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#tekblade-cataleg" class="btn btn-primary">Veure la gamma TEKBLADE</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITION -->
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
+                    <div style="text-align: center; padding: 2rem;">
+                        <i data-lucide="shield-check" style="width: 48px; height: 48px; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 class="font-display text-heading-3" style="margin-bottom: 1rem;">Aliatges Premium</h3>
+                        <p class="text-muted">Acer Inoxidable 440B i Acer per Eines D2/L3 per garantir la màxima resistència a la corrosió i manteniment del fil.</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem;">
+                        <i data-lucide="activity" style="width: 48px; height: 48px; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 class="font-display text-heading-3" style="margin-bottom: 1rem;">Màxim Rendiment</h3>
+                        <p class="text-muted">Geometries optimitzades que redueixen la fricció i el minvament del producte, millorant la qualitat del tall final.</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem;">
+                        <i data-lucide="check-circle" style="width: 48px; height: 48px; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 class="font-display text-heading-3" style="margin-bottom: 1rem;">Garantia ESMOTECH</h3>
+                        <p class="text-muted">Tot el nostre know-how acumulat en més de 15 anys d'esmolat concentrat en la fabricació d'una eina superior.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATÀLEG TEKBLADE -->
+        <section id="tekblade-cataleg" class="section bg-secondary">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="text-heading-2">Catàleg TEKBLADE</h2>
+                    <p class="text-muted">Explora la nostra selecció exclusiva.</p>
+                </div>
+                
+                <div id="tekblade-products" class="grid-products">
+                    <!-- S'omplirà via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo font-display" style="font-size: 2rem; color: var(--primary);">ESMOTECH</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-sm text-muted">&copy; 2026 ESMOTECH. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/theme-manager.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

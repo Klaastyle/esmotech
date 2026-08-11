@@ -1,0 +1,57 @@
+{
+  "url": "http://www.teofilorosete.es/personal/usuarios/login.asp",
+  "title": "Identificación de usuario Teofilo Rosete",
+  "meta_description": "Distribuidor de Giesser, Astor, Lutz, Euroflex, Knecht y Lumbeck and Wolter en España",
+  "headings": [
+    "IDENTIFICACIÓN DE USUARIO"
+  ],
+  "text_content": "Área Personal\nYA SOY USUARIO\nSi tiene cualquier problema o sugerencia, no dude en enviarnos un e-mail: info_arroba_teofilorosete.es\nImportante: para poder utilizar este entorno es necesario tener activados cookies y Javascript\nNUEVO USUARIO\nNombre: *\nPrimer apellido:\nSegundo apellido:\nDirección:\nPoblación:\nC.P.:\nProvincia:\nPaís:\nE-mail: *\nTeléfono Fijo:\nMóvil:\nFax:\nPágina web:\nN.I.F.:\nINFORMACIÓN CORPORATIVA\nEmpresa:\nC.I.F.:\nCargo:\nDepartamento:\nOTROS DATOS\nUsuario: *\nClave: *\nConfirme la Clave: *\nRecuerde los valores que haya escrito en 'usuario' y 'clave', tendrá que introducirlos cuando se le solicite identificación.\n(*) campo obligatorio.\nDeseo recibir información vía e-mail.\nAcepto las condiciones especificadas en el aviso legal\nPregunta de letras: escriba la letra del abecedario que va antes de la h",
+  "images": [
+    {
+      "src": "http://www.teofilorosete.es/imgslogo/logo_teofilo_admin.jpg",
+      "alt": "Teofilo Rosete"
+    },
+    {
+      "src": "http://www.teofilorosete.es/imgslogo/logo_teofilo_admin.jpg",
+      "alt": "Teofilo Rosete"
+    },
+    {
+      "src": "http://www.teofilorosete.es/imgs/logo_esencia_sci.png",
+      "alt": "Esencia - Sentido Común Internet"
+    }
+  ],
+  "links": [
+    {
+      "href": "http://www.teofilorosete.es/v_portal/apartados/apartado.asp",
+      "text": "Vista Web"
+    },
+    {
+      "href": "http://www.teofilorosete.es/v_portal/apartados/apartado.asp",
+      "text": ""
+    },
+    {
+      "href": "http://www.teofilorosete.es/v_portal/apartados/apartado.asp",
+      "text": ""
+    },
+    {
+      "href": "http://www.teofilorosete.es/personal/usuarios/usuariopwd.asp",
+      "text": "olvidé mi clave"
+    },
+    {
+      "href": "http://www.teofilorosete.es/personal/mailing/mailingalta.asp",
+      "text": "quiero recibir boletines"
+    },
+    {
+      "href": "http://www.teofilorosete.es/personal/mailing/mailingbaja.asp",
+      "text": "no quiero recibir boletines"
+    },
+    {
+      "href": "mailto:info_arroba_teofilorosete.es",
+      "text": "info_arroba_teofilorosete.es"
+    },
+    {
+      "href": "http://www.sentidocomun.es",
+      "text": ""
+    }
+  ]
+}

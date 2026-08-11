@@ -1,0 +1,291 @@
+[
+  {
+    "categoria_id": "CAT-01",
+    "familia_pare_id": "FAM-ET-08",
+    "nom_familia_pare": "Ganivetes Descotnadores (Skinners)",
+    "ref_interna": "ET-08-01",
+    "nom_ca": "Ganiveta Skinner Grasselli 520mm",
+    "marca": "PRIMEdge",
+    "maquines_compatibles": "Grasselli / Nock / Townsend",
+    "material": "Inox AISI 440C HRC 58-60",
+    "dimensions": "520 x 40 x 1.5 mm",
+    "recobriment": "Sense recobriment",
+    "aplicacio": "Despellat i descotnat de porcí",
+    "imatges": [
+      {
+        "src": "../img/products/ganiveta-skinner-grasselli-520mm-primedge-et-08-01-1.jpeg",
+        "alt": "Ganiveta Skinner Grasselli 520mm (PRIMEdge Ref. ET-08-01) - Vista 1 per a indústria alimentària",
+        "title": "Ganiveta Skinner Grasselli 520mm - Ref. ET-08-01"
+      },
+      {
+        "src": "../img/products/ganiveta-skinner-grasselli-520mm-primedge-et-08-01-2.jpeg",
+        "alt": "Ganiveta Skinner Grasselli 520mm (PRIMEdge Ref. ET-08-01) - Vista 2 per a indústria alimentària",
+        "title": "Ganiveta Skinner Grasselli 520mm - Ref. ET-08-01"
+      },
+      {
+        "src": "../img/products/ganiveta-skinner-grasselli-520mm-primedge-et-08-01-3.jpeg",
+        "alt": "Ganiveta Skinner Grasselli 520mm (PRIMEdge Ref. ET-08-01) - Vista 3 per a indústria alimentària",
+        "title": "Ganiveta Skinner Grasselli 520mm - Ref. ET-08-01"
+      },
+      {
+        "src": "../img/products/ganiveta-skinner-grasselli-520mm-primedge-et-08-01-4.jpeg",
+        "alt": "Ganiveta Skinner Grasselli 520mm (PRIMEdge Ref. ET-08-01) - Vista 4 per a indústria alimentària",
+        "title": "Ganiveta Skinner Grasselli 520mm - Ref. ET-08-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "pdf/fitxes/ET-08-skinner-datasheet.pdf",
+    "descripcio_curta_ca": "Ganiveta descotnadora d'alta flexibilitat per a peladores Grasselli.",
+    "imatge_principal": "img/products/ganiveta-skinner-grasselli-520mm-primedge-et-08-01-1.jpeg"
+  },
+  {
+    "categoria_id": "CAT-01",
+    "familia_pare_id": "FAM-ET-08",
+    "nom_familia_pare": "Ganivetes Descotnadores (Skinners)",
+    "ref_interna": "ET-08-02",
+    "nom_ca": "Ganiveta Skinner Nock 600mm",
+    "marca": "PRIMEdge",
+    "maquines_compatibles": "Nock / Townsend / Marel",
+    "material": "Inox AISI 440C HRC 58-60",
+    "dimensions": "600 x 40 x 1.5 mm",
+    "recobriment": "Sense recobriment",
+    "aplicacio": "Despellat de boví i peix",
+    "imatges": [
+      {
+        "src": "../img/products/ganiveta-skinner-nock-600mm-primedge-et-08-02-1.jpeg",
+        "alt": "Ganiveta Skinner Nock 600mm (PRIMEdge Ref. ET-08-02) - Vista 1 per a indústria alimentària",
+        "title": "Ganiveta Skinner Nock 600mm - Ref. ET-08-02"
+      },
+      {
+        "src": "../img/products/ganiveta-skinner-nock-600mm-primedge-et-08-02-2.jpeg",
+        "alt": "Ganiveta Skinner Nock 600mm (PRIMEdge Ref. ET-08-02) - Vista 2 per a indústria alimentària",
+        "title": "Ganiveta Skinner Nock 600mm - Ref. ET-08-02"
+      },
+      {
+        "src": "../img/products/ganiveta-skinner-nock-600mm-primedge-et-08-02-3.jpeg",
+        "alt": "Ganiveta Skinner Nock 600mm (PRIMEdge Ref. ET-08-02) - Vista 3 per a indústria alimentària",
+        "title": "Ganiveta Skinner Nock 600mm - Ref. ET-08-02"
+      },
+      {
+        "src": "../img/products/ganiveta-skinner-nock-600mm-primedge-et-08-02-4.png",
+        "alt": "Ganiveta Skinner Nock 600mm (PRIMEdge Ref. ET-08-02) - Vista 4 per a indústria alimentària",
+        "title": "Ganiveta Skinner Nock 600mm - Ref. ET-08-02"
+      }
+    ],
+    "pdf_fitxa_tecnica": "",
+    "descripcio_curta_ca": "Fulla de descotnar de gran longitud per a màquines Nock.",
+    "imatge_principal": "img/products/ganiveta-skinner-nock-600mm-primedge-et-08-02-1.jpeg"
+  },
+  {
+    "categoria_id": "CAT-01",
+    "familia_pare_id": "FAM-ET-03",
+    "nom_familia_pare": "Cutters Industrials",
+    "ref_interna": "ET-03-01",
+    "nom_ca": "Ganiveta Cutter CFS 500L",
+    "marca": "TEKBLADE",
+    "maquines_compatibles": "CFS / GEA / Seydelmann / Kramer",
+    "material": "Acer Eina D2 (1.2379)",
+    "dimensions": "450 x 85 x 6 mm",
+    "recobriment": "TiN Nitrur de Titani",
+    "aplicacio": "Emulsions i picat d'embotits crus",
+    "imatges": [
+      {
+        "src": "../img/products/ganiveta-cutter-cfs-500l-tekblade-et-03-01-1.png",
+        "alt": "Ganiveta Cutter CFS 500L (TEKBLADE Ref. ET-03-01) - Vista 1 per a indústria alimentària",
+        "title": "Ganiveta Cutter CFS 500L - Ref. ET-03-01"
+      },
+      {
+        "src": "../img/products/ganiveta-cutter-cfs-500l-tekblade-et-03-01-2.jpeg",
+        "alt": "Ganiveta Cutter CFS 500L (TEKBLADE Ref. ET-03-01) - Vista 2 per a indústria alimentària",
+        "title": "Ganiveta Cutter CFS 500L - Ref. ET-03-01"
+      },
+      {
+        "src": "../img/products/ganiveta-cutter-cfs-500l-tekblade-et-03-01-3.jpeg",
+        "alt": "Ganiveta Cutter CFS 500L (TEKBLADE Ref. ET-03-01) - Vista 3 per a indústria alimentària",
+        "title": "Ganiveta Cutter CFS 500L - Ref. ET-03-01"
+      },
+      {
+        "src": "../img/products/ganiveta-cutter-cfs-500l-tekblade-et-03-01-4.jpeg",
+        "alt": "Ganiveta Cutter CFS 500L (TEKBLADE Ref. ET-03-01) - Vista 4 per a indústria alimentària",
+        "title": "Ganiveta Cutter CFS 500L - Ref. ET-03-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "pdf/fitxes/ET-03-cutter-cfs.pdf",
+    "descripcio_curta_ca": "Ganiveta de cutter amb equilibrat dinàmic per a altes RPM.",
+    "imatge_principal": "img/products/ganiveta-cutter-cfs-500l-tekblade-et-03-01-1.png"
+  },
+  {
+    "categoria_id": "CAT-02",
+    "familia_pare_id": "FAM-SC-01",
+    "nom_familia_pare": "Serra Cinta Carn Fresca",
+    "ref_interna": "SC-01-01",
+    "nom_ca": "Serra Cinta 4 TPI Kolbe 3700mm",
+    "marca": "Stellar Technik",
+    "maquines_compatibles": "Kolbe / Medoc / Mainca / Hobart",
+    "material": "Acer Carboni Temprat",
+    "dimensions": "3700 x 20 x 0.6 mm",
+    "recobriment": "Templat inducció",
+    "aplicacio": "Tall de canal fresca de porcí i boví",
+    "imatges": [
+      {
+        "src": "../img/products/serra-cinta-4-tpi-kolbe-3700mm-stellar-technik-sc-01-01-1.jpeg",
+        "alt": "Serra Cinta 4 TPI Kolbe 3700mm (Stellar Technik Ref. SC-01-01) - Vista 1 per a indústria alimentària",
+        "title": "Serra Cinta 4 TPI Kolbe 3700mm - Ref. SC-01-01"
+      },
+      {
+        "src": "../img/products/serra-cinta-4-tpi-kolbe-3700mm-stellar-technik-sc-01-01-2.jpeg",
+        "alt": "Serra Cinta 4 TPI Kolbe 3700mm (Stellar Technik Ref. SC-01-01) - Vista 2 per a indústria alimentària",
+        "title": "Serra Cinta 4 TPI Kolbe 3700mm - Ref. SC-01-01"
+      },
+      {
+        "src": "../img/products/serra-cinta-4-tpi-kolbe-3700mm-stellar-technik-sc-01-01-3.jpeg",
+        "alt": "Serra Cinta 4 TPI Kolbe 3700mm (Stellar Technik Ref. SC-01-01) - Vista 3 per a indústria alimentària",
+        "title": "Serra Cinta 4 TPI Kolbe 3700mm - Ref. SC-01-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "",
+    "descripcio_curta_ca": "Serra cinta de 4 dents per polzada per a carn fresca amb os.",
+    "imatge_principal": "img/products/serra-cinta-4-tpi-kolbe-3700mm-stellar-technik-sc-01-01-1.jpeg"
+  },
+  {
+    "categoria_id": "CAT-03",
+    "familia_pare_id": "FAM-GE-09",
+    "nom_familia_pare": "Ganivetes Barqueta Ulma",
+    "ref_interna": "GE-09-01",
+    "nom_ca": "Ganiveta Perimetral Ulma TFS 500",
+    "marca": "Heder",
+    "maquines_compatibles": "Ulma TFS / TFA / Everest",
+    "material": "Acer Inox HRC 56-58",
+    "dimensions": "480 x 220 x 2 mm",
+    "recobriment": "TiN Nitrur de Titani",
+    "aplicacio": "Termosegellat de safates alimentàries",
+    "imatges": [
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-1.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 1 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      },
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-2.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 2 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      },
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-3.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 3 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      },
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-4.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 4 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      },
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-5.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 5 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      },
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-6.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 6 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      },
+      {
+        "src": "../img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-7.jpeg",
+        "alt": "Ganiveta Perimetral Ulma TFS 500 (Heder Ref. GE-09-01) - Vista 7 per a indústria alimentària",
+        "title": "Ganiveta Perimetral Ulma TFS 500 - Ref. GE-09-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "pdf/fitxes/GE-09-ulma-tfs.pdf",
+    "descripcio_curta_ca": "Ganiveta de tall perimetral per a termoformadora Ulma.",
+    "imatge_principal": "img/products/ganiveta-perimetral-ulma-tfs-500-heder-ge-09-01-1.jpeg"
+  },
+  {
+    "categoria_id": "CAT-04",
+    "familia_pare_id": "FAM-GC-01",
+    "nom_familia_pare": "Ganivetes Evolutives Llescat",
+    "ref_interna": "GC-01-01",
+    "nom_ca": "Ganiveta Evolutiva TRITECH Weber",
+    "marca": "Hagedorn",
+    "maquines_compatibles": "Weber Slicer 404 / 604 / 905",
+    "material": "Pols de Metall GENESIS",
+    "dimensions": "460 mm radi",
+    "recobriment": "Tefló PTFE Alimentari",
+    "aplicacio": "Llescat d'alta velocitat pernil i bacó",
+    "imatges": [
+      {
+        "src": "../img/products/ganiveta-evolutiva-tritech-weber-hagedorn-gc-01-01-1.jpeg",
+        "alt": "Ganiveta Evolutiva TRITECH Weber (Hagedorn Ref. GC-01-01) - Vista 1 per a indústria alimentària",
+        "title": "Ganiveta Evolutiva TRITECH Weber - Ref. GC-01-01"
+      },
+      {
+        "src": "../img/products/ganiveta-evolutiva-tritech-weber-hagedorn-gc-01-01-2.jpeg",
+        "alt": "Ganiveta Evolutiva TRITECH Weber (Hagedorn Ref. GC-01-01) - Vista 2 per a indústria alimentària",
+        "title": "Ganiveta Evolutiva TRITECH Weber - Ref. GC-01-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "pdf/fitxes/GC-01-hagedorn-tritech.pdf",
+    "descripcio_curta_ca": "Ganiveta evolutiva Hagedorn Made in Germany per a llescadora Weber.",
+    "imatge_principal": "img/products/ganiveta-evolutiva-tritech-weber-hagedorn-gc-01-01-1.jpeg"
+  },
+  {
+    "categoria_id": "CAT-05",
+    "familia_pare_id": "FAM-CT-01",
+    "nom_familia_pare": "Capçals Tèrmics Impressió",
+    "ref_interna": "CT-01-01",
+    "nom_ca": "Capçal Tèrmic Bizerba GLP 203DPI",
+    "marca": "Codewel",
+    "maquines_compatibles": "Bizerba GLP / GV / GS / GH",
+    "material": "Capa Ceràmica KTE",
+    "dimensions": "108 mm amplada",
+    "recobriment": "KTE Protecció",
+    "aplicacio": "Etiquetatge i pesatge industrial",
+    "imatges": [
+      {
+        "src": "../img/products/capcal-termic-bizerba-glp-203dpi-codewel-ct-01-01-1.jpeg",
+        "alt": "Capçal Tèrmic Bizerba GLP 203DPI (Codewel Ref. CT-01-01) - Vista 1 per a indústria alimentària",
+        "title": "Capçal Tèrmic Bizerba GLP 203DPI - Ref. CT-01-01"
+      },
+      {
+        "src": "../img/products/capcal-termic-bizerba-glp-203dpi-codewel-ct-01-01-2.jpeg",
+        "alt": "Capçal Tèrmic Bizerba GLP 203DPI (Codewel Ref. CT-01-01) - Vista 2 per a indústria alimentària",
+        "title": "Capçal Tèrmic Bizerba GLP 203DPI - Ref. CT-01-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "",
+    "descripcio_curta_ca": "Capçal tèrmic d'alta resolució per a pesadores Bizerba.",
+    "imatge_principal": "img/products/capcal-termic-bizerba-glp-203dpi-codewel-ct-01-01-1.jpeg"
+  },
+  {
+    "categoria_id": "CAT-06",
+    "familia_pare_id": "FAM-AB-01",
+    "nom_familia_pare": "Bandes d'Esmolar Industrials",
+    "ref_interna": "AB-01-01",
+    "nom_ca": "Banda Esmolar Knecht Grit 120",
+    "marca": "PRIMEdge",
+    "maquines_compatibles": "Knecht / Mado / Dick / Tru-Hone",
+    "material": "Corindó Noble Blau",
+    "dimensions": "1000 x 50 mm",
+    "recobriment": "Resina Sintètica",
+    "aplicacio": "Rectificat i esmolat diari en línia",
+    "imatges": [
+      {
+        "src": "../img/products/banda-esmolar-knecht-grit-120-primedge-ab-01-01-1.jpeg",
+        "alt": "Banda Esmolar Knecht Grit 120 (PRIMEdge Ref. AB-01-01) - Vista 1 per a indústria alimentària",
+        "title": "Banda Esmolar Knecht Grit 120 - Ref. AB-01-01"
+      },
+      {
+        "src": "../img/products/banda-esmolar-knecht-grit-120-primedge-ab-01-01-2.jpeg",
+        "alt": "Banda Esmolar Knecht Grit 120 (PRIMEdge Ref. AB-01-01) - Vista 2 per a indústria alimentària",
+        "title": "Banda Esmolar Knecht Grit 120 - Ref. AB-01-01"
+      },
+      {
+        "src": "../img/products/banda-esmolar-knecht-grit-120-primedge-ab-01-01-3.jpeg",
+        "alt": "Banda Esmolar Knecht Grit 120 (PRIMEdge Ref. AB-01-01) - Vista 3 per a indústria alimentària",
+        "title": "Banda Esmolar Knecht Grit 120 - Ref. AB-01-01"
+      }
+    ],
+    "pdf_fitxa_tecnica": "",
+    "descripcio_curta_ca": "Banda abrasiva d'esmolat refrigerat per a tallers de planta.",
+    "imatge_principal": "img/products/banda-esmolar-knecht-grit-120-primedge-ab-01-01-1.jpeg"
+  }
+]
