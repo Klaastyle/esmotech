@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* =============================================
+     PALETA EXACTA ESMOTECH — Extretes de les slides comercials
+     Sampling px confirmat: fons #0B141A, accent or #C9A84C
+     ============================================= */
+
+  /* Backgrounds — Blau-negre industrial (NO negre pur) */
+  --bg-primary:    #0D1318;  /* Fons principal — dark navy charcoal */
+  --bg-secondary:  #111B22;  /* Panells secundaris */
+  --bg-tertiary:   #172030;  /* Cards, mega-menú */
+  --bg-panel:      #0F1A22;  /* Panells de contingut (com slides) */
+  --bg-footer:     #080E12;  /* Footer ultra-fosc */
+
+  --text-primary:  #F0EFEC;  /* Blanc lleugerament càlid */
+  --text-secondary:#9AABB8;  /* Gris blavós industrial */
+  --text-muted:    #556070;  /* Gris molt apagat */
+  --text-inverse:  #0D1318;
+
+  --border-color:  #1E2C38;  /* Vora fosc-blavós */
+  --border-hover:  #C9A84C;  /* Vora daurat en hover */
+  --border-subtle: #162030;  /* Vora molt subtil */
+
+  /* =============================================
+     PALETA DE MARCA PRINCIPAL
+     ============================================= */
+
+  /* Or antik — el color exacte de les slides del client */
+  --primary:        #C9A84C;  /* Or antik principal */
+  --primary-light:  #DFC070;  /* Or clar / hover */
+  --primary-dark:   #A8882C;  /* Or fosc */
+  --primary-muted:  rgba(201, 168, 76, 0.15);  /* Or translúcid per a backgrounds */
+  --primary-glow:   rgba(201, 168, 76, 0.25);  /* Glow daurat */
+
+  /* Accent bronze (color càlid secundari de les slides) */
+  --accent-warm:    #BCA486;  /* Bronze càlid — del sampling px */
+  --accent-steel:   #8C9AA6;  /* Acer inoxidable — color neutral */
+
+  --secondary:     #1E2C38;
+  --black:         #060C10;
+
+  /* Estat / Feedback */
+  --success:       #2D8A5E;
+  --warning:       #C9A84C;
+  --error:         #A83232;
+  
+  /* Typography Scale */
+  --font-display: 'Barlow Condensed', sans-serif; /* Per a titulars, impactant, majúscules */
+  --font-body: 'Inter', sans-serif; /* Per a textos llegibles */
+  
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 2rem;      /* 32px */
+  --text-4xl: 3rem;      /* 48px */
+  --text-5xl: 4.5rem;    /* 72px */
+  
+  /* Spacing System (4px Base Grid) */
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-24: 6rem;      /* 96px */
+  
+  /* Layout System */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-xxl: 1440px;
+  
+  /* UI Tokens */
+  --border-radius-sm: 2px; /* Molt quadrat, aspecte industrial */
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.6);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.6);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.7);
+  --shadow-glow: 0 0 20px rgba(201, 168, 76, 0.3); /* Or antik glow #C9A84C */
+  --shadow-glow-sm: 0 0 10px rgba(201, 168, 76, 0.2);
+  
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-primary:   #F5F3EE;  /* Blanc càlid — no blanc pur, ressona amb el bronze */
+  --bg-secondary: #EAE6DE;
+  --bg-tertiary:  #DDD8CE;
+  --bg-panel:     #F0ECE4;
+  
+  --text-primary:   #1A1008;
+  --text-secondary: #4A3C2A;
+  --text-muted:     #8A7A60;
+  --text-inverse:   #F0EFEC;
+  
+  --border-color:  #C8BFA8;
+  --border-hover:  #C9A84C;
+  --border-subtle: #DDD8CE;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
+  --shadow-glow: 0 0 20px rgba(201, 168, 76, 0.2);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+}
+
+.text-heading-1 { font-size: var(--text-4xl); }
+@media (min-width: 768px) { .text-heading-1 { font-size: var(--text-5xl); } }
+
+.text-heading-2 { font-size: var(--text-3xl); }
+@media (min-width: 768px) { .text-heading-2 { font-size: var(--text-4xl); } }
+
+.text-heading-3 { font-size: var(--text-2xl); }
+.text-heading-4 { font-size: var(--text-xl); }
+
+.text-accent  { color: var(--primary); }        /* Or antik #C9A84C */
+.text-gold    { color: var(--primary); }
+.text-bronze  { color: var(--accent-warm); }     /* Bronze #BCA486 */
+.text-muted   { color: var(--text-muted); }
+.text-secondary-color { color: var(--text-secondary); }
+.text-black   { color: var(--black); }
+.text-center  { text-align: center; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+
+.bg-secondary { background-color: var(--bg-secondary); }
+.bg-panel     { background-color: var(--bg-panel); }
+.bg-gold      { background-color: var(--primary); }
+.bg-gold-muted{ background-color: var(--primary-muted); }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

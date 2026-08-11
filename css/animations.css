@@ -1,0 +1,305 @@
+﻿/* animations.css - ESMOTECH Whimsy & Interactions */
+
+:root {
+  --gold: #C9A84C;
+  --black: #0a0a0a;
+}
+
+/* 1. SCROLL ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 2. NAVBAR */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  background-color: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+.navbar .nav-link {
+  position: relative;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--gold);
+  transition: width 0.3s ease;
+}
+.navbar .nav-link.active::after,
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+.navbar .nav-link.active {
+  color: var(--gold);
+}
+
+/* 3. HERO */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  cursor: none; /* Hide default cursor */
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  opacity: 0;
+}
+
+.hero-section:hover ~ .custom-cursor,
+.hero-section:hover .custom-cursor {
+  opacity: 1;
+}
+
+.underline-reveal {
+  position: relative;
+  display: inline-block;
+}
+.underline-reveal::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--gold);
+  animation: underlineReveal 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.5s;
+}
+@keyframes underlineReveal {
+  to { width: 100%; }
+}
+
+/* 4. PRODUCT CARDS */
+.product-card {
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  position: relative;
+  background: #111;
+  border: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.1);
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.gold-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0 0 5px var(--gold);
+  animation: floatUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 0.8; }
+  100% { transform: translateY(-30px) scale(0); opacity: 0; }
+}
+
+/* 5. BUTTONS */
+.btn-cta {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn-cta:hover::before {
+  left: 150%;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  animation: rippleEffect 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* 6. EASTER EGGS */
+.precision-mode-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: var(--gold);
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 1px solid var(--gold);
+  background: rgba(10, 10, 10, 0.9);
+  z-index: 10000;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideInDown 0.5s forwards, pulseGlow 2s infinite alternate;
+}
+
+@keyframes slideInDown {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 5px rgba(201, 168, 76, 0.2); }
+  to { box-shadow: 0 0 15px rgba(201, 168, 76, 0.6); }
+}
+
+.logo {
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.logo.spin {
+  transform: rotate(360deg);
+}
+
+/* 7. FORM VALIDATION & SUCCESS */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border: 1px solid #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-control.valid {
+  border-color: #2e7d32; /* Subtle green */
+}
+
+.form-control.invalid {
+  border-color: #c62828; /* Subtle red */
+}
+
+.typing-indicator {
+  font-size: 12px;
+  color: var(--gold);
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.typing-indicator.active {
+  opacity: 1;
+}
+.typing-indicator span {
+  animation: blink 1s infinite;
+}
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.form-success-line {
+  position: relative;
+  display: inline-block;
+  color: var(--gold);
+  overflow: hidden;
+}
+.form-success-line::after {
+  content: 'âœ“';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.form-success-line.success-active::after {
+  transform: translateY(-50%) scale(1);
+}
+
+/* ACCESSIBILITY: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal, .reveal-left {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-section {
+    cursor: auto;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}

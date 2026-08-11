@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productes i Solucions de Tall | ESMOTECH</title>
+    <meta name="description" content="Explora les nostres 6 categories principals de tall industrial, envasat i esmolat. Selecciona una categoria per veure la seva pàgina dedicada.">
+    
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .cat-hub-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .cat-hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <header class="header sticky">
+        <div class="container header-container">
+            <a href="index.html" class="logo text-heading-3">ESMOTECH</a>
+                        <nav class="main-nav" aria-label="Navegació Principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inici</a></li>
+                    
+                    <li class="has-mega-menu">
+                        <a href="productos.html" class="nav-link">Productes</a>
+                        <div class="mega-menu" style="width: 480px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Categories Principals de Tall</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="productes/eines-de-tall.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 1. Eines de Tall (Skinners, Cutters)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Skinners, despelladores, cutters en acer D2 i placats de picadora.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/serra-cinta.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🪚 2. Serra Cinta (Carn, Os, Congelat)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Fulles de serra cinta per a carn fresca, os, congelat (-20ºC) i aviram.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/ganivetes-denvasat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📦 3. Ganivetes d'Envasat &amp; Termoformat</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Termoformat Ulma i Multivac, ganivetes perimetrals i Tefló.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/circulars-i-evolutives.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚙️ 4. Circulars &amp; Evolutives (Weber/Hagedorn)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Llescadores Hagedorn FoodTech (TRITECH) per a Weber Slicer.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/capcals-termics.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🖨️ 5. Capçals Tèrmics (Bizerba, Zebra)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Capçals d'impressió tèrmica per a etiquetatge industrial de pesat.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/abrasius.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ 6. Abrasius &amp; Esmolat Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
+
+                    <li class="has-mega-menu">
+                        <a href="servicios.html" class="nav-link">Serveis</a>
+                        <div class="mega-menu" style="width: 420px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="serveis/esmolat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reafilat CNC Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reafilat d'alta precisió per a ganivetes de llescadora i cutters.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/formacio.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🎓 Formació Tècnica per a Operaris</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Cursos de seguretat en el tall, regulació de fil i optimització.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/consultoria.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📊 Consultoria i Auditoria de Minvament</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Estudi del rendiment de tall a la línia per reduir la merma.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/suport.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ Suport Tècnic 24/7 i Emergències</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Lliurament d'emergència en 24h i manteniment preventiu.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+            <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
+                    <span class="lang-option active" style="color: var(--primary); cursor: pointer;">CA</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">ES</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">EN</span>
+                </div>
+                <div class="theme-toggle" role="radiogroup" aria-label="Selecció de tema">
+                    <button class="theme-toggle-option" data-theme="light"><i data-lucide="sun" style="width:16px;height:16px"></i></button>
+                    <button class="theme-toggle-option active" data-theme="dark"><i data-lucide="moon" style="width:16px;height:16px"></i></button>
+                </div>
+                <a href="contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    CONTACTE
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main style="padding-top: 100px; padding-bottom: 6rem;">
+        <section class="container" style="margin-bottom: 3.5rem; text-align: center;">
+            <div style="max-width: 850px; margin: 0 auto;">
+                <span class="badge badge-gold" style="margin-bottom: 1rem;">Catàleg General de Productes</span>
+                <h1 class="font-display text-heading-1" style="margin-bottom: 1rem;">Solucions Industrials de Tall</h1>
+                <p class="text-muted text-body-large" style="line-height: 1.7; font-size: 1.15rem;">
+                    Tria una de les nostres 6 categories per accedir a la seva pàgina pròpia i exclusiva amb descripció tècnica, segmentació visual i enllaços directes a la botiga.
+                </p>
+            </div>
+        </section>
+        <!-- GRID OF THE 6 MAIN CATEGORY HUBS -->
+        <section class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem;">
+                
+                <!-- CAT 1 -->
+                <article class="cat-hub-card" style="cursor: pointer;" onclick="location.href='productes/eines-de-tall.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span class="badge badge-industrial">CAT-01</span>
+                        <span class="badge" style="background: var(--bg-tertiary);">PRIMEdge & TEKBLADE</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(201, 168, 76, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="scissors" style="width: 26px; color: var(--primary);"></i>
+                        </div>
+                        <h2 class="font-display text-heading-3" style="margin: 0; color: var(--text-primary);">1. Eines de Tall</h2>
+                    </div>
+                    <p class="text-muted text-sm" style="line-height: 1.6; flex-grow: 1; margin-bottom: 1.5rem;">
+                        Skinners, despelladores, cutters industrials en acer D2, discs microdentats i placats de picadora.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                        <a href="productes/eines-de-tall.html" class="btn btn-secondary text-xs" style="flex: 1; text-align: center;">Explorar Categoria ➔</a>
+                        <a href="catalogo.html?cat=CAT-01" class="btn btn-primary text-xs" onclick="event.stopPropagation();" style="flex: 1; text-align: center; background: #e63946; border-color: #e63946; color: #fff;">🛒 Botiga</a>
+                    </div>
+                </article>
+
+                <!-- CAT 2 -->
+                <article class="cat-hub-card" style="cursor: pointer;" onclick="location.href='productes/serra-cinta.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span class="badge badge-industrial">CAT-02</span>
+                        <span class="badge" style="background: var(--bg-tertiary);">Stellar Technik</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(201, 168, 76, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="git-commit" style="width: 26px; color: var(--primary);"></i>
+                        </div>
+                        <h2 class="font-display text-heading-3" style="margin: 0; color: var(--text-primary);">2. Serra Cinta</h2>
+                    </div>
+                    <p class="text-muted text-sm" style="line-height: 1.6; flex-grow: 1; margin-bottom: 1.5rem;">
+                        Fulles de serra cinta per a carn fresca, os, congelats (-20ºC), aviram i ganiveteria Giesser.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                        <a href="productes/serra-cinta.html" class="btn btn-secondary text-xs" style="flex: 1; text-align: center;">Explorar Categoria ➔</a>
+                        <a href="catalogo.html?cat=CAT-02" class="btn btn-primary text-xs" onclick="event.stopPropagation();" style="flex: 1; text-align: center; background: #e63946; border-color: #e63946; color: #fff;">🛒 Botiga</a>
+                    </div>
+                </article>
+
+                <!-- CAT 3 -->
+                <article class="cat-hub-card" style="cursor: pointer;" onclick="location.href='productes/ganivetes-denvasat.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span class="badge badge-industrial">CAT-03</span>
+                        <span class="badge" style="background: var(--bg-tertiary);">Heder & Rosete</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(201, 168, 76, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="package" style="width: 26px; color: var(--primary);"></i>
+                        </div>
+                        <h2 class="font-display text-heading-3" style="margin: 0; color: var(--text-primary);">3. Ganivetes d'Envasat</h2>
+                    </div>
+                    <p class="text-muted text-sm" style="line-height: 1.6; flex-grow: 1; margin-bottom: 1.5rem;">
+                        Termoformat Ulma i Multivac, ganivetes perimetrals de barqueta, punxons estrella i Tefló.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                        <a href="productes/ganivetes-denvasat.html" class="btn btn-secondary text-xs" style="flex: 1; text-align: center;">Explorar Categoria ➔</a>
+                        <a href="catalogo.html?cat=CAT-03" class="btn btn-primary text-xs" onclick="event.stopPropagation();" style="flex: 1; text-align: center; background: #e63946; border-color: #e63946; color: #fff;">🛒 Botiga</a>
+                    </div>
+                </article>
+
+                <!-- CAT 4 -->
+                <article class="cat-hub-card" style="cursor: pointer;" onclick="location.href='productes/circulars-i-evolutives.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span class="badge badge-gold">⭐ HAGEDORN EXCLUSIVE</span>
+                        <span class="badge" style="background: var(--bg-tertiary);">CAT-04</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(201, 168, 76, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="disc" style="width: 26px; color: var(--primary);"></i>
+                        </div>
+                        <h2 class="font-display text-heading-3" style="margin: 0; color: var(--text-primary);">4. Circulars & Evolutives</h2>
+                    </div>
+                    <p class="text-muted text-sm" style="line-height: 1.6; flex-grow: 1; margin-bottom: 1.5rem;">
+                        Llescadores Hagedorn FoodTech (TRITECH, LONGLIFE, GENESIS) per a Weber Slicer 404/604/905.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                        <a href="productes/circulars-i-evolutives.html" class="btn btn-secondary text-xs" style="flex: 1; text-align: center;">Explorar Categoria ➔</a>
+                        <a href="catalogo.html?cat=CAT-04" class="btn btn-primary text-xs" onclick="event.stopPropagation();" style="flex: 1; text-align: center; background: #e63946; border-color: #e63946; color: #fff;">🛒 Botiga</a>
+                    </div>
+                </article>
+
+                <!-- CAT 5 -->
+                <article class="cat-hub-card" style="cursor: pointer;" onclick="location.href='productes/capcals-termics.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span class="badge badge-industrial">CAT-05</span>
+                        <span class="badge" style="background: var(--bg-tertiary);">Codewel & TPH</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(201, 168, 76, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="thermometer" style="width: 26px; color: var(--primary);"></i>
+                        </div>
+                        <h2 class="font-display text-heading-3" style="margin: 0; color: var(--text-primary);">5. Capçals Tèrmics</h2>
+                    </div>
+                    <p class="text-muted text-sm" style="line-height: 1.6; flex-grow: 1; margin-bottom: 1.5rem;">
+                        Recanvis OEM 203 DPI / 300 DPI amb capa ceràmica KTE per a Bizerba, Zebra i Honeywell.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                        <a href="productes/capcals-termics.html" class="btn btn-secondary text-xs" style="flex: 1; text-align: center;">Explorar Categoria ➔</a>
+                        <a href="catalogo.html?cat=CAT-05" class="btn btn-primary text-xs" onclick="event.stopPropagation();" style="flex: 1; text-align: center; background: #e63946; border-color: #e63946; color: #fff;">🛒 Botiga</a>
+                    </div>
+                </article>
+
+                <!-- CAT 6 -->
+                <article class="cat-hub-card" style="cursor: pointer;" onclick="location.href='productes/abrasius.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span class="badge badge-industrial">CAT-06</span>
+                        <span class="badge" style="background: var(--bg-tertiary);">PRIMEdge & Esmotech</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(201, 168, 76, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="zap" style="width: 26px; color: var(--primary);"></i>
+                        </div>
+                        <h2 class="font-display text-heading-3" style="margin: 0; color: var(--text-primary);">6. Abrasius & Esmolat</h2>
+                    </div>
+                    <p class="text-muted text-sm" style="line-height: 1.6; flex-grow: 1; margin-bottom: 1.5rem;">
+                        Bandes d'esmolar de corindó blau Knecht, moles diamantades de polit mirall i guants Euroflex.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                        <a href="productes/abrasius.html" class="btn btn-secondary text-xs" style="flex: 1; text-align: center;">Explorar Categoria ➔</a>
+                        <a href="catalogo.html?cat=CAT-06" class="btn btn-primary text-xs" onclick="event.stopPropagation();" style="flex: 1; text-align: center; background: #e63946; border-color: #e63946; color: #fff;">🛒 Botiga</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand"><span class="logo font-display" style="font-size: 2rem; color: var(--primary);">ESMOTECH</span><p>Solucions de tall industrial i esmolat professional.</p></div>
+        </div>
+    </footer>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/main.js"></script>
+    <script>if (window.lucide) lucide.createIcons();</script>
+</body>
+</html>
