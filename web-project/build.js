@@ -217,7 +217,7 @@ copyFolderSync(path.join(srcDir, 'productes'), path.join(distDir, 'productes'));
 copyFolderSync(path.join(srcDir, 'pdf'), path.join(distDir, 'pdf'));
 copyFolderSync(path.join(srcDir, 'img'), path.join(distDir, 'img'));
 
-const pagesToCopy = ['index.html', 'productos.html', 'tekblade.html', 'contacto.html', 'servicios.html', 'cerca.html', 'catalogo.html'];
+const pagesToCopy = ['index.html', 'productos.html', 'tekblade.html', 'contacto.html', 'servicios.html', 'cerca.html', 'catalogo.html', 'brand-book.html'];
 pagesToCopy.forEach(page => {
     if (fs.existsSync(path.join(srcDir, page))) {
         let html = fs.readFileSync(path.join(srcDir, page), 'utf-8');
@@ -231,6 +231,7 @@ let sitemapUrls = [
     'https://www.esmotech.com/servicios.html',
     'https://www.esmotech.com/contacto.html',
     'https://www.esmotech.com/tekblade.html',
+    'https://www.esmotech.com/brand-book.html',
     'https://www.esmotech.com/serveis/esmolat.html',
     'https://www.esmotech.com/serveis/formacio.html',
     'https://www.esmotech.com/serveis/consultoria.html',
