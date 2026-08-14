@@ -115,7 +115,13 @@
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 2.5rem;
-  background: radial-gradient(circle at 70% 30%, rgba(201, 168, 76, 0.06) 0%, transparent 65%);
+  background-image: linear-gradient(to right, var(--bg-primary) 40%, rgba(8, 9, 11, 0.5) 100%), url('../img/hero-sharpening.jpg');
+  background-size: cover;
+  background-position: right center;
+}
+
+[data-theme="light"] .hero {
+  background-image: linear-gradient(to right, var(--bg-primary) 40%, rgba(245, 243, 238, 0.5) 100%), url('../img/hero-sharpening.jpg');
 }
 
 .hero-headline-wrapper {
@@ -970,6 +976,7 @@
   padding-bottom: var(--space-4);
 }
 
+
 /* CLICKABLE CARD HOVER ENHANCEMENT */
 .cat-hub-card, .product-card {
     cursor: pointer !important;
@@ -979,4 +986,14 @@
     transform: translateY(-5px) !important;
     border-color: var(--primary) !important;
     box-shadow: 0 12px 30px rgba(201, 168, 76, 0.18) !important;
+}
+
+/* Light Theme Partner Logo Overrides */
+[data-theme="light"] .partner-img-logo {
+  filter: grayscale(1) opacity(0.6) !important;
+}
+
+[data-theme="light"] .partner-img-logo:hover {
+  filter: none !important;
+  opacity: 1 !important;
 }
