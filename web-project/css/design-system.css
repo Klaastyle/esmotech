@@ -6,12 +6,12 @@
      Sampling px confirmat: fons #0B141A, accent or #C9A84C
      ============================================= */
 
-  /* Backgrounds — Blau-negre industrial (NO negre pur) */
-  --bg-primary:    #0D1318;  /* Fons principal — dark navy charcoal */
-  --bg-secondary:  #111B22;  /* Panells secundaris */
-  --bg-tertiary:   #172030;  /* Cards, mega-menú */
-  --bg-panel:      #0F1A22;  /* Panells de contingut (com slides) */
-  --bg-footer:     #080E12;  /* Footer ultra-fosc */
+  /* Backgrounds — Fons super fosc mat estil slides */
+  --bg-primary:    #08090b;  /* Fons principal - fosc mat */
+  --bg-secondary:  #0d0e12;  /* Panells secundaris */
+  --bg-tertiary:   #12141a;  /* Cards, mega-menú */
+  --bg-panel:      #0f1014;  /* Panells de contingut */
+  --bg-footer:     #040506;  /* Footer ultra-fosc */
 
   --text-primary:  #F0EFEC;  /* Blanc lleugerament càlid */
   --text-secondary:#9AABB8;  /* Gris blavós industrial */

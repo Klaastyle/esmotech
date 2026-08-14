@@ -7,3 +7,5 @@ test_out.txt
 .system_generated/
 brain/
 *.tmp
+extracted_utf8.txt
+extracted_pptx_text.txt

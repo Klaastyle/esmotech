@@ -55,7 +55,18 @@
 
 .logo {
   margin-bottom: 0;
-  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  display: block;
+  transition: filter var(--transition-normal);
+}
+
+[data-theme="light"] .logo img {
+  filter: invert(0.9) contrast(1.2);
 }
 
 .main-nav .nav-list {
