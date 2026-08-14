@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESMOTECH | Llibre de Marca & Manual d'Identitat Corporativa</title>
+    <meta name="description" content="Manual d'identitat de marca oficial de ESMOTECH. Estil visual, logotip, paleta de colors, tipografia i pautes de veu.">
+    
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* Specific layout for Brand Book page */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .brand-grid {
+                grid-template-columns: 280px 1fr;
+            }
+        }
+        
+        .brand-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            padding: 1.5rem;
+        }
+        
+        .brand-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .brand-menu-link {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: var(--text-secondary);
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all var(--transition-fast);
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+        }
+        
+        .brand-menu-link:hover, .brand-menu-link.active {
+            color: var(--primary);
+            background: var(--primary-muted);
+            padding-left: 1.2rem;
+        }
+        
+        .brand-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem 2rem;
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 100px;
+        }
+        
+        .color-palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .color-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform var(--transition-fast), border-color var(--transition-fast);
+            position: relative;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+            transition: opacity var(--transition-fast);
+        }
+        
+        .color-info {
+            padding: 1rem;
+        }
+        
+        .color-name {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .color-hex {
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        /* Toast notification styling */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: var(--black);
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius-md);
+            font-weight: bold;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all var(--transition-normal);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Do's and Don'ts tables */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .comp-card {
+            border-radius: var(--border-radius-md);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        .comp-card.correct {
+            background: rgba(45, 138, 94, 0.05);
+            border-left: 4px solid var(--success);
+        }
+        
+        .comp-card.incorrect {
+            background: rgba(168, 50, 50, 0.05);
+            border-left: 4px solid var(--error);
+        }
+        
+        .logo-box {
+            background: #030406;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+        }
+        
+        .logo-box.light {
+            background: #f5f3ee;
+        }
+        
+        .code-block {
+            background: #030406;
+            border: 1px solid var(--border-color);
+            padding: 1.2rem;
+            border-radius: var(--border-radius-md);
+            font-family: monospace;
+            font-size: 0.88rem;
+            color: #d4d4d4;
+            overflow-x: auto;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header class="header sticky">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="img/logo-esmotech.png" alt="ESMOTECH"></a>
+            
+            <nav class="main-nav" aria-label="Navegació Principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inici</a></li>
+                    
+                    <li class="has-mega-menu">
+                        <a href="productos.html" class="nav-link">Productes</a>
+                        <div class="mega-menu" style="width: 480px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Categories Principals de Tall</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="productes/eines-de-tall.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 1. Eines de Tall (Skinners, Cutters)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Skinners, despelladores, cutters en acer D2 i placats de picadora.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/serra-cinta.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🪚 2. Serra Cinta (Carn, Os, Congelat)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Fulles de serra cinta per a carn fresca, os, congelat (-20ºC) i aviram.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/ganivetes-denvasat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📦 3. Ganivetes d'Envasat &amp; Termoformat</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Termoformat Ulma i Multivac, ganivetes perimetrals i Tefló.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/circulars-i-evolutives.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚙️ 4. Circulars &amp; Evolutives (Weber/Hagedorn)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Llescadores Hagedorn FoodTech (TRITECH) per a Weber Slicer.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/capcals-termics.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🖨️ 5. Capçals Tèrmics (Bizerba, Zebra)</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Capçals d'impressió tèrmica per a etiquetatge industrial de pesat.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/abrasius.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ 6. Abrasius &amp; Esmolat Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
+                    
+                    <li class="has-mega-menu">
+                        <a href="servicios.html" class="nav-link">Serveis</a>
+                        <div class="mega-menu" style="width: 420px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="serveis/esmolat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reafilat CNC Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reafilat d'alta precisió per a ganivetes de llescadora i cutters.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/formacio.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🎓 Formació Tècnica per a Operaris</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Cursos de seguretat en el tall, regulació de fil i optimització.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/consultoria.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📊 Consultoria i Auditoria de Minvament</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Estudi del rendiment de tall a la línia per reduir la merma.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/suport.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ Suport Tècnic 24/7 i Emergències</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Lliurament d'emergència en 24h i manteniment preventiu.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
+                    <span class="lang-option active" style="color: var(--primary); cursor: pointer;">CA</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">ES</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">EN</span>
+                </div>
+                <div class="theme-toggle" role="radiogroup" aria-label="Selecció de tema">
+                    <button class="theme-toggle-option" data-theme="light"><i data-lucide="sun" style="width:16px;height:16px"></i></button>
+                    <button class="theme-toggle-option active" data-theme="dark"><i data-lucide="moon" style="width:16px;height:16px"></i></button>
+                </div>
+                <a href="contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    CONTACTE
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main style="padding-top: 100px; padding-bottom: 6rem;">
+        <div class="container">
+            
+            <!-- HEADER INFO -->
+            <div style="margin-bottom: 3rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+                <span class="badge badge-gold" style="margin-bottom: 1rem;">Manual d'Identitat de Marca</span>
+                <h1 class="text-heading-1 font-display" style="margin-bottom: 0.5rem;">LLIBRE DE MARCA ESMOTECH</h1>
+                <p class="text-muted text-body-large">La guia de referència de la nostra personalitat corporativa, estil gràfic i to de veu.</p>
+            </div>
+            
+            <div class="brand-grid">
+                
+                <!-- STICKY SIDEBAR -->
+                <aside class="brand-sidebar">
+                    <ul class="brand-menu">
+                        <li><a href="#strategy" class="brand-menu-link active"><i data-lucide="compass" style="width:16px;"></i> 1. Estratègia</a></li>
+                        <li><a href="#logo-section" class="brand-menu-link"><i data-lucide="award" style="width:16px;"></i> 2. Logotip</a></li>
+                        <li><a href="#colors" class="brand-menu-link"><i data-lucide="palette" style="width:16px;"></i> 3. Paleta Colors</a></li>
+                        <li><a href="#typography" class="brand-menu-link"><i data-lucide="type" style="width:16px;"></i> 4. Tipografia</a></li>
+                        <li><a href="#voice" class="brand-menu-link"><i data-lucide="message-square" style="width:16px;"></i> 5. Veu i To</a></li>
+                        <li><a href="#code" class="brand-menu-link"><i data-lucide="code" style="width:16px;"></i> 6. Codi CSS</a></li>
+                    </ul>
+                </aside>
+                
+                <!-- MAIN MANUAL BODY -->
+                <section class="brand-content-body">
+                    
+                    <!-- 1. BRAND STRATEGY -->
+                    <div id="strategy" class="brand-section">
+                        <h2 class="font-display text-heading-2 text-accent" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">1. Estratègia de Marca</h2>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--border-radius-md);">
+                                <h3 class="font-display text-heading-4" style="color: var(--primary); margin-bottom: 0.5rem;">Propòsit de Marca</h3>
+                                <p class="text-body-large text-secondary-color" style="line-height: 1.6;">Ser el soci estratègic i de confiança per a la indústria alimentària, garantint la màxima eficiència i excel·lència en els seus processos de tall.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--border-radius-md);">
+                                <h3 class="font-display text-heading-4" style="color: var(--primary); margin-bottom: 0.5rem;">La Visió</h3>
+                                <p class="text-sm text-secondary-color" style="line-height: 1.5;">Liderar el sector de l'esmolat i subministrament d'eines de tall industrial, sent reconeguts per la precisió tecnològica, la qualitat innegociable i un servei al client excepcional.</p>
+                            </div>
+                            <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--border-radius-md);">
+                                <h3 class="font-display text-heading-4" style="color: var(--primary); margin-bottom: 0.5rem;">La Missió</h3>
+                                <p class="text-sm text-secondary-color" style="line-height: 1.5;">Proveir solucions de tall i serveis d'esmolat d'alta precisió per optimitzar la producció de la indústria alimentària, recolzant-nos en més de 15 anys d'experiència i el suport de partners líders mundials.</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="font-display text-heading-3" style="margin-bottom: 1rem;">Valors Fonamentals</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                            <div style="background: var(--bg-tertiary); border-top: 3px solid var(--primary); padding: 1.2rem; border-radius: var(--border-radius-md);">
+                                <h4 class="font-display" style="color: var(--text-primary); margin-bottom: 0.4rem;">1. Precisió Tècnica</h4>
+                                <p class="text-xs text-muted" style="line-height: 1.4;">Atenció meticulosa en cada angle de fil, mil·límetre de gruix i procés d'esmolat CNC.</p>
+                            </div>
+                            <div style="background: var(--bg-tertiary); border-top: 3px solid var(--primary); padding: 1.2rem; border-radius: var(--border-radius-md);">
+                                <h4 class="font-display" style="color: var(--text-primary); margin-bottom: 0.4rem;">2. Qualitat i Fiabilitat</h4>
+                                <p class="text-xs text-muted" style="line-height: 1.4;">Acer de primer nivell i resistència extrema; no hi ha marge per a l'error ni minves en l'alimentació.</p>
+                            </div>
+                            <div style="background: var(--bg-tertiary); border-top: 3px solid var(--primary); padding: 1.2rem; border-radius: var(--border-radius-md);">
+                                <h4 class="font-display" style="color: var(--text-primary); margin-bottom: 0.4rem;">3. Resposta Ràpida</h4>
+                                <p class="text-xs text-muted" style="line-height: 1.4;">Servei logístic flexible i de confiança per garantir que la producció mai s'aturi.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--border-radius-md);">
+                            <h4 class="font-display" style="color: var(--primary); margin-bottom: 0.5rem; text-transform: uppercase;">La Personalitat de Marca</h4>
+                            <p class="text-sm text-secondary-color" style="line-height: 1.6;">ESMOTECH es defineix com un caràcter **expert, professional, robust, precís, de confiança i orientat a solucions de seguretat laboral i eficiència industrial**.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. LOGO SYSTEM -->
+                    <div id="logo-section" class="brand-section">
+                        <h2 class="font-display text-heading-2 text-accent" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">2. El Logotip Oficial</h2>
+                        <p class="text-muted" style="margin-bottom: 1.5rem;">El logotip principal d'ESMOTECH utilitza una tipografia de caràcter industrial fortament estructural en color blanc amb una roda dentada/saw-blade integrada a la seva base. Transmet solidesa i alt rendiment.</p>
+                        
+                        <div class="comparison-grid">
+                            <div>
+                                <h4 class="font-display" style="margin-bottom: 0.5rem;">Sobre Fons Fosc (Predeterminat)</h4>
+                                <div class="logo-box">
+                                    <img src="img/logo-esmotech.png" alt="Esmotech Dark Logo" style="height: 40px;">
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-display" style="margin-bottom: 0.5rem;">Sobre Fons Clar (Inversió per Filtre)</h4>
+                                <div class="logo-box light">
+                                    <img src="img/logo-esmotech.png" alt="Esmotech Light Logo" style="height: 40px; filter: invert(0.9) contrast(1.2);">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="font-display text-heading-3" style="margin-top: 2rem; margin-bottom: 1rem;">Normes d'Aplicació</h3>
+                        <div class="comparison-grid">
+                            <div class="comp-card correct">
+                                <h4 class="font-display" style="color: var(--success); margin-bottom: 0.5rem;"><i data-lucide="check-circle" style="width: 16px; vertical-align: middle;"></i> Usos Correctes</h4>
+                                <ul style="list-style: square; padding-left: 1.2rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li>Mantenir always l'espai de seguretat equivalent a l'alçada de la lletra 'E'.</li>
+                                    <li>Aplicar sobre fons foscos o fons fotogràfics enfosquits.</li>
+                                    <li>Fer servir la inversió de filtre en entorns clar-sensibles (com factures o albarans en paper).</li>
+                                </ul>
+                            </div>
+                            <div class="comp-card incorrect">
+                                <h4 class="font-display" style="color: var(--error); margin-bottom: 0.5rem;"><i data-lucide="x-circle" style="width: 16px; vertical-align: middle;"></i> Usos Incorrectes</h4>
+                                <ul style="list-style: square; padding-left: 1.2rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li>No estirar, aplanar o deformar les proporcions del logotip.</li>
+                                    <li>No canviar el color daurat dels detalls per colors fosforescents o primaris plans.</li>
+                                    <li>No utilitzar el logotip blanc directament sobre fons blancs o molt clars sense el filtre.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. COLOR SYSTEM -->
+                    <div id="colors" class="brand-section">
+                        <h2 class="font-display text-heading-2 text-accent" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">3. Paleta de Colors Oficial</h2>
+                        <p class="text-muted" style="margin-bottom: 1rem;">Fes clic a qualsevol targeta de color per copiar el codi HEX directament al porta-retalls.</p>
+                        
+                        <div class="color-palette-grid">
+                            <div class="color-card" onclick="copyColor('#08090b', 'Fons Negre Mat')">
+                                <div class="color-swatch" style="background: #08090b;"></div>
+                                <div class="color-info">
+                                    <div class="color-name">Negre Mat</div>
+                                    <div class="color-hex">#08090B <i data-lucide="copy" style="width: 14px;"></i></div>
+                                </div>
+                            </div>
+                            
+                            <div class="color-card" onclick="copyColor('#C9A84C', 'Or Esmotech')">
+                                <div class="color-swatch" style="background: #C9A84C;"></div>
+                                <div class="color-info">
+                                    <div class="color-name">Or Esmotech</div>
+                                    <div class="color-hex">#C9A84C <i data-lucide="copy" style="width: 14px;"></i></div>
+                                </div>
+                            </div>
+                            
+                            <div class="color-card" onclick="copyColor('#12141a', 'Gris Metall')">
+                                <div class="color-swatch" style="background: #12141a;"></div>
+                                <div class="color-info">
+                                    <div class="color-name">Gris Metall</div>
+                                    <div class="color-hex">#12141A <i data-lucide="copy" style="width: 14px;"></i></div>
+                                </div>
+                            </div>
+                            
+                            <div class="color-card" onclick="copyColor('#F0EFEC', 'Blanc Càlid')">
+                                <div class="color-swatch" style="background: #F0EFEC; border-bottom: 1px solid var(--border-color);"></div>
+                                <div class="color-info">
+                                    <div class="color-name">Blanc Càlid</div>
+                                    <div class="color-hex">#F0EFEC <i data-lucide="copy" style="width: 14px;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="font-display text-heading-3" style="margin-top: 2rem; margin-bottom: 1rem;">Directrius d'ús del color</h3>
+                        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color);">
+                            <p class="text-sm text-secondary-color" style="line-height: 1.6; margin-bottom: 0.8rem;">
+                                **Contrast i Accessibilitat (WCAG)**: El fons negre mat combinat amb textos en blanc pur o blanc càlid garanteix el nivell màxim de contrast exigit (**AAA**). 
+                            </p>
+                            <p class="text-sm text-secondary-color" style="line-height: 1.6;">
+                                **Ús del Daurat (#C9A84C)**: S'ha de reservar únicament per a botons d'acció secundaris, elements de focalització visual (badges, títols de categoria, icones i línies primes decoratives). **Mai s'ha de fer servir per a blocs grans de text**, garantint el nivell **AA** d'accessibilitat en lectura.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 4. TYPOGRAPHY -->
+                    <div id="typography" class="brand-section">
+                        <h2 class="font-display text-heading-2 text-accent" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">4. Tipografia Corporativa</h2>
+                        <p class="text-muted" style="margin-bottom: 2rem;">Combinem una font de capçalera condensada i d'aspecte industrial fort amb una font de cos extremadament neta i geomètrica per a una lectura òptima.</p>
+                        
+                        <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1.8rem; border-radius: var(--border-radius-md); margin-bottom: 2rem;">
+                            <span style="color: var(--primary); font-size: 0.78rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 0.4rem;">Tipografia Principal (Titulars)</span>
+                            <h3 class="font-display" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">BARLOW CONDENSED</h3>
+                            <p style="font-family: 'Barlow Condensed', sans-serif; font-size: 1.15rem; color: var(--text-secondary); letter-spacing: 0.05em; font-weight: 400; text-transform: uppercase;">
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                                abcdefghijklmnopqrstuvwxyz<br>
+                                1234567890 &amp; @ ? %
+                            </p>
+                        </div>
+                        
+                        <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1.8rem; border-radius: var(--border-radius-md); margin-bottom: 2rem;">
+                            <span style="color: var(--primary); font-size: 0.78rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 0.4rem;">Tipografia Secundària (Text de Cos i Dades Tècniques)</span>
+                            <h3 style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--text-primary); text-transform: none; letter-spacing: 0;">Inter Font Family</h3>
+                            <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                                abcdefghijklmnopqrstuvwxyz<br>
+                                1234567890 &amp; @ ? %
+                            </p>
+                        </div>
+                        
+                        <h3 class="font-display text-heading-3" style="margin-bottom: 1rem;">Escala Jeràrquica en Producció</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                                <span class="text-xs text-muted" style="display: block;">H1 - Titular Hero (3.5rem / Condensed)</span>
+                                <h1 class="font-display" style="font-size: 2.2rem; margin: 0; color: var(--text-primary);">LA PRECISIÓ ÉS INNEGOCIABLE</h1>
+                            </div>
+                            <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                                <span class="text-xs text-muted" style="display: block;">H2 - Títols de Secció (2.2rem / Condensed)</span>
+                                <h2 class="font-display" style="font-size: 1.8rem; margin: 0; color: var(--text-primary);">SOLUCIONS DE TALL</h2>
+                            </div>
+                            <div>
+                                <span class="text-xs text-muted" style="display: block;">Paragraph - Text Normal (1rem / Inter)</span>
+                                <p style="font-family: 'Inter', sans-serif; margin: 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Som els teus aliats estratègics en eines de tall industrial i esmolat professional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 5. VOICE & TONE -->
+                    <div id="voice" class="brand-section">
+                        <h2 class="font-display text-heading-2 text-accent" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">5. Veu i To de Marca</h2>
+                        <p class="text-muted" style="margin-bottom: 1.5rem;">Ens comuniquem d'una manera clara, eficient i extremadament tècnica. Ens dirigim al client en **català formal ("Vostè")** per refermar la relació de soci de confiança.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 1.2rem; margin-bottom: 2rem;">
+                            <div style="background: var(--bg-tertiary); padding: 1.2rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--primary);">
+                                <strong style="color: var(--text-primary); display: block; margin-bottom: 0.3rem;">Expert i Precís</strong>
+                                <span class="text-sm text-secondary-color">Fem servir terminologia mecànica de la indústria alimentària per transmetre autoritat in-situ en el diagnòstic d'angles, vibracions i mermes.</span>
+                            </div>
+                            <div style="background: var(--bg-tertiary); padding: 1.2rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--primary);">
+                                <strong style="color: var(--text-primary); display: block; margin-bottom: 0.3rem;">Directe i Orientat a Dades</strong>
+                                <span class="text-sm text-secondary-color">Evitem la poesia o falses promeses. Ens recolzem en dades dures: +15 anys de trajectòria, més de 5.000 fulles reafilades anualment.</span>
+                            </div>
+                        </div>
+                        
+                        <h3 class="font-display text-heading-3" style="margin-bottom: 1rem;">Directrius del Vocabulari Tècnic</h3>
+                        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid var(--border-color); color: var(--text-primary);">
+                                    <th style="padding: 0.8rem 0.5rem;">A evitar (Incorrecte)</th>
+                                    <th style="padding: 0.8rem 0.5rem;">Recomanat (Correcte Català)</th>
+                                    <th style="padding: 0.8rem 0.5rem;">Concepte</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--error);">merma</td>
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--success); font-weight: bold;">minvament / pèrdua</td>
+                                    <td style="padding: 0.8rem 0.5rem;">Reducció de producte en tall</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--error);">cuchilles / ganivets</td>
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--success); font-weight: bold;">ganivetes / fulles</td>
+                                    <td style="padding: 0.8rem 0.5rem;">Eines de tall industrial</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--error);">afilado / afilat</td>
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--success); font-weight: bold;">esmolat / reafilat</td>
+                                    <td style="padding: 0.8rem 0.5rem;">Manteniment de fil CNC</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--error);">sierra cinta</td>
+                                    <td style="padding: 0.8rem 0.5rem; color: var(--success); font-weight: bold;">serra cinta / fulla de serra</td>
+                                    <td style="padding: 0.8rem 0.5rem;">Fulla de tall per a carn/os</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- 6. CSS IMPLEMENTATION -->
+                    <div id="code" class="brand-section">
+                        <h2 class="font-display text-heading-2 text-accent" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">6. Implementació de Disseny (CSS)</h2>
+                        <p class="text-muted" style="margin-bottom: 1.5rem;">Aquests són els valors variables del full d'estil en producció per mantenir el patró gràfic en futures ampliacions o llançament de la botiga:</p>
+                        
+                        <pre class="code-block">
+/* Patró Gràfic ESMOTECH - Disseny Fosc Premium */
+:root {
+  /* Fons Mat Estil Presentació */
+  --bg-primary:    #08090b;  /* Negre mat principal */
+  --bg-secondary:  #0d0e12;  /* Fons de panells i seccions */
+  --bg-tertiary:   #12141a;  /* Cards i elements flotants */
+  
+  /* Paleta Corporativa d'Accent */
+  --primary:        #C9A84C;  /* Or antic */
+  --primary-light:  #DFC070;  /* Or brillant per hover */
+  --primary-muted:  rgba(201, 168, 76, 0.12); /* Or translúcid */
+  
+  /* Neutral scale */
+  --text-primary:  #F0EFEC;  /* Blanc càlid per text principal */
+  --text-secondary:#9AABB8;  /* Gris industrial per subtextos */
+  --border-color:  #1e232e;  /* Vora de taules i caixes */
+  
+  /* Fonts corporatives */
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'Inter', sans-serif;
+}</pre>
+                    </div>
+                    
+                </section>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo" style="margin-bottom: 1.2rem;"><img src="img/logo-esmotech.png" alt="ESMOTECH" style="height: 45px;"></span>
+                <p>Solucions de tall industrial i esmolat professional per al sector agroalimentari.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-sm text-muted">&copy; 2026 ESMOTECH. Llibre de Marca Oficial. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOAST NOTIFICATION BOX -->
+    <div id="copy-toast" class="toast">
+        <i data-lucide="clipboard-check" style="width: 18px;"></i>
+        <span id="toast-text">HEX Copiat correctament!</span>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        
+        // Simple clipboard copy function for colors
+        function copyColor(hex, name) {
+            navigator.clipboard.writeText(hex).then(() => {
+                const toast = document.getElementById('copy-toast');
+                const toastText = document.getElementById('toast-text');
+                toastText.textContent = `HEX ${hex} (${name}) copiat al porta-retalls!`;
+                
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2500);
+            });
+        }
+        
+        // Highlight active link in sidebar on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.brand-section');
+            const navLinks = document.querySelectorAll('.brand-menu-link');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 120;
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').slice(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
