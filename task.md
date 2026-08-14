@@ -1,0 +1,7 @@
+- `[/]` Create 100% native editable PowerPoint presentation
+    - `[ ]` Write Python script `create_editable_presentation.py` to design slides 1 to 10 with native textboxes, background colors, shapes, and images
+    - `[ ]` Execute script to output `PRESENTACIÓ_ESMOTECH_ACTUALITZADA.pptx`
+- `[ ]` Verify output presentation editability
+    - `[ ]` Write and run a validation script `verify_editable.py` to confirm slide shapes count, text boxes presence, and speaker notes
+- `[ ]` Sychronize and push changes to GitHub
+    - `[ ]` Commit presentation and code changes and push to `main` branch
