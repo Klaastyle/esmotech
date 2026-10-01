@@ -1,8 +1,9 @@
-﻿/* animations.css - ESMOTECH Whimsy & Interactions */
+/* animations.css - ESMOTECH Whimsy & Interactions */
 
 :root {
-  --gold: #C9A84C;
-  --black: #0a0a0a;
+  --gold: #0088FF;
+  --accent: #0088FF;
+  --black: #080D14;
 }
 
 /* 1. SCROLL ANIMATIONS */
@@ -115,12 +116,12 @@
   will-change: transform;
   position: relative;
   background: #111;
-  border: 1px solid rgba(201, 168, 76, 0.1);
+  border: 1px solid rgba(0, 136, 255, 0.15);
 }
 
 .product-card:hover {
-  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.1);
-  border-color: rgba(201, 168, 76, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 136, 255, 0.15);
+  border-color: rgba(0, 136, 255, 0.4);
 }
 
 .gold-particle {
@@ -155,7 +156,7 @@
 
 .btn-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 136, 255, 0.35);
 }
 
 .btn-cta::before {
@@ -213,8 +214,8 @@
 }
 
 @keyframes pulseGlow {
-  from { box-shadow: 0 0 5px rgba(201, 168, 76, 0.2); }
-  to { box-shadow: 0 0 15px rgba(201, 168, 76, 0.6); }
+  from { box-shadow: 0 0 5px rgba(0, 136, 255, 0.2); }
+  to { box-shadow: 0 0 15px rgba(0, 136, 255, 0.45); }
 }
 
 .logo {

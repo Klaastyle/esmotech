@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background: #0B0F19;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    background: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #374151;
+  }
+  .card-media {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: #000;
+  }
+  .card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .caption {
+    padding: 12px;
+    font-size: 13px;
+    color: #9CA3AF;
+  }
+
+  /* Variant 1: Target Reference (Exemple 1.webp) */
+
+  /* Variant 2: CSS Gradient Blend Mode Overlay */
+  .variant-2::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 102, 204, 0.2) 0%, rgba(0, 70, 160, 0.6) 60%, rgba(2, 20, 50, 0.85) 100%);
+    mix-blend-mode: multiply;
+  }
+  .variant-2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 60% 30%, rgba(0, 162, 255, 0.35) 0%, rgba(0, 80, 180, 0.7) 100%);
+    mix-blend-mode: screen;
+  }
+
+  /* Variant A Refined: Match Exemple 1 tone exactly with subtle desaturation + cyan-blue wash */
+  .variant-match img {
+    filter: saturate(0.7) brightness(1.08) contrast(0.95);
+    transition: filter 0.5s ease, transform 0.6s ease;
+  }
+  .variant-match::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(140, 195, 235, 0.45) 0%, rgba(30, 110, 185, 0.55) 50%, rgba(15, 60, 120, 0.65) 100%);
+    mix-blend-mode: screen;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .variant-match::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(18, 55, 95, 0.55) 0%, transparent 70%);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  /* Hover & Click Transition */
+  .variant-interactive:hover img,
+  .variant-interactive.is-active img {
+    filter: saturate(1.1) brightness(1) contrast(1.05);
+    transform: scale(1.05);
+  }
+  .variant-interactive:hover::before,
+  .variant-interactive:hover::after,
+  .variant-interactive.is-active::before,
+  .variant-interactive.is-active::after {
+    opacity: 0;
+  }
+</style>
+</head>
+<body>
+  <h2>Resultat: CSS Pur (1 sola foto) vs Imatge 2MB</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-media">
+        <img src="img/eines-de-tall-active.webp" alt="Exemple 1">
+      </div>
+      <div class="caption"><strong>1. Arxiu Original (2.06 MB)</strong><br>Exemple 1.webp exportat</div>
+    </div>
+
+    <div class="card">
+      <div class="card-media variant-match">
+        <img src="img/eines-de-tall-hover.jpg" alt="Match">
+      </div>
+      <div class="caption"><strong>2. Reproducció CSS Pura (0 KB extra)</strong><br>Aplicada sobre la foto base en repòs</div>
+    </div>
+
+    <div class="card">
+      <div class="card-media variant-match variant-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+        <img src="img/eines-de-tall-hover.jpg" alt="Interactive">
+      </div>
+      <div class="caption"><strong>3. Interacció (Posa el ratolí o clica)</strong><br>Transició suau de 60fps cap a l'acer pur</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -57,16 +57,32 @@
   margin-bottom: 0;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo img {
   height: 40px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
   display: block;
-  transition: filter var(--transition-normal);
+  transition: opacity var(--transition-normal);
 }
 
-[data-theme="light"] .logo img {
-  filter: invert(0.9) contrast(1.2);
+.logo .logo-light {
+  display: none;
+}
+
+.logo .logo-dark {
+  display: block;
+}
+
+[data-theme="light"] .logo .logo-light {
+  display: block;
+}
+
+[data-theme="light"] .logo .logo-dark {
+  display: none;
 }
 
 .main-nav .nav-list {

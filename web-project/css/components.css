@@ -1,13 +1,13 @@
 /* NAVBAR & NAVIGATION */
 .header {
   background-color: #0a0a0c;
-  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  border-bottom: 1px solid rgba(0, 136, 255, 0.15);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="light"] .header {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 136, 255, 0.1);
 }
 
 .nav-link {
@@ -33,7 +33,7 @@
 }
 
 .nav-link:hover {
-  text-shadow: 0 0 8px rgba(201, 168, 76, 0.4);
+  text-shadow: 0 0 8px rgba(0, 136, 255, 0.35);
 }
 
 /* MEGA MENU */
@@ -90,6 +90,90 @@
   padding-left: var(--space-2);
 }
 
+/* MEGA MENU WITH PRODUCT THUMBNAILS */
+.mega-menu-product-link {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.9rem !important;
+  padding: 0.5rem 0.65rem !important;
+  border-radius: 8px;
+  text-decoration: none;
+  background: transparent;
+  transition: all var(--transition-fast) !important;
+  border: 1px solid transparent;
+}
+
+.mega-menu-product-link:hover {
+  background: rgba(0, 118, 193, 0.08) !important;
+  border-color: rgba(0, 118, 193, 0.25) !important;
+  padding-left: 0.85rem !important;
+  transform: translateX(4px);
+}
+
+.mega-menu-thumb {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .mega-menu-thumb {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.mega-menu-product-link:hover .mega-menu-thumb {
+  /* no transform on container – the image handles it */
+}
+
+.mega-menu-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              filter 0.3s ease;
+}
+
+.mega-menu-product-link:hover .mega-menu-thumb-img {
+  transform: scale(1.18);
+  filter: drop-shadow(0 0 8px rgba(0, 118, 193, 0.55))
+          drop-shadow(0 0 20px rgba(56, 189, 248, 0.35));
+}
+
+.mega-menu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.mega-menu-info .menu-item-title {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.25;
+  transition: color var(--transition-fast);
+}
+
+.mega-menu-product-link:hover .menu-item-title {
+  color: var(--primary);
+}
+
+.mega-menu-info .menu-item-desc {
+  color: var(--text-muted);
+  font-size: 0.77rem;
+  line-height: 1.25;
+}
+
 /* MOBILE MENU HAMBURGER */
 .mobile-menu-btn {
   display: block;
@@ -115,13 +199,13 @@
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 2.5rem;
-  background-image: linear-gradient(to right, var(--bg-primary) 40%, rgba(8, 9, 11, 0.5) 100%), url('../img/hero-sharpening.jpg');
+  background-image: linear-gradient(to right, var(--bg-primary) 45%, rgba(8, 13, 20, 0.65) 100%), url('../img/hero-industrial-sparks.png');
   background-size: cover;
   background-position: right center;
 }
 
 [data-theme="light"] .hero {
-  background-image: linear-gradient(to right, var(--bg-primary) 40%, rgba(245, 243, 238, 0.5) 100%), url('../img/hero-sharpening.jpg');
+  background-image: linear-gradient(to right, var(--bg-primary) 45%, rgba(248, 249, 250, 0.75) 100%), url('../img/hero-industrial-sparks.png');
 }
 
 .hero-headline-wrapper {
@@ -137,6 +221,10 @@
   letter-spacing: -0.01em;
 }
 
+[data-theme="light"] .hero-title {
+  text-shadow: none;
+}
+
 .hero-line {
   width: 90px;
   height: 3px;
@@ -144,6 +232,195 @@
   margin-top: 0.8rem;
   margin-bottom: 1.2rem;
   box-shadow: var(--shadow-glow);
+}
+
+/* Magic UI: Aurora Text Effect (Paleta Blau Corporatiu Logo ESMOTECH) */
+.aurora-text {
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(
+    135deg,
+    #0076C1 0%,
+    #00A3FF 20%,
+    #004B8C 40%,
+    #38BDF8 60%,
+    #003870 80%,
+    #0076C1 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: none !important;
+  animation: aurora-text 7s ease-in-out infinite alternate;
+  filter: drop-shadow(0 2px 14px rgba(0, 118, 193, 0.4));
+  will-change: background-position;
+}
+
+@keyframes aurora-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+[data-theme="light"] .aurora-text {
+  background-image: linear-gradient(
+    135deg,
+    #0076C1 0%,
+    #008CE8 25%,
+    #004B8C 50%,
+    #0284C7 75%,
+    #0076C1 100%
+  );
+  filter: drop-shadow(0 1px 3px rgba(0, 118, 193, 0.2));
+  text-shadow: none !important;
+}
+
+/* Aurora gradient underline – matches aurora-text animation */
+.aurora-underline {
+  position: relative;
+  display: inline;
+  padding-bottom: 4px;
+}
+
+.aurora-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-image: linear-gradient(
+    135deg,
+    #0076C1 0%,
+    #00A3FF 20%,
+    #004B8C 40%,
+    #38BDF8 60%,
+    #003870 80%,
+    #0076C1 100%
+  );
+  background-size: 250% auto;
+  animation: aurora-text 7s ease-in-out infinite alternate;
+  filter: drop-shadow(0 1px 6px rgba(0, 118, 193, 0.35));
+}
+
+[data-theme="light"] .aurora-underline::after {
+  background-image: linear-gradient(
+    135deg,
+    #0076C1 0%,
+    #008CE8 25%,
+    #004B8C 50%,
+    #0284C7 75%,
+    #0076C1 100%
+  );
+  filter: drop-shadow(0 1px 3px rgba(0, 118, 193, 0.15));
+}
+
+/* ==========================================================================
+   AURORA STRATEGIC BANNER SECTION (Contraste i Ritme Visual Industrial)
+   ========================================================================== */
+.section-aurora-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+  background: linear-gradient(130deg, #031527 0%, #002B54 28%, #004B8C 60%, #0076C1 85%, #0284C7 100%);
+  background-size: 200% 200%;
+  animation: aurora-banner-flow 12s ease-in-out infinite alternate;
+  border-top: 1px solid rgba(56, 189, 248, 0.25);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes aurora-banner-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.section-aurora-banner::before {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -20%;
+  width: 140%;
+  height: 220%;
+  background: radial-gradient(circle at 25% 35%, rgba(0, 163, 255, 0.28) 0%, transparent 45%),
+              radial-gradient(circle at 75% 65%, rgba(56, 189, 248, 0.22) 0%, transparent 45%),
+              radial-gradient(circle at 50% 50%, rgba(0, 75, 140, 0.3) 0%, transparent 55%);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.section-aurora-banner .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.section-aurora-banner .aurora-banner-title {
+  color: #FFFFFF;
+  font-size: 1.55rem;
+  line-height: 1.35;
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.01em;
+}
+
+.section-aurora-banner .aurora-highlight {
+  background: linear-gradient(135deg, #67E8F9 0%, #38BDF8 50%, #93C5FD 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+.section-aurora-banner .aurora-banner-desc {
+  color: rgba(241, 245, 249, 0.92);
+  font-size: 1.12rem;
+  line-height: 1.65;
+  max-width: 820px;
+  margin: 0;
+}
+
+.section-aurora-banner .btn-aurora {
+  background: #FFFFFF;
+  color: #004B8C;
+  font-weight: 700;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 0 20px rgba(56, 189, 248, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.section-aurora-banner .btn-aurora:hover {
+  transform: translateY(-2px);
+  background: #F0F9FF;
+  color: #002D59;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3), 0 0 25px rgba(56, 189, 248, 0.4);
+}
+
+/* Magic UI: Number Ticker Component */
+.number-ticker {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
 }
 
 .hero-actions {
@@ -182,7 +459,7 @@
   font-weight: 700;
   line-height: 1;
   margin-bottom: var(--space-2);
-  text-shadow: 0 0 10px rgba(201, 168, 76, 0.2);
+  text-shadow: 0 0 10px rgba(0, 136, 255, 0.25);
 }
 
 /* BUTTONS */
@@ -214,7 +491,7 @@
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 136, 255, 0.35);
 }
 
 .btn-secondary {
@@ -224,7 +501,7 @@
 }
 
 .btn-secondary:hover {
-  background-color: rgba(201, 168, 76, 0.1);
+  background-color: rgba(0, 136, 255, 0.1);
   box-shadow: inset 0 0 0 1px var(--primary);
 }
 
@@ -261,8 +538,9 @@
   font-family: var(--font-display);
 }
 
+.badge-blue,
 .badge-gold {
-  background-color: rgba(201, 168, 76, 0.15);
+  background-color: var(--primary-muted);
   border: 1px solid var(--primary);
   color: var(--primary);
 }
@@ -309,6 +587,130 @@
   z-index: 1;
 }
 
+/* Dual Image Media Header for Product Cards */
+.product-card-media {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--space-5);
+  border: 1.5px solid var(--border-color);
+  background-color: #080D14;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] .product-card-media {
+  border-color: #E2E8F0;
+  background-color: #F8FAFC;
+}
+
+.product-card-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.7) brightness(1.08) contrast(0.95);
+  transition: filter 0.5s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, filter;
+  z-index: 1;
+}
+
+/* Overlay 1: Gradient blau cian d'estudi amb mix-blend-mode */
+.product-card-media::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(140, 195, 235, 0.45) 0%, rgba(30, 110, 185, 0.55) 50%, rgba(15, 60, 120, 0.65) 100%);
+  mix-blend-mode: screen;
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Overlay 2: Gradient inferior per al degradat suau corporatiu */
+.product-card-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18, 55, 95, 0.55) 0%, transparent 70%);
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Transició en Hover, Active o Clic: s'esvaeix el degradat blau i es revela l'acer pur */
+.product-card:hover .product-card-media::before,
+.product-card:active .product-card-media::before,
+.product-card:focus-within .product-card-media::before,
+.product-card.is-active .product-card-media::before,
+.product-card:hover .product-card-media::after,
+.product-card:active .product-card-media::after,
+.product-card:focus-within .product-card-media::after,
+.product-card.is-active .product-card-media::after {
+  opacity: 0;
+}
+
+.product-card:hover .product-card-media img,
+.product-card:active .product-card-media img,
+.product-card:focus-within .product-card-media img,
+.product-card.is-active .product-card-media img {
+  filter: saturate(1.1) brightness(1) contrast(1.05);
+  transform: scale(1.06);
+}
+
+/* Llum perimetral / Brillantor de contorn de la imatge (Glow Effect) */
+.product-card-media-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--border-radius-sm) - 1px);
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 15px rgba(0, 136, 255, 0), 0 0 20px rgba(0, 136, 255, 0);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.product-card:hover .product-card-media-glow,
+.product-card:active .product-card-media-glow,
+.product-card:focus-within .product-card-media-glow,
+.product-card.is-active .product-card-media-glow {
+  border-color: #0088FF;
+  box-shadow: 0 0 22px rgba(0, 136, 255, 0.65), 
+              inset 0 0 20px rgba(0, 136, 255, 0.45),
+              0 0 45px rgba(0, 136, 255, 0.3);
+}
+
+.product-card:hover .product-card-media,
+.product-card:active .product-card-media,
+.product-card:focus-within .product-card-media,
+.product-card.is-active .product-card-media {
+  border-color: #0088FF;
+  box-shadow: 0 4px 20px rgba(0, 136, 255, 0.25);
+}
+
+.product-card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 4;
+  background: rgba(0, 136, 255, 0.9);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+
 .product-card::before {
   content: '';
   position: absolute;
@@ -329,7 +731,7 @@
   font-family: var(--font-display);
   font-size: 10rem;
   font-weight: 700;
-  color: rgba(201, 168, 76, 0.05);
+  color: rgba(0, 136, 255, 0.05);
   line-height: 1;
   z-index: -1;
   transition: color var(--transition-normal);
@@ -345,7 +747,7 @@
 }
 
 .product-card:hover .product-card-bg-num {
-  color: rgba(201, 168, 76, 0.15);
+  color: rgba(0, 136, 255, 0.12);
 }
 
 .product-icon {
@@ -386,6 +788,95 @@
   text-underline-offset: 4px;
 }
 
+/* ==========================================================================
+   ACETERNITY UI: DOT BACKGROUND BLOCK (SECCIÓ PARTNER ESTRATÈGIC)
+   Fons blanc net amb matriu de punts negres i màscara radial vinyeta
+   ========================================================================== */
+.aceternity-dot-section {
+  position: relative;
+  background-color: #ffffff !important;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.22) 1.25px, transparent 1.25px) !important;
+  background-size: 24px 24px !important;
+  background-position: center !important;
+  color: #0F1722 !important;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 5rem 0 !important;
+}
+
+/* Aceternity UI Radial Fade Mask */
+.aceternity-dot-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.65) 60%, #ffffff 100%);
+  z-index: 1;
+}
+
+.aceternity-dot-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Tipografia i targetes sobre el fons blanc de punts negres */
+.aceternity-dot-section .text-heading-2 {
+  color: #0F1722 !important;
+  text-shadow: none !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.aceternity-dot-section .badge-industrial {
+  background-color: rgba(0, 118, 193, 0.08) !important;
+  color: #0076C1 !important;
+  border: 1px solid rgba(0, 118, 193, 0.25) !important;
+  font-weight: 600;
+}
+
+.aceternity-dot-section .service-content h3 a {
+  color: #0F1722 !important;
+  transition: color var(--transition-fast);
+}
+
+.aceternity-dot-section .service-content h3 a:hover {
+  color: #0076C1 !important;
+}
+
+.aceternity-dot-section .service-content p.text-muted {
+  color: #475569 !important;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.aceternity-dot-section .service-icon {
+  background-color: #F0F7FF !important;
+  color: #0076C1 !important;
+  border: 1px solid rgba(0, 118, 193, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 118, 193, 0.08);
+}
+
+.aceternity-dot-section .service-image {
+  background-color: #F8FAFC;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.aceternity-dot-section .btn-secondary {
+  background-color: #FFFFFF !important;
+  color: #0F1722 !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.aceternity-dot-section .btn-secondary:hover {
+  background-color: #0076C1 !important;
+  color: #FFFFFF !important;
+  border-color: #0076C1 !important;
+  box-shadow: 0 4px 14px rgba(0, 118, 193, 0.25);
+}
+
 /* SECCIÃ“ SERVEIS */
 .service-row {
   display: grid;
@@ -417,7 +908,7 @@
 }
 
 .service-icon {
-  background-color: rgba(201, 168, 76, 0.1);
+  background-color: rgba(0, 136, 255, 0.1);
   color: var(--primary);
   padding: var(--space-4);
   border-radius: var(--border-radius-sm);
@@ -474,7 +965,7 @@
 }
 
 .partner-logo:hover {
-  filter: grayscale(0%) opacity(1) drop-shadow(0 0 8px rgba(201, 168, 76, 0.4));
+  filter: grayscale(0%) opacity(1) drop-shadow(0 0 8px rgba(0, 136, 255, 0.35));
 }
 
 .partner-logo img {
@@ -985,7 +1476,7 @@
 .cat-hub-card:hover, .product-card:hover {
     transform: translateY(-5px) !important;
     border-color: var(--primary) !important;
-    box-shadow: 0 12px 30px rgba(201, 168, 76, 0.18) !important;
+    box-shadow: 0 12px 30px rgba(0, 136, 255, 0.18) !important;
 }
 
 /* Light Theme Partner Logo Overrides */
@@ -1005,10 +1496,10 @@
 /* 1. OEM MACHINE COMPATIBILITY FINDER */
 .oem-finder-wrapper {
   background: linear-gradient(135deg, rgba(14, 17, 23, 0.95), rgba(22, 27, 38, 0.95));
-  border: 1px solid rgba(201, 168, 76, 0.35);
+  border: 1px solid rgba(0, 136, 255, 0.35);
   border-radius: 12px;
   padding: 2.2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(201, 168, 76, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 136, 255, 0.15);
   margin-top: 2rem;
   position: relative;
   overflow: hidden;
@@ -1021,7 +1512,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #c9a84c, #e63946, #c9a84c);
+  background: linear-gradient(90deg, #0088ff, #38bdf8, #0088ff);
 }
 
 .oem-grid {
@@ -1043,7 +1534,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--primary, #c9a84c);
+  color: var(--primary, #0088ff);
 }
 
 .oem-select {
@@ -1058,15 +1549,69 @@
 }
 
 .oem-select:focus {
-  border-color: #c9a84c;
+  border-color: #0088ff;
   outline: none;
-  box-shadow: 0 0 10px rgba(201, 168, 76, 0.35);
+  box-shadow: 0 0 10px rgba(0, 136, 255, 0.35);
+}
+
+/* Light Theme: OEM Machine Finder */
+[data-theme="light"] .oem-finder-wrapper {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 100%) !important;
+  border: 1px solid rgba(0, 136, 255, 0.22) !important;
+  box-shadow: 0 12px 30px rgba(0, 85, 179, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+}
+
+[data-theme="light"] .oem-finder-wrapper h3 {
+  color: #0F1115 !important;
+}
+
+[data-theme="light"] .oem-select-group label {
+  color: #0066CC !important;
+}
+
+[data-theme="light"] .oem-select {
+  background-color: #FFFFFF !important;
+  color: #0F1115 !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+[data-theme="light"] .oem-select:focus {
+  border-color: #0088FF !important;
+  box-shadow: 0 0 0 3px rgba(0, 136, 255, 0.18) !important;
 }
 
 /* 2. HAGEDORN FOODTECH EXCLUSIVE TECH GRID */
 .hagedorn-section {
   padding: 4rem 0;
-  background: radial-gradient(circle at center, rgba(201, 168, 76, 0.04) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(0, 136, 255, 0.05) 0%, transparent 70%);
+}
+
+.hagedorn-brand-logo-wrap {
+  margin: 1rem auto 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hagedorn-logo-img {
+  max-height: 46px;
+  width: auto;
+  transition: transform var(--transition-normal);
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.4));
+}
+
+.hagedorn-logo-img:hover {
+  transform: scale(1.05);
+}
+
+[data-theme="light"] .hagedorn-brand-logo-wrap .logo-dark {
+  display: none !important;
+}
+
+[data-theme="light"] .hagedorn-brand-logo-wrap .logo-light {
+  display: block !important;
+  filter: none !important;
 }
 
 .hagedorn-cards-grid {
@@ -1080,65 +1625,477 @@
   background: rgba(18, 22, 31, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
-  padding: 2rem;
-  transition: all 0.3s ease;
+  padding: 1.6rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.hagedorn-tech-card:hover {
+.hagedorn-card-media {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: #0b0f15;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hagedorn-card-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+  will-change: transform;
+}
+
+.hagedorn-card-media .tech-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  margin-bottom: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hagedorn-card-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 5;
+}
+
+.hagedorn-tech-card:hover .hagedorn-card-media img,
+.hagedorn-tech-card.is-active .hagedorn-card-media img {
+  transform: scale(1.06);
+}
+
+/* Hover and Active states by Technology */
+/* 1. TRITECH (Blue Accent) */
+.hagedorn-tech-card[data-tech="tritech"]:hover,
+.hagedorn-tech-card[data-tech="tritech"].is-active {
   transform: translateY(-6px);
-  border-color: #c9a84c;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 18px rgba(201, 168, 76, 0.2);
+  border-color: #0088ff !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 22px rgba(0, 136, 255, 0.3) !important;
+}
+.hagedorn-tech-card[data-tech="tritech"]:hover .hagedorn-card-glow,
+.hagedorn-tech-card[data-tech="tritech"].is-active .hagedorn-card-glow {
+  border-color: #0088ff !important;
+  box-shadow: 0 0 20px rgba(0, 136, 255, 0.6), inset 0 0 16px rgba(0, 136, 255, 0.45) !important;
+}
+.hagedorn-tech-card[data-tech="tritech"]:hover .hagedorn-card-media,
+.hagedorn-tech-card[data-tech="tritech"].is-active .hagedorn-card-media {
+  border-color: #0088ff !important;
+}
+
+/* 2. GENESIS (Gold Amber Accent) */
+.hagedorn-tech-card[data-tech="genesis"]:hover,
+.hagedorn-tech-card[data-tech="genesis"].is-active {
+  transform: translateY(-6px);
+  border-color: #eab308 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 22px rgba(234, 179, 8, 0.3) !important;
+}
+.hagedorn-tech-card[data-tech="genesis"]:hover .hagedorn-card-glow,
+.hagedorn-tech-card[data-tech="genesis"].is-active .hagedorn-card-glow {
+  border-color: #eab308 !important;
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.6), inset 0 0 16px rgba(234, 179, 8, 0.45) !important;
+}
+.hagedorn-tech-card[data-tech="genesis"]:hover .hagedorn-card-media,
+.hagedorn-tech-card[data-tech="genesis"].is-active .hagedorn-card-media {
+  border-color: #eab308 !important;
+}
+
+/* 3. LONGLIFE (Emerald Accent) */
+.hagedorn-tech-card[data-tech="longlife"]:hover,
+.hagedorn-tech-card[data-tech="longlife"].is-active {
+  transform: translateY(-6px);
+  border-color: #10b981 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 22px rgba(16, 185, 129, 0.3) !important;
+}
+.hagedorn-tech-card[data-tech="longlife"]:hover .hagedorn-card-glow,
+.hagedorn-tech-card[data-tech="longlife"].is-active .hagedorn-card-glow {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.6), inset 0 0 16px rgba(16, 185, 129, 0.45) !important;
+}
+.hagedorn-tech-card[data-tech="longlife"]:hover .hagedorn-card-media,
+.hagedorn-tech-card[data-tech="longlife"].is-active .hagedorn-card-media {
+  border-color: #10b981 !important;
 }
 
 .tech-badge {
-  display: inline-block;
-  padding: 0.35rem 0.85rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.35rem;
+  border-radius: 30px;
+  font-size: 1.15rem;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.1rem;
   width: fit-content;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: all var(--transition-fast);
 }
 
-.badge-tritech { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid #3b82f6; }
-.badge-genesis { background: rgba(234, 179, 8, 0.2); color: #facc15; border: 1px solid #eab308; }
-.badge-longlife { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }
+.badge-tritech { 
+  background: rgba(0, 136, 255, 0.22); 
+  color: #38bdf8; 
+  border: 1.5px solid #0088ff; 
+  box-shadow: 0 0 16px rgba(0, 136, 255, 0.35);
+}
 
-.yield-loss-banner {
-  background: linear-gradient(90deg, rgba(230, 57, 70, 0.18), rgba(201, 168, 76, 0.18));
-  border: 1px solid rgba(230, 57, 70, 0.45);
-  border-radius: 10px;
-  padding: 1.2rem 1.8rem;
-  margin-top: 2.2rem;
+.badge-genesis { 
+  background: rgba(234, 179, 8, 0.22); 
+  color: #fde047; 
+  border: 1.5px solid #eab308; 
+  box-shadow: 0 0 16px rgba(234, 179, 8, 0.35);
+}
+
+.badge-longlife { 
+  background: rgba(16, 185, 129, 0.22); 
+  color: #6ee7b7; 
+  border: 1.5px solid #10b981; 
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.35);
+}
+
+/* SECTOR 3D REALISTIC ICONS (TRANSPARENT FLOATING PNGs) */
+.sector-icon-wrap {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 1.1rem;
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  justify-content: center;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 14px rgba(0, 136, 255, 0.3));
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 3. REAFILAT CNC 24H HUB */
-.reafilat-hub-wrapper {
-  background: #0d1117;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  padding: 3rem 2.2rem;
+.sector-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.card:hover .sector-icon-wrap {
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 16px 26px rgba(0, 136, 255, 0.5)) drop-shadow(0 0 22px rgba(0, 136, 255, 0.65));
+}
+
+.card:hover .sector-icon-img {
+  transform: scale(1.06);
+}
+
+/* Light Theme: Sector Floating Icons */
+[data-theme="light"] .sector-icon-wrap {
+  filter: drop-shadow(0 8px 16px rgba(0, 85, 179, 0.22)) drop-shadow(0 2px 6px rgba(15, 23, 42, 0.1));
+}
+
+[data-theme="light"] .card:hover .sector-icon-wrap {
+  filter: drop-shadow(0 14px 26px rgba(0, 118, 193, 0.38)) drop-shadow(0 0 16px rgba(0, 118, 193, 0.45));
+}
+
+.yield-loss-banner {
+  background: linear-gradient(135deg, rgba(230, 57, 70, 0.12) 0%, rgba(0, 118, 193, 0.12) 50%, rgba(56, 189, 248, 0.08) 100%);
+  border: 1.5px solid transparent;
+  border-image: linear-gradient(135deg, rgba(230, 57, 70, 0.5), rgba(0, 118, 193, 0.4), rgba(56, 189, 248, 0.3)) 1;
+  border-radius: 14px;
+  padding: 1.1rem 2rem;
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.35rem;
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.reafilat-hub-wrapper::after {
+.yield-loss-banner::before {
   content: '';
   position: absolute;
-  right: -50px;
-  bottom: -50px;
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(230, 57, 70, 0.15) 0%, transparent 70%);
+  inset: 0;
+  border-radius: 14px;
+  background: radial-gradient(ellipse at 30% 50%, rgba(230, 57, 70, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 50%, rgba(0, 118, 193, 0.06) 0%, transparent 60%);
   pointer-events: none;
+}
+
+.yield-loss-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(230, 57, 70, 0.15), 0 0 20px rgba(0, 118, 193, 0.1);
+}
+
+.yield-loss-banner .yield-stat-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.yield-loss-banner .yield-stat {
+  font-size: 2.1rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #e63946, #c1121f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.yield-loss-banner .yield-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(230, 57, 70, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: yield-pulse 2.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+.yield-loss-banner .yield-icon i,
+.yield-loss-banner .yield-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #e63946;
+}
+
+@keyframes yield-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.3); }
+  50% { transform: scale(1.08); box-shadow: 0 0 20px 6px rgba(230, 57, 70, 0.15); }
+}
+
+.yield-loss-banner h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.yield-loss-banner p {
+  margin: 0;
+  font-size: 0.88rem;
+  max-width: 540px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+/* Light Theme: Hagedorn Tech Cards & Yield Loss Banner */
+[data-theme="light"] .hagedorn-section {
+  background: radial-gradient(circle at center, rgba(0, 136, 255, 0.04) 0%, transparent 70%) !important;
+}
+
+[data-theme="light"] .hagedorn-tech-card {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .hagedorn-card-media {
+  border-color: #E2E8F0;
+  background-color: #0B0E14;
+}
+
+[data-theme="light"] .hagedorn-tech-card h3 {
+  color: #0F1115 !important;
+}
+
+[data-theme="light"] .hagedorn-tech-card p {
+  color: #475569 !important;
+}
+
+[data-theme="light"] .hagedorn-tech-card ul {
+  color: #1E293B !important;
+}
+
+[data-theme="light"] .hagedorn-tech-card[data-tech="tritech"]:hover,
+[data-theme="light"] .hagedorn-tech-card[data-tech="tritech"].is-active {
+  transform: translateY(-6px) !important;
+  border: 1.5px solid #0088FF !important;
+  box-shadow: 0 16px 36px rgba(0, 136, 255, 0.18), 0 0 18px rgba(0, 136, 255, 0.12) !important;
+}
+
+[data-theme="light"] .hagedorn-tech-card[data-tech="genesis"]:hover,
+[data-theme="light"] .hagedorn-tech-card[data-tech="genesis"].is-active {
+  transform: translateY(-6px) !important;
+  border: 1.5px solid #EAB308 !important;
+  box-shadow: 0 16px 36px rgba(217, 119, 6, 0.18), 0 0 18px rgba(234, 179, 8, 0.12) !important;
+}
+
+[data-theme="light"] .hagedorn-tech-card[data-tech="longlife"]:hover,
+[data-theme="light"] .hagedorn-tech-card[data-tech="longlife"].is-active {
+  transform: translateY(-6px) !important;
+  border: 1.5px solid #10B981 !important;
+  box-shadow: 0 16px 36px rgba(16, 185, 129, 0.18), 0 0 18px rgba(16, 185, 129, 0.12) !important;
+}
+
+[data-theme="light"] .badge-tritech {
+  background: rgba(0, 118, 193, 0.12) !important;
+  color: #0066CC !important;
+  border: 1.5px solid #0076C1 !important;
+  box-shadow: 0 4px 12px rgba(0, 118, 193, 0.15) !important;
+}
+
+[data-theme="light"] .badge-genesis {
+  background: rgba(217, 119, 6, 0.12) !important;
+  color: #B45309 !important;
+  border: 1.5px solid #D97706 !important;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15) !important;
+}
+
+[data-theme="light"] .badge-longlife {
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #047857 !important;
+  border: 1.5px solid #10B981 !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15) !important;
+}
+
+[data-theme="light"] .yield-loss-banner {
+  background: linear-gradient(90deg, #FEF2F2 0%, #EFF6FF 100%) !important;
+  border: 1px solid #FECACA !important;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.06) !important;
+}
+
+[data-theme="light"] .yield-loss-banner h4 {
+  color: #991B1B !important;
+}
+
+[data-theme="light"] .yield-loss-banner p {
+  color: #475569 !important;
+}
+
+/* ==========================================================================
+   ACETERNITY UI: INTERACTIVE GRID WITH DOTS & MOTION EFFECTS
+   Secció Planta de Reafilat CNC Pròpia & Recollida en 24h
+   ========================================================================== */
+.reafilat-hub-wrapper {
+  position: relative;
+  background-color: #080D14;
+  border: 1px solid rgba(0, 136, 255, 0.35);
+  border-radius: 16px;
+  padding: 3rem 2.2rem;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* Video Background Layer */
+.reafilat-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none !important;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.65;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="light"] .reafilat-bg-video {
+  opacity: 0.52;
+  filter: contrast(1.1) brightness(1.02);
+}
+
+/* CAD Blueprint Grid Overlay over Video */
+.reafilat-grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 0px 0px, rgba(0, 136, 255, 0.85) 1.5px, transparent 1.5px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(8, 13, 20, 0.6), rgba(8, 13, 20, 0.72));
+  background-size: 38px 38px, 38px 38px, 38px 38px, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+}
+
+[data-theme="light"] .reafilat-grid-overlay {
+  background-image: 
+    radial-gradient(circle at 0px 0px, rgba(0, 118, 193, 0.6) 1.5px, transparent 1.5px),
+    linear-gradient(to right, rgba(15, 23, 42, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.72));
+}
+
+/* 1. Aceternity Interactive Mouse Spotlight & Vignette Overlay */
+.reafilat-hub-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(550px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 136, 255, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 2;
+  transition: background 0.12s ease-out;
+}
+
+/* 2. CNC Laser Scan Line Animation */
+.reafilat-hub-wrapper .cnc-laser-scanner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 229, 255, 0.8) 25%, #0088FF 50%, rgba(0, 229, 255, 0.8) 75%, transparent 100%);
+  box-shadow: 0 0 16px rgba(0, 229, 255, 0.8), 0 0 32px rgba(0, 136, 255, 0.6);
+  pointer-events: none;
+  z-index: 2;
+  animation: cnc-laser-scan 7s ease-in-out infinite alternate;
+}
+
+@keyframes cnc-laser-scan {
+  0% {
+    top: 2%;
+    opacity: 0.15;
+  }
+  50% {
+    top: 96%;
+    opacity: 0.85;
+  }
+  100% {
+    top: 2%;
+    opacity: 0.15;
+  }
+}
+
+.reafilat-hub-wrapper > * {
+  position: relative;
+  z-index: 3;
+}
+
+.reafilat-hub-wrapper > .reafilat-bg-video {
+  z-index: 0;
+}
+
+.reafilat-hub-wrapper > .reafilat-grid-overlay {
+  z-index: 1;
+}
+
+.reafilat-hub-wrapper > .cnc-laser-scanner {
+  z-index: 2;
 }
 
 .urgent-form-grid {
@@ -1146,6 +2103,268 @@
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   margin-top: 2rem;
+}
+
+/* Light Theme: Reafilat Hub 24H */
+[data-theme="light"] .reafilat-hub-wrapper {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="light"] .reafilat-bg-video {
+  opacity: 0.95 !important;
+  filter: none !important;
+}
+
+[data-theme="light"] .reafilat-grid-overlay {
+  background-image: 
+    radial-gradient(circle at 0px 0px, rgba(0, 136, 255, 0.7) 1.5px, transparent 1.5px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.55)) !important;
+}
+
+[data-theme="light"] .reafilat-hub-wrapper > div:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+[data-theme="light"] .reafilat-hub-wrapper h2 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important;
+}
+
+[data-theme="light"] .reafilat-hub-wrapper strong {
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .reafilat-hub-wrapper li {
+  color: #FFFFFF !important;
+}
+
+.reafilat-process-box,
+.urgent-form-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.07) 100%) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.30) !important;
+  border-radius: 12px;
+  padding: 1.6rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.3s ease;
+}
+
+.reafilat-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  transition: all 0.2s ease;
+}
+
+.reafilat-step-item:hover {
+  background: linear-gradient(90deg, rgba(0, 118, 193, 0.35) 0%, rgba(255, 255, 255, 0.18) 100%) !important;
+  border-color: rgba(56, 189, 248, 0.7) !important;
+}
+
+.reafilat-step-item .step-num {
+  font-family: var(--font-display, sans-serif);
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: #FFFFFF !important;
+  background: rgba(0, 118, 193, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.reafilat-step-item strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  margin-bottom: 0.2rem;
+}
+
+.reafilat-step-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  line-height: 1.45;
+}
+
+.btn-reafilat-submit {
+  background: linear-gradient(135deg, #0076C1 0%, #005696 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  padding: 0.85rem 1.2rem !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 16px rgba(0, 118, 193, 0.35) !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  letter-spacing: 0.03em !important;
+}
+
+.btn-reafilat-submit:hover {
+  background: linear-gradient(135deg, #008CE8 0%, #0076C1 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 118, 193, 0.45) !important;
+}
+
+.urgent-input {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  padding: 0.65rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.urgent-input:focus {
+  border-color: #0088ff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 136, 255, 0.35);
+}
+
+/* Light Theme: Reafilat Cards */
+[data-theme="light"] .reafilat-process-box,
+[data-theme="light"] .urgent-form-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 100%) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="light"] .reafilat-step-item {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.09) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+}
+
+[data-theme="light"] .reafilat-step-item:hover {
+  background: linear-gradient(90deg, rgba(0, 118, 193, 0.35) 0%, rgba(255, 255, 255, 0.25) 100%) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+}
+
+[data-theme="light"] .reafilat-step-item .step-num {
+  color: #FFFFFF !important;
+  background: rgba(0, 118, 193, 0.45) !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+[data-theme="light"] .reafilat-step-item strong {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+}
+
+[data-theme="light"] .reafilat-step-item p {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+}
+
+[data-theme="light"] .urgent-form-grid h4 {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+}
+
+[data-theme="light"] .urgent-input {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .urgent-input:focus {
+  border-color: #0088FF !important;
+  box-shadow: 0 0 0 3px rgba(0, 136, 255, 0.25) !important;
+}
+
+/* ==========================================================================
+   CLICKABLE SECTIONS & PRECISION GRADIENT STYLES (INSPIRAT EN LA FOTO DE REFERÈNCIA)
+   ========================================================================== */
+.banner-precision-gradient {
+  position: relative;
+  background: linear-gradient(105deg,
+    rgba(0, 85, 179, 0.92) 0%,
+    rgba(0, 136, 255, 0.75) 35%,
+    rgba(56, 189, 248, 0.45) 65%,
+    rgba(240, 246, 255, 0.9) 90%,
+    rgba(255, 255, 255, 0.98) 100%
+  ), url('../img/banner-gradient-precision.png') center/cover no-repeat;
+  border: 1px solid rgba(0, 136, 255, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 85, 179, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner-precision-gradient:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 136, 255, 0.2);
+  border-color: var(--primary);
+}
+
+/* Light Theme: Product & Category Cards */
+[data-theme="light"] .product-card,
+[data-theme="light"] .cat-hub-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05) !important;
+}
+
+[data-theme="light"] .product-card::before,
+[data-theme="light"] .cat-hub-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #0088FF 0%, #38BDF8 60%, rgba(255,255,255,0.8) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="light"] .product-card:hover::before,
+[data-theme="light"] .cat-hub-card:hover::before {
+  opacity: 1;
+}
+
+[data-theme="light"] .product-card:hover,
+[data-theme="light"] .cat-hub-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: #0088FF !important;
+  box-shadow: 0 14px 34px rgba(0, 136, 255, 0.16) !important;
+}
+
+[data-theme="light"] .product-card .product-title {
+  color: #0F1115 !important;
+}
+
+[data-theme="light"] .product-card .product-desc {
+  color: #475569 !important;
+}
+
+[data-theme="light"] .product-card .product-link {
+  color: #0066CC !important;
+}
+
+[data-theme="light"] .product-card .product-link:hover {
+  color: #0088FF !important;
 }
 
 @media (max-width: 900px) {

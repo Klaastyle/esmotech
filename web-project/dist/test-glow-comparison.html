@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background: #F8FAFC;
+    color: #0F172A;
+    font-family: sans-serif;
+    padding: 30px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 30px;
+  }
+  .product-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Style A: Sangrada a dalt (Com ara) */
+  .media-bleeding {
+    position: relative;
+    width: calc(100% + 48px);
+    margin: -24px -24px 20px -24px;
+    height: 190px;
+    overflow: hidden;
+    background: #080D14;
+    border-bottom: 2px solid #E2E8F0;
+    transition: all 0.4s ease;
+  }
+  .media-bleeding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .glow-bleeding {
+    position: absolute;
+    inset: 0;
+    border-bottom: 3px solid #0088FF;
+    box-shadow: inset 0 0 25px rgba(0, 136, 255, 0.6), 0 4px 20px rgba(0, 136, 255, 0.4);
+    pointer-events: none;
+  }
+
+  /* Style B: Finestra Marcada (Contorn complet 4 costats) */
+  .media-framed {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #080D14;
+    border: 1.5px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .media-framed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .glow-framed {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border: 2px solid #0088FF;
+    box-shadow: 0 0 20px rgba(0, 136, 255, 0.6), inset 0 0 20px rgba(0, 136, 255, 0.4);
+    pointer-events: none;
+  }
+
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 136, 255, 0.9);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 5;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+  }
+  .desc {
+    color: #64748B;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+  <h2>Comparativa de Disseny: Brillantor de Contorn en Mode Clar</h2>
+  <div class="grid">
+    <div class="product-card">
+      <div class="media-bleeding">
+        <span class="badge">ALTA PRECISIÓ</span>
+        <img src="img/eines-de-tall-base.webp" alt="Blade">
+        <div class="glow-bleeding"></div>
+      </div>
+      <h3 class="title">Estil A: Capçalera Sangrada</h3>
+      <p class="desc">La imatge omple tota la part superior de la targeta; la línia divisòria i l'interior brillen en blau elèctric.</p>
+    </div>
+
+    <div class="product-card">
+      <div class="media-framed">
+        <span class="badge">ALTA PRECISIÓ</span>
+        <img src="img/eines-de-tall-base.webp" alt="Blade">
+        <div class="glow-framed"></div>
+      </div>
+      <h3 class="title">Estil B: Finestra Marcada (Recomanat)</h3>
+      <p class="desc">La imatge té el seu propi marc independent amb els 4 costats i cantonades arrodonides brillant amb aura de neó.</p>
+    </div>
+  </div>
+</body>
+</html>

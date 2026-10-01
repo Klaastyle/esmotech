@@ -368,6 +368,8 @@ products.forEach(p => {
     html = html.replace(/href="serveis\//g, 'href="../serveis/');
     html = html.replace(/href="pdf\//g, 'href="../pdf/');
     html = html.replace(/action="cerca.html"/g, 'action="../cerca.html"');
+    html = html.replace(/(?<!\.\.\/)img\/esmotech-/g, '../img/esmotech-');
+    html = html.replace(/href="favicon\.ico"/g, 'href="../favicon.ico"');
     fs.writeFileSync(path.join(distProdDir, `${slug}.html`), html);
     fs.writeFileSync(path.join(rootProdDir, `${slug}.html`), html);
 });

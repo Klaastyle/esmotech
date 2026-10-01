@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background: #0B0F19;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .card {
+    background: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1F2937;
+    padding: 16px;
+    transition: all 0.3s ease;
+  }
+  .card-media {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .caption {
+    padding: 12px 4px 4px;
+    font-size: 13px;
+    color: #9CA3AF;
+  }
+
+  /* Glow Option 1: Inset + Outer Electric Blue Glow */
+  .glow-1:hover, .glow-1.is-active {
+    box-shadow: inset 0 0 0 2px #0088FF, 
+                inset 0 0 25px rgba(0, 136, 255, 0.45), 
+                0 0 30px rgba(0, 136, 255, 0.5);
+    border-color: #0088FF;
+  }
+  .glow-1:hover img, .glow-1.is-active img {
+    transform: scale(1.05);
+  }
+
+  /* Glow Option 2: High-Precision Cyan-Blue Dual Ring */
+  .glow-2:hover, .glow-2.is-active {
+    box-shadow: inset 0 0 0 1.5px #38BDF8, 
+                inset 0 0 18px rgba(0, 136, 255, 0.6), 
+                0 0 20px rgba(0, 136, 255, 0.45), 
+                0 0 40px rgba(0, 136, 255, 0.25);
+  }
+  .glow-2:hover img, .glow-2.is-active img {
+    transform: scale(1.05);
+  }
+
+  /* Glow Option 3: Neon Perimeter Aura with subtle ambient pulse */
+  .glow-3 {
+    position: relative;
+  }
+  .glow-3::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 136, 255, 0);
+    box-shadow: inset 0 0 20px rgba(0, 136, 255, 0), 0 0 25px rgba(0, 136, 255, 0);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    z-index: 10;
+  }
+  .glow-3:hover::after, .glow-3.is-active::after {
+    border-color: #0088FF;
+    box-shadow: inset 0 0 20px rgba(0, 136, 255, 0.5), 0 0 25px rgba(0, 136, 255, 0.65);
+  }
+  .glow-3:hover img, .glow-3.is-active img {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+  <h2>Opcions de Brillantor de Contorn (Glow Effect)</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-media glow-1 is-active">
+        <img src="img/eines-de-tall-base.webp" alt="Glow 1">
+      </div>
+      <div class="caption"><strong>Opció 1: Halo Blau Elèctric</strong><br>Contorn de 2px amb halo exterior i interior intens</div>
+    </div>
+
+    <div class="card">
+      <div class="card-media glow-2 is-active">
+        <img src="img/eines-de-tall-base.webp" alt="Glow 2">
+      </div>
+      <div class="caption"><strong>Opció 2: Llum Làser Tècnica (Cian + Blau)</strong><br>Nucli cian brillant amb reflexos industrials</div>
+    </div>
+
+    <div class="card">
+      <div class="card-media glow-3 is-active">
+        <img src="img/eines-de-tall-base.webp" alt="Glow 3">
+      </div>
+      <div class="caption"><strong>Opció 3: Aura de Neó Perimetral</strong><br>Marc flotant amb brillantor difusa equilibrada</div>
+    </div>
+  </div>
+</body>
+</html>
