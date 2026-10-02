@@ -790,29 +790,170 @@
 
 /* ==========================================================================
    ACETERNITY UI: DOT BACKGROUND BLOCK (SECCIÓ PARTNER ESTRATÈGIC)
-   Fons blanc net amb matriu de punts negres i màscara radial vinyeta
+   Adaptable dinàmicament a Mode Fosc i Mode Clar
    ========================================================================== */
 .aceternity-dot-section {
   position: relative;
-  background-color: #ffffff !important;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.22) 1.25px, transparent 1.25px) !important;
-  background-size: 24px 24px !important;
-  background-position: center !important;
-  color: #0F1722 !important;
   overflow: hidden;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding: 5rem 0 !important;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-/* Aceternity UI Radial Fade Mask */
-.aceternity-dot-section::before {
+/* --- MODE FOSC (Per defecte o [data-theme="dark"]) --- */
+[data-theme="dark"] .aceternity-dot-section,
+:root:not([data-theme="light"]) .aceternity-dot-section {
+  background-color: #060B11 !important;
+  background-image: radial-gradient(rgba(56, 189, 248, 0.22) 1.25px, transparent 1.25px) !important;
+  background-size: 24px 24px !important;
+  background-position: center !important;
+  color: #F8FAFC !important;
+  border-top: 1px solid rgba(56, 189, 248, 0.15);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .aceternity-dot-section::before,
+:root:not([data-theme="light"]) .aceternity-dot-section::before {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.65) 60%, #ffffff 100%);
+  background: radial-gradient(ellipse at center, rgba(6, 11, 17, 0.2) 0%, rgba(6, 11, 17, 0.75) 65%, #060B11 100%);
   z-index: 1;
+}
+
+[data-theme="dark"] .aceternity-dot-section .text-heading-2,
+:root:not([data-theme="light"]) .aceternity-dot-section .text-heading-2 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .aceternity-dot-section .badge-industrial,
+:root:not([data-theme="light"]) .aceternity-dot-section .badge-industrial {
+  background-color: rgba(0, 118, 193, 0.2) !important;
+  color: #38BDF8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .aceternity-dot-section .service-content h3 a,
+:root:not([data-theme="light"]) .aceternity-dot-section .service-content h3 a {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .aceternity-dot-section .service-content h3 a:hover,
+:root:not([data-theme="light"]) .aceternity-dot-section .service-content h3 a:hover {
+  color: #38BDF8 !important;
+}
+
+[data-theme="dark"] .aceternity-dot-section .service-content p.text-muted,
+:root:not([data-theme="light"]) .aceternity-dot-section .service-content p.text-muted {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .aceternity-dot-section .service-icon,
+:root:not([data-theme="light"]) .aceternity-dot-section .service-icon {
+  background-color: rgba(0, 118, 193, 0.22) !important;
+  color: #38BDF8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.45) !important;
+  box-shadow: 0 4px 14px rgba(0, 118, 193, 0.25);
+}
+
+[data-theme="dark"] .aceternity-dot-section .service-image,
+:root:not([data-theme="light"]) .aceternity-dot-section .service-image {
+  background-color: #0F1722;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .aceternity-dot-section .btn-secondary,
+:root:not([data-theme="light"]) .aceternity-dot-section .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .aceternity-dot-section .btn-secondary:hover,
+:root:not([data-theme="light"]) .aceternity-dot-section .btn-secondary:hover {
+  background-color: #0088FF !important;
+  color: #FFFFFF !important;
+  border-color: #0088FF !important;
+  box-shadow: 0 6px 20px rgba(0, 136, 255, 0.4);
+}
+
+/* --- MODE CLAR ([data-theme="light"]) --- */
+[data-theme="light"] .aceternity-dot-section {
+  background-color: #FFFFFF !important;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.22) 1.25px, transparent 1.25px) !important;
+  background-size: 24px 24px !important;
+  background-position: center !important;
+  color: #0F1722 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .aceternity-dot-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.65) 60%, #FFFFFF 100%);
+  z-index: 1;
+}
+
+[data-theme="light"] .aceternity-dot-section .text-heading-2 {
+  color: #0F1722;
+  text-shadow: none !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="light"] .aceternity-dot-section .badge-industrial {
+  background-color: rgba(0, 118, 193, 0.08) !important;
+  color: #0076C1 !important;
+  border: 1px solid rgba(0, 118, 193, 0.25) !important;
+  font-weight: 600;
+}
+
+[data-theme="light"] .aceternity-dot-section .service-content h3 a {
+  color: #0F1722 !important;
+  transition: color var(--transition-fast);
+}
+
+[data-theme="light"] .aceternity-dot-section .service-content h3 a:hover {
+  color: #0076C1 !important;
+}
+
+[data-theme="light"] .aceternity-dot-section .service-content p.text-muted {
+  color: #475569 !important;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+[data-theme="light"] .aceternity-dot-section .service-icon {
+  background-color: #F0F7FF !important;
+  color: #0076C1 !important;
+  border: 1px solid rgba(0, 118, 193, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 118, 193, 0.08);
+}
+
+[data-theme="light"] .aceternity-dot-section .service-image {
+  background-color: #F8FAFC;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .aceternity-dot-section .btn-secondary {
+  background-color: #FFFFFF !important;
+  color: #0F1722 !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .aceternity-dot-section .btn-secondary:hover {
+  background-color: #0076C1 !important;
+  color: #FFFFFF !important;
+  border-color: #0076C1 !important;
+  box-shadow: 0 4px 14px rgba(0, 118, 193, 0.25);
 }
 
 .aceternity-dot-section .container {
@@ -820,66 +961,9 @@
   z-index: 2;
 }
 
-/* Tipografia i targetes sobre el fons blanc de punts negres */
-.aceternity-dot-section .text-heading-2 {
-  color: #0F1722;
-  text-shadow: none !important;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
 .aceternity-dot-section .text-heading-2 .aurora-text {
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
-}
-
-.aceternity-dot-section .badge-industrial {
-  background-color: rgba(0, 118, 193, 0.08) !important;
-  color: #0076C1 !important;
-  border: 1px solid rgba(0, 118, 193, 0.25) !important;
-  font-weight: 600;
-}
-
-.aceternity-dot-section .service-content h3 a {
-  color: #0F1722 !important;
-  transition: color var(--transition-fast);
-}
-
-.aceternity-dot-section .service-content h3 a:hover {
-  color: #0076C1 !important;
-}
-
-.aceternity-dot-section .service-content p.text-muted {
-  color: #475569 !important;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.aceternity-dot-section .service-icon {
-  background-color: #F0F7FF !important;
-  color: #0076C1 !important;
-  border: 1px solid rgba(0, 118, 193, 0.2) !important;
-  box-shadow: 0 4px 12px rgba(0, 118, 193, 0.08);
-}
-
-.aceternity-dot-section .service-image {
-  background-color: #F8FAFC;
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
-}
-
-.aceternity-dot-section .btn-secondary {
-  background-color: #FFFFFF !important;
-  color: #0F1722 !important;
-  border: 1px solid #CBD5E1 !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.aceternity-dot-section .btn-secondary:hover {
-  background-color: #0076C1 !important;
-  color: #FFFFFF !important;
-  border-color: #0076C1 !important;
-  box-shadow: 0 4px 14px rgba(0, 118, 193, 0.25);
 }
 
 /* SECCIÃ“ SERVEIS */
