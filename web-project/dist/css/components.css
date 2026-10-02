@@ -822,10 +822,15 @@
 
 /* Tipografia i targetes sobre el fons blanc de punts negres */
 .aceternity-dot-section .text-heading-2 {
-  color: #0F1722 !important;
+  color: #0F1722;
   text-shadow: none !important;
   font-weight: 700;
   letter-spacing: -0.01em;
+}
+
+.aceternity-dot-section .text-heading-2 .aurora-text {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .aceternity-dot-section .badge-industrial {
