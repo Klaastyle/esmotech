@@ -1,14 +1,789 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="ca" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=web-project/">
-    <title>Redirigint a ESMOTECH...</title>
-    <script>
-        window.location.href = "web-project/";
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESMOTECH | Eines de Tall i Esmolat per a la Indústria Alimentària</title>
+    <meta name="description" content="Solucions de tall industrial i esmolat professional per al sector agroalimentari. Màxima precisió quan cada minut compta. Descobreix els nostres serveis.">
+    
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css?v=17">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Favicon & Icons ESMOTECH -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/esmotech-favicon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="img/esmotech-icon-512.png">
 </head>
 <body>
-    <p>Redirigint a <a href="web-project/">ESMOTECH Cutting Solutions</a>...</p>
+    <!-- HEADER & NAVBAR -->
+    <header class="header sticky">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="ESMOTECH Cutting Solutions">
+                <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" class="logo-dark">
+                <img src="img/esmotech-logo-dark.png" alt="ESMOTECH Cutting Solutions" class="logo-light">
+            </a>
+            
+                        <nav class="main-nav" aria-label="Navegació Principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inici</a></li>
+                    
+                    <li class="has-mega-menu">
+                        <a href="productos.html" class="nav-link">Productes</a>
+                        <div class="mega-menu" style="width: 530px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Categories Principals de Tall</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.6rem;">
+                                <li>
+                                    <a href="productes/eines-de-tall.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-eines-tall.png" alt="Eines de Tall" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">1. Eines de Tall (Skinners, Cutters)</span>
+                                            <small class="menu-item-desc">Skinners, despelladores, cutters en acer D2 i placats de picadora.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/serra-cinta.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-serra-cinta.png" alt="Serra Cinta" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">2. Serra Cinta (Carn, Os, Congelat)</span>
+                                            <small class="menu-item-desc">Fulles de serra cinta per a carn fresca, os, congelat (-20ºC) i aviram.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/ganivetes-denvasat.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-ganivetes-envasat.png" alt="Ganivetes d'Envasat" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">3. Ganivetes d'Envasat &amp; Termoformat</span>
+                                            <small class="menu-item-desc">Termoformat Ulma i Multivac, ganivetes perimetrals i matrius.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/circulars-i-evolutives.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-circulars-evolutives.png" alt="Circulars i Evolutives" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">4. Circulars &amp; Evolutives (Weber/Hagedorn)</span>
+                                            <small class="menu-item-desc">Llescadores Hagedorn FoodTech (TRITECH) per a Weber Slicer.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/capcals-termics.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-capcals-termics.png" alt="Capçals Tèrmics" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">5. Capçals Tèrmics (Bizerba, Zebra)</span>
+                                            <small class="menu-item-desc">Capçals d'impressió tèrmica per a etiquetatge industrial de pesat.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/abrasius.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-abrasius.png" alt="Abrasius & Esmolat" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">6. Abrasius &amp; Esmolat Industrial</span>
+                                            <small class="menu-item-desc">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
+
+                    <li class="has-mega-menu">
+                        <a href="servicios.html" class="nav-link">Serveis</a>
+                        <div class="mega-menu" style="width: 420px; padding: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
+                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <li>
+                                    <a href="serveis/esmolat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reafilat CNC Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reafilat d'alta precisió per a ganivetes de llescadora i cutters.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/formacio.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🎓 Formació Tècnica per a Operaris</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Cursos de seguretat en el tall, regulació de fil i optimització.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/consultoria.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📊 Consultoria i Auditoria de Minvament</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Estudi del rendiment de tall a la línia per reduir la merma.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/suport.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ Suport Tècnic 24/7 i Emergències</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Lliurament d'emergència en 24h i manteniment preventiu.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+
+            <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
+                    <span class="lang-option active" style="color: var(--primary); cursor: pointer;">CA</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">ES</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">EN</span>
+                </div>
+                <div class="theme-toggle" role="radiogroup" aria-label="Selecció de tema">
+                    <button class="theme-toggle-option" data-theme="light"><i data-lucide="sun" style="width:16px;height:16px"></i></button>
+                    <button class="theme-toggle-option active" data-theme="dark"><i data-lucide="moon" style="width:16px;height:16px"></i></button>
+                </div>
+                <a href="contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    CONTACTE
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero" style="min-height: calc(100vh - 80px); display: flex; flex-direction: column; justify-content: center; padding-top: 1.5rem; padding-bottom: 1.5rem;">
+            <div class="container hero-content" style="padding-top: 1rem; padding-bottom: 1rem;">
+                <div class="hero-headline-wrapper">
+                    <span class="badge badge-gold" style="margin-bottom: 1.2rem; display: inline-block;">Especialistes Indústria Alimentària</span>
+                    <h1 class="font-display hero-title">QUAN LA PRODUCCIÓ NO ES POT ATURAR,<br><span class="aurora-text">LA PRECISIÓ ÉS INNEGOCIABLE.</span></h1>
+                    <div class="hero-line"></div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="contacto.html" class="btn btn-primary">
+                        Parlem de les teves necessitats
+                        <i data-lucide="arrow-right" style="width: 20px;"></i>
+                    </a>
+                    <a href="productos.html" class="btn btn-secondary">Explorar Catàleg</a>
+                </div>
+                
+                <div class="kpi-strip">
+                    <div class="kpi-item" style="cursor: pointer;" title="Fes clic per tornar a animar el comptador">
+                        <span class="kpi-number">+<span class="number-ticker" data-value="15" data-start="0" data-delay="0.1">0</span> anys</span>
+                        <span class="text-muted text-sm uppercase" style="letter-spacing:0.05em">Garantint el tall perfecte al sector.</span>
+                    </div>
+                    <div class="kpi-item" style="cursor: pointer;" title="Fes clic per tornar a animar el comptador">
+                        <span class="kpi-number">+<span class="number-ticker" data-value="5000" data-start="0" data-format="locale" data-delay="0.25">0</span></span>
+                        <span class="text-muted text-sm uppercase" style="letter-spacing:0.05em">Ganivetes processades i esmolades cada any.</span>
+                    </div>
+                    <div class="kpi-item" style="cursor: pointer;" title="Fes clic per tornar a animar el comptador">
+                        <span class="kpi-number"><span class="number-ticker" data-value="100" data-start="0" data-delay="0.4">0</span>%</span>
+                        <span class="text-muted text-sm uppercase" style="letter-spacing:0.05em">De focus i especialització en alimentació.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- PRODUCTES -->
+        <section id="productes" class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-industrial" style="margin-bottom: 1rem;">Catàleg d'alt rendiment</span>
+                    <h2 class="text-heading-2 font-display"><span class="aurora-text">SOLUCIONS DE TALL</span></h2>
+                    <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Eines que responen a la màxima exigència de la línia de producció.</p>
+                </div>
+                
+                <div class="grid-products">
+                    <article class="product-card product-card-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="product-card-media">
+                            <img src="img/skinner-blades-base.webp?v=4" alt="Eines de Tall - Ganivetes Skinner Industrials" loading="lazy">
+                            <span class="product-card-badge">Alta Precisió</span>
+                            <div class="product-card-media-glow"></div>
+                        </div>
+                        <div class="product-card-bg-num">01</div>
+                        <h3 class="font-display product-title">Eines de Tall</h3>
+                        <p class="product-desc">Solucions integrals per a processos de tallatge precisos, dissenyades per suportar els volums més alts de producció.</p>
+                        <a href="productes/eines-de-tall.html" class="product-link">Veure més <i data-lucide="chevron-right" style="width: 16px;"></i></a>
+                    </article>
+                    
+                    <article class="product-card product-card-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="product-card-media">
+                            <img src="img/serra-cinta-base.webp?v=4" alt="Serra Cinta - Fulles Dentades Industrials" loading="lazy">
+                            <span class="product-card-badge">Alt Rendiment</span>
+                            <div class="product-card-media-glow"></div>
+                        </div>
+                        <div class="product-card-bg-num">02</div>
+                        <h3 class="font-display product-title">Serra Cinta</h3>
+                        <p class="product-desc">Fulles de serra dentades optimitzades per al sector alimentari. Talls nets que redueixen el minvament.</p>
+                        <a href="productes/serra-cinta.html" class="product-link">Veure més <i data-lucide="chevron-right" style="width: 16px;"></i></a>
+                    </article>
+                    
+                    <article class="product-card product-card-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="product-card-media">
+                            <img src="img/ganivetes-denvasat-base.webp?v=4" alt="Ganivetes d'Envasat - Segellat i Format" loading="lazy">
+                            <span class="product-card-badge">Format & Segellat</span>
+                            <div class="product-card-media-glow"></div>
+                        </div>
+                        <div class="product-card-bg-num">03</div>
+                        <h3 class="font-display product-title">Ganivetes d'Envasat</h3>
+                        <p class="product-desc">Segellat i tall perfecte a cada envàs. Compatibilitat total amb línies Multivac, Tiromat, Dixie i Ulma.</p>
+                        <a href="productes/ganivetes-denvasat.html" class="product-link">Veure més <i data-lucide="chevron-right" style="width: 16px;"></i></a>
+                    </article>
+                    
+                    <article class="product-card product-card-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="product-card-media">
+                            <img src="img/circulars-evolutives-base.webp?v=4" alt="Circulars i Evolutives - Llescat d'Alta Velocitat" loading="lazy">
+                            <span class="product-card-badge">Alta Velocitat</span>
+                            <div class="product-card-media-glow"></div>
+                        </div>
+                        <div class="product-card-bg-num">04</div>
+                        <h3 class="font-display product-title">Circulars i Evolutives</h3>
+                        <p class="product-desc">Discos dissenyats per a llescats a alta velocitat sense comprometre la integritat de l'aliment.</p>
+                        <a href="productes/circulars-i-evolutives.html" class="product-link">Veure més <i data-lucide="chevron-right" style="width: 16px;"></i></a>
+                    </article>
+
+                    <article class="product-card product-card-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="product-card-media">
+                            <img src="img/capcals-termics-base.webp?v=4" alt="Capçals Tèrmics - Segellat Tèrmic d'Alta Eficiència" loading="lazy">
+                            <span class="product-card-badge">Segellat Tèrmic</span>
+                            <div class="product-card-media-glow"></div>
+                        </div>
+                        <div class="product-card-bg-num">05</div>
+                        <h3 class="font-display product-title">Capçals Tèrmics</h3>
+                        <p class="product-desc">Eficiència tèrmica superior per a un segellat segur, resistent i absolutament impecable.</p>
+                        <a href="productes/capcals-termics.html" class="product-link">Veure més <i data-lucide="chevron-right" style="width: 16px;"></i></a>
+                    </article>
+
+                    <article class="product-card product-card-interactive" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="product-card-media">
+                            <img src="img/abrasius-base.webp?v=4" alt="Abrasius - Consumibles de Rectificat i Esmolat PRIMEdge" loading="lazy">
+                            <span class="product-card-badge">PRIMEdge Oficial</span>
+                            <div class="product-card-media-glow"></div>
+                        </div>
+                        <div class="product-card-bg-num">06</div>
+                        <h3 class="font-display product-title">Abrasius</h3>
+                        <p class="product-desc">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall sempre a punt a la teva planta.</p>
+                        <a href="productes/abrasius.html" class="product-link">Veure més <i data-lucide="chevron-right" style="width: 16px;"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUNT 2: TECNOLOGIA EXCLUSIVA HAGEDORN FOODTECH -->
+        <section id="hagedorn-tech" class="hagedorn-section">
+            <div class="container">
+                <div style="text-align: center; max-width: 780px; margin: 0 auto 2.5rem;">
+                    <span class="badge badge-gold" style="margin-bottom: 0.8rem;">Aliança Alemanya Premium</span>
+                    <h2 class="text-heading-2" style="font-size: 2.2rem; margin-bottom: 0.8rem;">TECNOLOGIA DE RECOBRIMENT</h2>
+                    <div class="hagedorn-brand-logo-wrap" style="margin: 1rem auto 1.4rem; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/hagedorn-logo-retina.png" alt="Hagedorn FoodTech" class="hagedorn-logo-img logo-dark" style="max-height: 46px; width: auto; object-fit: contain;">
+                        <img src="img/hagedorn-logo-retina-dark.png" alt="Hagedorn FoodTech" class="hagedorn-logo-img logo-light" style="max-height: 46px; width: auto; object-fit: contain; display: none;">
+                    </div>
+                    <p class="text-muted" style="font-size: 1.05rem;">
+                        Ganivetes de llescat d'alta velocitat dissenyades a Alemanya. Minimitzen la merma de producte i garanteixen la màxima durabilitat del tall.
+                    </p>
+                </div>
+
+                <div class="hagedorn-cards-grid">
+                    <!-- TRITECH -->
+                    <div class="hagedorn-tech-card" data-tech="tritech" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="hagedorn-card-media">
+                            <img src="img/hagedorn-tritech.webp?v=1" alt="Ganiveta Evolutiva TRITECH Hagedorn FoodTech" loading="lazy">
+                            <div class="hagedorn-card-glow"></div>
+                        </div>
+                        <span class="tech-badge badge-tritech">TRITECH COATING</span>
+                        <h3 class="font-display" style="font-size: 1.35rem; margin-bottom: 0.8rem;">Tall Higiènic &amp; Màxima Velocitat</h3>
+                        <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.2rem;">
+                            Recobriment de baix coeficient de fricció ideal per a línies automàtiques de llescat continu a més de 1.500 RPM. Evita el sobreescalfament i manté la textura intacta.
+                        </p>
+                        <ul style="list-style: none; padding: 0; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
+                            <li><span style="color: #0088FF; font-weight: bold; margin-right: 4px;">✔</span> Ideal per a Salchichón, Lomo i Embuchados</li>
+                            <li><span style="color: #0088FF; font-weight: bold; margin-right: 4px;">✔</span> Redueix l'adherència de greix vegetal i animal</li>
+                        </ul>
+                    </div>
+
+                    <!-- GENESIS -->
+                    <div class="hagedorn-tech-card" data-tech="genesis" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="hagedorn-card-media">
+                            <img src="img/hagedorn-genesis.webp?v=1" alt="Ganiveta Evolutiva GENESIS HRC 64+ Hagedorn FoodTech" loading="lazy">
+                            <div class="hagedorn-card-glow"></div>
+                        </div>
+                        <span class="tech-badge badge-genesis">GENESIS HRC 64+</span>
+                        <h3 class="font-display" style="font-size: 1.35rem; margin-bottom: 0.8rem;">Ultra-Duresa &amp; Resistència Extrema</h3>
+                        <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.2rem;">
+                            Acer aliatge especial sotmès a un procés de tremp criogènic que eleva la duresa del fil fins als 64 HRC, oferint una durabilitat fins a 3 vegades superior.
+                        </p>
+                        <ul style="list-style: none; padding: 0; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
+                            <li><span style="color: #EAB308; font-weight: bold; margin-right: 4px;">✔</span> Durabilitat x3 respecte a ganivetes estàndard</li>
+                            <li><span style="color: #EAB308; font-weight: bold; margin-right: 4px;">✔</span> Manteniment continu del perfil de tall original</li>
+                        </ul>
+                    </div>
+
+                    <!-- LONGLIFE -->
+                    <div class="hagedorn-tech-card" data-tech="longlife" onclick="this.classList.toggle('is-active')" style="cursor: pointer;">
+                        <div class="hagedorn-card-media">
+                            <img src="img/hagedorn-longlife.webp?v=1" alt="Ganiveta Evolutiva LONGLIFE ANTI-STICK Hagedorn FoodTech" loading="lazy">
+                            <div class="hagedorn-card-glow"></div>
+                        </div>
+                        <span class="tech-badge badge-longlife">LONGLIFE ANTI-STICK</span>
+                        <h3 class="font-display" style="font-size: 1.35rem; margin-bottom: 0.8rem;">Especial Formatges i Bacó Gras</h3>
+                        <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.2rem;">
+                            Tractament superficial antiadherent de PTFE/DLC que impedeix que els formatges de doble crema i el bacó gras s'enganxin a la fulla durant el llescat.
+                        </p>
+                        <ul style="list-style: none; padding: 0; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
+                            <li><span style="color: #10B981; font-weight: bold; margin-right: 4px;">✔</span> Zero parades de neteja per acumulació de formatge</li>
+                            <li><span style="color: #10B981; font-weight: bold; margin-right: 4px;">✔</span> Llescat fi perfectament apilat sense deformació</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BANNER REDUCCIÓ DE MINVA -->
+                <div class="yield-loss-banner">
+                    <div class="yield-stat-wrap">
+                        <div class="yield-stat">-1,8%</div>
+                        <div class="yield-icon">
+                            <i data-lucide="trending-down" style="width: 20px; height: 20px; color: #e63946;"></i>
+                        </div>
+                    </div>
+                    <h4>REDUCCIÓ DE MINVA DE PRODUCTE PER LOT</h4>
+                    <p>
+                        El tall d'alta precisió d'Hagedorn evita el desgavellat i la pèrdua de pes a les puntes dels blocs. Calculat per a línies de 10 tones/dia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUNT 3: HUB DEL SERVEI DE REAFILAT CNC 24H -->
+        <section id="reafilat-hub" class="section" style="padding-top: 2rem;">
+            <div class="container">
+                <div class="reafilat-hub-wrapper" style="position: relative; overflow: hidden;">
+                    <!-- VIDEO DE FONS EN LOOP CONTINU -->
+                    <video class="reafilat-bg-video" autoplay loop muted playsinline poster="img/reafilat-cnc-bg.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transform: none !important; z-index: 0; pointer-events: none;">
+                        <source src="video/reafilat-cnc-loop.mp4?v=2" type="video/mp4">
+                    </video>
+                    
+                    <!-- REQUADRES I MATRIU CAD BLUEPRINT OVERLAY -->
+                    <div class="reafilat-grid-overlay" style="position: absolute; inset: 0; z-index: 1; pointer-events: none;"></div>
+                    
+                    <!-- ESCÀNER LÀSER -->
+                    <div class="cnc-laser-scanner" style="z-index: 2;"></div>
+                    
+                    <!-- CONTINGUT PER SOBRE DEL VÍDEO I LA QUADRÍCULA -->
+                    <div style="position: relative; z-index: 3;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem;">
+                            <div>
+                                <span class="badge" style="background: rgba(0, 118, 193, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.4); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.05em;">⚡ SERVEI TÈCNIC D'EMERGÈNCIA</span>
+                                <h2 class="font-display" style="font-size: 2rem; margin: 0.4rem 0 0;">PLANTA DE REAFILAT CNC PROPIA &amp; RECOLLIDA EN 24H</h2>
+                            </div>
+                            <div style="background: rgba(0, 118, 193, 0.18); border: 1px solid rgba(56, 189, 248, 0.45); border-radius: 8px; padding: 0.6rem 1.2rem; text-align: right; backdrop-filter: blur(8px);">
+                                <span style="font-size: 0.8rem; color: #94A3B8; display: block; text-transform: uppercase;">Temps Mitjà de Resposta</span>
+                                <strong style="color: #38BDF8; font-size: 1.2rem;">&lt; 24 HORES A PLANTA</strong>
+                            </div>
+                        </div>
+
+                        <div class="urgent-form-grid">
+                            <div class="reafilat-process-box">
+                                <h4 style="color: #38BDF8; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 1.2rem; letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem;">
+                                    <i data-lucide="cog" style="width: 20px; height: 20px;"></i> Procés de Regeneració de Bisell CNC
+                                </h4>
+                                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <div class="reafilat-step-item">
+                                        <span class="step-num">01</span>
+                                        <div>
+                                            <strong>Neteja &amp; Descontaminació</strong>
+                                            <p>Eliminació de residus grassos amb banys d'ultrasons d'alta freqüència.</p>
+                                        </div>
+                                    </div>
+                                    <div class="reafilat-step-item">
+                                        <span class="step-num">02</span>
+                                        <div>
+                                            <strong>Rectificat CNC per Làser</strong>
+                                            <p>Afilat robotitzat multipassada respectant l'angle i geometria de bisell original.</p>
+                                        </div>
+                                    </div>
+                                    <div class="reafilat-step-item">
+                                        <span class="step-num">03</span>
+                                        <div>
+                                            <strong>Re-Equilibrat Dinàmic</strong>
+                                            <p>Control làser de vibracions i toleràncies per a rotacions extremes de 1.500 RPM.</p>
+                                        </div>
+                                    </div>
+                                    <div class="reafilat-step-item">
+                                        <span class="step-num">04</span>
+                                        <div>
+                                            <strong>Embalatge Higiènic Segur</strong>
+                                            <p>Protecció total del fil de tall amb funda polimèrica i lliurament directe a fàbrica.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="urgent-form-box">
+                                <h4 style="font-size: 1.05rem; margin-bottom: 1rem; text-transform: uppercase; color: #FFFFFF; display: flex; align-items: center; gap: 0.5rem;">
+                                    <i data-lucide="truck" style="width: 20px; height: 20px; color: #38BDF8;"></i> Sol·licitar Recollida d'Urgència 24h
+                                </h4>
+                                <form id="urgentPickForm" onsubmit="event.preventDefault(); alert('Sol·licitud enviada amb èxit! El nostre equip tècnic us trucarà en menys de 15 minuts.');">
+                                    <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+                                        <input type="text" placeholder="Nom de la Fàbrica / Empresa *" required class="urgent-input">
+                                        <input type="tel" placeholder="Telèfon d'Urgències 24h *" required class="urgent-input">
+                                        <select required class="urgent-input">
+                                            <option value="">Selecciona Tipus de Ganiveta a Reafilar</option>
+                                            <option value="llesores">Ganivetes de Llescadora (Weber / Bizerba)</option>
+                                            <option value="cutters">Ganivetes de Cutter Industrial</option>
+                                            <option value="skinners">Ganivetes Despelladores (Skinners)</option>
+                                            <option value="serres">Fulles de Serra Cinta</option>
+                                        </select>
+                                        <button type="submit" class="btn-reafilat-submit">
+                                            <i data-lucide="zap" style="width: 18px; height: 18px;"></i> ENVIAR URGÈNCIA DE RECOLLIDA
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER INTRODUCCIÓ STRATÈGICA AMB DEGRADAT AURORA -->
+        <section class="section-aurora-banner">
+            <div class="container">
+                <div style="max-width: 820px;">
+                    <h3 class="font-display aurora-banner-title">
+                        Som els teus aliats estratègics <span class="aurora-highlight">en eines de tall industrial i esmolat professional.</span>
+                    </h3>
+                    <p class="aurora-banner-desc">
+                        Assegurem el rendiment òptim de la teva línia perquè el teu equip de manteniment tingui tot sota control i tu només et preocupis del teu producte final.
+                    </p>
+                </div>
+                <a href="servicios.html" class="btn btn-aurora">
+                    Descobreix els nostres Serveis <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTORS D'APLICACIÓ (SLIDE 5) -->
+        <section id="sectors" class="section" style="border-bottom: 1px solid var(--border-color); padding: 5rem 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3.5rem;">
+                    <span class="badge badge-gold" style="margin-bottom: 1rem;">Polivalència i Especialització</span>
+                    <h2 class="text-heading-2 font-display"><span class="aurora-text">APLICACIONS EN DIVERSOS SECTORS</span></h2>
+                    <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Les nostres ganivetes i serveis d'esmolat estan adaptats a les exigències de seguretat i higiene de cada producte.</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; justify-content: center;">
+                    <div class="card text-center sector-card" style="padding: 2rem 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); transition: transform var(--transition-fast), border-color var(--transition-fast);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.transform='none'; this.style.borderColor='var(--border-color)'">
+                        <div class="sector-icon-wrap">
+                            <img src="img/sectors/carn-3d.png" alt="Sector Carn - ESMOTECH Eines de Tall" class="sector-icon-img" loading="lazy">
+                        </div>
+                        <h4 class="font-display" style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--text-primary);">Carn</h4>
+                        <p class="text-xs text-muted" style="margin: 0;">Escorxadors i sales de desballestament</p>
+                    </div>
+                    
+                    <div class="card text-center sector-card" style="padding: 2rem 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); transition: transform var(--transition-fast), border-color var(--transition-fast);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.transform='none'; this.style.borderColor='var(--border-color)'">
+                        <div class="sector-icon-wrap">
+                            <img src="img/sectors/formatges-3d.png" alt="Sector Formatges - ESMOTECH Eines de Tall" class="sector-icon-img" loading="lazy">
+                        </div>
+                        <h4 class="font-display" style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--text-primary);">Formatges</h4>
+                        <p class="text-xs text-muted" style="margin: 0;">Llescat, tall en blocs i formats especials</p>
+                    </div>
+                    
+                    <div class="card text-center sector-card" style="padding: 2rem 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); transition: transform var(--transition-fast), border-color var(--transition-fast);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.transform='none'; this.style.borderColor='var(--border-color)'">
+                        <div class="sector-icon-wrap">
+                            <img src="img/sectors/peix-3d.png" alt="Sector Peix - ESMOTECH Eines de Tall" class="sector-icon-img" loading="lazy">
+                        </div>
+                        <h4 class="font-display" style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--text-primary);">Peix</h4>
+                        <p class="text-xs text-muted" style="margin: 0;">Processament d'aviram i producte marítim</p>
+                    </div>
+                    
+                    <div class="card text-center sector-card" style="padding: 2rem 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); transition: transform var(--transition-fast), border-color var(--transition-fast);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.transform='none'; this.style.borderColor='var(--border-color)'">
+                        <div class="sector-icon-wrap">
+                            <img src="img/sectors/forneria-3d.png" alt="Sector Forneria - ESMOTECH Eines de Tall" class="sector-icon-img" loading="lazy">
+                        </div>
+                        <h4 class="font-display" style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--text-primary);">Forneria</h4>
+                        <p class="text-xs text-muted" style="margin: 0;">Farinacis, masses i pastisseria industrial</p>
+                    </div>
+                    
+                    <div class="card text-center sector-card" style="padding: 2rem 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); transition: transform var(--transition-fast), border-color var(--transition-fast);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.transform='none'; this.style.borderColor='var(--border-color)'">
+                        <div class="sector-icon-wrap">
+                            <img src="img/sectors/plats-preparats-3d.png" alt="Sector Plats Preparats - ESMOTECH Eines de Tall" class="sector-icon-img" loading="lazy">
+                        </div>
+                        <h4 class="font-display" style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--text-primary);">Plats Preparats</h4>
+                        <p class="text-xs text-muted" style="margin: 0;">Plats preparats, llescats ràpids i envasats</p>
+                    </div>
+                    
+                    <div class="card text-center sector-card" style="padding: 2rem 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); transition: transform var(--transition-fast), border-color var(--transition-fast);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.transform='none'; this.style.borderColor='var(--border-color)'">
+                        <div class="sector-icon-wrap">
+                            <img src="img/sectors/altres-industries-3d.png" alt="Sector Altres Indústries - ESMOTECH Eines de Tall" class="sector-icon-img" loading="lazy">
+                        </div>
+                        <h4 class="font-display" style="font-size: 1.15rem; margin-bottom: 0.4rem; color: var(--text-primary);">Altres Indústries</h4>
+                        <p class="text-xs text-muted" style="margin: 0;">Aplicacions industrials i a mida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVEIS -->
+        <section id="serveis" class="section aceternity-dot-section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <span class="badge badge-industrial" style="margin-bottom: 1rem;">Més enllà del producte</span>
+                    <h2 class="text-heading-2">EL TEU PARTNER ESTRATÈGIC</h2>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h3 class="font-display text-heading-3"><a href="serveis/esmolat.html" style="color: var(--text-primary); text-decoration: none;">Esmolat Professional</a></h3>
+                        <p class="text-muted" style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                            Retornem a les teves eines l'angle de tall original de fàbrica. Menys desgast, més vida útil per a la teva maquinària.
+                        </p>
+                        <a href="serveis/esmolat.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Més informació <i data-lucide="chevron-right" style="width: 14px;"></i></a>
+                    </div>
+                    <div class="service-image" style="background-image: url('img/hero-sharpening.jpg'); background-size: cover; background-position: center;"></div>
+                </div>
+
+                <div class="service-row reverse">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <h3 class="font-display text-heading-3"><a href="serveis/formacio.html" style="color: var(--text-primary); text-decoration: none;">Formació Tècnica</a></h3>
+                        <p class="text-muted" style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                            Capacitem els teus operaris per al manteniment i ús òptim de cada eina. El coneixement in-situ és rendiment.
+                        </p>
+                        <a href="serveis/formacio.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Més informació <i data-lucide="chevron-right" style="width: 14px;"></i></a>
+                    </div>
+                    <div class="service-image" style="background-image: url('img/hero-blades-table.jpg'); background-size: cover; background-position: center;"></div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <h3 class="font-display text-heading-3"><a href="serveis/consultoria.html" style="color: var(--text-primary); text-decoration: none;">Consultoria i Postvenda</a></h3>
+                        <p class="text-muted" style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                            Analitzem els teus processos per recomanar-te solucions. Resposta ràpida i eficient per minimitzar els temps d'inactivitat.
+                        </p>
+                        <a href="serveis/consultoria.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Més informació <i data-lucide="chevron-right" style="width: 14px;"></i></a>
+                    </div>
+                    <div class="service-image" style="background-image: url('img/hero-industrial-knives.jpg'); background-size: cover; background-position: center;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARCAS / PARTNERS -->
+        <section id="partners" class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 class="text-heading-2">PARTNERS DE CONFIANÇA</h2>
+                    <p class="text-muted">L'excel·lència compartida amb els millors del sector.</p>
+                </div>
+                
+                <div class="partner-separator"></div>
+
+                <div class="partners-grid">
+                    <div class="partner-logo" style="display: flex; align-items: center; justify-content: center; height: 50px;">
+                        <img class="partner-img-logo" src="img/pptx/image10.png" alt="Hagedorn FoodTech" style="max-height: 40px; filter: invert(1) opacity(0.6); transition: filter var(--transition-fast);" onmouseover="this.style.filter='invert(1) opacity(1)'" onmouseout="this.style.filter='invert(1) opacity(0.6)'">
+                    </div>
+                    <div class="partner-logo">
+                        <span class="font-display text-heading-4 text-muted">HEDER</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span class="font-display text-heading-4 text-muted">STELLAR TECHNIK</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span class="font-display text-heading-4 text-muted">TPH</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span class="font-display text-heading-4 text-muted">PRIMEdge</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span class="font-display text-heading-4 text-muted">ZHAOLI</span>
+                    </div>
+                </div>
+                
+                <div class="partner-separator"></div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION CON DEGRADAT DE PRECISIÓ INDUSTRIAL -->
+        <section class="section" style="padding-top: 1rem; padding-bottom: 4rem;">
+            <div class="container">
+                <div class="banner-precision-gradient">
+                    <div style="max-width: 650px;">
+                        <span class="badge" style="background: rgba(255,255,255,0.18); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); margin-bottom: 0.8rem; font-size: 0.8rem; text-transform: uppercase;">
+                            ⚙️ Auditoria Tècnica Especialitzada
+                        </span>
+                        <h2 class="font-display" style="font-size: 2.2rem; color: #FFFFFF; margin: 0.4rem 0 0.8rem; line-height: 1.15;">
+                            EL TEU PROCÉS DE TALL ES POT OPTIMITZAR?
+                        </h2>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; margin: 0; line-height: 1.5;">
+                            Estudi personalitzat de reducció de minva, màxima durabilitat de tall i estalvi de costos per quilo processat a la teva planta.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="contacto.html" class="btn btn-primary" style="background: #FFFFFF; color: #0066CC; border: none; font-weight: 800; font-size: 1rem; padding: 1rem 1.8rem; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); display: inline-flex; align-items: center; gap: 0.6rem; text-transform: uppercase;">
+                            Sol·licitar Estudi Tècnic <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo" style="margin-bottom: 1.2rem;">
+                    <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" style="height: 42px; width: auto; max-width: 240px;">
+                </span>
+                <p>Solucions de tall industrial i esmolat professional per al sector agroalimentari.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="font-display">Productes</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="productos.html?cat=CAT-01">Eines de Tall</a></li>
+                    <li><a href="productos.html?cat=CAT-02">Serra Cinta</a></li>
+                    <li><a href="productos.html?cat=CAT-03">Ganivetes d'Envasat</a></li>
+                    <li><a href="productos.html?cat=CAT-04">Circulars i Evolutives</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="font-display">Serveis</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="serveis/esmolat.html">Esmolat Professional</a></li>
+                    <li><a href="serveis/formacio.html">Formació Tècnica</a></li>
+                    <li><a href="serveis/consultoria.html">Consultoria</a></li>
+                    <li><a href="serveis/suport.html">Suport Postvenda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="font-display">Contacte</h4>
+                <p><i data-lucide="map-pin" style="width:16px;"></i> Polígon Industrial, Nau 4</p>
+                <p><i data-lucide="phone" style="width:16px;"></i> +34 900 000 000</p>
+                <p><i data-lucide="mail" style="width:16px;"></i> info@esmotech.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-sm text-muted">&copy; 2026 ESMOTECH. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PUNT 7: BOTÓ FLOTANT DE WHATSAPP DIRECTE -->
+    <a href="https://wa.me/34600000000?text=Hola%20ESMOTECH,%20necessito%20assist%C3%A8ncia%20t%C3%A8cnica%20o%20recambi%20d%27urg%C3%A8ncia%20per%20a%20la%20meva%20planta." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar per WhatsApp per a Urgències">
+        <span class="whatsapp-pulse-badge"></span>
+        <svg class="whatsapp-float-icon" viewBox="0 0 24 24">
+            <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.483 1.332 5.001L2 22l5.127-1.341a9.943 9.943 0 004.881 1.28h.004c5.507 0 9.99-4.478 9.99-9.985 0-2.667-1.039-5.176-2.927-7.062A9.923 9.923 0 0012.012 2z"/>
+        </svg>
+        <span>Urgències 24h</span>
+    </a>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/main.js?v=9"></script>
+
+    <!-- Magic UI Number Ticker Instant Guarantee Script -->
+    <script>
+        function triggerMagicNumberTicker() {
+            const tickers = document.querySelectorAll('.number-ticker');
+            if (!tickers.length) return;
+
+            tickers.forEach(el => {
+                if (el._tickerTimer) clearInterval(el._tickerTimer);
+
+                const target = parseFloat(el.getAttribute('data-value') || '0');
+                const start = parseFloat(el.getAttribute('data-start') || '0');
+                const delay = parseFloat(el.getAttribute('data-delay') || '0') * 1000;
+                const duration = parseFloat(el.getAttribute('data-duration') || '1800');
+                const isLocale = el.getAttribute('data-format') === 'locale';
+                const formatter = isLocale ? new Intl.NumberFormat('ca-ES') : null;
+
+                // Reset to start value
+                el.textContent = formatter ? formatter.format(start) : start;
+
+                setTimeout(() => {
+                    const startTime = Date.now();
+                    el._tickerTimer = setInterval(() => {
+                        const elapsed = Date.now() - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        // Magic UI Spring/Quartic deceleration: 1 - (1 - progress)^4
+                        const easeProgress = 1 - Math.pow(1 - progress, 4);
+                        const currentValue = Math.round(start + (target - start) * easeProgress);
+
+                        el.textContent = formatter ? formatter.format(currentValue) : currentValue;
+
+                        if (progress >= 1) {
+                            clearInterval(el._tickerTimer);
+                            el._tickerTimer = null;
+                            el.textContent = formatter ? formatter.format(target) : target;
+                        }
+                    }, 20);
+                }, delay);
+            });
+        }
+
+        // Trigger on load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', triggerMagicNumberTicker);
+        } else {
+            triggerMagicNumberTicker();
+        }
+
+        // Also trigger on click/hover for interactive delight
+        document.querySelectorAll('.kpi-item').forEach(item => {
+            item.addEventListener('click', triggerMagicNumberTicker);
+        });
+
+        // Aceternity UI: Grid mouse spotlight tracking
+        const reafilatHub = document.querySelector('.reafilat-hub-wrapper');
+        if (reafilatHub) {
+            reafilatHub.addEventListener('mousemove', e => {
+                const rect = reafilatHub.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                reafilatHub.style.setProperty('--mouse-x', `${x}%`);
+                reafilatHub.style.setProperty('--mouse-y', `${y}%`);
+            });
+            reafilatHub.addEventListener('mouseleave', () => {
+                reafilatHub.style.setProperty('--mouse-x', '50%');
+                reafilatHub.style.setProperty('--mouse-y', '50%');
+            });
+        }
+    </script>
 </body>
 </html>

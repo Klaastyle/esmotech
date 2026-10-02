@@ -1,0 +1,254 @@
+{
+  "CAT-01": {
+    "category_id": "CAT-01",
+    "category_name": "Eines de Tall (Skinners, Cutters i Microdentats)",
+    "filters": [
+      {
+        "id": "subcategoria",
+        "label": "Subcategoria de Tall",
+        "type": "pills_multiselect",
+        "options": [
+          "Ganivetes Descotnadores (Skinners)",
+          "Ganivetes de Cutter Industrial",
+          "Discs Microdentats",
+          "Placas i Ganivetes de Picadora *",
+          "Fulles per a Chuleteras *"
+        ]
+      },
+      {
+        "id": "maquina",
+        "label": "Màquina / Marca Compatible",
+        "type": "select_dropdown",
+        "options": [
+          "Grasselli (520mm, 600mm, 700mm)",
+          "Nock Cortadoras",
+          "Townsend Skinner",
+          "Marel",
+          "CFS / GEA MasterCut",
+          "Seydelmann (K300, K500)",
+          "Laska / Kilia / Talsa",
+          "Lumbeck & Wolter *",
+          "Treif / Holac *"
+        ]
+      },
+      {
+        "id": "material",
+        "label": "Aliatge / Material",
+        "type": "select_dropdown",
+        "options": [
+          "Inox AISI 440C (HRC 58-60)",
+          "Acer Eina D2 (1.2379)",
+          "Acer Inox 420 Inducció",
+          "Acer Crom-Vanadi *"
+        ]
+      },
+      {
+        "id": "litratge",
+        "label": "Litratge Cutter (Capacitat)",
+        "type": "select_dropdown",
+        "options": [
+          "Cutter 200L - 300L",
+          "Cutter 500L - 750L",
+          "Cutter 1000L Industrial"
+        ]
+      }
+    ]
+  },
+  "CAT-02": {
+    "category_id": "CAT-02",
+    "category_name": "Serra Cinta (Carn Fresca, Os, Congelat, Aviram)",
+    "filters": [
+      {
+        "id": "aplicacio_serra",
+        "label": "Tipus d'Aplicació",
+        "type": "pills_multiselect",
+        "options": [
+          "Carn Fresca amb Os",
+          "Ossos Durs i Canals",
+          "Blocs Congelats (-20ºC)",
+          "Elaboració d'Aviram",
+          "Sales de Desballestament / Giesser *"
+        ]
+      },
+      {
+        "id": "tpi",
+        "label": "Pas de Dents (TPI)",
+        "type": "select_dropdown",
+        "options": [
+          "3 TPI (Tall ràpid de canal / os dur)",
+          "4 TPI (Tall mètric standard)",
+          "6 TPI (Dentat fi / congelats i aviram)"
+        ]
+      },
+      {
+        "id": "material_serra",
+        "label": "Aliatge de la Serra",
+        "type": "select_dropdown",
+        "options": [
+          "Acer Carboni Inducció (Stellar Technik)",
+          "Bi-Metàl·lic M42 (Cobaltat)",
+          "Dentat Neutre Avícola"
+        ]
+      },
+      {
+        "id": "longitud_serra",
+        "label": "Longitud de Serra (mm)",
+        "type": "select_dropdown",
+        "options": [
+          "1750 mm (Mainca / Bizerba)",
+          "2850 mm (Kolbe K220 / Hobart)",
+          "3150 mm (Medoc STL-350)",
+          "3700 mm (Kolbe K440 / Medoc)",
+          "4200 mm (Kolbe Industrial)"
+        ]
+      }
+    ]
+  },
+  "CAT-03": {
+    "category_id": "CAT-03",
+    "category_name": "Ganivetes d'Envasat i Termoformat",
+    "filters": [
+      {
+        "id": "tipus_envasat",
+        "label": "Tipus d'Eina d'Envasat",
+        "type": "pills_multiselect",
+        "options": [
+          "Ganivetes Perimetrals de Barqueta",
+          "Punxons Troquel Estrella VS/HS",
+          "Ganivetes Longitudinals de Pressió",
+          "Ganivetes Transversals Dentades",
+          "Encunys Euroslot *"
+        ]
+      },
+      {
+        "id": "maquina_envasat",
+        "label": "Marca de Termoformadora",
+        "type": "select_dropdown",
+        "options": [
+          "Ulma Packaging (TFS 500, Scorpius, Galaxi)",
+          "Multivac (R105, R245, R535, C500)",
+          "G. Mondini Trave",
+          "Ilpra Foodpack",
+          "Tiromat / CFS PowerPak",
+          "Variovac *"
+        ]
+      },
+      {
+        "id": "recobriment",
+        "label": "Tractament Superficial / Anti-Adherent",
+        "type": "select_dropdown",
+        "options": [
+          "TiN Daurat (Nitrur de Titani)",
+          "Tefló PTFE Anti-Adherent",
+          "Acer Inox HRC 56-58 Standard"
+        ]
+      }
+    ]
+  },
+  "CAT-04": {
+    "category_id": "CAT-04",
+    "category_name": "Circulars i Evolutives de Llescat (Hagedorn)",
+    "filters": [
+      {
+        "id": "tecnologia_hagedorn",
+        "label": "Gama Tecnologia Hagedorn",
+        "type": "pills_multiselect",
+        "options": [
+          "TRITECH (Anti-vibració PM)",
+          "LONGLIFE (Resistent Crosta Dura)",
+          "GENESIS (Acer Pols de Metall)",
+          "PRIMEdge Circular *"
+        ]
+      },
+      {
+        "id": "llesca_maquina",
+        "label": "Model de Loncheadora",
+        "type": "select_dropdown",
+        "options": [
+          "Weber Slicer 404 / 604 / 905 / 1002",
+          "Dixie Union / GEA",
+          "Bizerba A550 / Schindler",
+          "Textor Slicer *"
+        ]
+      },
+      {
+        "id": "diametre_llescat",
+        "label": "Diàmetre / Radi Fulla",
+        "type": "select_dropdown",
+        "options": [
+          "Ø 350 mm Circular",
+          "Ø 380 mm Circular",
+          "Ø 440 mm Evolutiva",
+          "Ø 460 mm Evolutiva Weber"
+        ]
+      }
+    ]
+  },
+  "CAT-05": {
+    "category_id": "CAT-05",
+    "category_name": "Capçals Tèrmics d'Impressió i Pesatge",
+    "filters": [
+      {
+        "id": "resolucio_dpi",
+        "label": "Resolució d'Impressió",
+        "type": "pills_multiselect",
+        "options": [
+          "203 DPI (8 dots/mm)",
+          "300 DPI (12 dots/mm)",
+          "600 DPI (24 dots/mm) *"
+        ]
+      },
+      {
+        "id": "marca_pesatge",
+        "label": "Equip / Pesadora Compatible",
+        "type": "select_dropdown",
+        "options": [
+          "Bizerba GLP 80 / GLP 160",
+          "Bizerba GV 7000 / GS / GH",
+          "Zebra ZT410 / ZT420 / Xi4",
+          "Intermec PX4i / PX6i / PM43",
+          "Honeywell / Sato *"
+        ]
+      }
+    ]
+  },
+  "CAT-06": {
+    "category_id": "CAT-06",
+    "category_name": "Abrasius i Esmolat Industrial",
+    "filters": [
+      {
+        "id": "tipus_abrasiu",
+        "label": "Tipus d'Abrasiu",
+        "type": "pills_multiselect",
+        "options": [
+          "Bandes d'Esmolar Corindó Blau",
+          "Moles Diamantades Polit Mirall",
+          "Rodes d'Assentar i Desbarbat",
+          "Guants Malla Metàl·lica Euroflex *"
+        ]
+      },
+      {
+        "id": "granulometria",
+        "label": "Granulometria (Grit)",
+        "type": "select_dropdown",
+        "options": [
+          "Grit 60 (Buidat fort)",
+          "Grit 120 (Esmolat mitjà)",
+          "Grit 240 (Esmolat fi)",
+          "Grit 400 (Polit mirall)"
+        ]
+      },
+      {
+        "id": "maquina_esmoler",
+        "label": "Màquina Esmoladora",
+        "type": "select_dropdown",
+        "options": [
+          "Knecht S20 / S50 / USK",
+          "Mado Esmoladora",
+          "Dick SM-100",
+          "Wizard Mk4 / Ibex *"
+        ]
+      }
+    ]
+  }
+}
