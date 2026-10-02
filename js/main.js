@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('ESMOTECH Platform Loaded');
     initNumberTicker();
     initAceternityGridSpotlight();
-    initStickyScroll();
 });
 
 /**
@@ -68,57 +67,3 @@ function initNumberTicker() {
         }, delay);
     });
 }
-
-/**
- * Aceternity UI: Features with Sticky Scroll
- * Switches active media card as the user scrolls past each feature block
- */
-function initStickyScroll() {
-    const steps = document.querySelectorAll('.sticky-scroll-step');
-    const mediaCards = document.querySelectorAll('.sticky-scroll-media-card');
-    if (!steps.length || !mediaCards.length) return;
-
-    function setActiveStep(index) {
-        steps.forEach((step, idx) => {
-            if (idx === index) {
-                step.classList.add('is-active');
-            } else {
-                step.classList.remove('is-active');
-            }
-        });
-
-        mediaCards.forEach((card, idx) => {
-            if (idx === index) {
-                card.classList.add('is-active');
-            } else {
-                card.classList.remove('is-active');
-            }
-        });
-    }
-
-    // Scroll listener with optimal threshold calculation
-    function checkScroll() {
-        const viewportCenter = window.innerHeight * 0.45;
-        let bestIndex = 0;
-        let minDistance = Infinity;
-
-        steps.forEach((step, idx) => {
-            const rect = step.getBoundingClientRect();
-            const stepCenter = rect.top + rect.height / 2;
-            const distance = Math.abs(viewportCenter - stepCenter);
-
-            if (distance < minDistance) {
-                minDistance = distance;
-                bestIndex = idx;
-            }
-        });
-
-        setActiveStep(bestIndex);
-    }
-
-    window.addEventListener('scroll', checkScroll, { passive: true });
-    window.addEventListener('resize', checkScroll, { passive: true });
-    // Run on init
-    checkScroll();
-}
-
