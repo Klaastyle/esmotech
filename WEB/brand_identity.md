@@ -22,45 +22,47 @@
 ## 🎨 Visual Identity
 
 ### Logo System
-**Primary Logo**: Tipografia sans-serif contundent en majúscules. Transmet solidesa i caràcter industrial. S'aplica sobre fons fosc, preferentment amb un toc daurat corporatiu que emfasitzi l'alta qualitat.
+**Primary Logo**: Símbol icònic de 3 barres de tall a l'esquerra (amb la franja central en blau elèctric #0088FF), tipografia massissa ESMOTECH amb talls geomètrics, perfil dentat de serra sota ESMO i subtítol CUTTING SOLUTIONS sota TECH.
 **Logo Variations**: 
-- *Monocromàtic*: Blanc pur sobre fons fosc.
-- *Icon*: Símbol minimalista de línia fina (referència a maquinària i precisió en cercle) per a favicons i avatars.
-**Clear Space**: Marge mínim equivalent a l'alçada de la lletra "E".
-**Minimum Sizes**: 120px d'amplada (digital), 30mm (print).
-**Usage Guidelines**: Assegurar sempre un contrast òptim. L'entorn visual ha de respirar "industrial premium". Prohibit deformar o canviar el color daurat corporatiu per altres variants cridaneres.
+- *Fons Fosc*: Lletres blanques pures, barra central blava i serra platejada (`esmotech-logo-white.png`).
+- *Fons Clar*: Lletres negres, barra central blava i serra acer (`esmotech-logo-dark.png`).
+- *Icon*: Símbol minimalista de les 3 barres de tall (`esmotech-icon-512.png`, `favicon.ico`).
+**Clear Space**: Marge mínim equivalent a l'alçada de les barres del símbol.
+**Minimum Sizes**: 140px d'amplada (digital), 35mm (print).
+**Usage Guidelines**: Assegurar sempre un contrast òptim. L'entorn visual ha de respirar tecnologia de tall industrial per a alimentació. Prohibit deformar, aplanar o canviar el color blau elèctric corporatiu.
 
 ### Color System
 **Primary Palette**:
-- **Fons Negre Industrial**: `#0D0D0D` (Elegància tècnica, base de la web).
-- **Or Esmotech**: `#C9A84C` (Color d'accent per a botons, icones, detalls de línia i elements de crida a l'acció. Simbolitza el tall premium).
+- **Blau Elèctric Esmotech**: `#0088FF` (Color d'accent principal, extret de la franja del logo i el dossier 2026. Simbolitza el tall tecnològic i precisió).
+- **Negre Marí Industrial**: `#080D14` (Elegància tècnica, base fosca de la web).
 **Secondary Palette**:
-- **Gris Metall Fosc**: `#1A1A1A` a `#2A2A2A` (Per a fons secundaris, targetes i seccions diferenciades).
+- **Gris Acer Dossier**: `#64748B` (Color tècnic d'acers i subtextos de la presentació comercial).
+- **Fons Clar Higiènic**: `#F8F9FA` (Fons clar oficial del dossier corporatiu 2026).
+- **Cian / Hover**: `#38BDF8` (Transicions d'alta visibilitat).
 **Neutral Palette**:
-- **Blanc Pur**: `#FFFFFF` (Text principal per a un alt contrast (AAA) i llegibilitat màxima).
-- **Gris Acer**: `#888888` (Text secundari o elements atenuats).
-**Accessibility**: El text blanc sobre fons negre compleix WCAG AAA. L'Or Esmotech (#C9A84C) s'ha d'usar per destacar, no per a blocs llargs de text, garantint nivells AA.
+- **Blanc Pur**: `#FFFFFF` / `#F8FAFC` (Text principal sobre fons fosc, targetes netes sobre fons clar).
+- **Gris Metall Fosc**: `#121A26` a `#16202E` (Targetes i mega-menús).
+**Accessibility**: El text blanc sobre fons negre compleix WCAG AAA. El Blau Elèctric (#0088FF) sobre fons clar o fosc garanteix un contrast òptim per a CTAs i elements de focus.
 
 ### Typography
-**Primary Typeface**: `Inter` o `Roboto` (sans-serif), pes Bold (700) o Black (900), sempre en MAJÚSCULES. Ús exclusiu per a titulars, noms de productes i crides a l'acció. Transmet contundència i força industrial.
-**Secondary Typeface**: `Inter` Regular (400), format sentència (Caixa baixa amb majúscula inicial). Ús per a paràgrafs, descripcions i dades tècniques.
-**Hierarchy**: Titulars (H1, H2) imponents, separats; paràgrafs (p) de fàcil lectura tècnica.
+**Primary Typeface**: `Barlow Condensed` o `Inter` (sans-serif), pes Bold (700) o Black (900), sempre en MAJÚSCULES per a titulars industrials.
+**Secondary Typeface**: `Inter` Regular (400) i Medium (500) per a paràgrafs, taules tècniques i especificacions.
 
 ### Web Implementation (CSS Variables)
 ```css
 /* Brand Design System Variables */
 :root {
   /* Primary Brand Colors */
-  --brand-primary: #0D0D0D;      /* Main dark background */
-  --brand-accent: #C9A84C;       /* Golden accent */
+  --brand-primary: #080D14;      /* Main dark background */
+  --brand-accent: #0088FF;       /* Electric blue accent */
   
   /* Brand Color Variations */
-  --brand-primary-light: #1A1A1A;
-  --brand-primary-lighter: #2A2A2A;
+  --brand-primary-light: #0F1722;
+  --brand-primary-lighter: #16202E;
   
   /* Neutral Brand Palette */
-  --brand-neutral-100: #FFFFFF;  /* Lightest - Main Text */
-  --brand-neutral-500: #888888;  /* Medium - Muted Text */
+  --brand-neutral-100: #F8FAFC;  /* Lightest - Main Text */
+  --brand-neutral-500: #64748B;  /* Medium - Muted Steel */
   
   /* Brand Typography */
   --brand-font-primary: 'Inter', system-ui, sans-serif;

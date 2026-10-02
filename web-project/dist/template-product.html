@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrasius i Esmolat Industrial | ESMOTECH Solucions de Tall</title>
-    <meta name="description" content="Bandes d'esmolar de corindó blau Knecht, moles diamantades i guants de protecció Euroflex">
+    <title>{{PRODUCT_NAME}} - Ref. {{PRODUCT_REF}} | ESMOTECH</title>
+    <meta name="description" content="Especificacions tècniques, galeria d'imatges i descàrrega de fitxa tècnica per a {{PRODUCT_NAME}} (Ref. {{PRODUCT_REF}}). Eines de tall industrial.">
+    <meta name="keywords" content="{{PRODUCT_NAME}}, {{PRODUCT_REF}}, eines de tall industrial, tall alimentari, ESMOTECH">
+    
+    <!-- Microdades JSON-LD per a Rich Snippets en cercadors -->
+    {{PRODUCT_JSON_LD}}
+    
+    <!-- Base per rutes relatives -->
     
     
     <link rel="stylesheet" href="../css/design-system.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Favicon & Icons ESMOTECH -->
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -17,16 +25,17 @@
     <link rel="apple-touch-icon" sizes="512x512" href="../img/esmotech-icon-512.png">
 </head>
 <body>
+    <!-- HEADER & NAVBAR -->
     <header class="header sticky">
         <div class="container header-container">
             <a href="../index.html" class="logo" aria-label="ESMOTECH Cutting Solutions">
-                <img src="../img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" class="logo-dark">
-                <img src="../img/esmotech-logo-dark.png" alt="ESMOTECH Cutting Solutions" class="logo-light">
+                <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" class="logo-dark">
+                <img src="img/esmotech-logo-dark.png" alt="ESMOTECH Cutting Solutions" class="logo-light">
             </a>
-                        <nav class="main-nav" aria-label="Navegació Principal">
+            
+            <nav class="main-nav" aria-label="Navegació Principal">
                 <ul class="nav-list">
                     <li><a href="../index.html" class="nav-link">Inici</a></li>
-                    <li><a href="../qui-som.html" class="nav-link">Qui Som</a></li>
                     
                     <li class="has-mega-menu">
                         <a href="../productos.html" class="nav-link">Productes</a>
@@ -103,7 +112,7 @@
                         </div>
                     </li>
                     
-                    <li><a href="../catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
+                    <li><a href="../catalogo.html" class="nav-link">Catàleg & Botiga</a></li>
 
                     <li class="has-mega-menu">
                         <a href="../servicios.html" class="nav-link">Serveis</a>
@@ -134,6 +143,9 @@
                                         <small style="color: var(--text-muted); font-size: 0.78rem;">Lliurament d'emergència en 24h i manteniment preventiu.</small>
                                     </a>
                                 </li>
+                                <li style="border-top: 1px solid var(--border-color); padding-top: 0.6rem; margin-top: 0.4rem;">
+                                    <a href="../servicios.html" style="font-weight: bold; color: var(--primary);">➔ Veure Tots els Serveis</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -141,6 +153,7 @@
                     
                 </ul>
             </nav>
+
             <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
                 <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
                     <span class="lang-option active" style="color: var(--primary); cursor: pointer;">CA</span>
@@ -153,135 +166,117 @@
                     <button class="theme-toggle-option" data-theme="light"><i data-lucide="sun" style="width:16px;height:16px"></i></button>
                     <button class="theme-toggle-option active" data-theme="dark"><i data-lucide="moon" style="width:16px;height:16px"></i></button>
                 </div>
-                <a href="../contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                <a href="contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
                     CONTACTE
                 </a>
             </div>
         </div>
     </header>
     
-    <main style="padding-top: 80px; padding-bottom: 6rem;">
-        <!-- 1. FULL WIDTH HERO AMB FONS DE LA HOME I TITOL AURORA -->
-        <section class="category-hero-fullwidth" style="background-image: url('../img/abrasius-base.webp?v=4');">
-            <div class="category-hero-overlay"></div>
-            <div class="container category-hero-inner">
-                <div class="category-hero-content">
-                    <span class="badge badge-industrial" style="margin-bottom: 0.8rem; display: inline-block;">Categoria Especialitzada</span>
-                    <h1 class="font-display category-hero-title">
-                        <span class="aurora-text">ABRASIUS I ESMOLAT INDUSTRIAL</span>
-                    </h1>
-                    <p class="category-hero-desc">
-                        Consumibles de rectificat i esmolat PRIMEdge, bandes de corindó blau Knecht, moles diamantades i equipament de protecció laboral Euroflex.
-                    </p>
-                </div>
-            </div>
-        </section>
-
+    <main style="padding-top: 100px; padding-bottom: 6rem;">
         <div class="container">
-            <!-- 2. EXPLICACIÓ DETALLADA DEL QUE S'OFEREIX AMB CARACTERÍSTIQUES -->
-            <section style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); padding: 2.5rem; margin-bottom: 3.5rem;">
-                <h2 class="font-display text-heading-2" style="color: var(--text-primary); margin-bottom: 1rem;">
-                    Descripció Tècnica i Característiques d'Alta Precisió
-                </h2>
-                <div class="text-muted text-body-large" style="line-height: 1.7; font-size: 1.05rem; margin-bottom: 2rem;">
-                    <p>Bandes d'esmolar de corindó noble blau i moles diamantades per a l'afilat automàtic de ganivetes de planta carnica en esmoladores Knecht, Mado i Dick.</p>
-                </div>
+            <!-- Breadcrumbs -->
+            <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: center;">
+                <a href="../productos.html" style="color: var(--text-muted); text-decoration: none;">Catàleg</a>
+                <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
+                <a href="{{BREADCRUMB_CAT_URL}}" style="color: var(--text-muted); text-decoration: none;">{{BREADCRUMB_CAT_NAME}}</a>
+                <i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i>
+                <span style="color: var(--primary); font-weight: 500;">{{PRODUCT_NAME}}</span>
+            </div>
 
-                <h3 class="font-display text-heading-4" style="color: var(--primary); margin-bottom: 1rem; text-transform: uppercase;">
-                    Opcions i Característiques Tècniques
-                </h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem;">
-                    
-        <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.2rem 1.5rem;">
-            <h4 class="font-display" style="font-size: 0.95rem; color: var(--primary); margin-bottom: 0.4rem; text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem;">
-                <i data-lucide="zap" style="width: 16px;"></i> Corindó Noble Blau
-            </h4>
-            <p class="text-xs text-muted" style="line-height: 1.5; margin: 0;">Granulometria d'alta flexibilitat que evita el sobreescalfament de l'acer.</p>
-        </div>
-        
-        <div style="background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.2rem 1.5rem;">
-            <h4 class="font-display" style="font-size: 0.95rem; color: var(--primary); margin-bottom: 0.4rem; text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem;">
-                <i data-lucide="shield" style="width: 16px;"></i> Guants Anticall Euroflex
-            </h4>
-            <p class="text-xs text-muted" style="line-height: 1.5; margin: 0;">Protecció d'acer inox 100% per a sales de desballestament.</p>
-        </div>
-        
+            <div id="product-detail-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: flex-start;">
+                <!-- Imatge Principal i Galeria d'Imatges (Fins a 10 imatges) -->
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); padding: 2rem; position: sticky; top: 120px;">
+                    {{PRODUCT_GALLERY_HTML}}
                 </div>
-            </section>
-
-            <!-- 3. SECCIONS MÉS PETITES VISUALS TIPO BANNER AMB LINK A LA BOTIGA -->
-            <section style="margin-bottom: 4rem;">
-                <h2 class="font-display text-heading-2" style="margin-bottom: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.8rem;">
-                    Subcategories i Seccions de Tall
-                </h2>
                 
-        <article style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); padding: 2rem 2.5rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 300px;">
-                <span class="badge badge-industrial" style="margin-bottom: 0.8rem; display: inline-block;">KNECHT ABRASIUS</span>
-                <h3 class="font-display" style="font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0.6rem; text-transform: uppercase;">
-                    Bandes d'Esmolar i Moles Knecht (S20, S50, USK)
-                </h3>
-                <p class="text-muted text-sm" style="line-height: 1.6; margin-bottom: 1.5rem; max-width: 650px;">
-                    Bandes d'esmolar de corindó noble blau i moles diamantades per a esmoladores industrials.
-                </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="../catalogo.html?q=Knecht" class="btn" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; font-size: 0.85rem; padding: 0.65rem 1.4rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 4px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                        🛒 ANAR A LA BOTIGA PER AQUESTA SECCIÓ <i data-lucide="arrow-right" style="width: 16px;"></i>
-                    </a>
+                <!-- Informació del Producte -->
+                <div>
+                    <div style="display: inline-block; margin-bottom: 1rem;">{{PRODUCT_BRAND}}</div>
+                    <h1 class="font-display text-heading-2" style="margin-bottom: 0.5rem;">{{PRODUCT_NAME}}</h1>
+                    <p class="text-primary text-sm uppercase" style="letter-spacing: 0.05em; margin-bottom: 2rem; font-weight: 600;">REF: {{PRODUCT_REF}}</p>
+                    
+                    <p class="text-body-large text-muted" style="margin-bottom: 3rem; line-height: 1.6;">{{PRODUCT_DESC}}</p>
+                    
+                    <h3 class="font-display text-heading-4" style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">Especificacions Tècniques</h3>
+                    
+                    <ul style="list-style: none; padding: 0; margin: 0; margin-bottom: 3rem;">
+                        {{PRODUCT_SPECS}}
+                    </ul>
+                    
+                    <div style="display: flex; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                        <a href="../contacto.html" class="btn btn-primary" style="flex: 1; justify-content: center; min-width: 200px;">
+                            <i data-lucide="mail" style="width: 20px; height: 20px; margin-right: 8px;"></i>
+                            Sol·licitar Pressupost
+                        </a>
+                        {{PRODUCT_DATASHEET_BTN_HTML}}
+                    </div>
                 </div>
             </div>
-            
-            <div style="flex-shrink: 0; text-align: center;">
-                <svg width="240" height="150" viewBox="0 0 240 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="240" height="150" rx="8" fill="#0F172A"/>
-            <ellipse cx="120" cy="75" rx="75" ry="38" fill="#1E3A8A" stroke="#3B82F6" stroke-width="4"/>
-            <ellipse cx="120" cy="75" rx="32" ry="16" fill="#0F172A"/>
-        </svg>
-            </div>
-        </article>
-        
-        <article style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); padding: 2rem 2.5rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 300px;">
-                <span class="badge badge-industrial" style="margin-bottom: 0.8rem; display: inline-block;">EUROFLEX PROTECCIÓ</span>
-                <h3 class="font-display" style="font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0.6rem; text-transform: uppercase;">
-                    Guants de Malla Anticall Euroflex (EN 1082-1)
-                </h3>
-                <p class="text-muted text-sm" style="line-height: 1.6; margin-bottom: 1.5rem; max-width: 650px;">
-                    Guants de malla d'acer inoxidable 100% reversible per a seguretat laboral.
-                </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="../catalogo.html?q=Euroflex" class="btn" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; font-size: 0.85rem; padding: 0.65rem 1.4rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 4px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                        🛒 ANAR A LA BOTIGA PER AQUESTA SECCIÓ <i data-lucide="arrow-right" style="width: 16px;"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div style="flex-shrink: 0; text-align: center;">
-                <svg width="240" height="150" viewBox="0 0 240 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="240" height="150" rx="8" fill="#0F172A"/>
-            <rect x="25" y="60" width="190" height="30" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
-            <line x1="25" y1="90" x2="215" y2="90" stroke="#E63946" stroke-width="4"/>
-            <circle cx="45" cy="75" r="4" fill="#475569"/>
-            <circle cx="195" cy="75" r="4" fill="#475569"/>
-        </svg>
-            </div>
-        </article>
-        
-            </section>
 
+            <!-- Secció de Recomanacions de Manteniment & Esmolat -->
+            <section style="margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--border-color);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; background: var(--bg-secondary); padding: 3rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color);">
+                    <div>
+                        <h3 class="font-display text-heading-3" style="color: var(--primary); margin-bottom: 1rem;">Manteniment i Conservació</h3>
+                        <p class="text-muted" style="line-height: 1.6;">Per garantir la màxima durabilitat de la referència <strong>{{PRODUCT_REF}}</strong> a la línia de producció, recomanem realitzar neteges periòdiques amb detergents neutres de grau alimentari i evitar el contacte prolongat amb agents altament corrosius no neutralitzats.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-heading-3" style="color: var(--primary); margin-bottom: 1rem;">Servei d'Esmolat Oficial</h3>
+                        <p class="text-muted" style="line-height: 1.6;">A ESMOTECH disposem de servei d'esmolat CNC especialitzat per a aquesta eina. Restituïm l'angle de bisell original garantint un tall d'alta precisió sense alterar la duresa estructural de l'aliatge.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-brand"><span class="logo" style="margin-bottom: 1.2rem;">
+            <div class="footer-brand">
+                <span class="logo" style="margin-bottom: 1.2rem;">
                     <img src="../img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" style="height: 42px; width: auto; max-width: 240px;">
-                </span><p>Solucions de tall industrial i esmolat professional.</p></div>
+                </span>
+                <p>Solucions de tall industrial i esmolat professional per al sector agroalimentari.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="font-display">Productes</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="eines-de-tall.html">Eines de Tall</a></li>
+                    <li><a href="serra-cinta.html">Serra Cinta</a></li>
+                    <li><a href="ganivetes-denvasat.html">Ganivetes d'Envasat</a></li>
+                    <li><a href="circulars-i-evolutives.html">Circulars i Evolutives</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="font-display">Serveis</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="../serveis/esmolat.html">Esmolat Professional</a></li>
+                    <li><a href="../serveis/formacio.html">Formació Tècnica</a></li>
+                    <li><a href="../serveis/consultoria.html">Consultoria</a></li>
+                    <li><a href="../serveis/suport.html">Suport Postvenda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="font-display">Contacte</h4>
+                <p><i data-lucide="map-pin" style="width:16px;"></i> Polígon Industrial, Nau 4</p>
+                <p><i data-lucide="phone" style="width:16px;"></i> +34 900 000 000</p>
+                <p><i data-lucide="mail" style="width:16px;"></i> info@esmotech.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-sm text-muted">&copy; 2026 ESMOTECH. Tots els drets reservats.</p>
+            </div>
         </div>
     </footer>
     
     <script src="../js/theme-manager.js"></script>
     <script src="../js/main.js"></script>
-    <script>if (window.lucide) lucide.createIcons();</script>
+    <script src="../js/catalog.js"></script>
 </body>
 </html>

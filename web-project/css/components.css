@@ -2514,3 +2514,74 @@
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
 }
 
+/* ==========================================================================
+   PRODUCT CATEGORY FULL-WIDTH HERO (100% WIDTH + BACKGROUND IMAGE + AURORA)
+   ========================================================================== */
+.category-hero-fullwidth {
+  position: relative;
+  width: 100%;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.category-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 13, 20, 0.94) 0%,
+    rgba(8, 13, 20, 0.82) 45%,
+    rgba(8, 13, 20, 0.55) 75%,
+    rgba(8, 13, 20, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+[data-theme="light"] .category-hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.96) 0%,
+    rgba(255, 255, 255, 0.88) 45%,
+    rgba(255, 255, 255, 0.75) 75%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.category-hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.category-hero-content {
+  max-width: 780px;
+}
+
+.category-hero-title {
+  font-size: clamp(2.3rem, 4.5vw, 3.4rem);
+  line-height: 1.15;
+  margin: 0.6rem 0 1rem 0;
+}
+
+.category-hero-desc {
+  font-size: 1.18rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 680px;
+}
+
+[data-theme="light"] .category-hero-desc {
+  color: #334155;
+}
+
+
