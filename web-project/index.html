@@ -370,112 +370,116 @@
         </section>
 
         <!-- PUNT 3: HUB DEL SERVEI DE REAFILAT CNC 24H -->
-        <section id="reafilat-hub" class="section" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
-            <div class="container">
-                <!-- CAPÇALERA EXTERIOR DE SECCIÓ -->
-                <div style="text-align: center; max-width: 820px; margin: 0 auto 2.8rem;">
-                    <span class="badge badge-industrial" style="margin-bottom: 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
-                        <i data-lucide="shield-check" style="width: 15px; height: 15px; color: #38BDF8;"></i> SERVEI INTEGRAL D'AFILAT I MANTENIMENT
+        <section id="reafilat-hub" class="section reafilat-section-full" style="position: relative; overflow: hidden; padding-top: 5rem; padding-bottom: 5.5rem; background-color: #060B11;">
+            <!-- VIDEO DE FONS EN LOOP CONTINU PER A TOTA LA SECCIÓ -->
+            <video class="reafilat-bg-video" autoplay loop muted playsinline poster="img/reafilat-cnc-bg.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transform: none !important; z-index: 0; pointer-events: none; opacity: 0.55;">
+                <source src="video/reafilat-cnc-loop.mp4?v=2" type="video/mp4">
+            </video>
+            
+            <!-- REQUADRES I MATRIU CAD BLUEPRINT OVERLAY PER A TOTA LA SECCIÓ -->
+            <div class="reafilat-grid-overlay" style="position: absolute; inset: 0; z-index: 1; pointer-events: none;"></div>
+            
+            <!-- ESCÀNER LÀSER -->
+            <div class="cnc-laser-scanner" style="z-index: 2;"></div>
+
+            <div class="container" style="position: relative; z-index: 3;">
+                <!-- CAPÇALERA DE SECCIÓ SOBRE EL VÍDEO -->
+                <div style="text-align: center; max-width: 860px; margin: 0 auto 3rem;">
+                    <span class="badge" style="background: rgba(0, 118, 193, 0.28); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.5); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.06em; margin-bottom: 1.1rem; display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.4rem 1rem; border-radius: 9999px; backdrop-filter: blur(8px);">
+                        <i data-lucide="shield-check" style="width: 16px; height: 16px; color: #38BDF8;"></i> PLANTA DE REAFILAT CNC PRÒPIA &amp; RECOLLIDA EN 24H
                     </span>
-                    <h2 class="text-heading-2 font-display" style="font-size: 2.3rem; line-height: 1.25; margin-bottom: 0.8rem;">
-                        Allarga la vida útil de les teves eines de tall <span class="aurora-text">sense aturar la teva planta</span>
+                    <h2 class="font-display" style="font-size: 2.6rem; line-height: 1.2; margin-bottom: 0.9rem; color: #FFFFFF; text-shadow: 0 2px 16px rgba(0,0,0,0.85); letter-spacing: -0.01em;">
+                        SERVEI INTEGRAL D'AFILAT <span class="aurora-text">I MANTENIMENT</span>
                     </h2>
-                    <p class="text-muted" style="font-size: 1.05rem; line-height: 1.6; margin: 0 auto;">
-                        Regeneració robotitzada amb geometria 100% original i recollida d'urgència directa a fàbrica en menys de 24 hores.
+                    <p style="font-size: 1.12rem; line-height: 1.6; margin: 0 auto; color: #E2E8F0; text-shadow: 0 1px 6px rgba(0,0,0,0.9); max-width: 720px;">
+                        Regeneració robotitzada amb geometria 100% original per allargar la vida útil de les eines i resposta d'urgència directa a planta en menys de 24 hores.
                     </p>
                 </div>
 
-                <div class="reafilat-hub-wrapper" style="position: relative; overflow: hidden;">
-                    <!-- VIDEO DE FONS EN LOOP CONTINU -->
-                    <video class="reafilat-bg-video" autoplay loop muted playsinline poster="img/reafilat-cnc-bg.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transform: none !important; z-index: 0; pointer-events: none;">
-                        <source src="video/reafilat-cnc-loop.mp4?v=2" type="video/mp4">
-                    </video>
-                    
-                    <!-- REQUADRES I MATRIU CAD BLUEPRINT OVERLAY -->
-                    <div class="reafilat-grid-overlay" style="position: absolute; inset: 0; z-index: 1; pointer-events: none;"></div>
-                    
-                    <!-- ESCÀNER LÀSER -->
-                    <div class="cnc-laser-scanner" style="z-index: 2;"></div>
-                    
-                    <!-- CONTINGUT PER SOBRE DEL VÍDEO I LA QUADRÍCULA -->
-                    <div style="position: relative; z-index: 3;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 1.4rem; position: relative;">
+                <!-- CONTENIDOR DE LES CAIXES DE PROCÉS I FORMULARI -->
+                <div class="reafilat-hub-wrapper" style="position: relative; background: transparent; border: none; box-shadow: none; padding: 0;">
+                    <!-- BARRA SUPERIOR DE RESPOSTA EXPRESS -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.05) 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 12px; padding: 1.1rem 1.6rem; backdrop-filter: blur(10px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); margin-bottom: 1.8rem;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: rgba(0, 118, 193, 0.35); border: 1px solid rgba(56, 189, 248, 0.6); color: #38BDF8;">
+                                <i data-lucide="zap" style="width: 18px; height: 18px;"></i>
+                            </span>
                             <div>
-                                <span class="badge" style="background: rgba(0, 118, 193, 0.25); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.5); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.05em;">⚡ SERVEI TÈCNIC D'EMERGÈNCIA</span>
-                                <h2 class="font-display" style="font-size: 1.95rem; margin: 0.45rem 0 0; letter-spacing: -0.01em;">PLANTA DE REAFILAT CNC PRÒPIA &amp; RECOLLIDA EN 24H</h2>
+                                <strong style="color: #FFFFFF; font-size: 1.05rem; display: block; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">SERVEI TÈCNIC D'EMERGÈNCIA EN ROTACIÓ CONTINUA</strong>
+                                <span style="font-size: 0.82rem; color: #CBD5E1;">Cobertura directa per a línies de producció d'alta intensitat</span>
                             </div>
-                            <div style="background: rgba(0, 118, 193, 0.22); border: 1px solid rgba(56, 189, 248, 0.5); border-radius: 8px; padding: 0.65rem 1.3rem; text-align: right; backdrop-filter: blur(8px); box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
-                                <span style="font-size: 0.75rem; color: #CBD5E1; display: block; text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">Temps Mitjà de Resposta</span>
-                                <strong style="color: #38BDF8; font-size: 1.25rem; font-weight: 800;">&lt; 24 HORES A PLANTA</strong>
+                        </div>
+                        <div style="background: rgba(0, 118, 193, 0.35); border: 1px solid rgba(56, 189, 248, 0.6); border-radius: 8px; padding: 0.55rem 1.25rem; text-align: right; box-shadow: 0 4px 14px rgba(0, 118, 193, 0.3);">
+                            <span style="font-size: 0.72rem; color: #CBD5E1; display: block; text-transform: uppercase; font-weight: 700; letter-spacing: 0.06em;">Temps Màxim de Resposta</span>
+                            <strong style="color: #38BDF8; font-size: 1.2rem; font-weight: 800;">&lt; 24 HORES A PLANTA</strong>
+                        </div>
+                    </div>
+
+                    <div class="urgent-form-grid" style="margin-top: 0;">
+                        <div class="reafilat-process-box">
+                            <div style="margin-bottom: 1.2rem;">
+                                <span style="font-size: 0.75rem; color: #38BDF8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.2rem;">Metodologia Certificada</span>
+                                <h4 style="color: #FFFFFF; font-size: 1.15rem; text-transform: uppercase; margin: 0; letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">
+                                    <i data-lucide="cog" style="width: 20px; height: 20px; color: #38BDF8;"></i> Procés de Regeneració de Bisell CNC
+                                </h4>
+                                <p style="margin: 0.35rem 0 0; font-size: 0.85rem; color: #CBD5E1; line-height: 1.4;">Toleràncies micromètriques amb geometria 100% original de fabricant.</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <div class="reafilat-step-item">
+                                    <span class="step-num">01</span>
+                                    <div>
+                                        <strong>Neteja &amp; Descontaminació</strong>
+                                        <p>Eliminació de residus grassos amb banys d'ultrasons d'alta freqüència.</p>
+                                    </div>
+                                </div>
+                                <div class="reafilat-step-item">
+                                    <span class="step-num">02</span>
+                                    <div>
+                                        <strong>Rectificat CNC per Làser</strong>
+                                        <p>Afilat robotitzat multipassada respectant l'angle i geometria de bisell original.</p>
+                                    </div>
+                                </div>
+                                <div class="reafilat-step-item">
+                                    <span class="step-num">03</span>
+                                    <div>
+                                        <strong>Re-Equilibrat Dinàmic</strong>
+                                        <p>Control làser de vibracions i toleràncies per a rotacions extremes de 1.500 RPM.</p>
+                                    </div>
+                                </div>
+                                <div class="reafilat-step-item">
+                                    <span class="step-num">04</span>
+                                    <div>
+                                        <strong>Embalatge Higiènic Segur</strong>
+                                        <p>Protecció total del fil de tall amb funda polimèrica i lliurament directe a fàbrica.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="urgent-form-grid">
-                            <div class="reafilat-process-box">
-                                <div style="margin-bottom: 1.2rem;">
-                                    <span style="font-size: 0.75rem; color: #38BDF8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.2rem;">Metodologia Certificada</span>
-                                    <h4 style="color: #FFFFFF; font-size: 1.15rem; text-transform: uppercase; margin: 0; letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.5rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">
-                                        <i data-lucide="cog" style="width: 20px; height: 20px; color: #38BDF8;"></i> Procés de Regeneració de Bisell CNC
-                                    </h4>
-                                    <p style="margin: 0.35rem 0 0; font-size: 0.85rem; color: #CBD5E1; line-height: 1.4;">Toleràncies micromètriques amb geometria 100% original de fabricant.</p>
-                                </div>
-                                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                                    <div class="reafilat-step-item">
-                                        <span class="step-num">01</span>
-                                        <div>
-                                            <strong>Neteja &amp; Descontaminació</strong>
-                                            <p>Eliminació de residus grassos amb banys d'ultrasons d'alta freqüència.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reafilat-step-item">
-                                        <span class="step-num">02</span>
-                                        <div>
-                                            <strong>Rectificat CNC per Làser</strong>
-                                            <p>Afilat robotitzat multipassada respectant l'angle i geometria de bisell original.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reafilat-step-item">
-                                        <span class="step-num">03</span>
-                                        <div>
-                                            <strong>Re-Equilibrat Dinàmic</strong>
-                                            <p>Control làser de vibracions i toleràncies per a rotacions extremes de 1.500 RPM.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reafilat-step-item">
-                                        <span class="step-num">04</span>
-                                        <div>
-                                            <strong>Embalatge Higiènic Segur</strong>
-                                            <p>Protecció total del fil de tall amb funda polimèrica i lliurament directe a fàbrica.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="urgent-form-box">
+                            <div style="margin-bottom: 1.2rem;">
+                                <span style="font-size: 0.75rem; color: #38BDF8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.2rem;">Servei Express a Planta</span>
+                                <h4 style="font-size: 1.15rem; margin: 0; text-transform: uppercase; color: #FFFFFF; display: flex; align-items: center; gap: 0.5rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">
+                                    <i data-lucide="truck" style="width: 20px; height: 20px; color: #38BDF8;"></i> Sol·licitar Recollida d'Urgència 24h
+                                </h4>
+                                <p style="margin: 0.35rem 0 0; font-size: 0.85rem; color: #CBD5E1; line-height: 1.4;">Un tècnic d'ESMOTECH us contactarà en menys de 15 minuts per coordinar-ho.</p>
                             </div>
-
-                            <div class="urgent-form-box">
-                                <div style="margin-bottom: 1.2rem;">
-                                    <span style="font-size: 0.75rem; color: #38BDF8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.2rem;">Servei Express a Planta</span>
-                                    <h4 style="font-size: 1.15rem; margin: 0; text-transform: uppercase; color: #FFFFFF; display: flex; align-items: center; gap: 0.5rem; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">
-                                        <i data-lucide="truck" style="width: 20px; height: 20px; color: #38BDF8;"></i> Sol·licitar Recollida d'Urgència 24h
-                                    </h4>
-                                    <p style="margin: 0.35rem 0 0; font-size: 0.85rem; color: #CBD5E1; line-height: 1.4;">Un tècnic d'ESMOTECH us contactarà en menys de 15 minuts per coordinar-ho.</p>
+                            <form id="urgentPickForm" onsubmit="event.preventDefault(); alert('Sol·licitud enviada amb èxit! El nostre equip tècnic us trucarà en menys de 15 minuts.');">
+                                <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+                                    <input type="text" placeholder="Nom de la Fàbrica / Empresa *" required class="urgent-input">
+                                    <input type="tel" placeholder="Telèfon d'Urgències 24h *" required class="urgent-input">
+                                    <select required class="urgent-input">
+                                        <option value="">Selecciona Tipus de Ganiveta a Reafilar</option>
+                                        <option value="llesores">Ganivetes de Llescadora (Weber / Bizerba)</option>
+                                        <option value="cutters">Ganivetes de Cutter Industrial</option>
+                                        <option value="skinners">Ganivetes Despelladores (Skinners)</option>
+                                        <option value="serres">Fulles de Serra Cinta</option>
+                                    </select>
+                                    <button type="submit" class="btn-reafilat-submit">
+                                        <i data-lucide="zap" style="width: 18px; height: 18px;"></i> ENVIAR URGÈNCIA DE RECOLLIDA
+                                    </button>
                                 </div>
-                                <form id="urgentPickForm" onsubmit="event.preventDefault(); alert('Sol·licitud enviada amb èxit! El nostre equip tècnic us trucarà en menys de 15 minuts.');">
-                                    <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-                                        <input type="text" placeholder="Nom de la Fàbrica / Empresa *" required class="urgent-input">
-                                        <input type="tel" placeholder="Telèfon d'Urgències 24h *" required class="urgent-input">
-                                        <select required class="urgent-input">
-                                            <option value="">Selecciona Tipus de Ganiveta a Reafilar</option>
-                                            <option value="llesores">Ganivetes de Llescadora (Weber / Bizerba)</option>
-                                            <option value="cutters">Ganivetes de Cutter Industrial</option>
-                                            <option value="skinners">Ganivetes Despelladores (Skinners)</option>
-                                            <option value="serres">Fulles de Serra Cinta</option>
-                                        </select>
-                                        <button type="submit" class="btn-reafilat-submit">
-                                            <i data-lucide="zap" style="width: 18px; height: 18px;"></i> ENVIAR URGÈNCIA DE RECOLLIDA
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
