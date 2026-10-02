@@ -2520,12 +2520,13 @@
 .category-hero-fullwidth {
   position: relative;
   width: 100%;
-  min-height: 380px;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  margin-top: 0 !important;
   margin-bottom: 3.5rem;
   border-bottom: 1px solid var(--border-color);
   overflow: hidden;
@@ -2558,8 +2559,8 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .category-hero-content {
