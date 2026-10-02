@@ -2144,60 +2144,66 @@
 
 .reafilat-process-box,
 .urgent-form-box {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.07) 100%) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.30) !important;
-  border-radius: 12px;
-  padding: 1.6rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+  background: rgba(6, 12, 20, 0.78) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.28) !important;
+  border-radius: 14px;
+  padding: 1.8rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
   transition: all 0.3s ease;
 }
 
 .reafilat-step-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.9rem;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 100%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  transition: all 0.2s ease;
+  gap: 1rem;
+  padding: 0.9rem 1.15rem;
+  border-radius: 10px;
+  background: rgba(15, 25, 38, 0.88) !important;
+  border: 1px solid rgba(56, 189, 248, 0.22) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
 }
 
 .reafilat-step-item:hover {
-  background: linear-gradient(90deg, rgba(0, 118, 193, 0.35) 0%, rgba(255, 255, 255, 0.18) 100%) !important;
-  border-color: rgba(56, 189, 248, 0.7) !important;
+  background: rgba(22, 38, 58, 0.95) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  transform: translateX(4px);
+  box-shadow: 0 6px 18px rgba(0, 118, 193, 0.25);
 }
 
 .reafilat-step-item .step-num {
   font-family: var(--font-display, sans-serif);
   font-weight: 800;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: #FFFFFF !important;
-  background: rgba(0, 118, 193, 0.7) !important;
-  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  background: linear-gradient(135deg, #0076C1 0%, #0284C7 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.6) !important;
   border-radius: 6px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.3rem 0.6rem;
   line-height: 1;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
+  box-shadow: 0 2px 8px rgba(0, 118, 193, 0.4);
 }
 
 .reafilat-step-item strong {
   display: block;
-  font-size: 0.95rem;
+  font-size: 1.02rem;
+  font-weight: 700;
   color: #FFFFFF !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  margin-bottom: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.01em;
 }
 
 .reafilat-step-item p {
   margin: 0;
-  font-size: 0.85rem;
-  color: #FFFFFF !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  line-height: 1.45;
+  font-size: 0.88rem;
+  color: #E2E8F0 !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  line-height: 1.5;
 }
 
 .btn-reafilat-submit {
@@ -2244,37 +2250,37 @@
 /* Light Theme: Reafilat Cards */
 [data-theme="light"] .reafilat-process-box,
 [data-theme="light"] .urgent-form-box {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 100%) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.35) !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+  background: rgba(6, 12, 20, 0.82) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
 }
 
 [data-theme="light"] .reafilat-step-item {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.09) 100%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  background: rgba(15, 25, 38, 0.9) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
 }
 
 [data-theme="light"] .reafilat-step-item:hover {
-  background: linear-gradient(90deg, rgba(0, 118, 193, 0.35) 0%, rgba(255, 255, 255, 0.25) 100%) !important;
+  background: rgba(22, 38, 58, 0.95) !important;
   border-color: rgba(56, 189, 248, 0.6) !important;
 }
 
 [data-theme="light"] .reafilat-step-item .step-num {
   color: #FFFFFF !important;
-  background: rgba(0, 118, 193, 0.45) !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
+  background: linear-gradient(135deg, #0076C1 0%, #0284C7 100%) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
 }
 
 [data-theme="light"] .reafilat-step-item strong {
   color: #FFFFFF !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
 }
 
 [data-theme="light"] .reafilat-step-item p {
-  color: #FFFFFF !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+  color: #E2E8F0 !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
 }
 
 [data-theme="light"] .urgent-form-grid h4 {
