@@ -9,3 +9,5 @@ brain/
 *.tmp
 extracted_utf8.txt
 extracted_pptx_text.txt
+dist/
+video/renders/
