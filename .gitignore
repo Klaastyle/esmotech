@@ -11,3 +11,15 @@ extracted_utf8.txt
 extracted_pptx_text.txt
 dist/
 video/renders/
+
+# Local raw materials & working docs
+~$*
+*.docx
+Canvis a fer.docx
+Catàlegs Proveïdors/
+Imatges Web/
+PPT Esmotech/
+extracted_images/
+openart_assets/
+video_clips/
+mcp.json

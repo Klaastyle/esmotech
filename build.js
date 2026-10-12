@@ -228,6 +228,14 @@ pagesToCopy.forEach(page => {
 let sitemapUrls = [
     'https://www.esmotech.com/',
     'https://www.esmotech.com/productos.html',
+    'https://www.esmotech.com/productes/circulars-i-evolutives.html',
+    'https://www.esmotech.com/productes/cutters-industrials.html',
+    'https://www.esmotech.com/productes/picadores-placats.html',
+    'https://www.esmotech.com/productes/eines-de-tall.html',
+    'https://www.esmotech.com/productes/serra-cinta.html',
+    'https://www.esmotech.com/productes/ganivetes-denvasat.html',
+    'https://www.esmotech.com/productes/capcals-termics.html',
+    'https://www.esmotech.com/productes/abrasius.html',
     'https://www.esmotech.com/servicios.html',
     'https://www.esmotech.com/contacto.html',
     'https://www.esmotech.com/tekblade.html',
@@ -375,7 +383,7 @@ products.forEach(p => {
 });
 
 // Copy custom category landing pages to dist/productes/
-const customCatPages = ['eines-de-tall.html', 'serra-cinta.html', 'ganivetes-denvasat.html', 'circulars-i-evolutives.html', 'capcals-termics.html', 'abrasius.html'];
+const customCatPages = ['eines-de-tall.html', 'serra-cinta.html', 'ganivetes-denvasat.html', 'circulars-i-evolutives.html', 'cutters-industrials.html', 'picadores-placats.html', 'capcals-termics.html', 'abrasius.html'];
 customCatPages.forEach(cp => {
     const srcPath = path.join(rootProdDir, cp);
     if (fs.existsSync(srcPath)) {

@@ -4,21 +4,44 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('ESMOTECH Platform Loaded');
     initNumberTicker();
     initAceternityGridSpotlight();
+    initBackgroundVideo();
 });
 
 /**
- * Aceternity UI: Grid Spotlight Interaction
+ * Garantir reproducció fluïda del vídeo de fons
+ */
+function initBackgroundVideo() {
+    const video = document.querySelector('.reafilat-bg-video');
+    if (!video) return;
+    video.muted = true;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            document.addEventListener('click', () => video.play(), { once: true });
+        });
+    }
+}
+
+/**
+ * Aceternity UI: Grid Spotlight Interaction (rAF throttle per màxim rendiment)
  * Dynamically tracks cursor over CAD grid blueprint sections
  */
 function initAceternityGridSpotlight() {
     const grids = document.querySelectorAll('.reafilat-hub-wrapper');
     grids.forEach(grid => {
+        let ticking = false;
         grid.addEventListener('mousemove', e => {
-            const rect = grid.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            grid.style.setProperty('--mouse-x', `${x}%`);
-            grid.style.setProperty('--mouse-y', `${y}%`);
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const rect = grid.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    grid.style.setProperty('--mouse-x', `${x}%`);
+                    grid.style.setProperty('--mouse-y', `${y}%`);
+                    ticking = false;
+                });
+                ticking = true;
+            }
         });
         grid.addEventListener('mouseleave', () => {
             grid.style.setProperty('--mouse-x', '50%');

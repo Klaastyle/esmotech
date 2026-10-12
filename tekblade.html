@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/components.css?v=23">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -35,17 +35,50 @@
                     
                     <li class="has-mega-menu">
                         <a href="productos.html" class="nav-link">Productes</a>
-                        <div class="mega-menu" style="width: 530px; padding: 1.5rem;">
+                        <div class="mega-menu mega-menu-products-container">
                             <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Categories Principals de Tall</h4>
-                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.6rem;">
+                            <ul class="mega-menu-list">
+                                <li>
+                                    <a href="productes/circulars-i-evolutives.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-circulars-evolutives.png" alt="Circulars i Evolutives" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">1. Circulars &amp; Evolutives</span>
+                                            <small class="menu-item-desc">Llescadores Hagedorn FoodTech (TRITECH, GENESIS, LONGLIFE) per a Weber Slicer.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/cutters-industrials.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-cutters-industrials.png" alt="Cutters Industrials" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">2. Cutters Industrials</span>
+                                            <small class="menu-item-desc">Ganivetes en acer D2 equilibrades dinàmicament SCT Fuchs Columbus.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/picadores-placats.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-picadores-placats.png" alt="Picadores &amp; Placats" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">3. Picadores &amp; Placats</span>
+                                            <small class="menu-item-desc">Plaques i ganivetes sistemes Unger i Enterprise SCT Vorndran.</small>
+                                        </div>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="productes/eines-de-tall.html" class="mega-menu-product-link">
                                         <div class="mega-menu-thumb">
                                             <img src="img/menu/menu-eines-tall.png" alt="Eines de Tall" class="mega-menu-thumb-img">
                                         </div>
                                         <div class="mega-menu-info">
-                                            <span class="menu-item-title">1. Eines de Tall (Skinners, Cutters)</span>
-                                            <small class="menu-item-desc">Skinners, despelladores, cutters en acer D2 i placats de picadora.</small>
+                                            <span class="menu-item-title">4. Eines de Tall</span>
+                                            <small class="menu-item-desc">Skinners, despelladores i ganivetes especials d'obrador.</small>
                                         </div>
                                     </a>
                                 </li>
@@ -55,7 +88,7 @@
                                             <img src="img/menu/menu-serra-cinta.png" alt="Serra Cinta" class="mega-menu-thumb-img">
                                         </div>
                                         <div class="mega-menu-info">
-                                            <span class="menu-item-title">2. Serra Cinta (Carn, Os, Congelat)</span>
+                                            <span class="menu-item-title">5. Serra Cinta</span>
                                             <small class="menu-item-desc">Fulles de serra cinta per a carn fresca, os, congelat (-20ºC) i aviram.</small>
                                         </div>
                                     </a>
@@ -66,19 +99,8 @@
                                             <img src="img/menu/menu-ganivetes-envasat.png" alt="Ganivetes d'Envasat" class="mega-menu-thumb-img">
                                         </div>
                                         <div class="mega-menu-info">
-                                            <span class="menu-item-title">3. Ganivetes d'Envasat &amp; Termoformat</span>
+                                            <span class="menu-item-title">6. Ganivetes d'Envasat &amp; Termoformat</span>
                                             <small class="menu-item-desc">Termoformat Ulma i Multivac, ganivetes perimetrals i matrius.</small>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="productes/circulars-i-evolutives.html" class="mega-menu-product-link">
-                                        <div class="mega-menu-thumb">
-                                            <img src="img/menu/menu-circulars-evolutives.png" alt="Circulars i Evolutives" class="mega-menu-thumb-img">
-                                        </div>
-                                        <div class="mega-menu-info">
-                                            <span class="menu-item-title">4. Circulars &amp; Evolutives (Weber/Hagedorn)</span>
-                                            <small class="menu-item-desc">Llescadores Hagedorn FoodTech (TRITECH) per a Weber Slicer.</small>
                                         </div>
                                     </a>
                                 </li>
@@ -88,7 +110,7 @@
                                             <img src="img/menu/menu-capcals-termics.png" alt="Capçals Tèrmics" class="mega-menu-thumb-img">
                                         </div>
                                         <div class="mega-menu-info">
-                                            <span class="menu-item-title">5. Capçals Tèrmics (Bizerba, Zebra)</span>
+                                            <span class="menu-item-title">7. Capçals Tèrmics</span>
                                             <small class="menu-item-desc">Capçals d'impressió tèrmica per a etiquetatge industrial de pesat.</small>
                                         </div>
                                     </a>
@@ -96,10 +118,10 @@
                                 <li>
                                     <a href="productes/abrasius.html" class="mega-menu-product-link">
                                         <div class="mega-menu-thumb">
-                                            <img src="img/menu/menu-abrasius.png" alt="Abrasius &amp; Esmolat" class="mega-menu-thumb-img">
+                                            <img src="img/menu/menu-abrasius.png" alt="Abrasius & Esmolat" class="mega-menu-thumb-img">
                                         </div>
                                         <div class="mega-menu-info">
-                                            <span class="menu-item-title">6. Abrasius &amp; Esmolat Industrial</span>
+                                            <span class="menu-item-title">8. Abrasius &amp; Esmolat Industrial</span>
                                             <small class="menu-item-desc">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall.</small>
                                         </div>
                                     </a>
@@ -112,13 +134,13 @@
 
                     <li class="has-mega-menu">
                         <a href="servicios.html" class="nav-link">Serveis</a>
-                        <div class="mega-menu" style="width: 420px; padding: 1.5rem;">
+                        <div class="mega-menu mega-menu-services-container">
                             <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
-                            <ul class="mega-menu-list" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                            <ul class="mega-menu-list">
                                 <li>
                                     <a href="serveis/esmolat.html" style="display: flex; flex-direction: column;">
-                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reafilat CNC Industrial</span>
-                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reafilat d'alta precisió per a ganivetes de llescadora i cutters.</small>
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reesmolat CNC Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reesmolat d'alta precisió per a ganivetes de llescadora i cutters.</small>
                                     </a>
                                 </li>
                                 <li>
