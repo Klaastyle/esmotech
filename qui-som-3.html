@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Som (Opció 3: Fluid Expanding Grid) | ESMOTECH Cutting Solutions</title>
+    <meta name="description" content="Presentació d'ESMOTECH estil Fluid Expanding Grid: Tauler expansiu interactiu amb transicions suaus de columnes i detalls tècnics complets.">
+    
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css?v=23">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Favicon & Icons ESMOTECH -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/esmotech-favicon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="img/esmotech-icon-512.png">
+
+    <style>
+        /* ==========================================================================
+           VERSION SWITCHER BAR (EXPLORA LES 3 OPCIONS)
+           ========================================================================== */
+        .version-switcher-bar {
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 0.6rem 1rem;
+            position: sticky;
+            top: 72px;
+            z-index: 99;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        [data-theme="light"] .version-switcher-bar {
+            background: rgba(248, 250, 252, 0.95);
+            border-bottom-color: rgba(0, 118, 193, 0.15);
+        }
+        .version-switcher-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .version-switcher-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .version-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .version-pill {
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .version-pill:hover {
+            color: var(--text-primary);
+            border-color: var(--primary);
+            background: rgba(0, 136, 255, 0.1);
+        }
+        .version-pill.active {
+            background: var(--primary);
+            color: #FFFFFF;
+            border-color: var(--primary);
+            box-shadow: 0 0 16px rgba(0, 136, 255, 0.4);
+        }
+
+        /* ==========================================================================
+           FLUID EXPANDING GRID STYLES (STYLE 21ST.DEV 0XURVISH)
+           ========================================================================== */
+        .fluid-grid-hero {
+            position: relative;
+            padding: 4rem 0 5rem;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-bottom: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+        .fluid-grid-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 30%, rgba(0, 136, 255, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .fluid-badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 136, 255, 0.12);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 9999px;
+            padding: 0.4rem 1.1rem;
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        [data-theme="light"] .fluid-badge-pill {
+            background: rgba(0, 118, 193, 0.1);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.3);
+        }
+
+        /* Fluid Expanding Accordion Container */
+        .fluid-container {
+            display: flex;
+            width: 100%;
+            height: 600px;
+            gap: 1.2rem;
+            margin-top: 2.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        @media (max-width: 960px) {
+            .fluid-container {
+                flex-direction: column;
+                height: auto;
+                gap: 1rem;
+            }
+        }
+
+        /* Individual Fluid Tile / Card */
+        .fluid-card {
+            position: relative;
+            flex: 1;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+            transition: flex 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                        border-color 0.4s ease,
+                        box-shadow 0.4s ease;
+            background: #0B1118;
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        [data-theme="light"] .fluid-card {
+            background: #F8FAFC;
+            border-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Active / Expanded Tile */
+        .fluid-card.active {
+            flex: 3.2;
+            border-color: #38BDF8;
+            box-shadow: 0 25px 60px rgba(0, 136, 255, 0.25);
+            cursor: default;
+        }
+        [data-theme="light"] .fluid-card.active {
+            border-color: #0066CC;
+            box-shadow: 0 20px 50px rgba(0, 102, 204, 0.18);
+        }
+        @media (max-width: 960px) {
+            .fluid-card {
+                height: 140px;
+                flex: none;
+            }
+            .fluid-card.active {
+                height: auto;
+                min-height: 480px;
+                flex: none;
+            }
+        }
+
+        /* Background Image inside Tile */
+        .fluid-card-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                        filter 0.5s ease;
+            filter: brightness(0.65) saturate(0.9);
+            z-index: 1;
+        }
+        .fluid-card.active .fluid-card-bg {
+            filter: brightness(0.85) saturate(1.1);
+            transform: scale(1.04);
+        }
+
+        /* Gradient Dark Overlay */
+        .fluid-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(11, 17, 24, 0.95) 0%, rgba(11, 17, 24, 0.65) 50%, rgba(11, 17, 24, 0.3) 100%);
+            z-index: 2;
+            transition: background 0.5s ease;
+        }
+        .fluid-card.active .fluid-card-overlay {
+            background: linear-gradient(to top, rgba(11, 17, 24, 0.98) 0%, rgba(11, 17, 24, 0.78) 55%, rgba(11, 17, 24, 0.4) 100%);
+        }
+
+        /* Card Content Inner Container */
+        .fluid-card-content {
+            position: relative;
+            z-index: 3;
+            padding: 2.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Collapsed View (Vertical Label & Indicator) */
+        .fluid-collapsed-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            inset: 2rem 0;
+            pointer-events: none;
+        }
+        .fluid-card.active .fluid-collapsed-view {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .collapsed-number {
+            font-family: var(--font-display, sans-serif);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #38BDF8;
+            line-height: 1;
+        }
+        .collapsed-vertical-title {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-family: var(--font-display, sans-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .collapsed-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+        }
+        @media (max-width: 960px) {
+            .fluid-collapsed-view {
+                position: relative;
+                inset: auto;
+                flex-direction: row;
+                width: 100%;
+                padding: 1.5rem 1.8rem;
+            }
+            .collapsed-vertical-title {
+                writing-mode: horizontal-tb;
+                transform: none;
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Expanded Full Content View */
+        .fluid-expanded-view {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: opacity 0.45s 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.45s 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                        visibility 0.45s 0.2s;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+        .fluid-card.active .fluid-expanded-view {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .expanded-badge {
+            align-self: flex-start;
+            background: rgba(0, 136, 255, 0.2);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .expanded-title {
+            font-family: var(--font-display, sans-serif);
+            font-size: 2.2rem;
+            line-height: 1.15;
+            color: #FFFFFF;
+            margin: 0;
+            letter-spacing: -0.01em;
+        }
+        .expanded-desc {
+            font-size: 1rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.82);
+            margin: 0;
+            max-width: 580px;
+        }
+
+        .expanded-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: #FFFFFF;
+        }
+        .expanded-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+        }
+        .expanded-features li i {
+            color: #38BDF8;
+            flex-shrink: 0;
+        }
+
+        .expanded-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0.6rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .expanded-kpi {
+            display: flex;
+            align-items: baseline;
+            gap: 0.45rem;
+        }
+        .expanded-kpi strong {
+            font-family: var(--font-display, sans-serif);
+            font-size: 1.6rem;
+            color: #38BDF8;
+        }
+        .expanded-kpi span {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ==========================================================================
+           BENTO GRID STYLES (MATCHES QUI-SOM.HTML)
+           ========================================================================== */
+        .quisom-bento-section {
+            padding: 4.5rem 0 5rem;
+            background: var(--bg-primary);
+            position: relative;
+        }
+        .bento-header {
+            max-width: 860px;
+            margin: 0 auto 3.5rem;
+            text-align: center;
+        }
+        .bento-badge {
+            background: rgba(0, 136, 255, 0.12);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            padding: 0.35rem 0.9rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            margin-bottom: 1rem;
+        }
+        [data-theme="light"] .bento-badge {
+            background: rgba(0, 118, 193, 0.1);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.3);
+        }
+        .bento-title {
+            font-size: 2.8rem;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+        @media (max-width: 768px) {
+            .bento-title {
+                font-size: 2.1rem;
+            }
+        }
+        .bento-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+        .bento-card {
+            background: rgba(15, 23, 34, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.2rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        [data-theme="light"] .bento-card {
+            background: #FFFFFF;
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(56, 189, 248, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 136, 255, 0.15);
+        }
+        [data-theme="light"] .bento-card:hover {
+            border-color: rgba(0, 118, 193, 0.45);
+            box-shadow: 0 16px 36px rgba(0, 118, 193, 0.12);
+        }
+        .bento-card-leader {
+            grid-column: span 6;
+        }
+        @media (max-width: 960px) {
+            .bento-card-leader {
+                grid-column: span 12;
+            }
+        }
+        .leader-badge {
+            align-self: flex-start;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-bottom: 1.2rem;
+        }
+        .leader-badge-founder {
+            background: rgba(245, 158, 11, 0.18);
+            color: #FBBF24;
+            border: 1px solid rgba(245, 158, 11, 0.45);
+        }
+        [data-theme="light"] .leader-badge-founder {
+            background: rgba(217, 119, 6, 0.12);
+            color: #B45309;
+            border-color: rgba(217, 119, 6, 0.35);
+        }
+        .leader-badge-director {
+            background: rgba(0, 136, 255, 0.18);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.45);
+        }
+        [data-theme="light"] .leader-badge-director {
+            background: rgba(0, 118, 193, 0.12);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.35);
+        }
+        .leader-name {
+            font-family: var(--font-display, sans-serif);
+            font-size: 2.1rem;
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin: 0 0 0.35rem;
+            letter-spacing: -0.01em;
+        }
+        .leader-role {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+        .leader-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+        }
+        .leader-pill {
+            font-size: 0.76rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 0.25rem 0.65rem;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .leader-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+        }
+        .leader-features {
+            list-style: none;
+            padding: 0;
+            margin: auto 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            font-size: 0.88rem;
+            color: var(--text-primary);
+        }
+        .leader-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            line-height: 1.45;
+        }
+        .leader-features li i {
+            color: #38BDF8;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        [data-theme="light"] .leader-features li i {
+            color: #0066CC;
+        }
+        .bento-card-workshop {
+            grid-column: span 7;
+        }
+        .bento-card-circular {
+            grid-column: span 5;
+        }
+        .bento-card-coverage {
+            grid-column: span 12;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem 2.5rem;
+            background: linear-gradient(135deg, rgba(0, 136, 255, 0.1) 0%, rgba(15, 23, 34, 0.9) 100%);
+            border-color: rgba(56, 189, 248, 0.25);
+        }
+        [data-theme="light"] .bento-card-coverage {
+            background: linear-gradient(135deg, rgba(0, 118, 193, 0.08) 0%, #FFFFFF 100%);
+            border-color: rgba(0, 118, 193, 0.2);
+        }
+        @media (max-width: 960px) {
+            .bento-card-workshop,
+            .bento-card-circular,
+            .bento-card-coverage {
+                grid-column: span 12;
+            }
+        }
+        .workshop-machinery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+        @media (max-width: 640px) {
+            .workshop-machinery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .machinery-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+        [data-theme="light"] .machinery-item {
+            background: rgba(0, 0, 0, 0.02);
+            border-color: rgba(0, 0, 0, 0.06);
+        }
+        .machinery-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            margin-bottom: 0.35rem;
+        }
+        .machinery-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.4;
+        }
+        .circular-stat-highlight {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 14px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0;
+        }
+        .circular-stat-number {
+            font-family: var(--font-display, sans-serif);
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #10B981;
+            line-height: 1;
+        }
+        .circular-stat-text {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            margin: 0;
+        }
+        .coverage-scope-group {
+            display: flex;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+        }
+        .coverage-scope-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .coverage-scope-item .scope-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(0, 136, 255, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #38BDF8;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header sticky">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="ESMOTECH Cutting Solutions">
+                <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" class="logo-dark">
+                <img src="img/esmotech-logo-dark.png" alt="ESMOTECH Cutting Solutions" class="logo-light">
+            </a>
+            
+            <nav class="main-nav" aria-label="Navegació Principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inici</a></li>
+                    <li><a href="qui-som.html" class="nav-link active">Qui Som</a></li>
+                    
+                    <li class="has-mega-menu">
+                        <a href="productos.html" class="nav-link">Productes</a>
+                        <div class="mega-menu mega-menu-products-container">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Categories Principals de Tall</h4>
+                            <ul class="mega-menu-list">
+                                <li>
+                                    <a href="productes/circulars-i-evolutives.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-circulars-evolutives.png" alt="Circulars i Evolutives" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">1. Circulars &amp; Evolutives</span>
+                                            <small class="menu-item-desc">Llescadores Hagedorn FoodTech (TRITECH, GENESIS, LONGLIFE) per a Weber Slicer.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/cutters-industrials.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-cutters-industrials.png" alt="Cutters Industrials" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">2. Cutters Industrials</span>
+                                            <small class="menu-item-desc">Ganivetes en acer D2 equilibrades dinàmicament SCT Fuchs Columbus.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/picadores-placats.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-picadores-placats.png" alt="Picadores &amp; Placats" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">3. Picadores &amp; Placats</span>
+                                            <small class="menu-item-desc">Plaques i ganivetes sistemes Unger i Enterprise SCT Vorndran.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/eines-de-tall.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-eines-tall.png" alt="Eines de Tall" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">4. Eines de Tall</span>
+                                            <small class="menu-item-desc">Skinners, despelladores i ganivetes especials d'obrador.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/serra-cinta.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-serra-cinta.png" alt="Serra Cinta" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">5. Serra Cinta</span>
+                                            <small class="menu-item-desc">Fulles de serra cinta per a carn fresca, os, congelat (-20ºC) i aviram.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/ganivetes-denvasat.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-ganivetes-envasat.png" alt="Ganivetes d'Envasat" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">6. Ganivetes d'Envasat &amp; Termoformat</span>
+                                            <small class="menu-item-desc">Termoformat Ulma i Multivac, ganivetes perimetrals i matrius.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/capcals-termics.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-capcals-termics.png" alt="Capçals Tèrmics" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">7. Capçals Tèrmics</span>
+                                            <small class="menu-item-desc">Capçals d'impressió tèrmica per a etiquetatge industrial de pesat.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productes/abrasius.html" class="mega-menu-product-link">
+                                        <div class="mega-menu-thumb">
+                                            <img src="img/menu/menu-abrasius.png" alt="Abrasius & Esmolat" class="mega-menu-thumb-img">
+                                        </div>
+                                        <div class="mega-menu-info">
+                                            <span class="menu-item-title">8. Abrasius &amp; Esmolat Industrial</span>
+                                            <small class="menu-item-desc">Consumibles de rectificat i esmolat PRIMEdge per mantenir el tall.</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
+
+                    <li class="has-mega-menu">
+                        <a href="servicios.html" class="nav-link">Serveis</a>
+                        <div class="mega-menu mega-menu-services-container">
+                            <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
+                            <ul class="mega-menu-list">
+                                <li>
+                                    <a href="serveis/esmolat.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🔪 Esmolat i Reesmolat CNC Industrial</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Reesmolat d'alta precisió per a ganivetes de llescadora i cutters.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/formacio.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">🎓 Formació Tècnica per a Operaris</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Cursos de seguretat en el tall, regulació de fil i optimització.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/consultoria.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">📊 Consultoria i Auditoria de Minvament</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Estudi del rendiment de tall a la línia per reduir la merma.</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serveis/suport.html" style="display: flex; flex-direction: column;">
+                                        <span style="font-weight: 600; color: var(--text-primary);">⚡ Suport Tècnic 24/7 i Emergències</span>
+                                        <small style="color: var(--text-muted); font-size: 0.78rem;">Lliurament d'emergència en 24h i manteniment preventiu.</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
+                    <span class="lang-option active" style="color: var(--primary); cursor: pointer;">CA</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">ES</span>
+                    <span style="color: var(--border-color);">|</span>
+                    <span class="lang-option" style="color: var(--text-secondary); cursor: pointer; opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">EN</span>
+                </div>
+                <div class="theme-toggle" role="radiogroup" aria-label="Selecció de tema">
+                    <button class="theme-toggle-option" data-theme="light"><i data-lucide="sun" style="width:16px;height:16px"></i></button>
+                    <button class="theme-toggle-option active" data-theme="dark"><i data-lucide="moon" style="width:16px;height:16px"></i></button>
+                </div>
+                <a href="contacto.html" class="btn btn-primary text-xs" style="background: #e63946; border-color: #e63946; color: #fff; font-weight: bold; padding: 0.55rem 1rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    CONTACTE
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA INTERACTIVA DE COMPARACIÓ DE VERSIONS -->
+    <div class="version-switcher-bar">
+        <div class="version-switcher-inner">
+            <span class="version-switcher-title">
+                <i data-lucide="layout-grid" style="width: 14px; height: 14px; color: var(--primary);"></i>
+                Comparador d'estils "Qui Som":
+            </span>
+            <div class="version-pills">
+                <a href="qui-som.html" class="version-pill">
+                    <i data-lucide="layers" style="width: 13px; height: 13px;"></i> Versió 0: 3D Coverflow
+                </a>
+                <a href="qui-som-1.html" class="version-pill">
+                    <i data-lucide="play-circle" style="width: 13px; height: 13px;"></i> Opció 1: Feature Carousel
+                </a>
+                <a href="qui-som-2.html" class="version-pill">
+                    <i data-lucide="columns-3" style="width: 13px; height: 13px;"></i> Opció 2: Feature 108 Tabs
+                </a>
+                <a href="qui-som-3.html" class="version-pill active">
+                    <i data-lucide="stretch-horizontal" style="width: 13px; height: 13px;"></i> Opció 3: Fluid Expanding Grid
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- FLUID EXPANDING GRID HERO SECTION -->
+        <section class="fluid-grid-hero">
+            <div class="container">
+                <div style="max-width: 860px;">
+                    <span class="fluid-badge-pill">
+                        <i data-lucide="stretch-horizontal" style="width: 14px; height: 14px;"></i> ESTIL 3 · FLUID EXPANDING GRID
+                    </span>
+                    <h1 class="font-display" style="font-size: 3.4rem; line-height: 1.1; margin-bottom: 1.2rem; color: var(--text-primary); letter-spacing: -0.01em;">
+                        QUI SOM, QUÈ FEM <span class="aurora-highlight">I COM TREBALLEM</span>
+                    </h1>
+                    <p style="color: var(--text-secondary); font-size: 1.25rem; line-height: 1.5; border-left: 4px solid var(--primary); padding-left: 1.4rem; margin: 0;">
+                        Passa el cursor o clica sobre cadascuna de les columnes per desplegar la capacitat tècnica i el model de treball d'ESMOTECH.
+                    </p>
+                </div>
+
+                <!-- FLUID ACCORDION TILES CONTAINER -->
+                <div class="fluid-container" id="fluidGrid">
+                    
+                    <!-- TILE 1: COMPROMÍS (QUI SOM) -->
+                    <div class="fluid-card" data-index="0" role="button" tabindex="0" aria-label="Expandir pilar Compromís">
+                        <img src="img/qui-som-equip-especialitzat.jpg" alt="Equip Especialitzat ESMOTECH" class="fluid-card-bg">
+                        <div class="fluid-card-overlay"></div>
+                        
+                        <div class="fluid-card-content">
+                            <!-- Collapsed state view -->
+                            <div class="fluid-collapsed-view">
+                                <span class="collapsed-number">01</span>
+                                <span class="collapsed-vertical-title">COMPROMÍS · QUI SOM</span>
+                                <div class="collapsed-icon"><i data-lucide="shield" style="width: 18px; height: 18px;"></i></div>
+                            </div>
+
+                            <!-- Expanded state view -->
+                            <div class="fluid-expanded-view">
+                                <span class="expanded-badge">
+                                    <i data-lucide="award" style="width: 13px; height: 13px;"></i> PILAR 01 · PROXIMITAT &amp; CRITERI
+                                </span>
+                                <h2 class="expanded-title">Trajectòria sòlida i vocació de servei proper</h2>
+                                <p class="expanded-desc">
+                                    Som especialistes en tall industrial per a la indústria alimentària i càrnia. Oferim criteri estratègic directe, contrastat durant més de 20 anys a peu de línia de processament.
+                                </p>
+                                <ul class="expanded-features">
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Tracte directe i àgil amb la direcció tècnica i comercial.</li>
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Coneixement profund d'especejament, filetejat i llescat ràpid.</li>
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Compromís ferm de confiança i protecció de rendibilitat.</li>
+                                </ul>
+                                <div class="expanded-footer">
+                                    <div class="expanded-kpi">
+                                        <strong>+20 Anys</strong>
+                                        <span>D'experiència sectorial</span>
+                                    </div>
+                                    <a href="contacto.html" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem; border-radius: 8px;">
+                                        Contactar <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TILE 2: CAPACITAT (QUÈ FEM - ACTIVE DEFAULT) -->
+                    <div class="fluid-card active" data-index="1" role="button" tabindex="0" aria-label="Expandir pilar Capacitat">
+                        <img src="img/qui-som-centre-esmolat.jpg" alt="Centre d'Esmolat Propi ESMOTECH" class="fluid-card-bg">
+                        <div class="fluid-card-overlay"></div>
+                        
+                        <div class="fluid-card-content">
+                            <!-- Collapsed state view -->
+                            <div class="fluid-collapsed-view">
+                                <span class="collapsed-number">02</span>
+                                <span class="collapsed-vertical-title">CAPACITAT · QUÈ FEM</span>
+                                <div class="collapsed-icon"><i data-lucide="cpu" style="width: 18px; height: 18px;"></i></div>
+                            </div>
+
+                            <!-- Expanded state view -->
+                            <div class="fluid-expanded-view">
+                                <span class="expanded-badge">
+                                    <i data-lucide="wrench" style="width: 13px; height: 13px;"></i> PILAR 02 · ENGINYERIA &amp; TALLER CNC
+                                </span>
+                                <h2 class="expanded-title">Eines d'alt rendiment i centre d'esmolat industrial</h2>
+                                <p class="expanded-desc">
+                                    Subministrem les millors ganivetes industrials (circulars, evolutives, cutters i picadores) i disposem de taller industrial propi de 250 m² a Anglès (Girona) amb toleràncies micromètriques de 0.01 mm.
+                                </p>
+                                <ul class="expanded-features">
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Distribució oficial Hagedorn FoodTech (TRITECH, GENESIS, LONGLIFE).</li>
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Rectificadores CNC, torns i esmoladora de discs d'alta precisió.</li>
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Recuperació tècnica que estalvia fins al 40% del cost d'eina nova.</li>
+                                </ul>
+                                <div class="expanded-footer">
+                                    <div class="expanded-kpi">
+                                        <strong>0.01 mm</strong>
+                                        <span>Tolerància de rectificat</span>
+                                    </div>
+                                    <a href="serveis/esmolat.html" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem; border-radius: 8px;">
+                                        Servei d'Esmolat <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TILE 3: GARANTIA (COM HO FEM) -->
+                    <div class="fluid-card" data-index="2" role="button" tabindex="0" aria-label="Expandir pilar Garantia">
+                        <img src="img/qui-som-estocs-pactats.jpg?v=2" alt="Estocs Pactats ESMOTECH" class="fluid-card-bg">
+                        <div class="fluid-card-overlay"></div>
+                        
+                        <div class="fluid-card-content">
+                            <!-- Collapsed state view -->
+                            <div class="fluid-collapsed-view">
+                                <span class="collapsed-number">03</span>
+                                <span class="collapsed-vertical-title">GARANTIA · COM HO FEM</span>
+                                <div class="collapsed-icon"><i data-lucide="zap" style="width: 18px; height: 18px;"></i></div>
+                            </div>
+
+                            <!-- Expanded state view -->
+                            <div class="fluid-expanded-view">
+                                <span class="expanded-badge">
+                                    <i data-lucide="shield-check" style="width: 13px; height: 13px;"></i> PILAR 03 · EFICIÈNCIA &amp; ESTOCS PACTATS
+                                </span>
+                                <h2 class="expanded-title">Eficiència en el tall i estocs pactats per a urgències</h2>
+                                <p class="expanded-desc">
+                                    Acompanyem els equips de producció i manteniment amb estocs de seguretat dedicats al nostre magatzem, minimitzant el temps d'aturada per desgast o trencament d'eines.
+                                </p>
+                                <ul class="expanded-features">
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Lliurament d'emergències en 24 hores per a eines essencials.</li>
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Assessorament in-situ per reduir la merma de producte filetejat.</li>
+                                    <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Rutes regulars de recollida i retorn a tot Catalunya.</li>
+                                </ul>
+                                <div class="expanded-footer">
+                                    <div class="expanded-kpi">
+                                        <strong>24 Hores</strong>
+                                        <span>Temps de resposta urgent</span>
+                                    </div>
+                                    <a href="contacto.html" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem; border-radius: 8px;">
+                                        Sol·licitar Estoc <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓ BENTO GRID: EQUIP DIRECTIU, TALLER D'ANGLÈS I CAPACITAT OPERATIVA -->
+        <section class="quisom-bento-section">
+            <div class="container">
+                <div class="bento-header">
+                    <span class="bento-badge">
+                        <i data-lucide="layers" style="width: 14px; height: 14px;"></i> Model Empresarial i Equip
+                    </span>
+                    <h2 class="font-display bento-title">
+                        EQUIP DIRECTIU <span class="aurora-highlight">I CAPACITAT OPERATIVA</span>
+                    </h2>
+                    <p class="bento-subtitle">
+                        La complementarietat perfecta entre més de dues dècades d'ofici tècnic a peu de màquina i una dilatada trajectòria en l'assessorament comercial i d'eficiència de tall per a la indústria alimentària.
+                    </p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- 1. JULI CASABÓ SERRATS (SOCI FUNDADOR & DIRECTOR TÈCNIC) -->
+                    <article class="bento-card bento-card-leader">
+                        <div class="leader-badge leader-badge-founder">
+                            <i data-lucide="award" style="width: 13px; height: 13px;"></i> SOCI FUNDADOR &amp; DIRECTOR TÈCNIC
+                        </div>
+                        <h3 class="leader-name">Juli Casabó Serrats</h3>
+                        <div class="leader-role">
+                            <i data-lucide="wrench" style="width: 16px; height: 16px;"></i> Mestratge Tècnic d'Ofici &amp; Producció
+                        </div>
+                        <div class="leader-pills">
+                            <span class="leader-pill"><i data-lucide="clock" style="width: 12px; height: 12px;"></i> +20 Anys d'Experiència</span>
+                            <span class="leader-pill"><i data-lucide="cpu" style="width: 12px; height: 12px;"></i> Maquinària Pròpia</span>
+                            <span class="leader-pill"><i data-lucide="shield-check" style="width: 12px; height: 12px;"></i> Control Micromètric</span>
+                        </div>
+                        <p class="leader-desc">
+                            Més de dues dècades d'especialització directa en els processos d'esmolat industrial, rectificat, equilibrat i recuperació d'eines de tall per a la indústria càrnia i alimentària. Lidera l'operativa de taller, defineix els protocols d'esmolat i supervisa cada partida per garantir el compliment exacte del perfil de fàbrica.
+                        </p>
+                        <ul class="leader-features">
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Aportació d'un parc de maquinària industrial propi d'alta precisió (rectificadores, torn, fresa i afiladores de discs).</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Definició de geometries i tractaments d'acer segons l'exigència de tall de cada planta i producte.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Auditoria tècnica d'eines desgastades per a la seva viabilitat de recuperació abans de la reposició.</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- 2. ALBERT CAÑELLAS COLOMER (DIRECTOR COMERCIAL) -->
+                    <article class="bento-card bento-card-leader">
+                        <div class="leader-badge leader-badge-director">
+                            <i data-lucide="briefcase" style="width: 13px; height: 13px;"></i> DIRECTOR COMERCIAL
+                        </div>
+                        <h3 class="leader-name">Albert Cañellas Colomer</h3>
+                        <div class="leader-role">
+                            <i data-lucide="trending-up" style="width: 16px; height: 16px;"></i> Estratègia Sectorial &amp; Grans Comptes
+                        </div>
+                        <div class="leader-pills">
+                            <span class="leader-pill"><i data-lucide="clock" style="width: 12px; height: 12px;"></i> +22 Anys al Sector</span>
+                            <span class="leader-pill"><i data-lucide="users" style="width: 12px; height: 12px;"></i> Assessorament In-Situ</span>
+                            <span class="leader-pill"><i data-lucide="zap" style="width: 12px; height: 12px;"></i> Projecte TEKBLADE</span>
+                        </div>
+                        <p class="leader-desc">
+                            Més de 22 anys de trajectòria professional comercial i de desenvolupament de negoci al sector industrial i agroalimentari. Responsable de la relació amb els equips de producció i compres, optimització de costos de minvament i l'expansió de la línia pròpia de ganivetes d'alt rendiment TEKBLADE a tot el territori.
+                        </p>
+                        <ul class="leader-features">
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Relació propera i directa amb els responsables de manteniment i planta, sense filtres comercials generalistes.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Pactes d'estocs de seguretat personalitzats per respondre a urgències i trencament d'eines en temps rècord.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Consultoria tècnica de minvament a la línia per allargar la durabilitat del tall i estalviar costos per quilo produït.</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- 3. NAU INDUSTRIAL I TALLER PROPI A ANGLÈS (GIRONA) -->
+                    <article class="bento-card bento-card-workshop">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="bento-badge" style="margin-bottom: 0;">
+                                <i data-lucide="factory" style="width: 13px; height: 13px;"></i> Instal·lacions Pròpies
+                            </span>
+                            <span style="font-size: 0.8rem; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                <i data-lucide="map-pin" style="width: 13px; height: 13px; color: var(--primary);"></i> Anglès (La Selva, Girona)
+                            </span>
+                        </div>
+                        <h3 class="font-display" style="font-size: 1.85rem; color: var(--text-primary); margin: 0 0 0.6rem;">
+                            250 m² de Taller Industrial Especialitzat
+                        </h3>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 1rem;">
+                            La seu operativa d'ESMOTECH al Carrer Eixample d'Anglès acull un taller integral amb fluxos de treball dissenyats específicament per a eines de tall alimentari, connectat àgilment amb els eixos industrials de Girona i Barcelona:
+                        </p>
+
+                        <div class="workshop-machinery-grid">
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="settings" style="width: 15px; height: 15px; color: var(--primary);"></i> Rectificadores CNC</span>
+                                <p class="machinery-desc">Rectificat de precisió per a ganivetes perimetrals, lineals i d'envasadora.</p>
+                            </div>
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="disc" style="width: 15px; height: 15px; color: var(--primary);"></i> Esmoladora de Discs</span>
+                                <p class="machinery-desc">Reafilat i calibratge per a discs de tall continu, llescadores i picadores.</p>
+                            </div>
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="hammer" style="width: 15px; height: 15px; color: var(--primary);"></i> Torn i Fresa Mecànica</span>
+                                <p class="machinery-desc">Ajustaments geomètrics, equilibrat d'eixos i manteniment de suports de tall.</p>
+                            </div>
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="microscope" style="width: 15px; height: 15px; color: var(--primary);"></i> Control de Qualitat</span>
+                                <p class="machinery-desc">Comprovació de toleràncies fins a 0.01 mm per garantir el rendiment de fàbrica.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. ECONOMIA CIRCULAR I SOSTENIBILITAT -->
+                    <article class="bento-card bento-card-circular">
+                        <span class="bento-badge" style="background: rgba(16, 185, 129, 0.12); color: #10B981; border-color: rgba(16, 185, 129, 0.35); margin-bottom: 0.8rem;">
+                            <i data-lucide="recycle" style="width: 13px; height: 13px;"></i> Economia Circular
+                        </span>
+                        <h3 class="font-display" style="font-size: 1.85rem; color: var(--text-primary); margin: 0 0 0.5rem;">
+                            Recuperar abans de Rebutjar
+                        </h3>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                            L'esmolat i recuperació d'eines allarga el cicle de vida de l'acer d'alta puresa, reduint la dependència de fabricació nova i protegint els marges del client.
+                        </p>
+
+                        <div class="circular-stat-highlight">
+                            <span class="circular-stat-number">-40%</span>
+                            <p class="circular-stat-text">
+                                <strong>Estalvi directe anual</strong> en despesa de ganivetes gràcies a cicles de recuperació tècnica planificats.
+                            </p>
+                        </div>
+
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.85rem; color: var(--text-secondary);">
+                            <li style="display: flex; align-items: center; gap: 0.45rem;">
+                                <i data-lucide="check" style="width: 14px; height: 14px; color: #10B981;"></i> Allarga la vida útil de cada eina fins a un 300%.
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 0.45rem;">
+                                <i data-lucide="check" style="width: 14px; height: 14px; color: #10B981;"></i> Reducció d'emissions i residus metàl·lics industrials.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- 5. BANNER DE COBERTURA I MODEL DUAL -->
+                    <article class="bento-card bento-card-coverage">
+                        <div>
+                            <span style="font-size: 0.78rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.25rem;">
+                                MODEL DE SERVEI INTEGRAL
+                            </span>
+                            <h4 class="font-display" style="font-size: 1.45rem; margin: 0; color: var(--text-primary);">
+                                Proximitat Tècnica a Catalunya · Distribució a tot l'Estat
+                            </h4>
+                        </div>
+                        <div class="coverage-scope-group">
+                            <div class="coverage-scope-item">
+                                <div class="scope-icon"><i data-lucide="truck" style="width: 22px; height: 22px;"></i></div>
+                                <div>
+                                    <strong style="display: block; font-size: 0.9rem; color: var(--text-primary);">Catalunya</strong>
+                                    <span style="font-size: 0.78rem; color: var(--text-secondary);">Recollida, esmolat i lliurament àgil in-situ</span>
+                                </div>
+                            </div>
+                            <div class="coverage-scope-item">
+                                <div class="scope-icon"><i data-lucide="globe" style="width: 22px; height: 22px;"></i></div>
+                                <div>
+                                    <strong style="display: block; font-size: 0.9rem; color: var(--text-primary);">Nacional (Espanya)</strong>
+                                    <span style="font-size: 0.78rem; color: var(--text-secondary);">Subministrament d'eines industrials i TEKBLADE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION AMB DEGRADAT AURORA PREMIUM (AMPLADA COMPLETA 100%) -->
+        <section class="section-aurora-banner" style="margin-top: 0; margin-bottom: 0; width: 100%;">
+            <div class="container" style="padding: 1rem 2rem;">
+                <div style="max-width: 820px;">
+                    <div style="margin-bottom: 0.8rem;">
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #E0F2FE; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.35rem 0.85rem; border-radius: 9999px; display: inline-flex; align-items: center; gap: 0.4rem;">
+                            <i data-lucide="handshake" style="width: 14px; height: 14px; color: #38BDF8;"></i> Compromís Industrial
+                        </span>
+                    </div>
+                    <h3 class="font-display aurora-banner-title" style="font-size: 1.85rem; line-height: 1.25; margin-bottom: 0.75rem;">
+                        Vols optimitzar el rendiment <span class="aurora-highlight">de la teva planta amb nosaltres?</span>
+                    </h3>
+                    <p class="aurora-banner-desc" style="font-size: 1.05rem; line-height: 1.6;">
+                        El nostre equip tècnic analitza les teves necessitats específiques per oferir-te solucions de tall i reesmolat immediates.
+                    </p>
+                </div>
+                <div>
+                    <a href="contacto.html" class="btn btn-aurora" style="font-size: 0.98rem; padding: 0.95rem 1.75rem;">
+                        Contactar amb l'Equip <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo" style="margin-bottom: 1.2rem;">
+                    <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" style="height: 42px; width: auto; max-width: 240px;">
+                </span>
+                <p class="text-sm text-muted" style="margin-top: 1rem; line-height: 1.6;">
+                    Especialistes en eines de tall industrial i serveis avançats de reesmolat per a la indústria alimentària i de processat.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="font-display">Productes</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="productes/circulars-i-evolutives.html">Circulars i Evolutives</a></li>
+                    <li><a href="productes/cutters-industrials.html">Cutters Industrials</a></li>
+                    <li><a href="productes/picadores-placats.html">Picadores &amp; Placats</a></li>
+                    <li><a href="productes/eines-de-tall.html">Eines de Tall</a></li>
+                    <li><a href="productes/serra-cinta.html">Serra Cinta</a></li>
+                    <li><a href="productes/ganivetes-denvasat.html">Ganivetes d'Envasat</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="font-display">Serveis</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="serveis/esmolat.html">Esmolat Professional</a></li>
+                    <li><a href="serveis/formacio.html">Formació Tècnica</a></li>
+                    <li><a href="serveis/consultoria.html">Consultoria</a></li>
+                    <li><a href="serveis/suport.html">Suport Postvenda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="font-display">Empresa</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="qui-som.html">Qui Som</a></li>
+                    <li><a href="contacto.html">Contacte</a></li>
+                    <li><a href="catalogo.html">Catàleg &amp; Botiga</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-sm text-muted">&copy; 2026 ESMOTECH. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/theme-manager.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- FLUID ACCORDION CONTROLLER SCRIPT -->
+    <script>
+    (function() {
+        const cards = document.querySelectorAll('.fluid-card');
+
+        function activateCard(targetCard) {
+            cards.forEach(c => {
+                c.classList.remove('active');
+            });
+            targetCard.classList.add('active');
+            
+            if (window.lucide && typeof window.lucide.createIcons === 'function') {
+                window.lucide.createIcons();
+            }
+        }
+
+        cards.forEach(card => {
+            // Mouse Enter expansion for desktop fluid feel
+            card.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 960) {
+                    activateCard(card);
+                }
+            });
+
+            // Click support (vital for mobile/tablet and touch)
+            card.addEventListener('click', () => {
+                activateCard(card);
+            });
+
+            // Keyboard accessibility
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    activateCard(card);
+                }
+            });
+        });
+
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+            window.lucide.createIcons();
+        }
+    })();
+    </script>
+</body>
+</html>

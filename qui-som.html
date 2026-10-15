@@ -33,137 +33,784 @@
             pointer-events: none;
         }
 
-        .quisom-grid-cards {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 2rem;
-            margin-top: 3.5rem;
+        /* ==========================================================================
+           3D COVERFLOW LUXURY CAROUSEL (STYLE 21ST.DEV)
+           ========================================================================== */
+        .coverflow-section {
+            position: relative;
+            padding: 2rem 0 3rem;
+            overflow: visible;
         }
 
-        @media (min-width: 900px) {
-            .quisom-grid-cards {
-                grid-template-columns: repeat(3, 1fr);
+        /* Ambient Dynamic Background Glow */
+        .coverflow-ambient-glow {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            width: 700px;
+            height: 380px;
+            background: radial-gradient(ellipse at center, rgba(0, 136, 255, 0.28) 0%, rgba(56, 189, 248, 0.15) 45%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 0;
+            transition: background 0.6s ease, transform 0.6s ease;
+        }
+
+        [data-theme="light"] .coverflow-ambient-glow {
+            background: radial-gradient(ellipse at center, rgba(0, 118, 193, 0.18) 0%, rgba(56, 189, 248, 0.1) 45%, transparent 70%);
+            filter: blur(50px);
+        }
+
+        .coverflow-carousel-container {
+            position: relative;
+            z-index: 1;
+            perspective: 1200px;
+            -webkit-perspective: 1200px;
+            margin: 2.5rem auto 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+            height: 560px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+        }
+
+        @media (max-width: 768px) {
+            .coverflow-carousel-container {
+                height: 550px;
+                overflow: hidden;
             }
         }
 
-        .quisom-pillar-card {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius-md);
+        .coverflow-track {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+        }
+
+        /* 3D Coverflow Tile Card */
+        .coverflow-card {
+            position: absolute;
+            width: 365px;
+            max-width: 88vw;
+            height: 530px;
+            border-radius: 16px;
             overflow: hidden;
+            background: #0B1118;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+            transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                        opacity 0.5s ease,
+                        filter 0.5s ease,
+                        box-shadow 0.5s ease,
+                        border-color 0.4s ease;
+            transform-origin: center center;
+            will-change: transform, opacity, filter;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            justify-content: space-between;
         }
 
-        .quisom-pillar-card:hover {
-            transform: translateY(-6px);
-            border-color: var(--primary);
-            box-shadow: 0 16px 36px rgba(0, 136, 255, 0.2);
+        [data-theme="light"] .coverflow-card {
+            background: #FFFFFF;
+            border-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
-        .quisom-card-header {
-            padding: 2.2rem 2rem 1.6rem;
+        /* Top Header */
+        .coverflow-card-header {
+            padding: 1.8rem 1.8rem 1.2rem;
             border-bottom: 1px solid var(--border-color);
             background: rgba(255, 255, 255, 0.02);
-        }
-
-        [data-theme="light"] .quisom-card-header {
-            background: rgba(0, 118, 193, 0.03);
-        }
-
-        .quisom-card-body {
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .quisom-item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.3rem;
-        }
-
-        .quisom-item strong {
-            font-size: 1.02rem;
-            color: var(--text-primary);
-            display: flex;
-            align-items: baseline;
-            gap: 0.4rem;
-        }
-
-        .quisom-item strong::before {
-            content: '';
-            display: inline-block;
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background-color: var(--primary);
-            margin-right: 0.25rem;
             flex-shrink: 0;
         }
 
-        .quisom-item p {
-            margin: 0;
-            color: var(--text-secondary);
-            font-size: 0.94rem;
-            line-height: 1.55;
-            padding-left: 1.2rem;
+        [data-theme="light"] .coverflow-card-header {
+            background: rgba(0, 118, 193, 0.03);
         }
 
-        .quisom-card-footer-media {
-            position: relative;
-            width: 100%;
-            height: 190px;
-            overflow: hidden;
-            border-top: 1px solid var(--border-color);
-            background-color: #060B11;
-        }
-
-        .quisom-card-footer-media img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
-        }
-
-        .quisom-pillar-card:hover .quisom-card-footer-media img {
-            transform: scale(1.06);
-        }
-
-        .quisom-media-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
-            display: flex;
-            align-items: flex-end;
-            padding: 1.2rem 1.4rem;
-        }
-
-        .quisom-media-badge {
-            font-family: var(--font-display, sans-serif);
-            font-size: 0.88rem;
+        .coverflow-card-tag {
+            color: var(--primary);
             font-weight: 800;
-            letter-spacing: 0.08em;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: #FFFFFF;
-            text-shadow: 0 2px 6px rgba(0,0,0,0.9);
-            display: inline-flex;
+            display: block;
+            margin-bottom: 0.35rem;
+        }
+
+        .coverflow-card-title {
+            font-family: var(--font-display, sans-serif);
+            font-size: 2rem;
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin: 0;
+            letter-spacing: -0.01em;
+        }
+
+        /* Card Content Body */
+        .coverflow-card-body {
+            padding: 1.4rem 1.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-grow: 1;
+            background: transparent;
+        }
+
+        .coverflow-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.95rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .coverflow-card-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.18rem;
+        }
+
+        .coverflow-card-item strong {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            display: flex;
             align-items: center;
             gap: 0.45rem;
         }
 
-        .quisom-media-badge::before {
+        .coverflow-card-item strong::before {
             content: '';
-            display: inline-block;
-            width: 9px;
-            height: 9px;
-            background: #38BDF8;
-            border-radius: 2px;
-            box-shadow: 0 0 8px #38BDF8;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .coverflow-card-item p {
+            margin: 0;
+            padding-left: 1.05rem;
+            font-size: 0.86rem;
+            line-height: 1.45;
+            color: var(--text-secondary);
+        }
+
+        /* Bottom Media Footer */
+        .coverflow-card-media {
+            position: relative;
+            width: 100%;
+            height: 165px;
+            overflow: hidden;
+            background: #05080D;
+            flex-shrink: 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .coverflow-card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .coverflow-card:hover .coverflow-card-media img {
+            transform: scale(1.05);
+        }
+
+        .coverflow-card-media-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 65%, transparent 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem 1.2rem;
+        }
+
+        .coverflow-media-badge {
+            background: rgba(11, 17, 24, 0.88);
+            border: 1px solid rgba(56, 189, 248, 0.45);
+            color: #FFFFFF;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+
+        .coverflow-media-badge::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            background: #0088FF;
+            border-radius: 1px;
+            box-shadow: 0 0 6px #0088FF;
+        }
+
+        /* POSITIONAL STATES */
+        /* Active / Center Card */
+        .coverflow-card[data-pos="center"] {
+            transform: translateX(0) scale(1.02);
+            z-index: 10;
+            opacity: 1;
+            filter: blur(0px);
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 35px rgba(0, 136, 255, 0.25);
+            pointer-events: auto;
+            cursor: default;
+        }
+
+        [data-theme="light"] .coverflow-card[data-pos="center"] {
+            border-color: var(--primary);
+            box-shadow: 0 20px 50px rgba(0, 118, 193, 0.2), 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Left Card - Exact spacing matching the original 2rem gap */
+        .coverflow-card[data-pos="left"] {
+            transform: translateX(calc(-100% - 2rem)) scale(0.98);
+            z-index: 5;
+            opacity: 0.6;
+            filter: blur(5px) brightness(0.85);
+            pointer-events: auto;
+            cursor: pointer;
+        }
+
+        [data-theme="light"] .coverflow-card[data-pos="left"] {
+            filter: blur(5px) brightness(0.96);
+            opacity: 0.6;
+        }
+
+        /* Right Card - Exact spacing matching the original 2rem gap */
+        .coverflow-card[data-pos="right"] {
+            transform: translateX(calc(100% + 2rem)) scale(0.98);
+            z-index: 5;
+            opacity: 0.6;
+            filter: blur(5px) brightness(0.85);
+            pointer-events: auto;
+            cursor: pointer;
+        }
+
+        [data-theme="light"] .coverflow-card[data-pos="right"] {
+            filter: blur(5px) brightness(0.96);
+            opacity: 0.6;
+        }
+
+        /* Hover on lateral cards: clear interactive hint */
+        .coverflow-card[data-pos="left"]:hover,
+        .coverflow-card[data-pos="right"]:hover {
+            opacity: 0.85;
+            filter: blur(2px) brightness(0.95);
+            border-color: rgba(56, 189, 248, 0.35);
+        }
+
+        [data-theme="light"] .coverflow-card[data-pos="left"]:hover,
+        [data-theme="light"] .coverflow-card[data-pos="right"]:hover {
+            filter: blur(2px) brightness(0.98);
+            opacity: 0.85;
+            border-color: rgba(0, 118, 193, 0.4);
+        }
+
+        .coverflow-card[data-pos="left"] *,
+        .coverflow-card[data-pos="right"] * {
+            pointer-events: none;
+        }
+
+        .coverflow-card[data-pos="center"] * {
+            pointer-events: auto;
+        }
+
+        @media (max-width: 1140px) {
+            .coverflow-card {
+                width: 320px;
+                height: 520px;
+            }
+            .coverflow-card[data-pos="left"] {
+                transform: translateX(calc(-100% - 1.25rem)) scale(0.97);
+            }
+            .coverflow-card[data-pos="right"] {
+                transform: translateX(calc(100% + 1.25rem)) scale(0.97);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .coverflow-card {
+                width: 86vw;
+                max-width: 340px;
+                height: 510px;
+            }
+            .coverflow-card[data-pos="left"] {
+                transform: translateX(-78%) scale(0.88);
+                opacity: 0.35;
+                filter: blur(4px);
+            }
+            .coverflow-card[data-pos="right"] {
+                transform: translateX(78%) scale(0.88);
+                opacity: 0.35;
+                filter: blur(4px);
+            }
+        }
+
+        /* CONTROLS (Arrows & Dots) */
+        .coverflow-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .coverflow-nav-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: rgba(18, 26, 38, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        [data-theme="light"] .coverflow-nav-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border-color: rgba(0, 0, 0, 0.12);
+            color: #0F1722;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .coverflow-nav-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #FFFFFF;
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(0, 136, 255, 0.5);
+        }
+
+        .coverflow-dots {
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .coverflow-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        [data-theme="light"] .coverflow-dot {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .coverflow-dot.active {
+            width: 32px;
+            border-radius: 9999px;
+            background: var(--primary);
+            box-shadow: 0 0 12px rgba(0, 136, 255, 0.6);
+        }
+
+        /* ==========================================================================
+           BENTO GRID SECTION: EQUIP DIRECTIU & CAPACITAT OPERATIVA
+           ========================================================================== */
+        .quisom-bento-section {
+            padding: 5rem 0 5.5rem;
+            position: relative;
+            background: linear-gradient(180deg, rgba(7, 11, 16, 0.4) 0%, rgba(11, 17, 24, 0.95) 100%);
+            border-top: 1px solid var(--border-color);
+        }
+
+        [data-theme="light"] .quisom-bento-section {
+            background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+        }
+
+        .bento-header {
+            max-width: 860px;
+            margin: 0 auto 3.5rem;
+            text-align: center;
+        }
+
+        .bento-badge {
+            background: rgba(0, 136, 255, 0.12);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            padding: 0.35rem 0.9rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            margin-bottom: 1rem;
+        }
+
+        [data-theme="light"] .bento-badge {
+            background: rgba(0, 118, 193, 0.1);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.3);
+        }
+
+        .bento-title {
+            font-size: 2.8rem;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        @media (max-width: 768px) {
+            .bento-title {
+                font-size: 2.1rem;
+            }
+        }
+
+        .bento-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+        }
+
+        /* Bento Grid Container */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .bento-card {
+            background: rgba(15, 23, 34, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.2rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        [data-theme="light"] .bento-card {
+            background: #FFFFFF;
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .bento-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(56, 189, 248, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 136, 255, 0.15);
+        }
+
+        [data-theme="light"] .bento-card:hover {
+            border-color: rgba(0, 118, 193, 0.45);
+            box-shadow: 0 16px 36px rgba(0, 118, 193, 0.12);
+        }
+
+        /* Leader Cards (Juli & Albert) */
+        .bento-card-leader {
+            grid-column: span 6;
+        }
+
+        @media (max-width: 960px) {
+            .bento-card-leader {
+                grid-column: span 12;
+            }
+        }
+
+        .leader-badge {
+            align-self: flex-start;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .leader-badge-founder {
+            background: rgba(245, 158, 11, 0.18);
+            color: #FBBF24;
+            border: 1px solid rgba(245, 158, 11, 0.45);
+        }
+
+        [data-theme="light"] .leader-badge-founder {
+            background: rgba(217, 119, 6, 0.12);
+            color: #B45309;
+            border-color: rgba(217, 119, 6, 0.35);
+        }
+
+        .leader-badge-director {
+            background: rgba(0, 136, 255, 0.18);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.45);
+        }
+
+        [data-theme="light"] .leader-badge-director {
+            background: rgba(0, 118, 193, 0.12);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.35);
+        }
+
+        .leader-name {
+            font-family: var(--font-display, sans-serif);
+            font-size: 2.1rem;
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin: 0 0 0.35rem;
+            letter-spacing: -0.01em;
+        }
+
+        .leader-role {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .leader-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .leader-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 0.25rem 0.65rem;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        [data-theme="light"] .leader-pill {
+            background: rgba(0, 0, 0, 0.04);
+            border-color: rgba(0, 0, 0, 0.08);
+            color: #475569;
+        }
+
+        .leader-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 1.4rem;
+        }
+
+        .leader-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.2rem;
+            margin-top: auto;
+        }
+
+        .leader-features li {
+            font-size: 0.88rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            line-height: 1.45;
+        }
+
+        .leader-features li i {
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+
+        /* Facilities / Workshop Bento Card */
+        .bento-card-workshop {
+            grid-column: span 7;
+        }
+
+        @media (max-width: 960px) {
+            .bento-card-workshop {
+                grid-column: span 12;
+            }
+        }
+
+        /* Circular Economy Bento Card */
+        .bento-card-circular {
+            grid-column: span 5;
+        }
+
+        @media (max-width: 960px) {
+            .bento-card-circular {
+                grid-column: span 12;
+            }
+        }
+
+        /* Machinery Mini-Grid */
+        .workshop-machinery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.9rem;
+            margin-top: 1.4rem;
+        }
+
+        @media (max-width: 600px) {
+            .workshop-machinery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .machinery-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 0.85rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            transition: border-color 0.25s ease;
+        }
+
+        [data-theme="light"] .machinery-item {
+            background: rgba(0, 118, 193, 0.03);
+        }
+
+        .machinery-item:hover {
+            border-color: var(--primary);
+        }
+
+        .machinery-title {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .machinery-desc {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        /* Circular Stat Banner */
+        .circular-stat-highlight {
+            background: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 60%);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 14px;
+            padding: 1.4rem;
+            margin: 1.2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .circular-stat-number {
+            font-family: var(--font-display, sans-serif);
+            font-size: 2.5rem;
+            line-height: 1;
+            font-weight: 800;
+            color: #10B981;
+            white-space: nowrap;
+        }
+
+        .circular-stat-text {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        /* Coverage Banner Bento Card (Full Width) */
+        .bento-card-coverage {
+            grid-column: span 12;
+            padding: 1.8rem 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            background: linear-gradient(135deg, rgba(0, 136, 255, 0.1) 0%, rgba(56, 189, 248, 0.04) 100%);
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+
+        @media (max-width: 900px) {
+            .bento-card-coverage {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.2rem;
+            }
+        }
+
+        .coverage-scope-group {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .coverage-scope-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .coverage-scope-item .scope-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(0, 136, 255, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #38BDF8;
+            flex-shrink: 0;
         }
     </style>
 </head>
@@ -349,101 +996,402 @@
                     </p>
                 </div>
 
-                <!-- Els 3 Pilars Estratègics (Dossier Slide 2) -->
-                <div class="quisom-grid-cards">
+                <!-- 3D COVERFLOW LUXURY CAROUSEL (STYLE 21ST.DEV) -->
+                <div class="coverflow-section">
+                    <div class="coverflow-ambient-glow" id="coverflowAmbientGlow"></div>
                     
-                    <!-- 1. COMPROMÍS: QUI SOM -->
-                    <div class="quisom-pillar-card">
-                        <div class="quisom-card-header">
-                            <span style="color: var(--primary); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 0.4rem;">
-                                COMPROMÍS
-                            </span>
-                            <h2 class="font-display" style="font-size: 2rem; color: var(--text-primary); margin: 0;">
-                                QUI SOM
-                            </h2>
-                        </div>
-                        <div class="quisom-card-body">
-                            <div class="quisom-item">
-                                <strong>Trajectòria sòlida</strong>
-                                <p>Empresa jove amb àmplia experiència en el sector alimentari.</p>
-                            </div>
-                            <div class="quisom-item">
-                                <strong>Criteri estratègic</strong>
-                                <p>Coneixement profund d'un sector clau i exigent.</p>
-                            </div>
-                            <div class="quisom-item">
-                                <strong>Garantia de confiança</strong>
-                                <p>Compromís directe i proper amb cada client.</p>
-                            </div>
-                        </div>
-                        <div class="quisom-card-footer-media">
-                            <img src="img/qui-som-equip-especialitzat.jpg" alt="Equip Especialitzat ESMOTECH" loading="lazy">
-                            <div class="quisom-media-overlay">
-                                <span class="quisom-media-badge">EQUIP ESPECIALITZAT</span>
-                            </div>
+                    <div class="coverflow-carousel-container" id="coverflowContainer">
+                        <div class="coverflow-track" id="coverflowTrack">
+                            
+                            <!-- 1. COMPROMÍS: QUI SOM -->
+                            <article class="coverflow-card" data-index="0" data-pos="left" data-glow="rgba(0, 136, 255, 0.35)" role="button" tabindex="0" aria-label="Targeta 1: Compromís - Qui Som">
+                                <div class="coverflow-card-header">
+                                    <span class="coverflow-card-tag">COMPROMÍS</span>
+                                    <h2 class="coverflow-card-title">QUI SOM</h2>
+                                </div>
+                                <div class="coverflow-card-body">
+                                    <ul class="coverflow-card-list">
+                                        <li class="coverflow-card-item">
+                                            <strong>Trajectòria sòlida</strong>
+                                            <p>Empresa jove amb àmplia experiència en el sector alimentari.</p>
+                                        </li>
+                                        <li class="coverflow-card-item">
+                                            <strong>Criteri estratègic</strong>
+                                            <p>Coneixement profund d'un sector clau i exigent.</p>
+                                        </li>
+                                        <li class="coverflow-card-item">
+                                            <strong>Garantia de confiança</strong>
+                                            <p>Compromís directe i proper amb cada client.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="coverflow-card-media">
+                                    <img src="img/qui-som-equip-especialitzat.jpg" alt="Equip Especialitzat ESMOTECH" loading="lazy">
+                                    <div class="coverflow-card-media-overlay">
+                                        <span class="coverflow-media-badge">EQUIP ESPECIALITZAT</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- 2. CAPACITAT: QUÈ FEM (Activa per defecte al centre) -->
+                            <article class="coverflow-card" data-index="1" data-pos="center" data-glow="rgba(56, 189, 248, 0.45)" role="button" tabindex="0" aria-label="Targeta 2: Capacitat - Què Fem">
+                                <div class="coverflow-card-header">
+                                    <span class="coverflow-card-tag">CAPACITAT</span>
+                                    <h2 class="coverflow-card-title">QUÈ FEM</h2>
+                                </div>
+                                <div class="coverflow-card-body">
+                                    <ul class="coverflow-card-list">
+                                        <li class="coverflow-card-item">
+                                            <strong>Eines d'alt rendiment</strong>
+                                            <p>Subministrament i servei tècnic especialitzat d'eines de tall.</p>
+                                        </li>
+                                        <li class="coverflow-card-item">
+                                            <strong>Esmolat industrial</strong>
+                                            <p>Tractaments professionals per a tot tipus de ganivetes.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="coverflow-card-media">
+                                    <img src="img/qui-som-centre-esmolat.jpg" alt="Centre d'Esmolat Propi ESMOTECH" loading="lazy">
+                                    <div class="coverflow-card-media-overlay">
+                                        <span class="coverflow-media-badge">CENTRE D'ESMOLAT PROPI</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- 3. GARANTIA: COM HO FEM -->
+                            <article class="coverflow-card" data-index="2" data-pos="right" data-glow="rgba(0, 118, 193, 0.4)" role="button" tabindex="0" aria-label="Targeta 3: Garantia - Com Ho Fem">
+                                <div class="coverflow-card-header">
+                                    <span class="coverflow-card-tag">GARANTIA</span>
+                                    <h2 class="coverflow-card-title">COM HO FEM</h2>
+                                </div>
+                                <div class="coverflow-card-body">
+                                    <ul class="coverflow-card-list">
+                                        <li class="coverflow-card-item">
+                                            <strong>Màxima eficiència</strong>
+                                            <p>Tall òptim per minimitzar mermes i allargar la vida útil.</p>
+                                        </li>
+                                        <li class="coverflow-card-item">
+                                            <strong>Assessorament continu</strong>
+                                            <p>Suport tècnic a mida per a cada client.</p>
+                                        </li>
+                                        <li class="coverflow-card-item">
+                                            <strong>Resposta immediata</strong>
+                                            <p>Estocs pactats per atendre urgències amb agilitat.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="coverflow-card-media">
+                                    <img src="img/qui-som-estocs-pactats.jpg?v=2" alt="Estocs Pactats i Àgils ESMOTECH" loading="lazy">
+                                    <div class="coverflow-card-media-overlay">
+                                        <span class="coverflow-media-badge">ESTOCS PACTATS I ÀGILS</span>
+                                    </div>
+                                </div>
+                            </article>
+
                         </div>
                     </div>
 
-                    <!-- 2. CAPACITAT: QUÈ FEM -->
-                    <div class="quisom-pillar-card">
-                        <div class="quisom-card-header">
-                            <span style="color: var(--primary); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 0.4rem;">
-                                CAPACITAT
-                            </span>
-                            <h2 class="font-display" style="font-size: 2rem; color: var(--text-primary); margin: 0;">
-                                QUÈ FEM
-                            </h2>
+                    <!-- Controls: Navegació 3D i Punts -->
+                    <div class="coverflow-controls">
+                        <button class="coverflow-nav-btn" id="coverflowPrevBtn" aria-label="Targeta anterior">
+                            <i data-lucide="chevron-left" style="width: 22px; height: 22px;"></i>
+                        </button>
+                        <div class="coverflow-dots" id="coverflowDots">
+                            <button class="coverflow-dot" data-index="0" aria-label="Anar a Qui Som"></button>
+                            <button class="coverflow-dot active" data-index="1" aria-label="Anar a Què Fem"></button>
+                            <button class="coverflow-dot" data-index="2" aria-label="Anar a Com Ho Fem"></button>
                         </div>
-                        <div class="quisom-card-body">
-                            <div class="quisom-item">
-                                <strong>Eines d'alt rendiment</strong>
-                                <p>Subministrament i servei tècnic especialitzat d'eines de tall.</p>
-                            </div>
-                            <div class="quisom-item">
-                                <strong>Esmolat industrial</strong>
-                                <p>Tractaments professionals per a tot tipus de ganivetes.</p>
-                            </div>
-                        </div>
-                        <div class="quisom-card-footer-media">
-                            <img src="img/qui-som-centre-esmolat.jpg" alt="Centre d'Esmolat Propi ESMOTECH" loading="lazy">
-                            <div class="quisom-media-overlay">
-                                <span class="quisom-media-badge">CENTRE D'ESMOLAT PROPI</span>
-                            </div>
-                        </div>
+                        <button class="coverflow-nav-btn" id="coverflowNextBtn" aria-label="Targeta següent">
+                            <i data-lucide="chevron-right" style="width: 22px; height: 22px;"></i>
+                        </button>
                     </div>
+                </div>
 
-                    <!-- 3. GARANTIA: COM HO FEM -->
-                    <div class="quisom-pillar-card">
-                        <div class="quisom-card-header">
-                            <span style="color: var(--primary); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 0.4rem;">
-                                GARANTIA
+                <script>
+                // 3D Coverflow Interactive Controller
+                (function() {
+                    const cards = Array.from(document.querySelectorAll('.coverflow-card'));
+                    const dots = Array.from(document.querySelectorAll('.coverflow-dot'));
+                    const prevBtn = document.getElementById('coverflowPrevBtn');
+                    const nextBtn = document.getElementById('coverflowNextBtn');
+                    const glowEl = document.getElementById('coverflowAmbientGlow');
+                    const container = document.getElementById('coverflowContainer');
+                    let currentIndex = 1; // Default centered on card 1 (Què Fem)
+                    const total = cards.length;
+
+                    function updateCoverflow(newIndex) {
+                        currentIndex = (newIndex + total) % total;
+
+                        cards.forEach((card, idx) => {
+                            const diff = (idx - currentIndex + total) % total;
+                            if (diff === 0) {
+                                card.setAttribute('data-pos', 'center');
+                                if (glowEl) {
+                                    const customGlow = card.getAttribute('data-glow') || 'rgba(0, 136, 255, 0.35)';
+                                    glowEl.style.background = `radial-gradient(ellipse at center, ${customGlow} 0%, rgba(0, 75, 140, 0.15) 50%, transparent 70%)`;
+                                }
+                            } else if (diff === 1 || diff === -(total - 1)) {
+                                card.setAttribute('data-pos', 'right');
+                            } else {
+                                card.setAttribute('data-pos', 'left');
+                            }
+                        });
+
+                        dots.forEach((dot, idx) => {
+                            if (idx === currentIndex) {
+                                dot.classList.add('active');
+                            } else {
+                                dot.classList.remove('active');
+                            }
+                        });
+                    }
+
+                    if (prevBtn) {
+                        prevBtn.addEventListener('click', () => updateCoverflow(currentIndex - 1));
+                    }
+                    if (nextBtn) {
+                        nextBtn.addEventListener('click', () => updateCoverflow(currentIndex + 1));
+                    }
+
+                    dots.forEach((dot, idx) => {
+                        dot.addEventListener('click', () => updateCoverflow(idx));
+                    });
+
+                    cards.forEach((card, idx) => {
+                        card.addEventListener('click', () => {
+                            if (idx !== currentIndex) {
+                                updateCoverflow(idx);
+                            }
+                        });
+                        card.addEventListener('keydown', (e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                updateCoverflow(idx);
+                            }
+                        });
+                    });
+
+                    // Touch / Swipe support
+                    let touchStartX = 0;
+                    let touchEndX = 0;
+                    if (container) {
+                        container.addEventListener('touchstart', (e) => {
+                            touchStartX = e.changedTouches[0].screenX;
+                        }, { passive: true });
+
+                        container.addEventListener('touchend', (e) => {
+                            touchEndX = e.changedTouches[0].screenX;
+                            const diffX = touchEndX - touchStartX;
+                            if (Math.abs(diffX) > 40) {
+                                if (diffX < 0) {
+                                    updateCoverflow(currentIndex + 1); // Swipe left -> Next
+                                } else {
+                                    updateCoverflow(currentIndex - 1); // Swipe right -> Prev
+                                }
+                            }
+                        }, { passive: true });
+                    }
+
+                    // Keyboard navigation
+                    window.addEventListener('keydown', (e) => {
+                        if (e.key === 'ArrowLeft') {
+                            const rect = container ? container.getBoundingClientRect() : null;
+                            if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
+                                updateCoverflow(currentIndex - 1);
+                            }
+                        } else if (e.key === 'ArrowRight') {
+                            const rect = container ? container.getBoundingClientRect() : null;
+                            if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
+                                updateCoverflow(currentIndex + 1);
+                            }
+                        }
+                    });
+
+                    // Initialize Lucide icons if available
+                    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+                        window.lucide.createIcons();
+                    }
+                })();
+                </script>
+            </div>
+        </section>
+
+        <!-- SECCIÓ BENTO GRID: EQUIP DIRECTIU, TALLER D'ANGLÈS I CAPACITAT OPERATIVA -->
+        <section class="quisom-bento-section">
+            <div class="container">
+                <div class="bento-header">
+                    <span class="bento-badge">
+                        <i data-lucide="layers" style="width: 14px; height: 14px;"></i> Model Empresarial i Equip
+                    </span>
+                    <h2 class="font-display bento-title">
+                        EQUIP DIRECTIU <span class="aurora-highlight">I CAPACITAT OPERATIVA</span>
+                    </h2>
+                    <p class="bento-subtitle">
+                        La complementarietat perfecta entre més de dues dècades d'ofici tècnic a peu de màquina i una dilatada trajectòria en l'assessorament comercial i d'eficiència de tall per a la indústria alimentària.
+                    </p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- 1. JULI CASABÓ SERRATS (SOCI FUNDADOR & DIRECTOR TÈCNIC) -->
+                    <article class="bento-card bento-card-leader">
+                        <div class="leader-badge leader-badge-founder">
+                            <i data-lucide="award" style="width: 13px; height: 13px;"></i> SOCI FUNDADOR &amp; DIRECTOR TÈCNIC
+                        </div>
+                        <h3 class="leader-name">Juli Casabó Serrats</h3>
+                        <div class="leader-role">
+                            <i data-lucide="wrench" style="width: 16px; height: 16px;"></i> Mestratge Tècnic d'Ofici &amp; Producció
+                        </div>
+                        <div class="leader-pills">
+                            <span class="leader-pill"><i data-lucide="clock" style="width: 12px; height: 12px;"></i> +20 Anys d'Experiència</span>
+                            <span class="leader-pill"><i data-lucide="cpu" style="width: 12px; height: 12px;"></i> Maquinària Pròpia</span>
+                            <span class="leader-pill"><i data-lucide="shield-check" style="width: 12px; height: 12px;"></i> Control Micromètric</span>
+                        </div>
+                        <p class="leader-desc">
+                            Més de dues dècades d'especialització directa en els processos d'esmolat industrial, rectificat, equilibrat i recuperació d'eines de tall per a la indústria càrnia i alimentària. Lidera l'operativa de taller, defineix els protocols d'esmolat i supervisa cada partida per garantir el compliment exacte del perfil de fàbrica.
+                        </p>
+                        <ul class="leader-features">
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Aportació d'un parc de maquinària industrial propi d'alta precisió (rectificadores, torn, fresa i afiladores de discs).</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Definició de geometries i tractaments d'acer segons l'exigència de tall de cada planta i producte.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Auditoria tècnica d'eines desgastades per a la seva viabilitat de recuperació abans de la reposició.</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- 2. ALBERT CAÑELLAS COLOMER (DIRECTOR COMERCIAL) -->
+                    <article class="bento-card bento-card-leader">
+                        <div class="leader-badge leader-badge-director">
+                            <i data-lucide="briefcase" style="width: 13px; height: 13px;"></i> DIRECTOR COMERCIAL
+                        </div>
+                        <h3 class="leader-name">Albert Cañellas Colomer</h3>
+                        <div class="leader-role">
+                            <i data-lucide="trending-up" style="width: 16px; height: 16px;"></i> Estratègia Sectorial &amp; Grans Comptes
+                        </div>
+                        <div class="leader-pills">
+                            <span class="leader-pill"><i data-lucide="clock" style="width: 12px; height: 12px;"></i> +22 Anys al Sector</span>
+                            <span class="leader-pill"><i data-lucide="users" style="width: 12px; height: 12px;"></i> Assessorament In-Situ</span>
+                            <span class="leader-pill"><i data-lucide="zap" style="width: 12px; height: 12px;"></i> Projecte TEKBLADE</span>
+                        </div>
+                        <p class="leader-desc">
+                            Més de 22 anys de trajectòria professional comercial i de desenvolupament de negoci al sector industrial i agroalimentari. Responsable de la relació amb els equips de producció i compres, optimització de costos de minvament i l'expansió de la línia pròpia de ganivetes d'alt rendiment TEKBLADE a tot el territori.
+                        </p>
+                        <ul class="leader-features">
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Relació propera i directa amb els responsables de manteniment i planta, sense filtres comercials generalistes.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Pactes d'estocs de seguretat personalitzats per respondre a urgències i trencament d'eines en temps rècord.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                                <span>Consultoria tècnica de minvament a la línia per allargar la durabilitat del tall i estalviar costos per quilo produït.</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- 3. NAU INDUSTRIAL I TALLER PROPI A ANGLÈS (GIRONA) -->
+                    <article class="bento-card bento-card-workshop">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="bento-badge" style="margin-bottom: 0;">
+                                <i data-lucide="factory" style="width: 13px; height: 13px;"></i> Instal·lacions Pròpies
                             </span>
-                            <h2 class="font-display" style="font-size: 2rem; color: var(--text-primary); margin: 0;">
-                                COM HO FEM
-                            </h2>
+                            <span style="font-size: 0.8rem; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                <i data-lucide="map-pin" style="width: 13px; height: 13px; color: var(--primary);"></i> Anglès (La Selva, Girona)
+                            </span>
                         </div>
-                        <div class="quisom-card-body">
-                            <div class="quisom-item">
-                                <strong>Màxima eficiència</strong>
-                                <p>Tall òptim per minimitzar mermes i allargar la vida útil.</p>
-                            </div>
-                            <div class="quisom-item">
-                                <strong>Assessorament continu</strong>
-                                <p>Suport tècnic a mida per a cada client.</p>
-                            </div>
-                            <div class="quisom-item">
-                                <strong>Resposta immediata</strong>
-                                <p>Estocs pactats per atendre urgències amb agilitat.</p>
-                            </div>
-                        </div>
-                        <div class="quisom-card-footer-media">
-                            <img src="img/qui-som-estocs-pactats.jpg?v=2" alt="Estocs Pactats i Àgils ESMOTECH" loading="lazy">
-                            <div class="quisom-media-overlay">
-                                <span class="quisom-media-badge">ESTOCS PACTATS I ÀGILS</span>
-                            </div>
-                        </div>
-                    </div>
+                        <h3 class="font-display" style="font-size: 1.85rem; color: var(--text-primary); margin: 0 0 0.6rem;">
+                            250 m² de Taller Industrial Especialitzat
+                        </h3>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin: 0 0 1rem;">
+                            La seu operativa d'ESMOTECH al Carrer Eixample d'Anglès acull un taller integral amb fluxos de treball dissenyats específicament per a eines de tall alimentari, connectat àgilment amb els eixos industrials de Girona i Barcelona:
+                        </p>
 
+                        <div class="workshop-machinery-grid">
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="settings" style="width: 15px; height: 15px; color: var(--primary);"></i> Rectificadores CNC</span>
+                                <p class="machinery-desc">Rectificat de precisió per a ganivetes perimetrals, lineals i d'envasadora.</p>
+                            </div>
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="disc" style="width: 15px; height: 15px; color: var(--primary);"></i> Esmoladora de Discs</span>
+                                <p class="machinery-desc">Reafilat i calibratge per a discs de tall continu, llescadores i picadores.</p>
+                            </div>
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="hammer" style="width: 15px; height: 15px; color: var(--primary);"></i> Torn i Fresa Mecànica</span>
+                                <p class="machinery-desc">Ajustaments geomètrics, equilibrat d'eixos i manteniment de suports de tall.</p>
+                            </div>
+                            <div class="machinery-item">
+                                <span class="machinery-title"><i data-lucide="microscope" style="width: 15px; height: 15px; color: var(--primary);"></i> Control de Qualitat</span>
+                                <p class="machinery-desc">Comprovació de toleràncies fins a 0.01 mm per garantir el rendiment de fàbrica.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. ECONOMIA CIRCULAR I SOSTENIBILITAT -->
+                    <article class="bento-card bento-card-circular">
+                        <span class="bento-badge" style="background: rgba(16, 185, 129, 0.12); color: #10B981; border-color: rgba(16, 185, 129, 0.35); margin-bottom: 0.8rem;">
+                            <i data-lucide="recycle" style="width: 13px; height: 13px;"></i> Economia Circular
+                        </span>
+                        <h3 class="font-display" style="font-size: 1.85rem; color: var(--text-primary); margin: 0 0 0.5rem;">
+                            Recuperar abans de Rebutjar
+                        </h3>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                            L'esmolat i recuperació d'eines allarga el cicle de vida de l'acer d'alta puresa, reduint la dependència de fabricació nova i protegint els marges del client.
+                        </p>
+
+                        <div class="circular-stat-highlight">
+                            <span class="circular-stat-number">-40%</span>
+                            <p class="circular-stat-text">
+                                <strong>Estalvi directe anual</strong> en despesa de ganivetes gràcies a cicles de recuperació tècnica planificats.
+                            </p>
+                        </div>
+
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.85rem; color: var(--text-secondary);">
+                            <li style="display: flex; align-items: center; gap: 0.45rem;">
+                                <i data-lucide="check" style="width: 14px; height: 14px; color: #10B981;"></i> Allarga la vida útil de cada eina fins a un 300%.
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 0.45rem;">
+                                <i data-lucide="check" style="width: 14px; height: 14px; color: #10B981;"></i> Reducció d'emissions i residus metàl·lics industrials.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- 5. BANNER DE COBERTURA I MODEL DUAL -->
+                    <article class="bento-card bento-card-coverage">
+                        <div>
+                            <span style="font-size: 0.78rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.25rem;">
+                                MODEL DE SERVEI INTEGRAL
+                            </span>
+                            <h4 class="font-display" style="font-size: 1.45rem; margin: 0; color: var(--text-primary);">
+                                Proximitat Tècnica a Catalunya · Distribució a tot l'Estat
+                            </h4>
+                        </div>
+                        <div class="coverage-scope-group">
+                            <div class="coverage-scope-item">
+                                <div class="scope-icon"><i data-lucide="truck" style="width: 22px; height: 22px;"></i></div>
+                                <div>
+                                    <strong style="display: block; font-size: 0.9rem; color: var(--text-primary);">Catalunya</strong>
+                                    <span style="font-size: 0.78rem; color: var(--text-secondary);">Recollida, esmolat i lliurament àgil in-situ</span>
+                                </div>
+                            </div>
+                            <div class="coverage-scope-item">
+                                <div class="scope-icon"><i data-lucide="globe" style="width: 22px; height: 22px;"></i></div>
+                                <div>
+                                    <strong style="display: block; font-size: 0.9rem; color: var(--text-primary);">Nacional (Espanya)</strong>
+                                    <span style="font-size: 0.78rem; color: var(--text-secondary);">Subministrament d'eines industrials i TEKBLADE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
