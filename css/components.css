@@ -97,19 +97,22 @@
 
   /* Services Mega Menu (2 columns on desktop) */
   .has-mega-menu:has(a[href*="servicios"]) .mega-menu,
-  .has-mega-menu a[href*="servicios"] + .mega-menu {
-    width: 620px !important;
+  .has-mega-menu a[href*="servicios"] + .mega-menu,
+  .mega-menu-services-container {
+    width: 680px !important;
     left: 50% !important;
     transform: translateX(-40%) translateY(10px) !important;
   }
 
   .has-mega-menu:has(a[href*="servicios"]):hover .mega-menu,
   .has-mega-menu a[href*="servicios"]:hover + .mega-menu,
-  .has-mega-menu:hover a[href*="servicios"] + .mega-menu {
+  .has-mega-menu:hover a[href*="servicios"] + .mega-menu,
+  .has-mega-menu:hover .mega-menu-services-container {
     transform: translateX(-40%) translateY(0) !important;
   }
 
-  .has-mega-menu a[href*="servicios"] + .mega-menu .mega-menu-list {
+  .has-mega-menu a[href*="servicios"] + .mega-menu .mega-menu-list,
+  .mega-menu-services-container .mega-menu-list {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 0.85rem !important;
   }
