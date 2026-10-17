@@ -15,6 +15,466 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="img/esmotech-favicon.png">
     <link rel="apple-touch-icon" sizes="512x512" href="img/esmotech-icon-512.png">
+
+    <style>
+        /* ==========================================================================
+           CONTACT PAGE CUSTOM STYLES
+           ========================================================================== */
+        .contact-hero-header {
+            text-align: center;
+            max-width: 840px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .contact-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 136, 255, 0.12);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 9999px;
+            padding: 0.4rem 1.1rem;
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        [data-theme="light"] .contact-pill-badge {
+            background: rgba(0, 118, 193, 0.1);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.3);
+        }
+
+        /* 2-Column Main Contact Layout */
+        .contact-main-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+            align-items: start;
+        }
+
+        @media (max-width: 992px) {
+            .contact-main-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        /* Form Card */
+        .contact-form-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        [data-theme="light"] .contact-form-card {
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-color: #e2e8f0;
+        }
+
+        /* Inquiry Pills */
+        .inquiry-pills-label {
+            display: block;
+            font-size: 0.86rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .inquiry-pills-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .inquiry-pill {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.55rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .inquiry-pill:hover {
+            border-color: var(--primary);
+            color: var(--text-primary);
+            background: rgba(0, 136, 255, 0.08);
+        }
+
+        .inquiry-pill.active {
+            background: rgba(0, 136, 255, 0.18);
+            border-color: var(--primary);
+            color: #38BDF8;
+            box-shadow: 0 0 14px rgba(0, 136, 255, 0.25);
+        }
+
+        [data-theme="light"] .inquiry-pill {
+            background: #f8fafc;
+            border-color: #e2e8f0;
+            color: #475569;
+        }
+
+        [data-theme="light"] .inquiry-pill.active {
+            background: #e0f2fe;
+            border-color: #0284c7;
+            color: #0369a1;
+            box-shadow: 0 0 10px rgba(2, 132, 199, 0.2);
+        }
+
+        /* Form Fields */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+        @media (max-width: 640px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.45rem;
+        }
+
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        [data-theme="light"] .form-input,
+        [data-theme="light"] .form-textarea {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+        }
+
+        .form-input:focus, .form-textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 136, 255, 0.2);
+        }
+
+        /* Team Cards & HQ */
+        .contact-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+        }
+
+        .team-member-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.15rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+        [data-theme="light"] .team-member-card {
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            border-color: #e2e8f0;
+        }
+
+        .team-member-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+            box-shadow: 0 8px 24px rgba(0, 136, 255, 0.15);
+        }
+
+        .team-avatar-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+        .team-avatar-albert {
+            background: rgba(0, 136, 255, 0.15);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+        }
+        .team-avatar-juli {
+            background: rgba(245, 158, 11, 0.15);
+            color: #FBBF24;
+            border: 1px solid rgba(245, 158, 11, 0.4);
+        }
+
+        .team-info-name {
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 0.2rem;
+        }
+
+        .team-role-badge {
+            display: inline-block;
+            font-size: 0.74rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            margin-bottom: 0.65rem;
+        }
+        .role-comercial {
+            background: rgba(0, 136, 255, 0.12);
+            color: #38BDF8;
+        }
+        [data-theme="light"] .role-comercial {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+        .role-tecnic {
+            background: rgba(245, 158, 11, 0.12);
+            color: #FBBF24;
+        }
+        [data-theme="light"] .role-tecnic {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        .team-contact-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 0.3rem;
+        }
+
+        .team-contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.84rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .team-contact-link:hover {
+            color: var(--primary);
+        }
+
+        .hq-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.6rem;
+        }
+        [data-theme="light"] .hq-card {
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            border-color: #e2e8f0;
+        }
+
+        /* Trust Badges Bar */
+        .trust-badges-section {
+            margin-bottom: 4.5rem;
+        }
+
+        .trust-badges-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+        }
+        @media (max-width: 992px) {
+            .trust-badges-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 540px) {
+            .trust-badges-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .trust-badge-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        [data-theme="light"] .trust-badge-item {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border-color: #e2e8f0;
+        }
+
+        .trust-badge-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+
+        .trust-badge-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(0, 136, 255, 0.12);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Coverage Block */
+        .coverage-section {
+            margin-bottom: 4.5rem;
+        }
+
+        .coverage-banner-box {
+            background: linear-gradient(135deg, rgba(0, 43, 84, 0.45) 0%, rgba(3, 21, 39, 0.8) 100%);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 16px;
+            padding: 2.5rem 3rem;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        [data-theme="light"] .coverage-banner-box {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+            border-color: rgba(0, 118, 193, 0.25);
+        }
+        @media (max-width: 820px) {
+            .coverage-banner-box {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+        }
+
+        .coverage-tags-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.2rem;
+        }
+
+        .coverage-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 0.85rem;
+            border-radius: 8px;
+            background: rgba(56, 189, 248, 0.1);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+        [data-theme="light"] .coverage-tag {
+            background: rgba(0, 118, 193, 0.08);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.2);
+        }
+
+        /* FAQ Accordion */
+        .faq-section {
+            margin-bottom: 4.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-accordion-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 0.9rem;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        [data-theme="light"] .faq-accordion-item {
+            background: #ffffff;
+            border-color: #e2e8f0;
+        }
+
+        .faq-accordion-item.open {
+            border-color: var(--primary);
+            box-shadow: 0 4px 18px rgba(0, 136, 255, 0.12);
+        }
+
+        .faq-question-btn {
+            width: 100%;
+            padding: 1.2rem 1.4rem;
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .faq-chevron {
+            transition: transform 0.3s ease;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        .faq-accordion-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer-content {
+            display: none;
+            padding: 0 1.4rem 1.4rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        [data-theme="light"] .faq-answer-content {
+            border-top-color: #f1f5f9;
+        }
+        .faq-accordion-item.open .faq-answer-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header class="header sticky">
@@ -204,80 +664,317 @@
         </div>
     </header>
     
-    <main style="padding-top: 100px; padding-bottom: 6rem;">
-        <div class="container" style="margin-bottom: 2rem;">
+    <main style="padding-top: 100px; padding-bottom: 0; margin-bottom: 0;">
+        <div class="container" style="margin-bottom: 3.5rem;">
             
-            <div style="margin-bottom: 4rem; text-align: center;">
-                <h1 class="text-heading-2">Contacta'ns</h1>
-                <p class="text-muted text-body-large">Responem a la màxima velocitat perquè el teu procés no s'aturi.</p>
+            <!-- HERO HEADER -->
+            <div class="contact-hero-header">
+                <div class="contact-pill-badge">
+                    <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i> Atenció i Suport Professional
+                </div>
+                <h1 class="text-heading-1" style="font-size: clamp(2rem, 4vw, 2.85rem); margin-bottom: 1rem; line-height: 1.2;">
+                    PARLEM DEL TEU <span class="aurora-highlight">PROJECTE DE TALL</span>
+                </h1>
+                <p class="text-muted text-body-large" style="max-width: 680px; margin: 0 auto; line-height: 1.6;">
+                    Contacta directament amb el nostre equip d'enginyeria i vendes. Assessorament tècnic precís, reesmolat industrial d'alta tolerància i subministrament d'eines sense interrupcions.
+                </p>
             </div>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
-                <div style="background: var(--bg-secondary); padding: 3rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color);">
-                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div>
-                            <label for="nom" style="display: block; margin-bottom: 0.5rem;">Nom i Cognoms</label>
-                            <input type="text" id="nom" name="nom" required style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid var(--border-color); background: var(--bg-tertiary); color: var(--text-primary);">
+            <!-- MAIN GRID: FORM + SIDEBAR -->
+            <div class="contact-main-grid">
+                <!-- FORM CARD -->
+                <div class="contact-form-card">
+                    <h2 class="text-heading-3" style="margin-bottom: 0.5rem; font-size: 1.45rem;">Envia'ns la teva consulta</h2>
+                    <p class="text-muted text-sm" style="margin-bottom: 1.75rem;">
+                        Tria el motiu de la consulta per dirigir-la directament a l'especialista adequat.
+                    </p>
+
+                    <form action="#" method="POST" id="contact-form">
+                        <input type="hidden" id="motiu_consulta" name="motiu_consulta" value="Pressupost / Comanda">
+
+                        <!-- Interactive Pills -->
+                        <span class="inquiry-pills-label">Motiu de la consulta</span>
+                        <div class="inquiry-pills-group" id="inquiry-pills">
+                            <button type="button" class="inquiry-pill active" data-reason="Pressupost / Comanda">
+                                <i data-lucide="file-text" style="width: 15px; height: 15px;"></i> Pressupost / Comanda
+                            </button>
+                            <button type="button" class="inquiry-pill" data-reason="Reesmolat CNC">
+                                <i data-lucide="disc" style="width: 15px; height: 15px;"></i> Reesmolat CNC
+                            </button>
+                            <button type="button" class="inquiry-pill" data-reason="Consultoria de Minvament">
+                                <i data-lucide="line-chart" style="width: 15px; height: 15px;"></i> Consultoria de Minvament
+                            </button>
+                            <button type="button" class="inquiry-pill" data-reason="Informació General">
+                                <i data-lucide="help-circle" style="width: 15px; height: 15px;"></i> Informació General
+                            </button>
                         </div>
-                        <div>
-                            <label for="empresa" style="display: block; margin-bottom: 0.5rem;">Empresa</label>
-                            <input type="text" id="empresa" name="empresa" required style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid var(--border-color); background: var(--bg-tertiary); color: var(--text-primary);">
+
+                        <!-- Form Fields -->
+                        <div class="form-row">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="nom">Nom i Cognoms *</label>
+                                <input type="text" id="nom" name="nom" class="form-input" placeholder="ex. Marc Soler" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="empresa">Empresa *</label>
+                                <input type="text" id="empresa" name="empresa" class="form-input" placeholder="ex. Indústries Càrnies SL" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email" style="display: block; margin-bottom: 0.5rem;">Correu Electrònic</label>
-                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid var(--border-color); background: var(--bg-tertiary); color: var(--text-primary);">
+
+                        <div class="form-row">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="email">Correu Electrònic *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="nom@empresa.com" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="telefon">Telèfon de Contacte *</label>
+                                <input type="tel" id="telefon" name="telefon" class="form-input" placeholder="+34 600 000 000" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="missatge" style="display: block; margin-bottom: 0.5rem;">Missatge</label>
-                            <textarea id="missatge" name="missatge" rows="5" required style="width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid var(--border-color); background: var(--bg-tertiary); color: var(--text-primary); resize: vertical;"></textarea>
+
+                        <div class="form-group">
+                            <label for="missatge">Missatge o Detalls del Projecte *</label>
+                            <textarea id="missatge" name="missatge" rows="4" class="form-textarea" placeholder="Explica'ns el tipus d'eines, materials o necessitats específiques de la teva planta..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Enviar Missatge</button>
+
+                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.4rem;">
+                                <i data-lucide="lock" style="width: 14px; height: 14px; color: var(--primary);"></i> Dades protegides segons el RGPD. Resposta en &lt; 2h en horari laboral.
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="background: #e63946; border-color: #e63946; font-weight: 700; padding: 0.85rem 1.8rem; border-radius: 6px; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                Enviar Consulta <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
-                
-                <div>
-                    <h3 class="text-heading-3" style="margin-bottom: 1.5rem;">Informació de Contacte</h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem;">
-                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="color: var(--primary);"><i data-lucide="map-pin"></i></div>
-                            <div>
-                                <strong style="display: block; margin-bottom: 0.2rem;">Adreça Postal</strong>
+
+                <!-- SIDEBAR: TEAM CARDS & HQ -->
+                <div class="contact-sidebar">
+                    
+                    <!-- Albert: Director Comercial -->
+                    <div class="team-member-card">
+                        <div class="team-avatar-box team-avatar-albert">
+                            A
+                        </div>
+                        <div style="flex: 1;">
+                            <div class="team-role-badge role-comercial">Direcció Comercial</div>
+                            <h3 class="team-info-name">Albert</h3>
+                            <p class="text-muted text-xs" style="margin-bottom: 0.75rem; line-height: 1.45;">
+                                Gestió de comandes, acords marc de subministrament, condicions especials i estocs de seguretat dedicats.
+                            </p>
+                            <div class="team-contact-actions">
+                                <a href="mailto:albert@esmotech.com" class="team-contact-link">
+                                    <i data-lucide="mail" style="width: 14px; height: 14px; color: #38BDF8;"></i> albert@esmotech.com
+                                </a>
+                                <a href="tel:+34930000000" class="team-contact-link">
+                                    <i data-lucide="phone" style="width: 14px; height: 14px; color: #38BDF8;"></i> Contacte Directe
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Juli: Soci Fundador & Assessor Tècnic -->
+                    <div class="team-member-card">
+                        <div class="team-avatar-box team-avatar-juli">
+                            J
+                        </div>
+                        <div style="flex: 1;">
+                            <div class="team-role-badge role-tecnic">Soci Fundador &amp; Assessor Tècnic</div>
+                            <h3 class="team-info-name">Juli</h3>
+                            <p class="text-muted text-xs" style="margin-bottom: 0.75rem; line-height: 1.45;">
+                                Assessorament tècnic especialitzat, selecció d'acers i geometries de tall, toleràncies CNC i resolució d'incidències en línia.
+                            </p>
+                            <div class="team-contact-actions">
+                                <a href="mailto:juli@esmotech.com" class="team-contact-link">
+                                    <i data-lucide="mail" style="width: 14px; height: 14px; color: #FBBF24;"></i> juli@esmotech.com
+                                </a>
+                                <a href="tel:+34930000000" class="team-contact-link">
+                                    <i data-lucide="phone" style="width: 14px; height: 14px; color: #FBBF24;"></i> Assessorament Tècnic
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HQ / Central Office -->
+                    <div class="hq-card">
+                        <h4 class="font-display" style="font-size: 1.05rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i data-lucide="building-2" style="width: 18px; height: 18px; color: var(--primary);"></i> Seu Central &amp; Taller Tècnic
+                        </h4>
+                        <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.88rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <i data-lucide="map-pin" style="width: 16px; height: 16px; color: var(--primary); margin-top: 0.2rem; flex-shrink: 0;"></i>
                                 <span class="text-muted">Polígon Industrial ESMOTECH, Nau 4<br>08000 Barcelona, Espanya</span>
                             </div>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="color: var(--primary);"><i data-lucide="phone"></i></div>
-                            <div>
-                                <strong style="display: block; margin-bottom: 0.2rem;">Telèfon</strong>
-                                <span class="text-muted">+34 900 000 000</span>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <i data-lucide="phone" style="width: 16px; height: 16px; color: var(--primary); flex-shrink: 0;"></i>
+                                <span class="text-muted">+34 930 000 000</span>
                             </div>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="color: var(--primary);"><i data-lucide="mail"></i></div>
-                            <div>
-                                <strong style="display: block; margin-bottom: 0.2rem;">Correu Electrònic</strong>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <i data-lucide="mail" style="width: 16px; height: 16px; color: var(--primary); flex-shrink: 0;"></i>
                                 <span class="text-muted">info@esmotech.com</span>
                             </div>
-                        </li>
-                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="color: var(--primary);"><i data-lucide="clock"></i></div>
-                            <div>
-                                <strong style="display: block; margin-bottom: 0.2rem;">Horari d'Atenció</strong>
-                                <span class="text-muted">Dilluns - Divendres: 8:00h - 18:00h</span>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- TRUST BADGES BAR -->
+            <div class="trust-badges-section">
+                <div class="trust-badges-grid">
+                    <div class="trust-badge-item">
+                        <div class="trust-badge-icon">
+                            <i data-lucide="clock" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.2rem;">Resposta &lt; 2h</strong>
+                            <span class="text-muted text-xs">Atenció comercial i tècnica immediata</span>
+                        </div>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <div class="trust-badge-icon">
+                            <i data-lucide="target" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.2rem;">Tolerància CNC 0.01mm</strong>
+                            <span class="text-muted text-xs">Precisió alemanya en cada rectificat</span>
+                        </div>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <div class="trust-badge-icon">
+                            <i data-lucide="shield" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.2rem;">Estoc de Seguretat</strong>
+                            <span class="text-muted text-xs">Pactat per evitar aturades de línia</span>
+                        </div>
+                    </div>
+
+                    <div class="trust-badge-item">
+                        <div class="trust-badge-icon">
+                            <i data-lucide="award" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.2rem;">Assessorament Expert</strong>
+                            <span class="text-muted text-xs">Enginyers i tècnics sèniors al teu servei</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GEOGRAPHIC COVERAGE BOX -->
+            <div class="coverage-section">
+                <div class="coverage-banner-box">
+                    <div>
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.3rem 0.8rem; border-radius: 9999px; display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.8rem;">
+                            <i data-lucide="globe" style="width: 14px; height: 14px;"></i> Cobertura Logística
+                        </span>
+                        <h3 class="font-display" style="font-size: 1.55rem; margin-bottom: 0.65rem; color: var(--text-primary);">
+                            Presència i Distribució a Tota la Península i Europa
+                        </h3>
+                        <p class="text-muted text-sm" style="line-height: 1.6; max-width: 600px;">
+                            Gestionem l'enviament, recepció i reesmolat periòdic d'eines de tall per a les principals indústries de processat carni i envasat a nivell nacional i europeu.
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em;">Àmbits de Servei:</span>
+                        <div class="coverage-tags-group" style="margin-top: 0;">
+                            <span class="coverage-tag"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Catalunya</span>
+                            <span class="coverage-tag"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Espanya (Península i Illes)</span>
+                            <span class="coverage-tag"><i data-lucide="check-circle" style="width: 14px; height: 14px;"></i> Unió Europea</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ SECTION -->
+            <div class="faq-section">
+                <div style="text-align: center; margin-bottom: 2.5rem;">
+                    <span class="badge" style="background: rgba(0, 136, 255, 0.12); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.3rem 0.8rem; border-radius: 9999px; display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.8rem;">
+                        <i data-lucide="help-circle" style="width: 14px; height: 14px;"></i> Preguntes Freqüents
+                    </span>
+                    <h3 class="font-display" style="font-size: 1.75rem; color: var(--text-primary);">Dubtes habituals sobre el servei ESMOTECH</h3>
+                </div>
+
+                <div class="faq-accordion-item open">
+                    <button type="button" class="faq-question-btn">
+                        <span>Com funciona el servei de recollida i retorn d'eines per a reesmolat?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron" style="width: 20px; height: 20px;"></i>
+                    </button>
+                    <div class="faq-answer-content">
+                        Coordinem la recollida periòdica mitjançant contenidors de seguretat homologats directament a les teves instal·lacions. Un cop rebudes al nostre taller CNC, es verifiquen per làser, es reesmolen amb la geometria exacta de fàbrica i es retornen protegides en un termini acordat.
+                    </div>
+                </div>
+
+                <div class="faq-accordion-item">
+                    <button type="button" class="faq-question-btn">
+                        <span>Podem provar mostres de ganivetes abans de formalitzar una comanda de volum?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron" style="width: 20px; height: 20px;"></i>
+                    </button>
+                    <div class="faq-answer-content">
+                        I tant. Oferim eines de test per a línies d'alt rendiment perquè puguis verificar en la teva pròpia maquinària el tall net, la durabilitat del fil i la reducció del minvament de producte abans de tancar un acord de subministrament anual.
+                    </div>
+                </div>
+
+                <div class="faq-accordion-item">
+                    <button type="button" class="faq-question-btn">
+                        <span>Fabriqueu eines a mida per a maquinària antiga o descatalogada?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron" style="width: 20px; height: 20px;"></i>
+                    </button>
+                    <div class="faq-answer-content">
+                        Sí. Gràcies al nostre departament tècnic d'enginyeria podem replicar o millorar qualsevol ganiveta industrial a partir d'un plànol tècnic, fitxer CAD o fins i tot a partir d'una mostra física desgastada.
+                    </div>
+                </div>
+
+                <div class="faq-accordion-item">
+                    <button type="button" class="faq-question-btn">
+                        <span>Com es garanteix que no patirem aturades per falta d'estoc?</span>
+                        <i data-lucide="chevron-down" class="faq-chevron" style="width: 20px; height: 20px;"></i>
+                    </button>
+                    <div class="faq-answer-content">
+                        Amb el servei d'Estocs Pactats, reservem al nostre magatzem central un lot de seguretat exclusiu per a la teva empresa. Davant de qualsevol imprevist o trencall d'eina, el material s'expedeix de forma urgent amb lliurament immediat.
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <!-- CTA SECTION AMB DEGRADAT AURORA PREMIUM (FLUSH TO FOOTER) -->
+        <section class="section-aurora-banner" style="margin-top: 0; margin-bottom: 0; width: 100%;">
+            <div class="container" style="padding: 1.5rem 2rem;">
+                <div style="max-width: 820px;">
+                    <div style="margin-bottom: 0.8rem;">
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #E0F2FE; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.35rem 0.85rem; border-radius: 9999px; display: inline-flex; align-items: center; gap: 0.4rem;">
+                            <i data-lucide="headphones" style="width: 14px; height: 14px; color: #38BDF8;"></i> Compromís de Resposta
+                        </span>
+                    </div>
+                    <h3 class="font-display aurora-banner-title" style="font-size: 1.85rem; line-height: 1.25; margin-bottom: 0.75rem;">
+                        Necessites una resposta immediata <span class="aurora-highlight">per a la teva planta?</span>
+                    </h3>
+                    <p class="aurora-banner-desc" style="font-size: 1.05rem; line-height: 1.6;">
+                        El nostre equip tècnic i comercial és a la teva disposició per analitzar qualsevol requeriment de tall o emergència d'eines.
+                    </p>
+                </div>
+                <div>
+                    <a href="tel:+34930000000" class="btn btn-aurora" style="font-size: 0.98rem; padding: 0.95rem 1.75rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="phone" style="width: 18px; height: 18px;"></i> Truca'ns Directament
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 0;">
         <div class="container footer-grid">
             <div class="footer-brand">
                 <span class="logo" style="margin-bottom: 1.2rem;">
                     <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" style="height: 42px; width: auto; max-width: 240px;">
                 </span>
+                <p class="text-sm text-muted" style="margin-top: 1rem; line-height: 1.6;">
+                    Especialistes en eines de tall industrial i serveis avançats de reesmolat per a la indústria alimentària i de processat.
+                </p>
             </div>
             
             <div class="footer-links">
@@ -311,5 +1008,35 @@
     
     <script src="js/theme-manager.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Interactive Inquiry Pills
+        document.querySelectorAll('.inquiry-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                document.querySelectorAll('.inquiry-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                const reasonInput = document.getElementById('motiu_consulta');
+                if (reasonInput) {
+                    reasonInput.value = pill.getAttribute('data-reason');
+                }
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-accordion-item');
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-accordion-item').forEach(i => i.classList.remove('open'));
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Re-initialize Lucide Icons for dynamic content
+        if (window.lucide && typeof lucide.createIcons === 'function') {
+            lucide.createIcons();
+        }
+    </script>
 </body>
 </html>
