@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serveis | ESMOTECH</title>
-    <meta name="description" content="Descobreix els serveis de ESMOTECH.">
+    <title>Serveis | ESMOTECH Cutting Solutions</title>
+    <meta name="description" content="Serveis tècnics industrials d'ESMOTECH: Esmolat i reesmolat CNC, formació tècnica per a operaris, consultoria de minvament i suport urgent 24/7 amb estocs pactats.">
     
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -15,6 +15,405 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="img/esmotech-favicon.png">
     <link rel="apple-touch-icon" sizes="512x512" href="img/esmotech-icon-512.png">
+
+    <style>
+        /* ==========================================================================
+           GRADIENT CARDS GRID (STYLE 21ST.DEV @RAVIKATIYAR162)
+           ========================================================================== */
+        .services-hero-header {
+            text-align: center;
+            max-width: 860px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .services-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 136, 255, 0.12);
+            color: #38BDF8;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 9999px;
+            padding: 0.4rem 1.1rem;
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        [data-theme="light"] .services-pill-badge {
+            background: rgba(0, 118, 193, 0.1);
+            color: #0066CC;
+            border-color: rgba(0, 118, 193, 0.3);
+        }
+
+        .services-grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1240px;
+            margin: 0 auto 4rem;
+        }
+        @media (max-width: 900px) {
+            .services-grid-wrapper {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Base Gradient Card */
+        .gradient-card {
+            position: relative;
+            border-radius: 24px;
+            padding: 2.5rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 380px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                        box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                        border-color 0.35s ease;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .gradient-card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Card Content Layering */
+        .gradient-card-content {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        /* Status Badge with Glowing Dot */
+        .gradient-card-badge {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.95rem;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1.4rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+        }
+        [data-theme="light"] .gradient-card-badge {
+            background: rgba(255, 255, 255, 0.85);
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .badge-status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .gradient-card-title {
+            font-family: var(--font-display, sans-serif);
+            font-size: 1.9rem;
+            line-height: 1.2;
+            color: var(--text-primary);
+            margin: 0 0 0.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            max-width: 85%;
+        }
+
+        .gradient-card-desc {
+            font-size: 0.98rem;
+            line-height: 1.55;
+            color: var(--text-secondary);
+            margin: 0 0 1.8rem;
+            max-width: 78%;
+        }
+
+        /* Metric Highlight & CTA Footer */
+        .gradient-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            z-index: 5;
+        }
+        [data-theme="light"] .gradient-card-footer {
+            border-top-color: rgba(0, 0, 0, 0.06);
+        }
+
+        .card-metric-block {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 5;
+        }
+        .card-metric-value {
+            font-family: var(--font-display, sans-serif);
+            font-size: 1.85rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .card-metric-label {
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-top: 0.35rem;
+        }
+
+        .card-cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 5;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.25s ease;
+        }
+        [data-theme="light"] .card-cta-link {
+            background: rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .gradient-card:hover .card-cta-link {
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.12);
+        }
+        .card-cta-link i {
+            transition: transform 0.25s ease;
+        }
+        .gradient-card:hover .card-cta-link i {
+            transform: translateX(4px);
+        }
+
+        /* Floating 3D / Cutout Decorative Image inside Card */
+        .gradient-card-media {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 260px;
+            height: 260px;
+            pointer-events: none;
+            z-index: 1;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                        filter 0.5s ease;
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.5));
+        }
+        .gradient-card:hover .gradient-card-media {
+            transform: scale(1.06) translate(-5px, -5px);
+        }
+        .gradient-card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-right-radius: 24px;
+            mask-image: radial-gradient(circle at 75% 75%, black 40%, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle at 75% 75%, black 40%, transparent 80%);
+            opacity: 0.55;
+            transition: opacity 0.4s ease;
+        }
+        [data-theme="light"] .gradient-card-media img {
+            opacity: 0.7;
+        }
+        .gradient-card:hover .gradient-card-media img {
+            opacity: 0.85;
+        }
+        @media (max-width: 640px) {
+            .gradient-card-media {
+                width: 180px;
+                height: 180px;
+                right: -10px;
+                bottom: 60px;
+                opacity: 0.45;
+            }
+            .gradient-card-title,
+            .gradient-card-desc {
+                max-width: 100%;
+            }
+        }
+
+        /* --------------------------------------------------------------------------
+           VARIANT 1: AMBER / GOLD (Esmolat CNC)
+           -------------------------------------------------------------------------- */
+        .gradient-card-amber {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 23, 42, 0.9) 65%);
+            border-color: rgba(245, 158, 11, 0.25);
+        }
+        [data-theme="light"] .gradient-card-amber {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FFFFFF 100%);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+        }
+        .gradient-card-amber:hover {
+            border-color: #F59E0B;
+            box-shadow: 0 20px 50px rgba(245, 158, 11, 0.25), 0 0 25px rgba(245, 158, 11, 0.15);
+        }
+        .gradient-card-amber .badge-status-dot {
+            background: #F59E0B;
+            box-shadow: 0 0 10px #F59E0B;
+        }
+        .gradient-card-amber .gradient-card-badge {
+            color: #FBBF24;
+        }
+        [data-theme="light"] .gradient-card-amber .gradient-card-badge {
+            color: #B45309;
+        }
+        .gradient-card-amber .card-metric-value {
+            color: #FBBF24;
+        }
+        [data-theme="light"] .gradient-card-amber .card-metric-value {
+            color: #B45309;
+        }
+        .gradient-card-amber .card-cta-link {
+            color: #FBBF24;
+        }
+        [data-theme="light"] .gradient-card-amber .card-cta-link {
+            color: #B45309;
+        }
+
+        /* --------------------------------------------------------------------------
+           VARIANT 2: CYAN / BLUE (Formació Tècnica)
+           -------------------------------------------------------------------------- */
+        .gradient-card-cyan {
+            background: linear-gradient(135deg, rgba(0, 136, 255, 0.14) 0%, rgba(15, 23, 42, 0.9) 65%);
+            border-color: rgba(56, 189, 248, 0.25);
+        }
+        [data-theme="light"] .gradient-card-cyan {
+            background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #FFFFFF 100%);
+            border-color: rgba(0, 136, 255, 0.25);
+            box-shadow: 0 10px 30px rgba(0, 136, 255, 0.08);
+        }
+        .gradient-card-cyan:hover {
+            border-color: #38BDF8;
+            box-shadow: 0 20px 50px rgba(0, 136, 255, 0.25), 0 0 25px rgba(56, 189, 248, 0.18);
+        }
+        .gradient-card-cyan .badge-status-dot {
+            background: #38BDF8;
+            box-shadow: 0 0 10px #38BDF8;
+        }
+        .gradient-card-cyan .gradient-card-badge {
+            color: #38BDF8;
+        }
+        [data-theme="light"] .gradient-card-cyan .gradient-card-badge {
+            color: #0066CC;
+        }
+        .gradient-card-cyan .card-metric-value {
+            color: #38BDF8;
+        }
+        [data-theme="light"] .gradient-card-cyan .card-metric-value {
+            color: #0066CC;
+        }
+        .gradient-card-cyan .card-cta-link {
+            color: #38BDF8;
+        }
+        [data-theme="light"] .gradient-card-cyan .card-cta-link {
+            color: #0066CC;
+        }
+
+        /* --------------------------------------------------------------------------
+           VARIANT 3: PURPLE (Consultoria & Auditoria)
+           -------------------------------------------------------------------------- */
+        .gradient-card-purple {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.14) 0%, rgba(15, 23, 42, 0.9) 65%);
+            border-color: rgba(139, 92, 246, 0.25);
+        }
+        [data-theme="light"] .gradient-card-purple {
+            background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 50%, #FFFFFF 100%);
+            border-color: rgba(139, 92, 246, 0.25);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.08);
+        }
+        .gradient-card-purple:hover {
+            border-color: #A78BFA;
+            box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25), 0 0 25px rgba(167, 139, 250, 0.18);
+        }
+        .gradient-card-purple .badge-status-dot {
+            background: #A78BFA;
+            box-shadow: 0 0 10px #A78BFA;
+        }
+        .gradient-card-purple .gradient-card-badge {
+            color: #C4B5FD;
+        }
+        [data-theme="light"] .gradient-card-purple .gradient-card-badge {
+            color: #6D28D9;
+        }
+        .gradient-card-purple .card-metric-value {
+            color: #C4B5FD;
+        }
+        [data-theme="light"] .gradient-card-purple .card-metric-value {
+            color: #6D28D9;
+        }
+        .gradient-card-purple .card-cta-link {
+            color: #C4B5FD;
+        }
+        [data-theme="light"] .gradient-card-purple .card-cta-link {
+            color: #6D28D9;
+        }
+
+        /* --------------------------------------------------------------------------
+           VARIANT 4: EMERALD / GREEN (Suport 24/7 & Estocs)
+           -------------------------------------------------------------------------- */
+        .gradient-card-green {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.14) 0%, rgba(15, 23, 42, 0.9) 65%);
+            border-color: rgba(16, 185, 129, 0.25);
+        }
+        [data-theme="light"] .gradient-card-green {
+            background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 50%, #FFFFFF 100%);
+            border-color: rgba(16, 185, 129, 0.25);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
+        }
+        .gradient-card-green:hover {
+            border-color: #34D399;
+            box-shadow: 0 20px 50px rgba(16, 185, 129, 0.25), 0 0 25px rgba(52, 211, 153, 0.18);
+        }
+        .gradient-card-green .badge-status-dot {
+            background: #10B981;
+            box-shadow: 0 0 10px #10B981;
+        }
+        .gradient-card-green .gradient-card-badge {
+            color: #6EE7B7;
+        }
+        [data-theme="light"] .gradient-card-green .gradient-card-badge {
+            color: #047857;
+        }
+        .gradient-card-green .card-metric-value {
+            color: #6EE7B7;
+        }
+        [data-theme="light"] .gradient-card-green .card-metric-value {
+            color: #047857;
+        }
+        .gradient-card-green .card-cta-link {
+            color: #6EE7B7;
+        }
+        [data-theme="light"] .gradient-card-green .card-cta-link {
+            color: #047857;
+        }
+    </style>
 </head>
 <body>
     <header class="header sticky">
@@ -24,7 +423,7 @@
                 <img src="img/esmotech-logo-dark.png" alt="ESMOTECH Cutting Solutions" class="logo-light">
             </a>
             
-                        <nav class="main-nav" aria-label="Navegació Principal">
+            <nav class="main-nav" aria-label="Navegació Principal">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Inici</a></li>
                     <li><a href="qui-som.html" class="nav-link">Qui Som</a></li>
@@ -129,7 +528,7 @@
                     <li><a href="catalogo.html" class="nav-link">Catàleg &amp; Botiga</a></li>
 
                     <li class="has-mega-menu">
-                        <a href="servicios.html" class="nav-link">Serveis</a>
+                        <a href="servicios.html" class="nav-link active">Serveis</a>
                         <div class="mega-menu mega-menu-services-container">
                             <h4 style="color: var(--primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">Serveis Tècnics Especialitzats</h4>
                             <ul class="mega-menu-list">
@@ -160,8 +559,6 @@
                             </ul>
                         </div>
                     </li>
-
-                    
                 </ul>
             </nav>
 
@@ -184,89 +581,172 @@
         </div>
     </header>
     
-    <main style="padding-top: 100px; padding-bottom: 6rem;">
-        <div class="container" style="margin-bottom: 2rem;">
+    <main style="padding-top: 100px; padding-bottom: 5rem;">
+        <div class="container">
             
-            <div style="margin-bottom: 4rem; text-align: center;">
-                <h1 class="text-heading-2">Serveis ESMOTECH</h1>
-                <p class="text-muted text-body-large">Més enllà del producte, el teu partner estratègic per a la indústria alimentària.</p>
+            <!-- Hero Header -->
+            <div class="services-hero-header">
+                <span class="services-pill-badge">
+                    <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i> Serveis Tècnics Especialitzats
+                </span>
+                <h1 class="font-display" style="font-size: 3.2rem; line-height: 1.15; margin-bottom: 1.2rem; color: var(--text-primary); letter-spacing: -0.01em;">
+                    SERVEIS <span class="aurora-highlight">ESMOTECH</span>
+                </h1>
+                <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Més enllà del producte d'alt rendiment, som el teu partner estratègic per garantir continuïtat, precisió i estalvi a la indústria alimentària.
+                </p>
             </div>
             
-            <!-- Card 1: Esmolat (Alternating Left) -->
-            <div id="esmolat" style="margin-bottom: 4rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(201, 168, 76, 0.03) 100%); padding: 3.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onclick="location.href='serveis/esmolat.html'" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;">
-                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center;">
+            <!-- 2x2 GRID DE GRADIENT CARDS (STYLE 21ST.DEV) -->
+            <div class="services-grid-wrapper">
+                
+                <!-- CARD 1: ESMOLAT (AMBER / GOLD) -->
+                <a href="serveis/esmolat.html" class="gradient-card gradient-card-amber" id="esmolat" aria-label="Servei d'Esmolat i Reesmolat CNC Industrial">
+                    <div class="gradient-card-content">
                         <div>
-                            <span class="badge badge-gold" style="margin-bottom: 1rem;">Manteniment Industrial</span>
-                            <h2 class="text-heading-3" style="font-size: 1.8rem; margin-bottom: 1rem;"><a href="serveis/esmolat.html" style="color: var(--text-primary); text-decoration: none;">🔪 Esmolat i Reesmolat CNC Industrial</a></h2>
-                            <p class="text-muted" style="line-height: 1.6; font-size: 1.05rem;">Retornem a les teves eines l'angle de tall original de fàbrica. El nostre servei d'esmolat industrial utilitza tecnologia avançada per minimitzar el desgast del material i allargar la vida útil de cada ganiveta, serra o placa.</p>
-                            <span class="btn btn-secondary" style="margin-top: 1.5rem; display: inline-flex;">Detalls del Reesmolat CNC <i data-lucide="chevron-right" style="width: 16px; margin-left: 0.5rem;"></i></span>
+                            <div class="gradient-card-badge">
+                                <span class="badge-status-dot"></span>
+                                <span>Manteniment de Precisió</span>
+                            </div>
+                            <h2 class="gradient-card-title">🔪 Esmolat i Reesmolat CNC Industrial</h2>
+                            <p class="gradient-card-desc">
+                                Retornem a les teves eines l'angle de tall original de fàbrica. Tecnologia avançada per minimitzar el desgast del material i allargar la vida útil de cada ganiveta, serra o placa.
+                            </p>
                         </div>
-                        <div style="text-align: center; border-left: 1px solid rgba(255,255,255,0.08); padding-left: 2rem;">
-                            <span class="font-display" style="font-size: 3.5rem; color: var(--primary); display: block; font-weight: bold; line-height: 1;">0.01mm</span>
-                            <span class="text-muted text-sm uppercase" style="letter-spacing: 0.05em; font-size: 0.8rem; display: block; margin-top: 0.5rem;">Tolerància de rectificat CNC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 2: Formació (Alternating Right) -->
-            <div id="formacio" style="margin-bottom: 4rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(255, 255, 255, 0.01) 100%); padding: 3.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onclick="location.href='serveis/formacio.html'" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;">
-                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
-                        <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.08); padding-right: 2rem;">
-                            <span class="font-display" style="font-size: 3.5rem; color: var(--primary); display: block; font-weight: bold; line-height: 1;">100%</span>
-                            <span class="text-muted text-sm uppercase" style="letter-spacing: 0.05em; font-size: 0.8rem; display: block; margin-top: 0.5rem;">Cursos a la teva pròpia planta</span>
-                        </div>
-                        <div>
-                            <span class="badge badge-industrial" style="margin-bottom: 1rem; color: #38bdf8; border-color: rgba(56, 189, 248, 0.2); background: rgba(56, 189, 248, 0.05);">Seguretat i Ergonomia</span>
-                            <h2 class="text-heading-3" style="font-size: 1.8rem; margin-bottom: 1rem;"><a href="serveis/formacio.html" style="color: var(--text-primary); text-decoration: none;">🎓 Formació Tècnica per a Operaris</a></h2>
-                            <p class="text-muted" style="line-height: 1.6; font-size: 1.05rem;">L'eina és tan bona com qui l'utilitza. Oferim programes de capacitació per als operaris de planta sobre l'ús, manteniment bàsic i bones pràctiques amb eines de tall, ajudant a reduir accidents i optimitzar processos.</p>
-                            <span class="btn btn-secondary" style="margin-top: 1.5rem; display: inline-flex;">Detalls de la Formació <i data-lucide="chevron-right" style="width: 16px; margin-left: 0.5rem;"></i></span>
+                        <div class="gradient-card-footer">
+                            <div class="card-metric-block">
+                                <span class="card-metric-value">0.01 mm</span>
+                                <span class="card-metric-label">Tolerància rectificat CNC</span>
+                            </div>
+                            <span class="card-cta-link">
+                                Detalls del Reesmolat <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                            </span>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Card 3: Consultoria (Alternating Left) -->
-            <div id="consultoria" style="margin-bottom: 4rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(201, 168, 76, 0.03) 100%); padding: 3.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onclick="location.href='serveis/consultoria.html'" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;">
-                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center;">
-                        <div>
-                            <span class="badge badge-gold" style="margin-bottom: 1rem;">Optimització</span>
-                            <h2 class="text-heading-3" style="font-size: 1.8rem; margin-bottom: 1rem;"><a href="serveis/consultoria.html" style="color: var(--text-primary); text-decoration: none;">📊 Consultoria i Auditoria de Minvament</a></h2>
-                            <p class="text-muted" style="line-height: 1.6; font-size: 1.05rem;">No saps quina és la millor solució per a la teva línia? Auditem els teus processos actuals de tall i envasat per recomanar-te les eines o consumibles adequats per maximitzar el rendiment i minimitzar el minvament.</p>
-                            <span class="btn btn-secondary" style="margin-top: 1.5rem; display: inline-flex;">Detalls de Consultoria <i data-lucide="chevron-right" style="width: 16px; margin-left: 0.5rem;"></i></span>
-                        </div>
-                        <div style="text-align: center; border-left: 1px solid rgba(255,255,255,0.08); padding-left: 2rem;">
-                            <span class="font-display" style="font-size: 3.5rem; color: var(--primary); display: block; font-weight: bold; line-height: 1;">-15%</span>
-                            <span class="text-muted text-sm uppercase" style="letter-spacing: 0.05em; font-size: 0.8rem; display: block; margin-top: 0.5rem;">Reducció de merma mitjana</span>
-                        </div>
+                    <div class="gradient-card-media">
+                        <img src="img/esmolat-professional-esmotech.jpg" alt="Esmolat CNC ESMOTECH" loading="lazy">
                     </div>
-                </div>
-            </div>
+                </a>
 
-            <!-- Card 4: Suport B2B (Alternating Right) -->
-            <div id="suport" style="margin-bottom: 4rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(255, 255, 255, 0.01) 100%); padding: 3.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onclick="location.href='serveis/suport.html'" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;">
-                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
-                        <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.08); padding-right: 2rem;">
-                            <span class="font-display" style="font-size: 3.5rem; color: var(--primary); display: block; font-weight: bold; line-height: 1;">24h</span>
-                            <span class="text-muted text-sm uppercase" style="letter-spacing: 0.05em; font-size: 0.8rem; display: block; margin-top: 0.5rem;">Resposta SLA garantida</span>
-                        </div>
+                <!-- CARD 2: FORMACIÓ (CYAN / INDUSTRIAL BLUE) -->
+                <a href="serveis/formacio.html" class="gradient-card gradient-card-cyan" id="formacio" aria-label="Formació Tècnica per a Operaris">
+                    <div class="gradient-card-content">
                         <div>
-                            <span class="badge badge-industrial" style="margin-bottom: 1rem; color: #10b981; border-color: rgba(16, 185, 129, 0.2); background: rgba(16, 185, 129, 0.05);">Suport Urgent 24/7</span>
-                            <h2 class="text-heading-3" style="font-size: 1.8rem; margin-bottom: 1rem;"><a href="serveis/suport.html" style="color: var(--text-primary); text-decoration: none;">⚡ Suport Tècnic 24/7 i Manteniment Preventiu</a></h2>
-                            <p class="text-muted" style="line-height: 1.6; font-size: 1.05rem;">Estem al teu costat sempre que ens necessitis. Resposta àgil davant qualsevol incidència per garantir que la teva producció no s'aturi per culpa d'una eina en mal estat.</p>
-                            <span class="btn btn-secondary" style="margin-top: 1.5rem; display: inline-flex;">Detalls del Suport 24/7 <i data-lucide="chevron-right" style="width: 16px; margin-left: 0.5rem;"></i></span>
+                            <div class="gradient-card-badge">
+                                <span class="badge-status-dot"></span>
+                                <span>Seguretat &amp; Rendiment</span>
+                            </div>
+                            <h2 class="gradient-card-title">🎓 Formació Tècnica per a Operaris</h2>
+                            <p class="gradient-card-desc">
+                                L'eina és tan bona com qui l'utilitza. Capacitem els equips sobre ús òptim, seguretat, regulació de fil i manteniment bàsic per reduir accidents i maximitzar la productivitat.
+                            </p>
+                        </div>
+
+                        <div class="gradient-card-footer">
+                            <div class="card-metric-block">
+                                <span class="card-metric-value">100%</span>
+                                <span class="card-metric-label">Cursos a la teva planta</span>
+                            </div>
+                            <span class="card-cta-link">
+                                Detalls de la Formació <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                            </span>
                         </div>
                     </div>
-                </div>
+
+                    <div class="gradient-card-media">
+                        <img src="img/formacio-tecnica-esmotech.jpg?v=2" alt="Formació Tècnica d'Operaris ESMOTECH" loading="lazy">
+                    </div>
+                </a>
+
+                <!-- CARD 3: CONSULTORIA (PURPLE / VIOLET) -->
+                <a href="serveis/consultoria.html" class="gradient-card gradient-card-purple" id="consultoria" aria-label="Consultoria i Auditoria de Minvament">
+                    <div class="gradient-card-content">
+                        <div>
+                            <div class="gradient-card-badge">
+                                <span class="badge-status-dot"></span>
+                                <span>Optimització de Processos</span>
+                            </div>
+                            <h2 class="gradient-card-title">📊 Consultoria i Auditoria de Minvament</h2>
+                            <p class="gradient-card-desc">
+                                Auditem els teus processos de tall i envasat per recomanar solucions a mida. Mesurem el rendiment a la línia per reduir la merma de producte carni i allargar cicles d'esmolat.
+                            </p>
+                        </div>
+
+                        <div class="gradient-card-footer">
+                            <div class="card-metric-block">
+                                <span class="card-metric-value">-15%</span>
+                                <span class="card-metric-label">Reducció mitjana de merma</span>
+                            </div>
+                            <span class="card-cta-link">
+                                Detalls de Consultoria <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="gradient-card-media">
+                        <img src="img/consultoria-postvenda-esmotech.jpg?v=2" alt="Consultoria de Minvament ESMOTECH" loading="lazy">
+                    </div>
+                </a>
+
+                <!-- CARD 4: SUPORT 24/7 & ESTOCS (EMERALD / GREEN) -->
+                <a href="serveis/suport.html" class="gradient-card gradient-card-green" id="suport" aria-label="Suport Tècnic 24/7 i Estocs Pactats">
+                    <div class="gradient-card-content">
+                        <div>
+                            <div class="gradient-card-badge">
+                                <span class="badge-status-dot"></span>
+                                <span>Urgències &amp; Manteniment</span>
+                            </div>
+                            <h2 class="gradient-card-title">⚡ Suport Tècnic 24/7 i Estocs Pactats</h2>
+                            <p class="gradient-card-desc">
+                                Resposta immediata davant qualsevol incidència. Pactem estocs de seguretat dedicats al nostre magatzem perquè la teva planta mai no s'aturi per trencament d'eines.
+                            </p>
+                        </div>
+
+                        <div class="gradient-card-footer">
+                            <div class="card-metric-block">
+                                <span class="card-metric-value">24h</span>
+                                <span class="card-metric-label">Resposta SLA garantida</span>
+                            </div>
+                            <span class="card-cta-link">
+                                Detalls del Suport 24/7 <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="gradient-card-media">
+                        <img src="img/qui-som-estocs-pactats.jpg?v=2" alt="Estocs Pactats i Suport 24/7 ESMOTECH" loading="lazy">
+                    </div>
+                </a>
+
             </div>
 
         </div>
 
-        </div>
+        <!-- CTA SECTION AMB DEGRADAT AURORA PREMIUM (AMPLADA COMPLETA 100%) -->
+        <section class="section-aurora-banner" style="margin-top: 2rem; margin-bottom: 0; width: 100%;">
+            <div class="container" style="padding: 1rem 2rem;">
+                <div style="max-width: 820px;">
+                    <div style="margin-bottom: 0.8rem;">
+                        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #E0F2FE; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.35rem 0.85rem; border-radius: 9999px; display: inline-flex; align-items: center; gap: 0.4rem;">
+                            <i data-lucide="settings" style="width: 14px; height: 14px; color: #38BDF8;"></i> Auditoria Tècnica Especialitzada
+                        </span>
+                    </div>
+                    <h3 class="font-display aurora-banner-title" style="font-size: 1.85rem; line-height: 1.25; margin-bottom: 0.75rem;">
+                        El teu procés de tall <span class="aurora-highlight">es pot optimitzar?</span>
+                    </h3>
+                    <p class="aurora-banner-desc" style="font-size: 1.05rem; line-height: 1.6;">
+                        El nostre equip tècnic analitza les teves necessitats específiques per oferir-te solucions de tall i reesmolat immediates.
+                    </p>
+                </div>
+                <div>
+                    <a href="contacto.html" class="btn btn-aurora" style="font-size: 0.98rem; padding: 0.95rem 1.75rem;">
+                        Contactar amb l'Equip <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -275,6 +755,9 @@
                 <span class="logo" style="margin-bottom: 1.2rem;">
                     <img src="img/esmotech-logo-white.png" alt="ESMOTECH Cutting Solutions" style="height: 42px; width: auto; max-width: 240px;">
                 </span>
+                <p class="text-sm text-muted" style="margin-top: 1rem; line-height: 1.6;">
+                    Especialistes en eines de tall industrial i serveis avançats de reesmolat per a la indústria alimentària i de processat.
+                </p>
             </div>
             
             <div class="footer-links">
@@ -296,6 +779,15 @@
                     <li><a href="serveis/formacio.html">Formació Tècnica</a></li>
                     <li><a href="serveis/consultoria.html">Consultoria</a></li>
                     <li><a href="serveis/suport.html">Suport Postvenda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="font-display">Empresa</h4>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li><a href="qui-som.html">Qui Som</a></li>
+                    <li><a href="contacto.html">Contacte</a></li>
+                    <li><a href="catalogo.html">Catàleg &amp; Botiga</a></li>
                 </ul>
             </div>
         </div>
